@@ -1,0 +1,17 @@
+{{ name }},
+
+{{ email_customer_message }}
+
+{{ site_name }}
+{{ primary_phone }}
+{{ primary_email }}
+
+---
+
+<p>{{ name }},</p>
+
+{{ email_customer_message | markdown }}
+
+<p><strong><a href="{{ site_url }}">{{ site_name }}</a></strong></p>
+<p>Phone: <strong>{{ primary_phone }}</strong></p>
+<p>Email: <strong>{{ primary_email }}</strong></p>

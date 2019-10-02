@@ -1,0 +1,111 @@
+/*
+|--------------------------------------------------------------------------
+| Base Typography
+|
+| These styles are used to set a base style for all elements. Only use
+| these properties here:
+|
+| color:
+| font-family:
+| font-size:
+| line-height:
+| margin:
+|
+|--------------------------------------------------------------------------
+*/
+
+body {
+    @apply text-base font-serif font-normal text-black leading-normal;
+}
+
+// h1 {
+//     @apply mb-1.5 text-5xl-scale font-semibold leading-none;
+//     @screen md {
+//         @apply text-5xl;
+//     }
+// }
+
+// h2 {
+//     @apply mb-1.5 text-4xl-scale font-regular leading-tight;
+//     @screen md {
+//         @apply text-4xl;
+//     }
+// }
+
+// h3 {
+//     @apply mb-1.5 text-3xl-scale leading-tight;
+//     @screen md {
+//         @apply text-3xl;
+//     }
+// }
+
+// h4,
+// h5,
+// h6 {
+//     @apply text-base mb-1.5;
+// }
+
+p {
+//     @apply mb-2 text-base;
+//     @screen lg {
+//         @apply text-base;
+//     }
+    margin-bottom: 1.3em;
+    @apply leading-normal;
+}
+
+.leadin {
+    @apply text-2xl;
+}
+
+.first-p-leadin {
+    p:first-of-type {
+        @apply text-2xl;
+    }
+}
+
+i,
+em {
+    @apply italic;
+}
+
+a {
+    color: inherit;
+}
+
+small {
+    @apply text-sm;
+}
+
+// li { // this affects navigation, omitting for now until can scope it
+//     font-size: 1.375rem;
+// }
+.headline-spaced, .headline-1, .headline-2, .headline-3, .headline-4 {
+    @apply leading-tight;
+    margin-bottom: 0.3em;
+}
+
+// quote,
+// blockquote {}
+.headline-spaced {
+    @apply uppercase tracking-wider;
+}
+
+.headline-1 {
+    @apply text-5xl-scale font-serif mb-2; 
+}
+.headline-2 {
+    @apply text-3xl-scale font-serif;
+}
+.headline-3 {
+    @apply text-2xl uppercase tracking-wider; // add .font-sans if needed
+}
+.headline-4 {
+    @apply text-xl font-sans uppercase tracking-wider font-light;
+}
+.multicol .col-2 {
+    @screen md {
+        columns: 2 15em;
+        column-gap: 2rem;
+    }
+}

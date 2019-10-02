@@ -1,0 +1,23 @@
+// takes a list of images and scales their widths across the space in a harmonious rhythm
+.mosaic-horiz {
+    min-height: calc(6vw + 18rem);
+    & img:nth-child(1) {
+        display: hidden;
+        @screen lg {
+            width: 5%;
+            display: block;
+        }
+    }
+    & img:nth-child(2) {
+        width: 20%;
+    }
+    & img:nth-child(3) {
+        width: 40%;
+    }
+    & img:nth-child(4) {
+        width: auto;
+        @screen md {
+            width: 60%;
+        }
+    }
+}

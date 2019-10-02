@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Responsivie Debugging
+   ========================================================================== */
+
+body.development:after {
+  bottom: 2px;
+  position: fixed;
+  right: 2px;
+  z-index: 3000;
+
+  padding: 2px 8px;
+
+  background: lighten(#000, 5%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.5;
+  text-align: center;
+
+  content: "xs";
+
+  @screen sm {
+    content: "sm";
+  }
+
+  @screen md {
+    content: "md";
+  }
+
+  @screen lg {
+    content: "lg";
+  }
+
+  @screen xl {
+    content: "xl";
+  }
+
+  @screen xxl {
+    content: "xxl";
+  }
+}

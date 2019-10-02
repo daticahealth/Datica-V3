@@ -1,0 +1,92 @@
+
+// .bg-grad-amber { // for buttons
+//     background-image: linear-gradient(to bottom, $amber-grad-start, $amber-grad-end);
+//     background-size: cover;
+//     @apply .text-blue-dark;
+// }
+.bg-blend-multiply {
+    @supports (background-blend-mode: multiply) {
+        background-blend-mode: multiply;
+    }
+}
+.trans-color { // transitions for anim
+    transition: color $speed-default linear, box-shadow $speed-default linear, background-color $speed-default linear, border-color $speed-default linear;
+}
+.tint-dark {
+    background: linear-gradient(45deg, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.55) 15%,rgba(0,0,0,0) 75%,rgba(0,0,0,0) 100%);
+}
+.tint-light {
+    background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0.8) 100%);
+}
+.text-shadow-tight {
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+// .text-shadow {
+//     text-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+// }
+.text-shadow-expansive {
+    text-shadow: 1px 1px 2px rgba(0,0,30,0.4), 1px 2px 40px rgba(0,0,30,0.3);
+}
+.max-w-site { //easier to remember
+	@apply .max-w-4xl;
+}
+hr {
+    &.gold {
+        @apply border-t border-gold mx-auto w-40 my-4;
+    }
+}
+.bg-blue-dark-trans {
+    color: white;
+    // @supports (backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px)) {
+    //     background-color: hsla(203, 47%, 29%, 0.5); // there's no native tailwind way to do this yet. plugins coming
+    //     @include bg-blur(5px);
+    // }
+    background-color: hsla(203, 47%, 29%, 0.9);
+}
+.bg-green-dark-trans {
+    color: white;
+    // @supports (backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px)) {
+    //     background-color: hsla(99, 13%, 30%, 0.5); // there's no native tailwind way to do this yet. plugins coming
+    //     @include bg-blur(5px);
+    // }
+    background-color: hsla(99, 13%, 30%, 0.8);
+}
+.bg-tan-trans {
+    color: black;
+    // @supports (backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px)) {
+    //     background-color: hsla(48, 20%, 95%, 0.5); // there's no native tailwind way to do this yet. plugins coming
+    //     @include bg-blur(5px);
+    // }
+    background-color: hsla(48, 20%, 95%, 0.9);
+}
+// set default text colors for containers. need a tailwind-native route 
+[class*="bg-"] {
+    color: white;
+}
+.bg-tan-light, .bg-tan, .bg-white, .bg-grey-100, .bg-grey-200, .bg-grey-300, .bg-grey-400, .bg-tan-trans {
+    color: black;
+}
+.bg-white-grad {
+    color: black;
+    background: white;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 46%); 
+}
+.pill {
+    display:inline-block;
+    line-height:0px;
+    border-radius:50%;
+    font-size: 1.8rem;
+}
+
+.pill span {
+    // color: white;
+    display:inline-block;
+    padding-top:    50%;
+    padding-bottom: 50%;
+    margin-left:  12px;
+    margin-right: 12px;
+}
+
+.bg-blur {
+    @include bg-blur(5px);
+}

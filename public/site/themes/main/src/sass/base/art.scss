@@ -1,0 +1,29 @@
+// art, custom layouts, etc.
+
+// .accent-box-art { // large, thin-lined logo. not sure if this is repeatable.
+//     height: 400px;
+//     width: 440px;
+//     right: 13%;
+//     top: -10%;
+// }
+
+// all pages output what template they're using in the body eg. <body class="page-{{ template }}"
+
+.page-design {
+    .block-1 {
+        // color: #e2ba6328;
+        background-position-y: 8rem; // pulls it down
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='434' height='364'%3E%3Cg fill='%23e2ba6328'%3E%3Cpath d='M434 242L217 363.7 0 242l217-121.7L434 242zM217 123.7L6 242l211 118.3L428 242 217 123.7z'/%3E%3Cpath d='M434 122L217 243.7 0 122 217 .3 434 122zM217 3.7L6 122l211 118.3L428 122 217 3.7z'/%3E%3Cpath d='M215.5 2h3v120h-3zM215.5 242h3v120h-3z'/%3E%3C/g%3E%3C/svg%3E");
+        @screen lg {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='434' height='364'%3E%3Cg fill='%23C09D51'%3E%3Cpath d='M434 242L217 363.7 0 242l217-121.7L434 242zM217 123.7L6 242l211 118.3L428 242 217 123.7z'/%3E%3Cpath d='M434 122L217 243.7 0 122 217 .3 434 122zM217 3.7L6 122l211 118.3L428 122 217 3.7z'/%3E%3Cpath d='M215.5 2h3v120h-3zM215.5 242h3v120h-3z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+    }
+}
+
+.page-maintenance {
+    .custom-header {
+        h3 {
+            @apply text-lg uppercase tracking-wider text-gold font-sans mb-4;
+        }
+    }
+}

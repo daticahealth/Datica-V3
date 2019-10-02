@@ -1,0 +1,22 @@
+Name: {{ name }}
+Email: {{ email }}
+Phone: {{ phone }}
+Date: {{ date }}
+
+Message:
+{{ message }}
+
+{{ if estimate}}
+Estimate Details:
+{{ estimate }}
+{{ /if }}
+---
+
+<p><strong>Name:</strong> {{ name }}</p>
+<p><strong>Email:</strong> {{ email }}</p>
+<p><strong>Phone:</strong> {{ phone }}</p>
+<p><strong>Location:</strong> {{ location }}</p>
+<p><strong>Message:</strong> {{ message | nl2br }}</p>
+<p><strong>Date:</strong> {{ date }}</p>
+
+<a href="{{ site_url}}/cp/forms">View More Submissions</a>

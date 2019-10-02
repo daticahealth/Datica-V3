@@ -1,0 +1,43 @@
+/*
+|--------------------------------------------------------------------------
+| Links
+|
+| Basic link class that can be used across the site
+|--------------------------------------------------------------------------
+*/
+
+a {
+    transition: color 150ms linear, border-color 150ms linear;
+}
+
+.link {
+    @apply text-blue-dark border-b border-transparent tracking-wider;
+    &:hover {
+        @apply text-blue border-blue;
+    }
+}
+
+.link-blue {
+    @apply text-blue-dark border-b border-blue;
+    &:hover {
+        @apply text-blue border-blue;
+    }
+}
+.link-gold {
+    @apply text-gold-dark border-b border-gold;
+    &:hover {
+        @apply text-gold border-gold;
+    }
+}
+.link-gold-plain {
+    @apply text-gold-dark;
+    &:hover {
+        @apply text-gold;
+    }
+}
+.link-light {
+    @apply text-white border-b border-white;
+    &:hover {
+        @apply text-gold-light border-gold-light;
+    }
+}

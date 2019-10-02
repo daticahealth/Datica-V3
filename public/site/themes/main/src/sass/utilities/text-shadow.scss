@@ -1,0 +1,10 @@
+@responsive {
+  .text-shadow {
+    &-sm {
+      text-shadow: 0 2px 10px rgba(#484f26, 0.4), 1px 1px 1px #484f26;
+    }
+    &-lg {
+      text-shadow: 0 2px 30px #484f26, 1px 1px 1px #484f26;
+    }
+  }
+}

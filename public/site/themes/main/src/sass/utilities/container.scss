@@ -1,0 +1,5 @@
+// Add a margin be default, since we always want to have it.
+
+.container {
+    @apply mx-auto;
+}

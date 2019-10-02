@@ -1,0 +1,11 @@
+// for content in markdown fieldtypes. Wrap them in .content-md using wrap or other parent.
+
+.content-md {
+    ul {
+        list-style-type: disc;
+        margin-left: 1.5rem;
+        li {
+            margin-bottom: 0.5em;            
+        }
+    }
+}

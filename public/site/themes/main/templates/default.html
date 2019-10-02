@@ -1,0 +1,13 @@
+{{#
+
+    This template is the default page and entry template that will load.
+
+#}}
+
+{{ partial:page_hero }}
+
+{{ partial:content_blocks }}
+
+{{ if mount }}
+{{ partial:list_{{mount}} }}
+{{ /if }}

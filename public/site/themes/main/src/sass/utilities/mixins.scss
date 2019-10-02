@@ -1,0 +1,47 @@
+$link-color-default: config('colors.gold-dark') !default;
+$underline: false !default;
+// ex. @include link-colors (white, $color_prime-bright, true);
+@mixin link-colors($color: $link-color-default, $hover-color: $link-color-default, $has-underline: $underline) {
+    font-weight: config('fontWeight.regular');
+    transition: border-bottom .15s linear, color .15s linear;
+    color: $color !important;
+    @if $has-underline==true {
+        border-bottom: 2px solid transparentize($hover-color, 0.7);
+    }
+    &:hover {
+        color: $hover-color !important;
+        @if $has-underline==true {
+            border-bottom: 2px solid transparentize($hover-color, 0);
+        }
+    }
+}
+
+/* Utility classes - for @extend or other use downstream */
+
+@mixin button-shadow ($size: 4px, $start: 0.2) {
+	// transition: all $speed-default linear;
+    box-shadow: 1px 1px $size * 0.125 0 rgba(0,0,0,$start / 2), 4px 4px $size * 0.5 0 rgba(0,0,0,$start);
+    &:hover {
+        @apply .border-transparent .shadow-lg;
+        box-shadow: 0 $size * 0.6 $size 0 rgba(0,0,0,0.3);
+    }
+}
+@mixin grid-square ($squares: 2) {
+	grid-column-end: span $squares;
+    grid-row-end:    span $squares;
+}
+@mixin bg-blur ($blur: 5px) {
+    backdrop-filter: blur($blur);  
+    -webkit-backdrop-filter: blur($blur);
+}
+
+@mixin blur($r){ // covers most browsers...
+    // $r: $radius * 1px;
+    filter: blur($r); /* Someday, sigh ... */
+    -webkit-filter: blur($r); /* Prefixed CSS3 blur filters */
+    -moz-filter: blur($r);
+    -o-filter: blur($r);
+    -ms-filter: blur($r);
+    // filter: url(#blur); /* Firefox needs SVG */
+    // filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='$radius'); /* IE lte 9 */
+}

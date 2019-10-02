@@ -1,0 +1,7 @@
+// Customizations for photoswipe
+
+$pswp__assets-path: '../img/photoswipe/' !default;
+
+@import '../../../node_modules/photoswipe/src/css/main-settings';
+@import '../../../node_modules/photoswipe/src/css/default-skin/default-skin';
+@import '../../../node_modules/photoswipe/src/css/main';

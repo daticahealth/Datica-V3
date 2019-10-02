@@ -1,0 +1,9 @@
+@responsive {
+  .grow-parent {
+    transition: all 0.15s ease-out;
+
+    &:hover .grow-child {
+      transform: scale(1.1);
+    }
+  }
+}

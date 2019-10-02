@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+//Main This is the main scss file that pulls in all the other files.
+// Base
+// Basic styles that sit on top of the Tailwind presets.
+@import "base/variables";
+@import "utilities/mixins";
+@import "base/fonts"; // loading that font pack isn't working; substituting EB Garamond for now
+// @import "base/debug";
+// @import "base/icons"; we'll be using SVG icons inline or loaded lazily as img.
+@import "base/images";
+@import "base/lozad";
+@import "base/tables";
+@import "base/typography";
+
+// | Components
+// | Each component should be saved in its own file.
+// |--------------------------------------------------------------------------
+@import "components/markdown";
+@import "components/dropdown";
+@import "components/buttons";
+@import "components/links";
+// @import "components/main-nav";
+@import "components/nav";
+@import "components/wysiwyg";
+@import "components/block-image-content";
+@import "components/block-image-mosaic-horiz";
+
+// | Custom Utilities
+// | Each utility should be saved in its own file.
+// |--------------------------------------------------------------------------
+
+@import "utilities/aspect-ratio";
+@import "utilities/blend-modes";
+@import "utilities/container";
+@import "utilities/gradients";
+@import "utilities/grid";
+@import "utilities/section-pad";
+@import "utilities/text-shadow";
+@import "utilities/transition";
+@import "utilities/utilities";
+
+@import "base/art"; // custom stuff here and there. Could be split out into separate files.
+
+@tailwind utilities;

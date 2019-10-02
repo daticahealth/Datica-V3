@@ -1,0 +1,28 @@
+/*
+|--------------------------------------------------------------------------
+| Wysiwyg
+|
+| Add styling to tags that are output by a wysiwyg or markdown editor
+|--------------------------------------------------------------------------
+*/
+
+.wysiwyg {
+  ul {
+    @apply mb-1;
+    list-style: disc;
+  }
+
+  ol {
+    @apply mb-1;
+    list-stye: decimal;
+  }
+
+  li {
+    @apply mb-1;
+  }
+
+  b,
+  strong {
+    @apply font-bold;
+  }
+}

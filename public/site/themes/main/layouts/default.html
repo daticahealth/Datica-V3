@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en-ca">
+
+<head>
+
+    {{ if environment!='local' and environment!='staging' }}
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{ gtm_id }}"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', '{{ gtm_id }}');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    {{ /if }} {{ partial:metadata }} {{ partial:device_icons }} {{ theme:css cache_bust="true" tag="true" }} {{ theme:css src="vendor.css" cache_bust="true" tag="true" }}
+    {{# <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700&display=swap" rel="stylesheet"> #}}
+
+    {{ head_tags }}
+
+</head>
+
+<body class="text-base antialiased page-{{ template }} {{ settings }}{{ debug }}{{ if debug==1 }}development{{ /if }}{{ /debug }}{{ /settings }}">
+
+    {{ if environment!='local' and environment!='staging' }}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ gtm_id }}"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {{ /if }}
+
+    <header class="site-header bg-white" itemscope itemtype="http://schema.org/LocalBusiness">
+        {{ partial:navbar }}
+    </header>
+    
+    <div class="overflow-hidden relative">
+        {{ template_content }}
+    </div>
+    {{ partial:footer }}
+
+    <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.4" media="print"> {{# Photoswipe gallery html loads below You might want to conditionally load this if there is a gallery on the page #}} {{ partial:photoswipe_markup }}
+
+</body>
+
+</html>

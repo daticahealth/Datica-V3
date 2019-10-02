@@ -1,0 +1,13 @@
+.bg-gradient {
+  &-to-bottom {
+  }
+
+  &-to-top {
+    &-subtle-shadow {
+      background-image: linear-gradient(to top, rgba(#000, 0.5), transparent);
+    }
+  }
+
+  &-to-right {
+  }
+}

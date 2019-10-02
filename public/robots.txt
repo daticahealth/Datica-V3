@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /seldon/
+Disallow: /blog/why-there-is-no-up-front-pricing/
+Sitemap: https://datica.com/sitemap.xml

@@ -1,0 +1,25 @@
+@responsive {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: .5em;
+    }
+}
+.lg\:grid {
+    .left {
+        grid-column: 1 / span 1;
+    }
+    .right { // note the number of .left fields needs to match the grid-row-end value
+        grid-column: 2 / span 1;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+    .right ~ .right {
+        grid-row-start: auto;
+    }
+}

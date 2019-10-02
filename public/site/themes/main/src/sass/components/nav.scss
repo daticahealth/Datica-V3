@@ -1,0 +1,79 @@
+.nav-item {
+    @apply block text-center font-sans font-normal no-underline tracking-wider;
+    &:hover {
+        @apply text-black;
+    }
+}
+.nav-pane {
+    display: none;
+}
+.is-active { // when toggle is triggered, the target gets .is-active
+   display: block;
+}
+// $speed-default: 150ms;
+// .icon, .toggle-me, .nav-item {
+//    transition: color $speed-default ease, opacity $speed-default ease, position $speed-default ease;
+// }
+// .is-toggled {
+//    color: black;
+//    .icon-default {
+//       display: none;
+//       // opacity: 0;
+//    }
+//    .icon-active {
+//       display: block;
+//       // opacity: 1;
+//    }
+// }
+
+// via https://codepen.io/keefyboooo/pen/Wvwjwo
+#nav-toggle {
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    height: 50px;
+    width:  40px;
+    @screen sm {
+        width: 50px;
+    }
+    cursor: pointer;
+    transform: translate(0%, -50%);
+    & span,
+    & span:before,
+    & span:after {
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        border-radius: 1px;
+        height: 2px;
+        width: 35px;
+        @apply bg-blue-dark;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        display: block;
+        content: "";
+    }
+    & span:before {
+      top: -10px;
+    }
+    & span:after {
+      top: 10px;
+    }
+    &.is-toggled span {
+        background-color: transparent;
+    }
+
+    &.is-toggled span:before,
+    &.is-toggled span:after {
+        top: 0;
+    }
+
+    &.is-toggled span:before {
+        transform: rotate(135deg);
+    }
+
+    &.is-toggled span:after {
+        transform: rotate(-135deg);
+    }
+}

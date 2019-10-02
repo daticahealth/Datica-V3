@@ -1,0 +1,115 @@
+/*
+|--------------------------------------------------------------------------
+| Main Nav
+|
+| Using the label and input as for the mobile version.
+|--------------------------------------------------------------------------
+*/
+
+.main-nav {
+  &__list {
+    transition: transform 0.125s ease-out;
+    transform: scaleY(0);
+    transform-origin: 75% top;
+
+    @screen sm {
+      transform: none;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+
+    text-decoration: none;
+
+    @screen sm {
+      width: auto;
+    }
+
+    &:hover,
+    &:focus {
+      outline: 0;
+      background-color: color(theme("colors.blue"));
+      text-decoration: none;
+    }
+  }
+
+  &__trigger {
+    left: auto;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+
+    margin: 0;
+    padding: 18px 0;
+    width: 100%;
+    z-index: 5000;
+
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    opacity: 1;
+    outline: 0 !important;
+    text-align: center;
+
+    @screen sm {
+      display: none;
+    }
+
+    &:after,
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      content: "";
+      width: 25px;
+
+      transition: all 0.5s;
+    }
+
+    &:before {
+      height: 10px;
+
+      border-bottom: 2px solid #fff;
+      border-top: 2px solid #fff;
+    }
+
+    &:after {
+      top: 16px;
+
+      border-bottom: 2px solid #fff;
+      text-shadow: none !important;
+      font-size: 1.8em;
+      font-family: sans;
+      line-height: 1;
+      opacity: 1;
+    }
+
+    &:checked:before {
+      left: 3px;
+      top: 6px;
+
+      transform: rotate(-45deg);
+
+      border-bottom: none;
+    }
+
+    &:checked:after {
+      left: 0px;
+      top: 7px;
+
+      transform: rotate(45deg);
+    }
+  }
+
+  &__trigger:checked ~ &__list {
+    display: block;
+
+    transform: scaleY(1);
+  }
+}

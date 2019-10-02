@@ -1,0 +1,9 @@
+.lozad {
+  opacity: 0;
+  transition: opacity 0.3s, background-image 0.3s, filter 0.3s, -webkit-filter 0.3s, -moz-filter 0.3s, -o-filter 0.3s, -ms-filter 0.3s;
+  // @include blur(4px); // blur if you like
+  &.loaded {
+    opacity: 1;
+    // @include blur(0);
+  }
+}

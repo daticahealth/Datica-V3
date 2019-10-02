@@ -1,0 +1,59 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "acorn": "^6.1.1",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "*",
+    "cross-env": "*",
+    "css-loader": "^2.1.1",
+    "headroom.js": "*",
+    "jquery": "^3.4.0",
+    "laravel-mix": "^4.0.15",
+    "laravel-mix-purgecss": "*",
+    "lozad": "^1.9.0",
+    "photoswipe": "^4.1.3",
+    "postcss": "*",
+    "postcss-color-function": "^4.1.0",
+    "sass": "^1.17.3",
+    "sass-loader": "*",
+    "tailwindcss": "^1.0.5",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.29.6"
+  },
+  "dependencies": {
+    "npm": "^6.9.0"
+  },
+  "name": "compass-creative",
+  "version": "1.0.0",
+  "description": "Tailwind + Laravel Mix.",
+  "main": "tailwind.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compasscreative/roger-willis.git"
+  },
+  "keywords": [
+    "tailwind",
+    "laravel",
+    "mix",
+    "webpack"
+  ],
+  "author": "Compass Creative",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/compasscreative/roger-willis/issues"
+  },
+  "homepage": "https://github.com/compasscreative/roger-willis#readme"
+}
