@@ -1,30 +1,40 @@
-title: Blog Post
+title: 'Blog Post'
 hide: true
-fields:
-  title:
-    type: text
-    display: Title
-    localizable: true
-    width: 50
-  slug:
-    width: 50
-  sub_title:
-    type: textarea
-    display: Subtitle
-    localizable: true
-  intro_image:
-    type: assets
-    display: Intro Image
-    container: main
-    folder: img
-    max_files: 1
-  hero_image:
-    type: assets
-    display: Hero Image
-    container: main
-    folder: img
-    max_files: 1
-  content:
-    type: markdown
-    display: Content
-    localizable: true
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        display: Title
+        localizable: true
+        width: 50
+      slug:
+        width: 50
+        type: text
+      sub_title:
+        type: textarea
+        display: Subtitle
+        localizable: true
+      featured_image:
+        type: assets
+        display: 'Featured Image'
+        container: main
+        folder: img
+        max_files: 1
+        instructions: 'Choose a large image for the entry.'
+        restrict: true
+        mode: grid
+      content:
+        type: markdown
+        display: Content
+        localizable: true
+        cheatsheet: false
+        restrict_assets: false
+      discovery_topic:
+        max_items: 1
+        taxonomy: topics
+        type: taxonomy
+        instructions: 'Choose a single topic category to categorize the entry.'
+        display: 'Discovery Topic (Category)'
+taxonomies: true

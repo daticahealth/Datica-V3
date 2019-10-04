@@ -1,0 +1,76 @@
+title: People
+sections:
+  basics:
+    display: Basics
+    fields:
+      title:
+        display: 'Full Name'
+        type: text
+        localizable: true
+      slug:
+        display: Slug
+        type: text
+        validate: required
+      person_type:
+        options:
+          'Datica Leadership': leadership
+          'Datica Team': team
+          'Datica Alumni': alumni
+          'Guests (podcasts, etc)': guests
+          Customers: customers
+        type: select
+        instructions: 'It''s important to select the person category.'
+        display: 'Person Category'
+        default: guest
+        validate: required
+      role:
+        type: text
+        display: 'Role or Title'
+      profile_pic:
+        restrict: false
+        type: assets
+        display: 'Profile Photo'
+        container: main
+      bio_short:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: 'Bio, Short'
+      bio_full:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: 'Bio, Full'
+      featured_image:
+        restrict: false
+        type: assets
+        display: 'Featured Image'
+        container: main
+        folder: img
+        max_files: 1
+        mode: grid
+      location:
+        type: location
+        instructions: 'A city is close enough, or institution.'
+        display: Location
+  sidebar:
+    display: 'Social, Public Contact Info'
+    fields:
+      profile_twitter:
+        type: text
+        instructions: 'Just the username, without the `@` symbol.'
+        display: 'Twitter handle'
+      profile_linkedin:
+        type: text
+        display: 'LinkedIn Username'
+      profile_url:
+        type: text
+        instructions: 'If the person has an external profile page, paste the url here.'
+        display: 'Profile Website'
+        validate: 'validate: url'
+      email:
+        type: text
+        display: Email
+        validate: email
+taxonomies: false
+hide: true

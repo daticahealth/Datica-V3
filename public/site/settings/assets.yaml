@@ -1,0 +1,8 @@
+image_manipulation_route: /img
+image_manipulation_secure: false
+auto_crop: true
+image_manipulation_driver: gd
+image_manipulation_cached: false
+thumbnail_max_width: 6000
+thumbnail_max_height: 6000
+image_manipulation_presets_generate_on_upload: true
