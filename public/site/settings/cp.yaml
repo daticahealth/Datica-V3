@@ -1,3 +1,6 @@
+start_page: dashboard
+date_format: Y/n/d
+pagination_size: 50
 widgets:
   -
     type: collection
@@ -11,7 +14,7 @@ widgets:
     type: form
     form: contact
     limit: 5
-    title: Recent Submissions
+    title: 'Recent Submissions'
     width: full
     fields:
       - name

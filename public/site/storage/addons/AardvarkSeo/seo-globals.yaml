@@ -1,0 +1,14 @@
+title_separator: '|'
+site_name: Datica
+company_or_person: company
+company_name: 'Datica Health, Inc.'
+enable_breadcrumbs: true
+no_index: false
+social_links:
+  -
+    social_icon: twitter
+    url: 'https://twitter.com/daticahealth'
+twitter_username: '@daticahealth'
+twitter_card_type: summary_large_image
+enable_gtm_script: false
+google_verification_code: google8c054d702c2044e4

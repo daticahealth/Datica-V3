@@ -1,0 +1,25 @@
+sections:
+  main:
+    display: 'Core Fields'
+    fields:
+      title:
+        display: Title
+        type: text
+        localizable: true
+      slug:
+        display: Slug
+        type: text
+      summary:
+        type: textarea
+        display: Summary
+      tags:
+        max_items: 5
+        label: '{{ title }}'
+        taxonomy: tags
+        mode: tags
+        type: taxonomy
+        display: Tags
+taxonomies: false
+hide: true
+title: 'Discovery Topics'
+hide_aardvark_seo: true

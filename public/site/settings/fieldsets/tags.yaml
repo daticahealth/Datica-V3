@@ -1,0 +1,22 @@
+title: Tags
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+      slug:
+        display: Slug
+        type: text
+      summary:
+        type: textarea
+        display: Summary
+      body:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: Description
+taxonomies: true
+hide: true
+hide_aardvark_seo: true

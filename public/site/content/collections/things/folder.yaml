@@ -1,7 +1,0 @@
-title: Things
-fieldset: things
-template: thing
-columns:
-  - title
-  - amazon_id
-  - slug

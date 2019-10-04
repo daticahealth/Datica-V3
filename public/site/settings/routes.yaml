@@ -1,13 +1,13 @@
 collections:
   blog: '/blog/{year}/{month}/{day}/{slug}'
-  things: '/things/{slug}'
 taxonomies:
-  tags: '/blog/tags/{slug}'
+  tags: '/tag/{slug}'
+  topics: '/discover/{slug}'
 routes:
   /blog/tags: blog/taxonomies
   /search: search
   /users: user/index
-  /users/{username}: user/profile
+  '/users/{username}': user/profile
   /account: user/account
   /login: auth/login
   /register: auth/register
