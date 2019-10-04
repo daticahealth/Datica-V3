@@ -1,5 +1,5 @@
 .dropdown {
-    @apply flex-grow appearance-none border-2 border-transparent trans-color px-3 py-2 pr-8 bg-no-repeat;
+    @apply flex-grow appearance-none border-2 border-transparent transition-color px-3 py-2 pr-8 bg-no-repeat;
     background-position: right center;
     background-size: 2em;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='20' height='7' viewBox='0 0 10 7' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3ETriangle%3C/title%3E%3Cpath d='M5 7L0 0h10z' fill='%2327516C' fill-rule='evenodd'/%3E%3C/svg%3E");

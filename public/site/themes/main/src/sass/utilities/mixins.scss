@@ -45,3 +45,30 @@ $underline: false !default;
     // filter: url(#blur); /* Firefox needs SVG */
     // filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='$radius'); /* IE lte 9 */
 }
+
+/*
+|--------------------------------------------------------------------------
+| Aspect Ratio
+|
+| Use for images and iframes to work with a fluid width and set height.
+| This is pulled directly from http://getbootstrap.com
+|--------------------------------------------------------------------------
+*/
+
+@mixin aspect-ratio($w, $h) {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($h / $w) * 100%;
+    }
+    > * {
+        position: absolute;
+        top: 0;
+
+        display: block;
+        width: 100%;
+    }
+}
+    

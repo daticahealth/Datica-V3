@@ -1,29 +1,29 @@
-@responsive {
-  .section-pad {
-    padding-top: calc(10vh + 2rem);
-    padding-bottom: calc(10vh + 2rem);
-  }
+// @responsive {
+//   .section-pad {
+//     padding-top: calc(10vh + 2rem);
+//     padding-bottom: calc(10vh + 2rem);
+//   }
 
-  .section-pad-b {
-    padding-bottom: calc(10vh + 2rem);
-  }
+//   .section-pad-b {
+//     padding-bottom: calc(10vh + 2rem);
+//   }
 
-  .section-pad-t {
-    padding-top: calc(10vh + 2rem);
-  }
-  .section-pad-sm {
-    padding-top: calc(5vh + 1rem);
-    padding-bottom: calc(5vh + 1rem);
-  }
+//   .section-pad-t {
+//     padding-top: calc(10vh + 2rem);
+//   }
+//   .section-pad-sm {
+//     padding-top: calc(5vh + 1rem);
+//     padding-bottom: calc(5vh + 1rem);
+//   }
 
-  .section-pad-b-sm {
-    padding-bottom: calc(5vh + 1rem);
-  }
+//   .section-pad-b-sm {
+//     padding-bottom: calc(5vh + 1rem);
+//   }
 
-  .section-pad-t-sm {
-    padding-top: calc(5vh + 1rem);
-  }
-}
+//   .section-pad-t-sm {
+//     padding-top: calc(5vh + 1rem);
+//   }
+// }
 // ====== containers - these will scale with viewport at different rates. 
 .pad-scale {
   padding: 2rem;

@@ -15,7 +15,7 @@
 */
 
 body {
-    @apply text-base font-serif font-normal text-black leading-normal;
+    @apply text-base font-sans font-normal text-black leading-normal;
 }
 
 // h1 {
@@ -54,16 +54,6 @@ p {
     @apply leading-normal;
 }
 
-.leadin {
-    @apply text-2xl;
-}
-
-.first-p-leadin {
-    p:first-of-type {
-        @apply text-2xl;
-    }
-}
-
 i,
 em {
     @apply italic;
@@ -87,7 +77,7 @@ small {
 
 // quote,
 // blockquote {}
-.headline-spaced {
+.headline-spaced, .spaced-out {
     @apply uppercase tracking-wider;
 }
 

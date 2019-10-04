@@ -3,3 +3,6 @@
     transition: all 0.15s ease-out;
   }
 }
+.transition-color { // transitions for anim
+  transition: color $speed-default linear, box-shadow $speed-default linear, background-color $speed-default linear, border-color $speed-default linear;
+}
