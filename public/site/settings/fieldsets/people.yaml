@@ -62,12 +62,13 @@ sections:
         display: 'Twitter handle'
       profile_linkedin:
         type: text
-        display: 'LinkedIn Username'
+        display: 'LinkedIn URL'
+        validate: url
       profile_url:
         type: text
         instructions: 'If the person has an external profile page, paste the url here.'
         display: 'Profile Website'
-        validate: 'validate: url'
+        validate: url
       email:
         type: text
         display: Email

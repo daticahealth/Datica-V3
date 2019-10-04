@@ -1,0 +1,87 @@
+title: 'Blog Post'
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        display: Title
+        localizable: true
+        width: 50
+      slug:
+        width: 50
+        type: text
+      sub_title:
+        type: textarea
+        display: Subtitle
+        localizable: true
+      featured_image:
+        type: assets
+        display: 'Featured Image'
+        container: main
+        folder: img
+        max_files: 1
+        instructions: 'Choose a large image for the entry.'
+        restrict: true
+        mode: grid
+      lead:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: Lead
+      content:
+        type: markdown
+        display: Content
+        localizable: true
+        cheatsheet: false
+        restrict_assets: false
+        instructions: 'This field is for legacy content.'
+      related_entries:
+        max_items: '3'
+        label: '{{ title }} {{ topic }}'
+        collection:
+          - blog
+        mode: panes
+        type: collection
+        display: 'Related Entries'
+  sidebar:
+    display: Meta
+    fields:
+      pub_date:
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 2006'
+        type: date
+        instructions: 'Date the entry is published on; future dates ok.'
+        display: 'Publish Date'
+        validate: required
+      discovery_topic:
+        max_items: 1
+        taxonomy: topics
+        type: taxonomy
+        instructions: 'Choose a single topic category to categorize the entry.'
+        display: 'Discovery Topic (Category)'
+      tags:
+        max_items: 5
+        taxonomy: tags
+        mode: tags
+        type: taxonomy
+        display: Tags
+      author:
+        max_items: '1'
+        label: '{{ title }}, {{ role }}'
+        collection:
+          - people
+        mode: panes
+        type: collection
+        display: Author
+      featured_person:
+        max_items: '1'
+        label: '{{ title }}, {{ role }}'
+        collection:
+          - people
+        mode: panes
+        type: collection
+        display: 'Featured Person'
+taxonomies: true
