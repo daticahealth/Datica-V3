@@ -1,4 +1,4 @@
-$link-color-default: config('colors.gold-dark') !default;
+$link-color-default: config('colors.green-dark') !default;
 $underline: false !default;
 // ex. @include link-colors (white, $color_prime-bright, true);
 @mixin link-colors($color: $link-color-default, $hover-color: $link-color-default, $has-underline: $underline) {

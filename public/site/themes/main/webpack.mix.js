@@ -1,4 +1,4 @@
-const localURL = 'roger-willis.test'; // *** change this to your local url ***
+const localURL = 'statica.test'; // *** change this to your local url ***
 const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 
@@ -14,11 +14,11 @@ mix.sass('./src/sass/main.scss', './css/')
     .sass(
       './src/sass/vendor/vendor.scss', './css/')
     .options({ processCssUrls: false })
-    .copy([
-      './node_modules/photoswipe/dist/default-skin/default-skin.png',
-      './node_modules/photoswipe/dist/default-skin/default-skin.svg',
-      './node_modules/photoswipe/dist/default-skin/preloader.gif',
-    ], './img/photoswipe/')
+    // .copy([
+    //   './node_modules/photoswipe/dist/default-skin/default-skin.png',
+    //   './node_modules/photoswipe/dist/default-skin/default-skin.svg',
+    //   './node_modules/photoswipe/dist/default-skin/preloader.gif',
+    // ], './img/photoswipe/')
     // Use this if you want to import css files from node_modules
     // .combine([
       // to set the assets folder, we’re importing these in vendor/photoswipe.scss
@@ -27,10 +27,10 @@ mix.sass('./src/sass/main.scss', './css/')
       // './node_modules/photoswipe/dist/default-skin/default-skin.css'
     // ], './vendor.css')
     .combine([
-      './node_modules/jquery/dist/jquery.js',
+      // './node_modules/jquery/dist/jquery.js',
       './node_modules/lozad/dist/lozad.js',
-      './node_modules/photoswipe/dist/photoswipe.js',
-      './node_modules/photoswipe/dist/photoswipe-ui-default.min.js',
+      // './node_modules/photoswipe/dist/photoswipe.js',
+      // './node_modules/photoswipe/dist/photoswipe-ui-default.min.js',
       './src/js/vendor/*.js'
     ], './js/vendor.js')
     .babel([

@@ -4,7 +4,7 @@ module.exports = {
       transparent: 'transparent',
       white: '#ffffff',
       black: '#000000',
-      grey: {
+      gray: {
         100: '#f7fafc',
         200: '#edf2f7',
         300: '#e2e8f0',
@@ -15,17 +15,11 @@ module.exports = {
         800: '#2d3748',
         900: '#1a202c',
       },
-      tan: {
-        default: '#EFEAD7',
-        dark: '#E7E1C8',
-        light: '#F5F4F0',
+      green: {
+        default: '#718765',
+        dark: '#27516C',
+        light: '#709DC9',
       },
-      gold: {
-        'default': '#C09D51',
-        'dark': '#B08C40',
-        'light': '#FFD16E',
-      },
-      green: '#718765',
       blue: {
         default: '#6689AB',
         dark: '#27516C',

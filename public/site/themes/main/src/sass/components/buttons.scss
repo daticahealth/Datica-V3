@@ -4,23 +4,8 @@
 |--------------------------------------------------------------------------
 */
 
-// .btn {
-//     @apply px-1.75 py-1 bg-grey-200 uppercase no-underline text-base tracking-extra-wide;
-//     background-color: turquoise;
-//     cursor: pointer;
-//     &:hover {
-//         @apply bg-white;
-//     }
-//     &--primary {
-//         @apply bg-black text-white;
-//         &:hover {
-//             @apply bg-grey-700;
-//         }
-//     }
-// }
-
 .btn {
-    @apply px-5 py-3 text-base tracking-wide leading-none bg-gold-dark text-white font-sans font-normal no-underline;
+    @apply px-5 py-3 text-base tracking-wide leading-none text-white font-sans font-normal no-underline;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     &-primary {
@@ -28,11 +13,11 @@
         //@extend .trans-color;
         @include button-shadow (10px, 0.2);
         &:hover {
-            @apply bg-gold;
+            @apply bg-green-light;
         }    
     }
     &-hollow {
-        @apply bg-transparent border border-solid border-gold-dark text-gold-dark;
+        @apply bg-transparent border border-solid;
         &:hover {
             @apply text-black;
         }
@@ -44,7 +29,7 @@
         // }
     }
     &-hollow-dark {
-        @apply bg-transparent border border-solid border-blue-dark text-blue-dark;
+        @apply bg-transparent border border-solid border-green-dark text-green-dark;
         // &:hover {
         //     @apply border-2;
         // }

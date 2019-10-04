@@ -20,29 +20,26 @@
     "cross-env": "*",
     "css-loader": "^2.1.1",
     "headroom.js": "*",
-    "jquery": "^3.4.0",
     "laravel-mix": "^4.0.15",
     "laravel-mix-purgecss": "*",
     "lozad": "^1.9.0",
-    "photoswipe": "^4.1.3",
     "postcss": "*",
     "postcss-color-function": "^4.1.0",
     "sass": "^1.17.3",
     "sass-loader": "*",
-    "tailwindcss": "^1.0.5",
-    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.29.6"
   },
   "dependencies": {
-    "npm": "^6.9.0"
+    "npm": "^6.9.0",
+    "tailwindcss": "^1.1.2"
   },
-  "name": "compass-creative",
+  "name": "Datica-V3",
   "version": "1.0.0",
   "description": "Tailwind + Laravel Mix.",
   "main": "tailwind.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/compasscreative/roger-willis.git"
+    "url": "git+https://github.com/daticahealth/Datica-V3.git"
   },
   "keywords": [
     "tailwind",
@@ -50,10 +47,10 @@
     "mix",
     "webpack"
   ],
-  "author": "Compass Creative",
+  "author": "Datica Health",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/compasscreative/roger-willis/issues"
+    "url": "https://github.com/daticahealth/Datica-V3/issues"
   },
-  "homepage": "https://github.com/compasscreative/roger-willis#readme"
+  "homepage": "https://github.com/daticahealth/Datica-V3#readme"
 }

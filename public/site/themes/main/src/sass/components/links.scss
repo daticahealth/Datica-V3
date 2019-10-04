@@ -17,27 +17,16 @@ a {
     }
 }
 
-.link-blue {
+.link-dark {
     @apply text-blue-dark border-b border-blue;
     &:hover {
         @apply text-blue border-blue;
     }
 }
-.link-gold {
-    @apply text-gold-dark border-b border-gold;
-    &:hover {
-        @apply text-gold border-gold;
-    }
-}
-.link-gold-plain {
-    @apply text-gold-dark;
-    &:hover {
-        @apply text-gold;
-    }
-}
+
 .link-light {
     @apply text-white border-b border-white;
     &:hover {
-        @apply text-gold-light border-gold-light;
+        @apply text-green-light border-green-light;
     }
 }
