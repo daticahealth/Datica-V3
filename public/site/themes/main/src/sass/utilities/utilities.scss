@@ -21,11 +21,11 @@
 .max-w-site { //easier to remember
 	@apply .max-w-7xl;
 }
-hr {
-    &.green {
-        @apply border-t border-green mx-auto w-40 my-4;
-    }
-}
+// hr {
+//     &.green {
+//         @apply border-t border-green mx-auto w-40 my-4;
+//     }
+// }
 .bg-blue-dark-trans {
     color: white;
     // @supports (backdrop-filter: blur(5px)) or (-webkit-backdrop-filter: blur(5px)) {
@@ -54,7 +54,7 @@ hr {
 [class*="bg-"] {
     color: white;
 }
-.bg-tan-light, .bg-tan, .bg-white, .bg-grey-100, .bg-grey-200, .bg-grey-300, .bg-grey-400, .bg-tan-trans {
+.bg-white, .bg-gray-100, .bg-gray-200, .bg-gray-300, .bg-gray-400,  {
     color: black;
 }
 .bg-white-grad {

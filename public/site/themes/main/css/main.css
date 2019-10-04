@@ -651,117 +651,97 @@ video {
 */
 
 @font-face {
-  font-family: "Garamond Web";
+  src: url("/site/themes/main/fonts/gt-america-light.woff2") format("woff2");
 
-  src: url("/site/themes/main/fonts/garamond/5d0a2fdf-0d8d-4fb1-9b9b-31c9e2f4afbc.woff2") format("woff2"), url("/site/themes/main/fonts/garamond/fb02ca0e-f451-457e-8872-ea31cb820826.woff") format("woff");
-
-  font-style: normal;
+  font-family: "GT America";
 
   font-display: optional;
-}
-
-@font-face {
-  font-family: "Garamond Web";
-
-  src: url("/site/themes/main/fonts/garamond/31789d93-3b8a-4a06-8b33-43bf03f03221.woff2") format("woff2"), url("/site/themes/main/fonts/garamond/d985feaf-70a7-4f5b-bd30-912e92c1475d.woff") format("woff");
-
-  font-style: italic;
-
-  font-display: optional;
-}
-
-@font-face {
-  font-family: "Garamond Web";
-
-  src: url("/site/themes/main/fonts/garamond/ef2b7826-217f-41fb-b934-fd924314bf94.woff2") format("woff2"), url("/site/themes/main/fonts/garamond/dd61316d-97b0-4d21-ab3a-c7c351333243.woff") format("woff");
-
-  font-style: normal;
-
-  font-weight: bold;
-
-  font-display: optional;
-}
-
-@font-face {
-  font-family: Montserrat;
-
-  src: url("/site/themes/main/fonts/garamond/5d0a2fdf-0d8d-4fb1-9b9b-31c9e2f4afbc.woff2") format("woff2"), url("/site/themes/main/fonts/garamond/fb02ca0e-f451-457e-8872-ea31cb820826.woff") format("woff");
-
-  font-style: normal;
-
-  font-display: optional;
-}
-
-@font-face {
-  font-family: Montserrat;
-
-  font-style: normal;
-
-  font-weight: 700;
-
-  font-display: swap;
-
-  src: url("/site/themes/main/fonts/montserrat/montserrat-bold.woff2") format("woff2"), url("/site/themes/main/fonts/montserrat/montserrat-bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: Montserrat;
-
-  font-style: italic;
-
-  font-weight: 700;
-
-  font-display: swap;
-
-  src: url("/site/themes/main/fonts/montserrat/montserrat-bolditalic.woff2") format("woff2"), url("/site/themes/main/fonts/montserrat/montserrat-bolditalic.woff") format("woff");
-}
-
-@font-face {
-  font-family: Montserrat;
-
-  font-style: normal;
 
   font-weight: 300;
-
-  font-display: swap;
-
-  src: url("/site/themes/main/fonts/montserrat/montserrat-light.woff2") format("woff2"), url("/site/themes/main/fonts/montserrat/montserrat-light.woff") format("woff");
 }
 
 @font-face {
-  font-family: Montserrat;
+  src: url("/site/themes/main/fonts/gt-america-regular.woff2") format("woff2");
 
-  font-style: italic;
+  font-family: "GT America";
 
-  font-weight: 300;
+  font-display: optional;
 
-  font-display: swap;
-
-  src: url("/site/themes/main/fonts/montserrat/montserrat-lightitalic.woff2") format("woff2"), url("/site/themes/main/fonts/montserrat/montserrat-lightitalic.woff") format("woff");
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: Montserrat;
+  src: url("/site/themes/main/fonts/gt-america-regularitalic.woff2") format("woff2");
 
-  font-style: normal;
+  font-family: "GT America";
+
+  font-display: optional;
 
   font-weight: 400;
 
-  font-display: swap;
-
-  src: url("/site/themes/main/fonts/montserrat/montserrat-regular.woff2") format("woff2"), url("/site/themes/main/fonts/montserrat/montserrat-regular.woff") format("woff");
+  font-style: italic;
 }
 
 @font-face {
-  font-family: Montserrat;
+  src: url("/site/themes/main/fonts/gt-america-medium.woff2") format("woff2");
+
+  font-family: "GT America";
+
+  font-display: optional;
+
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("/site/themes/main/fonts/gt-america-mediumitalic.woff2") format("woff2");
+
+  font-family: "GT America";
+
+  font-display: optional;
+
+  font-weight: 500;
 
   font-style: italic;
+}
 
-  font-weight: 400;
+@font-face {
+  src: url("/site/themes/main/fonts/gt-america-bold.woff2") format("woff2");
 
-  font-display: swap;
+  font-family: "GT America";
 
-  src: url("/site/themes/main/fonts/montserrat/montserrat-regularitalic.woff2") format("woff2"), url("/site/themes/main/fonts/montserrat/montserrat-regularitalic.woff") format("woff");
+  font-display: optional;
+
+  font-weight: 700;
+}
+
+@font-face {
+  src: url("/site/themes/main/fonts/gt-america-bolditalic.woff2") format("woff2");
+
+  font-family: "GT America";
+
+  font-display: optional;
+
+  font-weight: 700;
+
+  font-style: italic;
+}
+
+@font-face {
+  src: url("/site/themes/main/fonts/source-serif-pro-regular-subset.woff2") format("woff2");
+
+  font-family: "Source Serif Pro";
+
+  font-display: optional;
+}
+
+@font-face {
+  src: url("/site/themes/main/fonts/source-serif-pro-italic.woff2") format("woff2");
+
+  font-family: "Source Serif Pro";
+
+  font-display: optional;
+
+  font-style: italic;
 }
 
 img {
@@ -796,7 +776,7 @@ img {
 
 body {
   font-size: 1rem;
-  font-family: Montserrat, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+  font-family: "GT America", system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
   font-weight: 400;
   color: #000000;
   line-height: 1.6;
@@ -832,13 +812,13 @@ small {
 
 .headline-1 {
   font-size: calc(2vw + 2.5rem);
-  font-family: "Garamond Web", serif;
+  font-family: "Source Serif Pro", serif;
   margin-bottom: 0.5rem;
 }
 
 .headline-2 {
   font-size: calc(1.5vw + 1.125rem);
-  font-family: "Garamond Web", serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 .headline-3 {
@@ -849,7 +829,7 @@ small {
 
 .headline-4 {
   font-size: 1.25rem;
-  font-family: Montserrat, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+  font-family: "GT America", system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 300;
@@ -900,7 +880,7 @@ small {
   letter-spacing: 0.025em;
   line-height: 1;
   color: #ffffff;
-  font-family: Montserrat, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+  font-family: "GT America", system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
   font-weight: 400;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -1009,7 +989,7 @@ a {
 .nav-item {
   display: block;
   text-align: center;
-  font-family: Montserrat, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+  font-family: "GT America", system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
   font-weight: 400;
   text-decoration: none;
   letter-spacing: 0.05em;
@@ -1242,16 +1222,6 @@ a {
   max-width: 96rem;
 }
 
-hr.green {
-  border-top-width: 1px;
-  border-color: #718765;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .bg-blue-dark-trans {
   color: white;
   background-color: rgba(39, 82, 109, 0.9);
@@ -1271,7 +1241,7 @@ hr.green {
   color: white;
 }
 
-.bg-tan-light, .bg-tan, .bg-white, .bg-grey-100, .bg-grey-200, .bg-grey-300, .bg-grey-400, .bg-tan-trans {
+.bg-white, .bg-gray-100, .bg-gray-200, .bg-gray-300, .bg-gray-400 {
   color: black;
 }
 
@@ -1317,7 +1287,7 @@ hr.green {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: #718765;
-  font-family: Montserrat, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+  font-family: "GT America", system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
   margin-bottom: 1rem;
 }
 
@@ -2500,11 +2470,11 @@ hr.green {
 }
 
 .font-sans {
-  font-family: Montserrat, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+  font-family: "GT America", system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
 }
 
 .font-serif {
-  font-family: "Garamond Web", serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 .font-mono {
@@ -7507,11 +7477,11 @@ hr.green {
   }
 
   .sm\:font-sans {
-    font-family: Montserrat, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+    font-family: "GT America", system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
   }
 
   .sm\:font-serif {
-    font-family: "Garamond Web", serif;
+    font-family: "Source Serif Pro", serif;
   }
 
   .sm\:font-mono {
@@ -12515,11 +12485,11 @@ hr.green {
   }
 
   .md\:font-sans {
-    font-family: Montserrat, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+    font-family: "GT America", system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
   }
 
   .md\:font-serif {
-    font-family: "Garamond Web", serif;
+    font-family: "Source Serif Pro", serif;
   }
 
   .md\:font-mono {
@@ -17523,11 +17493,11 @@ hr.green {
   }
 
   .lg\:font-sans {
-    font-family: Montserrat, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+    font-family: "GT America", system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
   }
 
   .lg\:font-serif {
-    font-family: "Garamond Web", serif;
+    font-family: "Source Serif Pro", serif;
   }
 
   .lg\:font-mono {
@@ -22531,11 +22501,11 @@ hr.green {
   }
 
   .xl\:font-sans {
-    font-family: Montserrat, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+    font-family: "GT America", system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
   }
 
   .xl\:font-serif {
-    font-family: "Garamond Web", serif;
+    font-family: "Source Serif Pro", serif;
   }
 
   .xl\:font-mono {
@@ -27539,11 +27509,11 @@ hr.green {
   }
 
   .xxl\:font-sans {
-    font-family: Montserrat, system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
+    font-family: "GT America", system-ui, BlinkMacSystemFont, -apple-system, sans-serif;
   }
 
   .xxl\:font-serif {
-    font-family: "Garamond Web", serif;
+    font-family: "Source Serif Pro", serif;
   }
 
   .xxl\:font-mono {

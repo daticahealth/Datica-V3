@@ -35,14 +35,14 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Montserrat',
+        '"GT America"',
         'system-ui',
         'BlinkMacSystemFont',
         '-apple-system',
         'sans-serif',
       ],
       serif: [
-        '"Garamond Web"',
+        '"Source Serif Pro"',
         'serif',
       ],
       mono: [

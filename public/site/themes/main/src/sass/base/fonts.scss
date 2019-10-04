@@ -1,88 +1,76 @@
-$fam-serif: 'Garamond Web';
-$fam-sans: Montserrat; // Google Fonts supports font-display options now, loading this in template for now
+$fam-serif: 'Source Serif Pro';
+$fam-sans: 'GT America';
+@font-face{
+    src: url('/site/themes/main/fonts/gt-america-light.woff2') format('woff2');
+    font-family: $fam-sans;
+    font-display: optional;
+    font-weight: 300;
+}
+// @font-face{
+//     src: url('/site/themes/main/fonts/gt-america-lightitalic.woff2') format('woff2');
+//     font-family: $fam-sans;
+//     font-display: optional;
+//     font-weight: 300;
+//     font-style: italic;
+// }
 
-@font-face {
-  font-family: $fam-serif;
-  src: url('/site/themes/main/fonts/garamond/5d0a2fdf-0d8d-4fb1-9b9b-31c9e2f4afbc.woff2') format('woff2'),
-    url('/site/themes/main/fonts/garamond/fb02ca0e-f451-457e-8872-ea31cb820826.woff') format('woff');
-  font-style: normal;
-  font-display: optional;
+@font-face{
+    src: url('/site/themes/main/fonts/gt-america-regular.woff2') format('woff2');
+    font-family: $fam-sans;
+    font-display: optional;
+    font-weight: 400;
 }
-@font-face {
-  font-family: $fam-serif;
-  src: url('/site/themes/main/fonts/garamond/31789d93-3b8a-4a06-8b33-43bf03f03221.woff2') format('woff2'),
-    url('/site/themes/main/fonts/garamond/d985feaf-70a7-4f5b-bd30-912e92c1475d.woff') format('woff');
-  font-style: italic;
-  font-display: optional;
-}
-@font-face {
-  font-family: $fam-serif;
-  src: url('/site/themes/main/fonts/garamond/ef2b7826-217f-41fb-b934-fd924314bf94.woff2') format('woff2'),
-    url('/site/themes/main/fonts/garamond/dd61316d-97b0-4d21-ab3a-c7c351333243.woff') format('woff');
-  font-style: normal;
-  font-weight: bold;
-  font-display: optional;
-}
-@font-face {
-  font-family: $fam-sans;
-  src: url('/site/themes/main/fonts/garamond/5d0a2fdf-0d8d-4fb1-9b9b-31c9e2f4afbc.woff2') format('woff2'),
-    url('/site/themes/main/fonts/garamond/fb02ca0e-f451-457e-8872-ea31cb820826.woff') format('woff');
-  font-style: normal;
-  font-display: optional;
+@font-face{
+    src: url('/site/themes/main/fonts/gt-america-regularitalic.woff2') format('woff2');
+    font-family: $fam-sans;
+    font-display: optional;
+    font-weight: 400;
+    font-style: italic;
 }
 
-// sans-serif
-@font-face {
-  font-family: $fam-sans;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/site/themes/main/fonts/montserrat/montserrat-bold.woff2') format('woff2'), url('/site/themes/main/fonts/montserrat/montserrat-bold.woff') format('woff');
+@font-face{
+    src: url('/site/themes/main/fonts/gt-america-medium.woff2') format('woff2');
+    font-family: $fam-sans;
+    font-display: optional;
+    font-weight: 500;
 }
-@font-face {
-  font-family: $fam-sans;
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/site/themes/main/fonts/montserrat/montserrat-bolditalic.woff2') format('woff2'), url('/site/themes/main/fonts/montserrat/montserrat-bolditalic.woff') format('woff');
+@font-face{
+    src: url('/site/themes/main/fonts/gt-america-mediumitalic.woff2') format('woff2');
+    font-family: $fam-sans;
+    font-display: optional;
+    font-weight: 500;
+    font-style: italic;
 }
-@font-face {
-  font-family: $fam-sans;
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url('/site/themes/main/fonts/montserrat/montserrat-light.woff2') format('woff2'), url('/site/themes/main/fonts/montserrat/montserrat-light.woff') format('woff');
+
+@font-face{
+    src: url('/site/themes/main/fonts/gt-america-bold.woff2') format('woff2');
+    font-family: $fam-sans;
+    font-display: optional;
+    font-weight: 700;
 }
-@font-face {
-  font-family: $fam-sans;
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: url('/site/themes/main/fonts/montserrat/montserrat-lightitalic.woff2') format('woff2'), url('/site/themes/main/fonts/montserrat/montserrat-lightitalic.woff') format('woff');
+@font-face{
+    src: url('/site/themes/main/fonts/gt-america-bolditalic.woff2') format('woff2');
+    font-family: $fam-sans;
+    font-display: optional;
+    font-weight: 700;
+    font-style: italic;
 }
-// @font-face {
-//   font-family: $fam-serif;
-//   font-style: normal;
-//   font-display: swap;
-//   src: url('/site/themes/main/fonts/montserrat/montserrat-medium.woff2') format('woff2'), url('/site/themes/main/fonts/montserrat/montserrat-medium.woff') format('woff');
-// }
-// @font-face {
-//   font-family: $fam-serif;
-//   font-style: italic;
-//   font-display: swap;
-//   src: url('/site/themes/main/fonts/montserrat/montserrat-mediumitalic.woff2') format('woff2'), url('/site/themes/main/fonts/montserrat/montserrat-mediumitalic.woff') format('woff');
-// }
-@font-face {
-  font-family: $fam-sans;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/site/themes/main/fonts/montserrat/montserrat-regular.woff2') format('woff2'), url('/site/themes/main/fonts/montserrat/montserrat-regular.woff') format('woff');
+
+// serif fonts - used in quotes, DSHF copy. Source Serif Pro is still in development, with no italics; Charter is a very close subsitute.
+
+@font-face{
+    src: url('/site/themes/main/fonts/source-serif-pro-regular-subset.woff2') format('woff2');
+    font-family: $fam-serif;
+    font-display: optional;
+    // font-weight: 400;
 }
-@font-face {
-  font-family: $fam-sans;
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/site/themes/main/fonts/montserrat/montserrat-regularitalic.woff2') format('woff2'), url('/site/themes/main/fonts/montserrat/montserrat-regularitalic.woff') format('woff');
+
+
+@font-face{
+    src: url('/site/themes/main/fonts/source-serif-pro-italic.woff2') format('woff2');
+    font-family: $fam-serif;
+    font-display: optional;
+    // font-weight: 400;
+    font-style: italic;
 }
+
