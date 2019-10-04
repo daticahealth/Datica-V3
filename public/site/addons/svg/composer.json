@@ -1,0 +1,8 @@
+{
+  "name": "statamic-svg",
+  "autoload": {
+    "classmap": [
+      "./"
+    ]
+  }
+}

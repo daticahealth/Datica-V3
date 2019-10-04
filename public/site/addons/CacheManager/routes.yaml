@@ -1,0 +1,12 @@
+routes:
+  /: index
+
+  /clear-all:
+    uses: clearAll
+    as: cachemanager.clear-all
+  /clear-cache:
+    uses: clearCache
+    as: cachemanager.clear-cache
+  /update-stache:
+    uses: updateStache
+    as: cachemanager.update-stache

@@ -3,19 +3,13 @@ date_format: Y/n/d
 pagination_size: 50
 widgets:
   -
+    type: CacheManager
+    width: 33
+  -
     type: collection
     collection: blog
     limit: 5
   -
     type: collection
-    collection: things
+    collection: tags
     limit: 5
-  -
-    type: form
-    form: contact
-    limit: 5
-    title: 'Recent Submissions'
-    width: full
-    fields:
-      - name
-      - email

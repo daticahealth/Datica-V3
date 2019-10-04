@@ -1,0 +1,16 @@
+handle_assets: true
+handle_glide: true
+advanced: false
+optimizers:
+  -
+    mimetype: image/jpeg
+    command: /usr/local/bin/jpegoptim --strip-all --all-progressive -m85 :file
+  -
+    mimetype: image/png
+    command: /usr/local/bin/pngquant --force --output=:file
+  -
+    mimetype: image/png
+    command: /usr/local/bin/optipng -i0 -o2 :file
+  -
+    mimetype: image/gif
+    command: /usr/local/bin/gifsicle -b -O3 :file

@@ -1,0 +1,5 @@
+name: Minify HTML
+version: "1.0.1"
+description: Minify HTML output
+developer: 4rn0
+developer_url: https://github.com/4rn0/statamic-minifyhtml

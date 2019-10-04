@@ -1,0 +1,34 @@
+fields:
+  statistics:
+    type: image_optimizer.statistics
+    width: 100
+  handle_assets:
+    type: toggle
+    width: 33
+  handle_glide:
+    type: toggle
+    width: 33
+  advanced:
+    type: toggle
+    width: 33
+  optimizers:
+    type: grid
+    display: Optimizers
+    show_when:
+      advanced: true
+    add_row: Add new optimizer
+    mode: table
+    fields:
+      mimetype:
+        type: select
+        display: Type
+        default: image/jpeg
+        options:
+          image/jpeg: image/jpeg
+          image/png: image/png
+          image/gif: image/gif
+      command:
+        type: text
+        display: Command
+        placeholder: /usr/local/mozjpeg/bin/cjpeg -quality 85 -optimize -outfile :temp :file
+        validate: required
