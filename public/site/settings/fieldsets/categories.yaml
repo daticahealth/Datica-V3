@@ -11,3 +11,4 @@ sections:
         display: Description
 taxonomies: false
 hide: true
+hide_aardvark_seo: true

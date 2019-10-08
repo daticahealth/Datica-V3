@@ -56,12 +56,20 @@ sections:
         instructions: 'Date the entry is published on; future dates ok.'
         display: 'Publish Date'
         validate: required
+      category:
+        max_items: 1
+        taxonomy: category
+        mode: tags
+        type: taxonomy
+        display: Category
       discovery_topic:
         max_items: 1
         taxonomy: topics
         type: taxonomy
         instructions: 'Choose a single topic category to categorize the entry.'
         display: 'Discovery Topic (Category)'
+        show_when:
+          category: 'not null'
       tags:
         max_items: 5
         taxonomy: tags
@@ -84,4 +92,4 @@ sections:
         mode: panes
         type: collection
         display: 'Featured Person'
-taxonomies: true
+taxonomies: false
