@@ -19,6 +19,12 @@ sections:
         mode: tags
         type: taxonomy
         display: Tags
+      category:
+        max_items: 1
+        taxonomy: category
+        type: taxonomy
+        instructions: 'A singular, high-level category.'
+        display: Category
 taxonomies: false
 hide: true
 title: 'Discovery Topics'

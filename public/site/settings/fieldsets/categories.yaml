@@ -1,0 +1,13 @@
+title: categories
+sections:
+  main:
+    display: 'Category Info'
+    fields:
+      title:
+        display: Title
+        type: text
+      desc:
+        type: textarea
+        display: Description
+taxonomies: false
+hide: true

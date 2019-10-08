@@ -15,10 +15,16 @@ module.exports = {
         800: '#2d3748',
         900: '#1a202c',
       },
+      purple: {
+        default: '#D73BFF',
+        dark: '#9B00FF',
+        light: '#5C00EB'
+      },
       green: {
         default: '#718765',
         dark: '#27516C',
         light: '#709DC9',
+        bright: '#718765',
       },
       blue: {
         default: '#6689AB',
@@ -37,12 +43,11 @@ module.exports = {
       sans: [
         '"GT America"',
         'system-ui',
-        'BlinkMacSystemFont',
-        '-apple-system',
         'sans-serif',
       ],
       serif: [
         '"Source Serif Pro"',
+        'Georgia',
         'serif',
       ],
       mono: [

@@ -14,7 +14,7 @@ You can clone this repo to your local machine to work. We recommend using [Valet
 - [ ]  `brew update`
 - [ ]  `brew install php` - if permissions issues, see [this](https://github.com/jakubroztocil/httpie/issues/645). `brew doctor` helped, unlinked & relinked php then install again.
 - [ ]  `brew install php composer`
-- [ ]  `**composer require laravel/valet**`
+- [ ]  `composer require laravel/valet`
 
 if you have JIT memory problems:
 `php --ini` - see what init file is in use
