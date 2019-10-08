@@ -1,0 +1,5 @@
+{
+    "require": {
+        "laravel/valet": "^2.5"
+    }
+}

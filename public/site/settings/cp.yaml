@@ -11,5 +11,5 @@ widgets:
     limit: 5
   -
     type: collection
-    collection: tags
+    collection: people
     limit: 5

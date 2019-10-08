@@ -1,0 +1,6 @@
+name: Big Kahuna
+version: '1.4.5'
+description: 'Add a wordpress style flexible menu editor to Statamic'
+developer: 'Wout Mager'
+developer_url: 'https://woutmager.nl'
+commercial: true
