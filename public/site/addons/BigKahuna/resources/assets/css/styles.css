@@ -1,0 +1,42 @@
+#bigkahuna .dossier-table-wrapper #tbody {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Hide a page title & show the title editor */
+#bigkahuna .branch-row .edit-url {
+    display: none;
+}
+
+#bigkahuna .branch-row .active .edit-url {
+    display: block;
+}
+
+#bigkahuna .original-title {
+    display: block;
+    font-weight: normal;
+}
+
+#bigkahuna .card-heading {
+    padding: 12px 16px;
+    font-size: 11px;
+    color: #8f9ca3;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#bigkahuna .page-text {
+    width: 100%;
+    flex-grow: 1;
+}
+
+#bigkahuna .form-group--main input {
+    width: 49%;
+}
+
+#bigkahuna .form-group--main input:only-child {
+    width: 100%;
+}
