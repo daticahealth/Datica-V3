@@ -6,3 +6,5 @@ local/cache/*
 local/storage/*
 local/temp/*
 installer.php
+
+public/.vscode/

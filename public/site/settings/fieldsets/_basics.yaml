@@ -1,0 +1,21 @@
+title: Basics
+display: 'Basic Info'
+taxonomies: false
+hide: true
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        display: Title
+        localizable: true
+        width: 50
+      slug:
+        width: 50
+        type: text
+      summary:
+        type: textarea
+        display: Summary
+        instructions: 'A short description of the content and why it matters, for search results.'
+        localizable: true

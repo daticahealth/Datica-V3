@@ -1,5 +1,7 @@
 collections:
   blog: '/blog/{year}/{month}/{day}/{slug}'
+  academy: '/academy/{slug}'
+  events: '/events/{slug}'
 taxonomies:
   tags: '/tag/{slug}'
   topics: '/discover/{slug}'

@@ -1,4 +1,4 @@
-title: 'Blog Post'
+title: 'Academy Article'
 sections:
   main:
     display: Main
@@ -42,20 +42,14 @@ sections:
         type: partial
         display: 'Post Metadata'
         fieldset: _meta
-      featured_person:
-        max_items: '1'
-        label: '{{ title }}, {{ role }}'
-        collection:
-          - people
-        mode: panes
-        type: collection
-        display: 'Featured Person'
       related_entries:
         max_items: '3'
         label: '{{ title }} {{ topic }}'
         collection:
           - blog
+          - academy
         mode: panes
         type: collection
         display: 'Related Entries'
+
 taxonomies: false

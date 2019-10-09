@@ -1,4 +1,4 @@
-title: categories
+title: Categories
 sections:
   main:
     display: 'Category Info'
@@ -6,6 +6,7 @@ sections:
       title:
         display: Title
         type: text
+        localizable: true
       desc:
         type: textarea
         display: Description

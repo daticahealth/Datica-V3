@@ -1,0 +1,79 @@
+title: Events
+sections:
+  main:
+    display: 'Event Details'
+    fields:
+      basics:
+        type: partial
+        display: 'Entry basics'
+        fieldset: _basics
+      date_start:
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 2013'
+        type: date
+        instructions: 'Starting date & time of the event.'
+        width: 50
+        display: 'Date Start'
+      date_end:
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 2013'
+        type: date
+        instructions: 'Ending date & time of the event.'
+        width: 50
+        display: 'Date End'
+      event_logo:
+        container: main
+        folder: logos
+        restrict: false
+        max_files: 1
+        type: assets
+        instructions: 'Upload a logo associated with the event. Transparent PNG or SVG.'
+        display: 'Event Logo'
+      event_location:
+        type: location
+        instructions: 'The event venue''s address.'
+        display: Location
+      event_desc:
+        type: markdown
+        display: 'Event Description'
+        localizable: true
+        cheatsheet: true
+        restrict_assets: false
+        instructions: 'Event details'
+      event_photos:
+        type: assets
+        display: 'Event Photos'
+        container: main
+        folder: img
+        max_files: 5
+        instructions: 'Choose some images for the entry.'
+        restrict: true
+        mode: grid
+  sidebar:
+    display: 'Event Metadata'
+    fields:
+      post_meta:
+        type: partial
+        display: 'Post Metadata'
+        fieldset: _meta
+      event_related_people:
+        max_items: '3'
+        label: '{{ title }}, {{ role }}'
+        collection:
+          - people
+        mode: panes
+        type: collection
+        display: 'Featured Person'
+      related_entries:
+        max_items: '3'
+        label: '{{ title }} {{ topic }}'
+        collection:
+          - blog
+        mode: panes
+        type: collection
+        display: 'Related Entries'
+taxonomies: false

@@ -1,5 +1,7 @@
 title: 'Article Metadata'
 display: Metadata
+taxonomies: false
+hide: true
 sections:
   main:
     display: Main
@@ -34,12 +36,10 @@ sections:
         type: taxonomy
         display: Tags
       author:
-        max_items: '1'
+        max_items: '3'
         label: '{{ title }}, {{ role }}'
         collection:
           - people
-        mode: panes
+        mode: tags
         type: collection
         display: Author
-taxonomies: false
-hide: true
