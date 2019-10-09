@@ -1,0 +1,49 @@
+title: Quotes
+sections:
+  main:
+    display: 'Quote Details'
+    fields:
+      basics:
+        type: partial
+        display: 'Entry basics'
+        fieldset: _basics
+      content:
+        type: markdown
+        display: Description
+        localizable: true
+        cheatsheet: false
+        restrict_assets: false
+        instructions: 'An optional longer description.'
+      url:
+        type: text
+        display: 'Quote Citation URL'
+        validate: url
+      source_logo:
+        container: main
+        folder: logos
+        restrict: false
+        max_files: 1
+        type: assets
+        display: 'Quote Logo'
+  sidebar:
+    display: 'Quote Details'
+    fields:
+      post_meta:
+        type: partial
+        fieldset: _meta
+      related_person:
+        max_items: '1'
+        label: '{{ title }}, {{ role }}'
+        collection:
+          - people
+        mode: panes
+        type: collection
+        display: 'Person (Quoter)'
+      quote_type:
+        options:
+          Press: press
+          Customer: customer
+        type: select
+        display: 'Quote Type'
+taxonomies: false
+hide: true

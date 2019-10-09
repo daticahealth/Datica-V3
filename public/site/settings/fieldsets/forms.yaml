@@ -1,0 +1,21 @@
+title: 'Forms & Scripts'
+sections:
+  main:
+    display: 'Form basics'
+    fields:
+      basics:
+        type: partial
+        display: 'Entry basics'
+        fieldset: _basics
+      custom_form:
+        type: textarea
+        display: 'Form or script Embed Code'
+      content:
+        type: markdown
+        display: Description
+        localizable: true
+        cheatsheet: false
+        restrict_assets: false
+        instructions: 'An optional longer description.'
+taxonomies: false
+hide: true
