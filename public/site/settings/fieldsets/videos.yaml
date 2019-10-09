@@ -1,0 +1,39 @@
+title: 'Video Entries'
+sections:
+  main:
+    display: 'Video Info'
+    fields:
+      basics:
+        type: partial
+        display: 'Entry basics'
+        fieldset: _basics
+      bg_image:
+        type: assets
+        display: 'Background Image'
+        container: main
+        folder: img
+        max_files: 1
+        instructions: 'Choose a large image for the entry.'
+        restrict: true
+        mode: grid
+      custom_form:
+        type: textarea
+        display: 'Video Embed Code'
+      content:
+        type: markdown
+        display: Description
+        localizable: true
+        cheatsheet: false
+        restrict_assets: false
+        instructions: 'An optional longer description.'
+      wistia_id:
+        type: text
+        display: 'Wistia ID'
+  sidebar:
+    display: 'Video Metadata'
+    fields:
+      post_meta:
+        type: partial
+        fieldset: _meta
+taxonomies: false
+hide: true
