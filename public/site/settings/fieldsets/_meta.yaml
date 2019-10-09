@@ -1,0 +1,45 @@
+title: 'Article Metadata'
+display: Metadata
+sections:
+  main:
+    display: Main
+    fields:
+      pub_date:
+        allow_blank: false
+        allow_time: true
+        require_time: false
+        earliest_date: 'January 1, 2013'
+        type: date
+        instructions: 'Date the entry is published on; future dates ok.'
+        display: 'Publish Date'
+        validate: required
+      category:
+        max_items: 1
+        taxonomy: category
+        mode: tags
+        type: taxonomy
+        display: Category
+      discovery_topic:
+        max_items: 1
+        taxonomy: topics
+        type: taxonomy
+        instructions: 'Choose a single topic category to categorize the entry.'
+        display: 'Discovery Topic (Category)'
+        show_when:
+          category: 'not null'
+      tags:
+        max_items: 5
+        taxonomy: tags
+        mode: tags
+        type: taxonomy
+        display: Tags
+      author:
+        max_items: '1'
+        label: '{{ title }}, {{ role }}'
+        collection:
+          - people
+        mode: panes
+        type: collection
+        display: Author
+taxonomies: false
+hide: true
