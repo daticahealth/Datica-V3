@@ -15,7 +15,7 @@ sections:
         type: assets
         display: 'Featured Image'
         container: main
-        folder: img
+        folder: articles
         max_files: 1
         instructions: 'Choose a large image for the entry.'
         restrict: true
@@ -26,7 +26,7 @@ sections:
         type: markdown
         display: Lead
   legacy:
-    display: Legacy Fields
+    display: 'Legacy Fields'
     fields:
       content:
         type: markdown
@@ -51,5 +51,4 @@ sections:
         mode: panes
         type: collection
         display: 'Related Entries'
-
 taxonomies: false
