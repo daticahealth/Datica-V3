@@ -22,4 +22,4 @@ no_follow_links: false
 sitemap_priority: '0.5'
 sitemap_changefreq: daily
 twitter_share_setting: inherit
-id: e7cf39b6-a3d8-4539-be5a-6945b1b79201
+id: 1gpUmvd6yuOKUIUIY620i0
