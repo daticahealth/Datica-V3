@@ -17,10 +17,11 @@ sections:
         validate: required
       category:
         max_items: 1
-        taxonomy: category
+        taxonomy: categories
         mode: tags
         type: taxonomy
         display: Category
+        instructions: 'Choose a single high-level category to identify this content.'
       discovery_topic:
         max_items: 1
         taxonomy: topics

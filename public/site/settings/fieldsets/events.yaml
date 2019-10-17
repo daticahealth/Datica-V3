@@ -67,7 +67,7 @@ sections:
           - people
         mode: panes
         type: collection
-        display: 'Featured Person'
+        display: 'Featured People'
       related_entries:
         max_items: '3'
         label: '{{ title }} {{ topic }}'

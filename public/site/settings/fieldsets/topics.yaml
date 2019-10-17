@@ -21,7 +21,7 @@ sections:
         display: Tags
       category:
         max_items: 1
-        taxonomy: category
+        taxonomy: categories
         type: taxonomy
         instructions: 'A singular, high-level category.'
         display: Category

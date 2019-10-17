@@ -9,11 +9,11 @@ sections:
         fieldset: _basics
       content:
         type: markdown
-        display: Description
+        display: 'Quote Content'
         localizable: true
-        cheatsheet: false
+        cheatsheet: true
         restrict_assets: false
-        instructions: 'An optional longer description.'
+        instructions: 'The quote itself.'
       url:
         type: text
         display: 'Quote Citation URL'
