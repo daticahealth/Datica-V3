@@ -25,16 +25,6 @@ sections:
         restrict_assets: false
         type: markdown
         display: Lead
-  legacy:
-    display: Legacy Fields
-    fields:
-      content:
-        type: markdown
-        display: Content
-        localizable: true
-        cheatsheet: false
-        restrict_assets: false
-        instructions: 'This field is for legacy content.'
   sidebar:
     display: 'Article Metadata'
     fields:
@@ -58,4 +48,14 @@ sections:
         mode: panes
         type: collection
         display: 'Related Entries'
+  legacy:
+    display: 'Legacy Fields'
+    fields:
+      content:
+        type: markdown
+        display: Content
+        localizable: true
+        cheatsheet: false
+        restrict_assets: false
+        instructions: 'This field is for legacy content.'
 taxonomies: false

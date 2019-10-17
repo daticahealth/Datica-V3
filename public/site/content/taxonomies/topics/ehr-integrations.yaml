@@ -1,14 +1,8 @@
 title: 'EHR Integrations'
 summary: 'EHR systems are the hub of clinical data and clinical workflows in healthcare today making EHR integrations, like HL7 and FHIR, an essential driver of healthcare transformation. We break it down for you here.'
-content: 'EHR systems are the hub of clinical data and clinical workflows in healthcare today making EHR integrations, like HL7 and FHIR, an essential driver of healthcare transformation. We break it down for you here.'
-meta_title: 'EHR Integrations'
-meta_description: 'EHR systems are the hub of clinical data and clinical workflows in healthcare today making EHR integrations, like HL7 and FHIR, an essential driver of healthcare transformation. We break it down for you here.'
-page_no_index: false
-no_follow_links: false
-sitemap_priority: '0.2'
-sitemap_changefreq: monthly
-twitter_share_setting: inherit
 category: integration
+slug: ehr-integrations
 tags:
   - integration
   - ehrs
+id: 6t94v6is9O4QmK6mEOCuoo
