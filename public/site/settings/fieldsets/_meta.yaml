@@ -25,6 +25,7 @@ sections:
       discovery_topic:
         max_items: 1
         taxonomy: topics
+        mode: tags
         type: taxonomy
         instructions: 'Choose a single topic category to categorize the entry.'
         display: 'Discovery Topic (Category)'

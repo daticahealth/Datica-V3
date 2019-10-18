@@ -16,7 +16,7 @@ bio_full: |
   Along with HIStalk Mobile, Travis has contributed to VentureBeat and HITconsultant, among others. His expertise on compliance, HIPAA, and health IT is highly regarded and sought after. He recently released his first book, [Complete Cloud Compliance](https://completecloudcompliance.com).
 featured_image: /assets/people/poster-travis.jpg
 profile_twitter: travisjgood
-profile_linkedin: 'https://linkedin.com/in/travisjgood'
+profile_linkedin: https://www.linkedin.com/in/'https://linkedin.com/in/travisjgood'
 page_no_index: false
 no_follow_links: false
 sitemap_priority: '0.5'

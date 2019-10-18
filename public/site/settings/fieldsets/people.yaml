@@ -36,7 +36,7 @@ sections:
         restrict_assets: false
         type: markdown
         display: 'Bio, Short'
-      bio_full:
+      bio:
         cheatsheet: false
         restrict_assets: false
         type: markdown
