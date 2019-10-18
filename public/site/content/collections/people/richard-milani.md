@@ -19,7 +19,7 @@ bio: >-
   Epidemic of Chronic
   Disease](https://www.amazon.com/Death-Dollars-Solving-Epidemic-Chronic/dp/1683505875)_.
 profile_twitter: richard-milani-md-facc-faha
-profile_linkedin: richard-milani-md-facc-faha
+profile_linkedin: https://www.linkedin.com/in/richard-milani-md-facc-faha
 profile_url: 'https://www.ochsner.org/doctors/richard-milani'
 location:
   lon: -90.14558779999999

@@ -7,7 +7,7 @@ profile_pic:
   - /assets/people/Jenn_Kavanaugh_portrait_2017.jpg
 email: jenn@datica.com
 profile_twitter: jenn-kavanaugh
-profile_linkedin: jenn-kavanaugh
+profile_linkedin: https://www.linkedin.com/in/jenn-kavanaugh
 location:
   lon: -89.40123019999999
   lat: 43.0730517

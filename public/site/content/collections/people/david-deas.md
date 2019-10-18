@@ -6,7 +6,7 @@ role: 'Corporate Director, Innovation and Knowledge Analytics'
 profile_pic:
   - /assets/people/David-Deas-headshot.jpg
 profile_twitter: david-deas
-profile_linkedin: david-deas-4475531
+profile_linkedin: https://www.linkedin.com/in/david-deas-4475531
 location:
   lon: -90.0489801
   lat: 35.1495343

@@ -21,7 +21,7 @@ bio: >-
   Bachelor’s degree in Computer Science from Auburn University. Andrew serves as
   a member and certified Project Management Professional (PMP) with the Project
   Management Institute.
-profile_linkedin: andrewgoff
+profile_linkedin: https://www.linkedin.com/in/andrewgoff
 location:
   lon: -89.40123019999999
   lat: 43.0730517

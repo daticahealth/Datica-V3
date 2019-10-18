@@ -22,4 +22,4 @@ bio: >-
   literary and fine arts magazine of SIU School of Medicine and has lectured
   around the globe. 
 profile_twitter: dr-manish-kohli
-profile_linkedin: dr-manish-kohli
+profile_linkedin: https://www.linkedin.com/in/dr-manish-kohli

@@ -20,7 +20,7 @@ bio_short: >-
   Prior to her graduate degree from DePaul university, Vikki received her
   undergraduate degree in Business Administration and Marketing at the
   University of St. Francis.
-profile_linkedin: vikki-caruso-7241457
+profile_linkedin: https://www.linkedin.com/in/vikki-caruso-7241457
 location:
   lon: -87.62979819999998
   lat: 41.8781136

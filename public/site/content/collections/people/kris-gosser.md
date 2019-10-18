@@ -22,7 +22,7 @@ bio: >-
   With his co-author [Travis Good, MD](/about/travis), Kris recently released
   his first book, [Complete Cloud
   Compliance](https://completecloudcompliance.com). 
-profile_linkedin: kgosser
+profile_linkedin: https://www.linkedin.com/in/kgosser
 location:
   lon: -122.3320708
   lat: 47.6062095

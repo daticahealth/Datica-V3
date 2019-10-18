@@ -16,7 +16,7 @@ bio_short: >-
   for the national Blue Button REST API. He has a special interest in tools and
   interfaces that support software developers who are new to the health domain.
 profile_twitter: joshcmandel
-profile_linkedin: joshua-mandel-88347235
+profile_linkedin: https://www.linkedin.com/in/joshua-mandel-88347235
 location:
   lon: -71.05888010000001
   lat: 42.3600825

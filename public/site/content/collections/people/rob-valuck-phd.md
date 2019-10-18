@@ -39,4 +39,4 @@ bio: >-
   the University of Illinois at Chicago. When he’s not creating solutions to
   improve medication use and outcomes, Rob enjoys the Colorado outdoors with his
   sons and fly fishing, hiking and traveling.
-profile_linkedin: robvaluck
+profile_linkedin: https://www.linkedin.com/in/robvaluck

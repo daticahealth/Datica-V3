@@ -25,7 +25,7 @@ bio: >-
   Additionally, Grahame is involved in a variety of open source industry
   consortiums, such as Open Healthcare Framework, Open Health Tools and the Indy
   Project.
-profile_linkedin: grahame-grieve-952637
+profile_linkedin: https://www.linkedin.com/in/grahame-grieve-952637
 location:
   lon: 144.96305759999996
   lat: -37.8136276

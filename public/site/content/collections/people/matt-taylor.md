@@ -19,7 +19,7 @@ bio_short: >-
   analytics. He cut his teeth on relational databases and data analysis during
   the nascent rise of electronic evidence discovery industry. Matt has a BA from
   the University of Washington.
-profile_linkedin: matthewlindtaylor/
+profile_linkedin: https://www.linkedin.com/in/matthewlindtaylor/
 location:
   lon: -122.3320708
   lat: 47.6062095

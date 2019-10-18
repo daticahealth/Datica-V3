@@ -16,7 +16,7 @@ bio: >-
   offerings to three subsidiary companies in addition to the Wisconsin-based EHR
   company headquarters.  Maggie previously studied graphic design & illustration
   before getting into the HR world.
-profile_linkedin: maggie-ostrowski-16b68556
+profile_linkedin: https://www.linkedin.com/in/maggie-ostrowski-16b68556
 location:
   lon: -89.40123019999999
   lat: 43.0730517

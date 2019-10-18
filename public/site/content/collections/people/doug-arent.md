@@ -24,7 +24,7 @@ bio: >-
 
   Doug holds a BS in Industrial Engineering and works from his home in
   Evergreen, Colorado.
-profile_linkedin: dougarent
+profile_linkedin: https://www.linkedin.com/in/dougarent
 location:
   lon: -105.3172146
   lat: 39.6333213

@@ -31,7 +31,7 @@ bio: >-
 
   Vince has a BS in Mathematics and Computer Science from UW Madison.
 profile_twitter: vince-kenney
-profile_linkedin: vincentkenney
+profile_linkedin: https://www.linkedin.com/in/vincentkenney
 location:
   lon: -89.40123019999999
   lat: 43.0730517

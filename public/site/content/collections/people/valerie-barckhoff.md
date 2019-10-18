@@ -22,7 +22,7 @@ bio: >-
   Health Sciences from the University of Kentucky. She and her husband Greg have
   two children. Valerie says her biggest passion is running. She regularly runs
   in the Peachtree marathon and completed the Georgia half-marathon.
-profile_linkedin: valeriebarckhoff
+profile_linkedin: https://www.linkedin.com/in/valeriebarckhoff
 location:
   lon: -84.3879824
   lat: 33.7489954

@@ -6,7 +6,7 @@ role: 'Co-Founder & CEO, Twine Health'
 profile_pic:
   - /assets/people/John Moore, Twine Health Portrait.jpg
 profile_twitter: john-moore
-profile_linkedin: johnomoore
+profile_linkedin: https://www.linkedin.com/in/johnomoore
 profile_url: 'https://www.twinehealth.com/john-moore'
 location:
   lon: -71.0935083

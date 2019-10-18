@@ -17,7 +17,7 @@ bio: >-
   lead. Along with a Bachelor of Business Administration degree from the
   University Dubuque, Chris is also a Certified Public Accountant in the state
   of Wisconsin.
-profile_linkedin: chris-barnas-cpa-0b39a625
+profile_linkedin: https://www.linkedin.com/in/chris-barnas-cpa-0b39a625
 location:
   lon: -89.40123019999999
   lat: 43.0730517

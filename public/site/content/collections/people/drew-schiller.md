@@ -6,4 +6,4 @@ role: 'CEO & Co-Founder, Validic'
 profile_pic:
   - /assets/people/Drew_Shiller.jpg
 profile_twitter: drew-schiller
-profile_linkedin: drew-schiller
+profile_linkedin: https://www.linkedin.com/in/drew-schiller

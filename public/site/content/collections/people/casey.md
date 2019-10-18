@@ -35,10 +35,7 @@ bio: >-
   network operations centers, hardware sizing and deployment, and the deployment
   of all Epic and third party software within the data centers.
 
-
   He holds a B.S. in Business Administration with an emphasis in Marketing and
   Economics from University of Missouri.
-profile_linkedin: caseybrysoninnovates
-location:
   lon: -89.40123019999999
   lat: 43.0730517

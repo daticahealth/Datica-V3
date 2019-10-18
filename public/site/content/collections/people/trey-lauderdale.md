@@ -15,7 +15,7 @@ bio: >
   with a Bachelor’s degree in Industrial Engineering, and Minors in Engineering
   Sales and Electrical Engineering. He earned his Master’s degree in
   Entrepreneurship from University of Florida Warrington College of Business.
-profile_linkedin: treylauderdale
+profile_linkedin: https://www.linkedin.com/in/treylauderdale
 location:
   lon: -82.53065270000002
   lat: 27.3364347

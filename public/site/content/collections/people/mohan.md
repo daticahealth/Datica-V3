@@ -27,7 +27,7 @@ bio_short: >-
   alum. He has presented at various HIMSS and AHIP sessions, and is a noted
   speaker about compliance at healthcare events.
 profile_twitter: mohan2020
-profile_linkedin: mohanbalachandran
+profile_linkedin: https://www.linkedin.com/in/mohanbalachandran
 profile_url: 'https://datica.com/mohan'
 location:
   lon: -122.41941550000001

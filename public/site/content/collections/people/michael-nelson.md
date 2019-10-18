@@ -16,7 +16,7 @@ bio: >-
   with executive teams to drive improved business performance. He received his
   BS in Civil Engineering at South Dakota State and his MBA in Finance from
   Kelly School of Business at the University of Indiana.
-profile_linkedin: michaelnelsonavl
+profile_linkedin: https://www.linkedin.com/in/michaelnelsonavl
 location:
   lon: -93.26501080000003
   lat: 44.977753

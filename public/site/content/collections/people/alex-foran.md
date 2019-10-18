@@ -6,7 +6,7 @@ role: Software Engineer
 profile_pic:
   - /assets/people/prof-alex.jpg
 profile_twitter: alex-foran
-profile_linkedin: alex-foran
+profile_linkedin: https://www.linkedin.com/in/alex-foran
 location:
   lon: -89.38811299999998
   lat: 43.07284

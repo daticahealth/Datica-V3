@@ -27,7 +27,7 @@ bio: >-
   of healthcare organizations use information technologies and innovation
   strategies in new and disruptive ways.  
 profile_twitter: drlylemd
-profile_linkedin: drlyle
+profile_linkedin: https://www.linkedin.com/in/drlyle
 location:
   lon: -87.62979819999998
   lat: 41.8781136

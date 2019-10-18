@@ -10,7 +10,7 @@ bio_short: >-
   emerging technology companies and implement integrated systems for large and
   small healthcare organizations.
 bio: ' Before Datica, Mike was VP of Solutions Strategy and Marketing at Leidos Health, where he led the development of the professional services organization and go to market strategy. Previously, he was a Principal and Owner of Validus Consulting. Mike has skillfully leveraged his more than 15 years of healthcare and start-up experience to become a trusted partner and advisor on behalf of notable clients such as Cleveland Clinic Health System, Allina Health and the Hazelden Betty Ford Foundation. Mike is a member of HIMSS and is actively involved with the Twin Cities chapter of Habitat for Humanity. Mike earned his BA from St. Cloud State University.'
-profile_linkedin: mike-pietig-5691287
+profile_linkedin: https://www.linkedin.com/in/mike-pietig-5691287
 location:
   lon: -93.26501080000003
   lat: 44.977753

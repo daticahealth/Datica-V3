@@ -21,7 +21,7 @@ bio: >-
   and worked for the health practice within Booz & Co. He holds two Bachelor of
   Science degrees from Duke University, one in Biomedical Engineering and the
   other in Economics.
-profile_linkedin: avtar-varma-5bb47759
+profile_linkedin: https://www.linkedin.com/in/avtar-varma-5bb47759
 location:
   lon: -122.3320708
   lat: 47.6062095

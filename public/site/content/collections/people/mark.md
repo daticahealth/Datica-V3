@@ -37,7 +37,7 @@ bio: >-
   standards, or other digital health considerations can be found on the Datica
   blog.
 profile_twitter: markolschesky
-profile_linkedin: markolschesky
+profile_linkedin: https://www.linkedin.com/in/markolschesky
 location:
   lon: -89.40123019999999
   lat: 43.0730517

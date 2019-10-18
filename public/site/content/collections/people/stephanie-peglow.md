@@ -27,7 +27,7 @@ bio: >-
   members of our community.  She works to foster interprofessional education in
   Substance Use Disorder Treatment.  Her research interests are in Health Policy
   of Addictions and Disparities in Opioid Use Disorder Treatment.
-profile_linkedin: stephanie-l-peglow-do-mph-512b66144
+profile_linkedin: https://www.linkedin.com/in/stephanie-l-peglow-do-mph-512b66144
 location:
   lon: -76.30360510000003
   lat: 36.860402

@@ -36,7 +36,7 @@ bio: >-
   Emily’s passion for startups began early in her career when she moved to
   Bozeman, MT to help her father co-found the successful men’s footwear brand
   H.S. Trask & Co. The entrepreneurial bug hasn’t left her since.
-profile_linkedin: emilyrtrask
+profile_linkedin: https://www.linkedin.com/in/emilyrtrask
 location:
   lon: -104.990251
   lat: 39.7392358

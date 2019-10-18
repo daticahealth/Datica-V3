@@ -17,7 +17,7 @@ bio: >-
   council of Antenna, and has chaired non-profit boards. Grant received his B.A.
   from Carleton College and his MBA In Strategy and Marketing from Washington
   University in St. Louis.
-profile_linkedin: grantbarrick
+profile_linkedin: https://www.linkedin.com/in/grantbarrick
 location:
   lon: -93.26501080000003
   lat: 44.977753

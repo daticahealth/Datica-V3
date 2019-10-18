@@ -23,7 +23,7 @@ bio: >
   completed his residency in Family & Community Medicine at Brown and a
   fellowship in academic Family & Community Medicine at Eastern Virginia Medical
   School (EVMS).
-profile_linkedin: dave-levin-51b82811
+profile_linkedin: https://www.linkedin.com/in/dave-levin-51b82811
 location:
   lat: 44.9804074
   lon: -93.27414770000001

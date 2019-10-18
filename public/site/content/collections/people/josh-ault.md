@@ -6,7 +6,7 @@ role: Software Engineer
 profile_pic:
   - /assets/people/Portrait__Josh_Ault__engineer.jpg
 profile_twitter: josh-ault
-profile_linkedin: josh-ault
+profile_linkedin: https://www.linkedin.com/in/josh-ault
 location:
   lon: 8.5693359375
   lat: 52.22127984824025

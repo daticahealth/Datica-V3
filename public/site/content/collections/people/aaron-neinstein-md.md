@@ -28,7 +28,7 @@ bio: >-
   [Connected Health Interoperability
   Platform](http://www.connectinghealthdata.com/).
 profile_twitter: aaronneinstein
-profile_linkedin: aaronneinstein
+profile_linkedin: https://www.linkedin.com/in/aaronneinstein
 profile_url: 'http://profiles.ucsf.edu/aaron.neinstein'
 location:
   lon: -122.4575489

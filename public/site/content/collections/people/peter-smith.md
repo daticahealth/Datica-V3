@@ -23,7 +23,7 @@ bio: >-
   Exchange (ANHIX) and holds a Bachelor of Commerce degree from the University
   of Calgary.
 profile_twitter: peter-smith
-profile_linkedin: peter-smith-9375362
+profile_linkedin: https://www.linkedin.com/in/peter-smith-9375362
 location:
   lon: -114.0708459
   lat: 51.0486151

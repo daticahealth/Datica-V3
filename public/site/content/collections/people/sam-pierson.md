@@ -17,7 +17,7 @@ bio: >-
   Symantec. He received his BS in Computer Science from the College of Science
   and Engineering at the University of Minnesota and his MBA from the Carlson
   School of Management at the University of Minnesota.
-profile_linkedin: samuelpierson
+profile_linkedin: https://www.linkedin.com/in/samuelpierson
 location:
   lon: -93.26501080000003
   lat: 44.977753

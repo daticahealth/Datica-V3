@@ -21,7 +21,7 @@ bio: >
   and is board certified by the American College of Preventive Medicine.  A true
   Renaissance woman, Dr. Coye also has a M.A. degree in Chinese History from
   Stanford University and is the author of two books on Chinese history.
-profile_linkedin: molly-coye-921a358
+profile_linkedin: https://www.linkedin.com/in/molly-coye-921a358
 location:
   lon: -122.41941550000001
   lat: 37.7749295

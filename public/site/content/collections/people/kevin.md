@@ -22,7 +22,7 @@ bio: >-
 
   He has a BS from the University of Minnesota, is a licensed freefall skydiver,
   PADI Divemaster, and extensive traveler (27 countries and counting).
-profile_linkedin: kevinlindbergh
+profile_linkedin: https://www.linkedin.com/in/kevinlindbergh
 location:
   lon: -87.90647360000003
   lat: 43.0389025

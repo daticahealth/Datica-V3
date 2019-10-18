@@ -32,4 +32,4 @@ bio: >-
   Master in Business Administration, and is a Certified Manager of Quality and
   Organizational Excellence by the American Society for Quality (ASQ).
 profile_twitter: craig-clapper
-profile_linkedin: craig-clapper
+profile_linkedin: https://www.linkedin.com/in/craig-clapper

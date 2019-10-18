@@ -14,7 +14,7 @@ bio: >
   years healthcare IT experience from various positions in IT leadership, sales
   and consulting with Siemens, Healthlink and IBM. Chris is now leading MD
   Anderson through a system wide Epic, EMR rollout.
-profile_linkedin: chris-belmont-0671a96
+profile_linkedin: https://www.linkedin.com/in/chris-belmont-0671a96
 location:
   lon: -95.3698028
   lat: 29.7604267

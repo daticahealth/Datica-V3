@@ -19,7 +19,7 @@ bio: >-
   newspaper journalist. She holds a B.S. in Mass Communications from Lamar
   University.
 profile_twitter: marcianoyes
-profile_linkedin: marciahornnoyes
+profile_linkedin: https://www.linkedin.com/in/marciahornnoyes
 location:
   lon: -105.00022419999999
   lat: 39.7541032

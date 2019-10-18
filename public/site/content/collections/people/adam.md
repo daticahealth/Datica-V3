@@ -15,7 +15,7 @@ bio: >-
   scholarly publications in the areas of high-performance embedded networking
   and performance analysis, and is co-author of a patent for processing streams
   of data in a distributed environment (US 8959075 B2).
-profile_linkedin: adamleko
+profile_linkedin: https://www.linkedin.com/in/adamleko
 location:
   lon: -94.57920000000001
   lat: 39.099144

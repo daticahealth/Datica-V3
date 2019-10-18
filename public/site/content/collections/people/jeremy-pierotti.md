@@ -18,7 +18,7 @@ bio: >-
   and MHA from the Carlson School of Management at the University of Minnesota,
   and his BA from Brown University.
 profile_twitter: jeremy_ep
-profile_linkedin: jeremyedespierotti
+profile_linkedin: https://www.linkedin.com/in/jeremyedespierotti
 location:
   lon: -93.26501080000003
   lat: 44.977753

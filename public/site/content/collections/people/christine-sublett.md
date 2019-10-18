@@ -6,4 +6,4 @@ role: 'President, Sublett Consulting, LLC.'
 profile_pic:
   - /assets/people/sublett_2013.png
 profile_twitter: christine-sublett
-profile_linkedin: christine-sublett
+profile_linkedin: https://www.linkedin.com/in/christine-sublett

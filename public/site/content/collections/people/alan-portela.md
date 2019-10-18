@@ -18,7 +18,7 @@ bio: >-
   vendors and was among the leaders who pioneered Global Care Quest, an mHealth
   company that emerged from UCLA Medical Center Department of Neurosurgery more
   than a decade ago.
-profile_linkedin: alan-portela-33a49
+profile_linkedin: https://www.linkedin.com/in/alan-portela-33a49
 profile_url: 'http://airstrip.com/person/alan-portela'
 location:
   lon: -98.48935890000001

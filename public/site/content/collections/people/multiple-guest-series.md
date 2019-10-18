@@ -13,4 +13,4 @@ bio: >-
   The bio for each guest can be found under their original episode, as well as a
   brief summary in the description of this episode. 
 profile_twitter: multiple-guest-series
-profile_linkedin: multiple-guest-series
+profile_linkedin: https://www.linkedin.com/in/multiple-guest-series

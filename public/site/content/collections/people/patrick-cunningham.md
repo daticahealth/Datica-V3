@@ -12,7 +12,7 @@ bio_short: >-
 bio: >-
   In his role as VP of Sales, Patrick Cunningham leads the sales team in helping
   true innovators solve some of the most pressing problems in healthcare. 
-profile_linkedin: patrickccunningham
+profile_linkedin: https://www.linkedin.com/in/patrickccunningham
 location:
   lon: -89.40123019999999
   lat: 43.0730517

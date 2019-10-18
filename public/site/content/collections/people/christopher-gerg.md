@@ -27,7 +27,7 @@ bio: >-
   practice, he is also experienced in the practical aspects of building a secure
   technical environment – and working with the boardroom to promote executive
   understanding and support. 
-profile_linkedin: christopher-gerg-8aa0a66a
+profile_linkedin: https://www.linkedin.com/in/christopher-gerg-8aa0a66a
 location:
   lon: -89.40123019999999
   lat: 43.0730517

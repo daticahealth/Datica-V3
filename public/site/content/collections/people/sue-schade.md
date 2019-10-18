@@ -60,7 +60,7 @@ bio: >-
   Illinois. She has achieved fellow status with both HIMSS and CHIME. Learn more
   from Sue Schade at [sueschade.com](http://sueschade.com/) and read her blog
   “Health IT Connect.”
-profile_linkedin: sue-schade-4a12887
+profile_linkedin: https://www.linkedin.com/in/sue-schade-4a12887
 profile_url: 'http://sueschade.com/about/'
 location:
   lon: -85.60236429999998

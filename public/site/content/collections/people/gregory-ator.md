@@ -11,7 +11,7 @@ bio_short: >-
   Gregory A. Ator, MD, is Chief Medical Informatics Officer for the University
   of Kansas Health System and an associate professor of Otolaryngology - Head
   and Neck Surgery at the University of Kansas Medical Center.
-profile_linkedin: gregoryatormd
+profile_linkedin: https://www.linkedin.com/in/gregoryatormd
 location:
   lon: -94.60904370000003
   lat: 39.0549176

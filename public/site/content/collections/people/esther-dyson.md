@@ -20,7 +20,7 @@ bio: >-
   Living](http://www.amazon.com/exec/obidos/ASIN/0767900111/) in the Digital
   Age, published by Broadway Books in 1997.
 profile_twitter: estherdyson
-profile_linkedin: estherdyson
+profile_linkedin: https://www.linkedin.com/in/estherdyson
 location:
   lon: -74.0059728
   lat: 40.7127753

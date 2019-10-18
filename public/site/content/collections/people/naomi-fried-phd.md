@@ -36,7 +36,7 @@ bio: >-
 
   Naomi received her Ph.D. in Materials Science from MIT and her B.S. in
   Chemistry from the University of California, Berkeley.
-profile_linkedin: nfried
+profile_linkedin: https://www.linkedin.com/in/nfried
 location:
   lon: -71.1864397
   lat: 42.3028239

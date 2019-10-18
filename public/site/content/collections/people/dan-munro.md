@@ -26,7 +26,7 @@ bio: >-
   undergraduate degrees in both Computer Science and Communications (with a
   minor in Journalism).
 profile_twitter: danmunro
-profile_linkedin: dmunro
+profile_linkedin: https://www.linkedin.com/in/dmunro
 profile_url: 'http://dan-munro.com/bio'
 location:
   lon: -112.07403729999999

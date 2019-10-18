@@ -12,7 +12,7 @@ bio_short: >-
   medical degree from the University of Wisconsin School of Medicine and Public
   Health and his Bachelor’s of Science degree in Genetics from the University of
   Wisconsin-Madison.
-profile_linkedin: jake-behrens-11586925
+profile_linkedin: https://www.linkedin.com/in/jake-behrens-11586925
 location:
   lon: -87.90647360000003
   lat: 43.0389025

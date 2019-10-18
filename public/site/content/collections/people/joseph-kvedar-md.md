@@ -17,7 +17,7 @@ bio_short: >-
   clinical outcomes. He is the author of [The Internet of Healthy
   Things](http://theinternetofhealthythings.com/).
 profile_twitter: jkvedar
-profile_linkedin: joekvedar
+profile_linkedin: https://www.linkedin.com/in/joekvedar
 location:
   lon: -71.05906240000002
   lat: 42.3604802

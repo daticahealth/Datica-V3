@@ -22,7 +22,7 @@ bio: >-
   Business Administration from the Tepper School of Business at Carnegie Mellon
   University. 
 profile_twitter: lalehfarrah
-profile_linkedin: lalehfarrah
+profile_linkedin: https://www.linkedin.com/in/lalehfarrah
 location:
   lon: -122.3320708
   lat: 47.6062095

@@ -22,7 +22,7 @@ bio: >-
   completed postdoctoral work at the University of Washington, Harvard Medical
   School & Children's Hospital Boston.  
 profile_twitter: christiana-dellorusso-phd
-profile_linkedin: christianadellorusso
+profile_linkedin: https://www.linkedin.com/in/christianadellorusso
 location:
   lon: -122.3320708
   lat: 47.6062095

@@ -19,7 +19,7 @@ bio: >
   Dr. Chasin joined us to talk about the "Voice of a Patient: Why the front line
   should be involved in innovation."
 profile_twitter: m_chasin
-profile_linkedin: marc-chasin-md-mmm-cpe-chcio-4651934
+profile_linkedin: https://www.linkedin.com/in/marc-chasin-md-mmm-cpe-chcio-4651934
 location:
   lon: -116.21460680000001
   lat: 43.6187102

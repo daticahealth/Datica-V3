@@ -21,7 +21,7 @@ bio: >-
   best-practice management of complex health conditions in their communities or
   correctional institutions.
 profile_twitter: projectEcho
-profile_linkedin: sanjeev-arora-085950b
+profile_linkedin: https://www.linkedin.com/in/sanjeev-arora-085950b
 location:
   lon: -106.61978120000003
   lat: 35.0843187

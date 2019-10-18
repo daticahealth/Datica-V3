@@ -15,7 +15,7 @@ bio: >-
   Baylor Scott & White Health, Rhode Island Hospital, and CHRISTUS Health. Nikki
   earned her B.A. in History from TCU and MHA from the Carlson School of
   Management at the University of Minnesota.
-profile_linkedin: nicole-kent-b426679
+profile_linkedin: https://www.linkedin.com/in/nicole-kent-b426679
 location:
   lon: -93.26501080000003
   lat: 44.977753

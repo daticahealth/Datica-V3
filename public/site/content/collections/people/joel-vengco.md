@@ -27,7 +27,7 @@ bio: >-
   received distinction from Information Management magazine as one of the Top 25
   Information Managers in the country. He was also a recipient of the eHealth
   Initiative's Advocate of the Year for Business Process Improvement.
-profile_linkedin: joel-vengco-a820231
+profile_linkedin: https://www.linkedin.com/in/joel-vengco-a820231
 location:
   lon: -72.589811
   lat: 42.1014831

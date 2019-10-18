@@ -17,7 +17,7 @@ bio: >-
   social media, and healthcare. Prior to joining Datica, Scott worked at
   American TV, Healthgrades, and Shoutlet. Scott graduated from the University
   of Wisconsin.
-profile_linkedin: scott-tillema-0ba71a5
+profile_linkedin: https://www.linkedin.com/in/scott-tillema-0ba71a5
 location:
   lon: -89.4008958
   lat: 43.0592056
