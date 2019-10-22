@@ -1,3 +1,7 @@
+.z--10 { // other z settings in tailwind
+    z-index: -10;
+}
+
 // Add a margin be default, since we always want to have it.
 .container {
     @apply mx-auto;

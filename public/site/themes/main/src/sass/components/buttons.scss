@@ -3,18 +3,18 @@
 | Buttons
 |--------------------------------------------------------------------------
 */
-
-.btn {
-    @apply px-5 py-3 text-base tracking-wide leading-none text-white font-sans font-normal no-underline;
+.button {
+    @apply py-2 px-4 text-white font-bold rounded no-underline;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     &-primary {
         transform: scale3d(1.015, 1.015, 1.015);
         //@extend .trans-color;
-        @include button-shadow (10px, 0.2);
+        // @include button-shadow (10px, 0.2);
+        @apply bg-green;
         &:hover {
             @apply bg-green-light;
-        }    
+        }
     }
     &-hollow {
         @apply bg-transparent border border-solid;

@@ -727,7 +727,7 @@ video {
 }
 
 @font-face {
-  src: url("/site/themes/main/fonts/source-serif-pro-regular-subset.woff2") format("woff2");
+  src: url("/site/themes/main/fonts/SourceSerifPro-Regular.ttf.woff2") format("woff2");
 
   font-family: "Source Serif Pro";
 
@@ -735,7 +735,7 @@ video {
 }
 
 @font-face {
-  src: url("/site/themes/main/fonts/source-serif-pro-italic.woff2") format("woff2");
+  src: url("/site/themes/main/fonts/SourceSerifPro-It.ttf.woff2") format("woff2");
 
   font-family: "Source Serif Pro";
 
@@ -802,7 +802,9 @@ small {
 
 .headline-spaced, .headline-1, .headline-2, .headline-3, .headline-4 {
   line-height: 1.35;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.25rem;
+  font-family: "GT America", system-ui, sans-serif;
+  font-weight: 700;
 }
 
 .headline-spaced, .spaced-out {
@@ -811,27 +813,21 @@ small {
 }
 
 .headline-1 {
-  font-size: calc(2vw + 2.5rem);
-  font-family: "Source Serif Pro", Georgia, serif;
+  font-size: calc(2vw + 1.375rem);
   margin-bottom: 0.5rem;
 }
 
 .headline-2 {
   font-size: calc(1.5vw + 1.125rem);
-  font-family: "Source Serif Pro", Georgia, serif;
 }
 
 .headline-3 {
   font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 .headline-4 {
   font-size: 1.25rem;
   font-family: "GT America", system-ui, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   font-weight: 300;
 }
 
@@ -871,48 +867,39 @@ small {
 |--------------------------------------------------------------------------
 */
 
-.btn {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-size: 1rem;
-  letter-spacing: 0.025em;
-  line-height: 1;
+.button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: #ffffff;
-  font-family: "GT America", system-ui, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
+  border-radius: 0.25rem;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.btn-primary {
+.button-primary {
   -webkit-transform: scale3d(1.015, 1.015, 1.015);
           transform: scale3d(1.015, 1.015, 1.015);
-  box-shadow: 1px 1px 1.25px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #718765;
 }
 
-.btn-primary:hover {
-  border-color: transparent;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
-}
-
-.btn-primary:hover {
+.button-primary:hover {
   background-color: #709DC9;
 }
 
-.btn-hollow {
+.button-hollow {
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
 }
 
-.btn-hollow:hover {
+.button-hollow:hover {
   color: #000000;
 }
 
-.btn-hollow-white {
+.button-hollow-white {
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
@@ -920,7 +907,7 @@ small {
   color: #ffffff;
 }
 
-.btn-hollow-dark {
+.button-hollow-dark {
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
@@ -928,7 +915,7 @@ small {
   color: #27516C;
 }
 
-.btn-large {
+.button-large {
   font-size: 1rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -936,7 +923,7 @@ small {
   padding-bottom: 1rem;
 }
 
-.btn-no-shadow {
+.button-no-shadow {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
@@ -1067,33 +1054,54 @@ a {
 
 /*
 |--------------------------------------------------------------------------
-| Wysiwyg
+| Wysiwyg/markdown block styling
 |
 | Add styling to tags that are output by a wysiwyg or markdown editor
 |--------------------------------------------------------------------------
 */
 
-.wysiwyg ul {
+.markdown ul {
   margin-bottom: 0.25rem;
   list-style: disc;
 }
 
-.wysiwyg ol {
+.markdown ol {
   margin-bottom: 0.25rem;
   list-stye: decimal;
 }
 
-.wysiwyg li {
+.markdown li {
   margin-bottom: 0.25rem;
 }
 
-.wysiwyg b,
-.wysiwyg strong {
+.markdown b,
+.markdown strong {
   font-weight: 700;
+}
+
+.markdown img {
+  margin: 2rem 0 1rem 0;
+}
+
+.markdown p {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown blockquote {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  font-family: "Source Serif Pro", Georgia, serif;
 }
 
 .blend-mode-multiply {
   mix-blend-mode: multiply;
+}
+
+.mask-bottom {
+  mask: linear-gradient(0deg, rgba(0, 0, 0, 0) 3%, black 20%);
+  -webkit-mask: linear-gradient(0deg, rgba(0, 0, 0, 0) 3%, black 20%);
 }
 
 .grid {
@@ -1195,6 +1203,10 @@ a {
 
 .transition-color {
   transition: color 150ms linear, box-shadow 150ms linear, background-color 150ms linear, border-color 150ms linear;
+}
+
+.z--10 {
+  z-index: -10;
 }
 
 .container {

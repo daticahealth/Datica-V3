@@ -1,8 +1,8 @@
 <div class="person flex items-center">
     <img class="w-12 h-12 rounded-full mr-3 lozad" {{ if profile_pic }}{{ assets:profile_pic }}data-src="{{ glide:id width="200" height="200" crop="focal_crop" }}" src="{{ glide:id width="100" height="100" crop="focal_crop" }}" {{ /assets:profile_pic }}{{ /if }} alt="Avatar of {{ title }}"/>
-    <div class="text-xs">
-        <p class="text-gray-900 leading-none font-bold">{{ title }}</p>
-        <p class="text-gray-600">{{ role }}</p>
+    <div class="text-sm">
+        <h4 class="text-gray-900 leading-none font-bold mb-0">{{ title }}</h4>
+        <p class="text-gray-600 mb-0">{{ role }}</p>
     </div>
 </div>
 

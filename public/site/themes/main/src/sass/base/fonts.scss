@@ -59,7 +59,7 @@ $fam-sans: 'GT America';
 // serif fonts - used in quotes, DSHF copy. Source Serif Pro is still in development, with no italics; Charter is a very close subsitute.
 
 @font-face{
-    src: url('/site/themes/main/fonts/source-serif-pro-regular-subset.woff2') format('woff2');
+    src: url('/site/themes/main/fonts/SourceSerifPro-Regular.ttf.woff2') format('woff2');
     font-family: $fam-serif;
     font-display: optional;
     // font-weight: 400;
@@ -67,10 +67,16 @@ $fam-sans: 'GT America';
 
 
 @font-face{
-    src: url('/site/themes/main/fonts/source-serif-pro-italic.woff2') format('woff2');
+    src: url('/site/themes/main/fonts/SourceSerifPro-It.ttf.woff2') format('woff2');
     font-family: $fam-serif;
     font-display: optional;
     // font-weight: 400;
     font-style: italic;
 }
 
+// SourceSerifPro-Bold.ttf.woff
+// SourceSerifPro-Bold.ttf.woff2
+// SourceSerifPro-It.ttf.woff
+// SourceSerifPro-It.ttf.woff2
+// SourceSerifPro-Regular.ttf.woff
+// SourceSerifPro-Regular.ttf.woff2

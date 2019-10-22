@@ -1,12 +1,12 @@
 /*
 |--------------------------------------------------------------------------
-| Wysiwyg
+| Wysiwyg/markdown block styling
 |
 | Add styling to tags that are output by a wysiwyg or markdown editor
 |--------------------------------------------------------------------------
 */
 
-.wysiwyg {
+.markdown {
   ul {
     @apply mb-1;
     list-style: disc;
@@ -24,5 +24,16 @@
   b,
   strong {
     @apply font-bold;
+  }
+  img {
+    margin: 2rem 0 1rem 0;
+  }
+  p {
+    @apply text-sm mb-2;
+    // font-size: smaller;
+    // margin-bottom: 0.7em;
+  }
+  blockquote {
+    @apply my-8 text-lg font-serif;
   }
 }
