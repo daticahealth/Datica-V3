@@ -1,5 +1,5 @@
 collections:
-  blog: '/blog/{year}/{month}/{day}/{slug}'
+  blog: '/blog/{slug}'
   academy: '/academy/{slug}'
   events: '/events/{slug}'
   webinars: '/webinar/{slug}'
