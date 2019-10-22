@@ -14,6 +14,8 @@
             </div>
         </header>
         <div class="markdown">
+			{{ if lead }}{{ lead | wrap:div.text-lg.mb-6 | markdown }}
+			{{ /if }}
 			{{ content }}
 		</div>
 		<hr class="my-8"/>
@@ -31,13 +33,19 @@
 				{{ svg src="/assets/icons/icon-email-open.svg" class="float-right w-12 ml-4 fill-current text-gray-500" a11y="email" }}
                 <h3 class="headline-4">Subscribe via email</h3>
                 <p class="text-sm mb-2">We'll send you an email each time a new blog article is posted.</p>
-                <input class="form-input mx-auto p-2 mb-4" placeholder="yourname@domain.com"/>
+                <input class="form-input mx-auto p-2 mb-4 w-full" placeholder="yourname@domain.com"/>
                 <button class="button button-primary">Subscribe today</button>
-            </div>
-            <div class="mb-8 lg:mb-12">
-                <div class="text-reg font-bold tracking-widest uppercase mb-2">Explore this topic</div>
-                <p class="text-sm mb-4">The shift from Ottoman imperial rule to post-Ottoman Arab national rule was neither natural nor inevitable.</p><img class="lozad" data-src="https://images.ctfassets.net/bfs863we7xd3/6m4CTI0Bd2esaf8pgRaTlJ/9f30e25ac314b5b16df6a7c5d104b9e7/video_poster_example.jpg?w=800"/>
-            </div>
+			</div>
+			{{ if topics }}
+			{{ relate:discovery_topic }}
+				<div class="mb-8 lg:mb-12">
+					<div class="text-reg font-bold tracking-widest uppercase mb-2"><span class="font-light">Explore</span> {{ title }}</div>
+					{{ summary | wrap:div.text-sm.mb-4 }}
+					<img class="lozad" data-src="https://images.ctfassets.net/bfs863we7xd3/6m4CTI0Bd2esaf8pgRaTlJ/9f30e25ac314b5b16df6a7c5d104b9e7/video_poster_example.jpg?w=800"/>
+				</div>
+			{{ /relate:discovery_topic }}
+            
+			{{ /if }}
             <div class="mb-4"><a class="card card-hover" href="https://aeon.co/essays/ottoman-cosmopolitanism-and-the-myth-of-the-sectarian-middle-east">
                     <div class="bg-white max-w-md overflow-hidden shadow-lg">
                         <header class="bg-gray-500 lozad" data-background-image="https://source.unsplash.com/S43CFXMiWwM/800x400">
@@ -51,11 +59,9 @@
                     </div></a></div>
         </div>
 	</aside>
-	
 </main>
 {{ if featured_image }}
 <aside class="featured-image top-0 z--10 w-full absolute">
-	<img class="mask-bottom w-full lozad" data-src="" src="" alt=""/>
 	<img class="mask-bottom w-full lozad" {{ assets:featured_image }}data-src="{{ glide:id width="1800" height="600" }}" {{ /assets:featured_image }} />
 </aside>
 {{ /if }}
