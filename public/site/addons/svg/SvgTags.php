@@ -66,16 +66,15 @@ class SvgTags extends Tags
   public function getSvgConfig()
   {
     // Get the config from the params
-    $class = $this->getParam('class');
-    $height = $this->getParam('height');
-    $width = $this->getParam('width');
-
-    // Add the config to an array and return it.
-    return [
-      'class' => ((false) ? null : $class),
-      'height' => ((false) ? null : $height),
-      'width' => ((false) ? null : $width)
+    $config = [
+      'class' => $this->getParam('class'),
+      'height' => $this->getParam('height'),
+      'width' => $this->getParam('width'),
     ];
+
+    return array_filter ($config, function ($element) {
+      return $element;
+    });
   }
 
   /**
