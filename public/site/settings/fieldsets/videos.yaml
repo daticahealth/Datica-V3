@@ -17,7 +17,9 @@ sections:
         restrict: true
         mode: grid
       custom_form:
-        type: textarea
+        type: markdown
+        localizable: true
+        cheatsheet: false
         display: 'Video Embed Code'
       content:
         type: markdown

@@ -1,0 +1,23 @@
+{{ collection:next in="blog" limit="2" as="next_posts" }}
+	{{ unless no_results }}
+		<footer class="list article-footer">
+            <h6 class="uppercase text-bold text-xs">Next</h6>
+            <div class="flex justify-between leading-tight mx-auto">
+				{{ next_posts scope="tag" }}
+                    {{# {{ partial:block }} #}}
+                    <a class="text-sm w-1/2 mr-4" href="{{ url }}" title="Read {{ title }}">
+                        {{ title | wrap:h4.text-sm.font-bold }}
+                    </a>
+				{{ /next_posts }}
+			</div>
+		</footer>
+	{{ /unless }}
+{{ /collection:next }}
+{{# </div>
+    <a href=""> 
+        <div class="uppercase text-bold text-xs">Previous post</div>
+        <div class="text-sm">The Lost Relics of Aleppo </div></a>
+        <a href=""> 
+        <div class="uppercase text-bold text-xs text-right">Next post</div>
+        <div class="text-sm">Paintings of the Levant</div>
+    </a></div> #}}

@@ -1,3 +1,6 @@
+body {
+    background-color: var(--bg-color);
+}
 .z--10 { // other z settings in tailwind
     z-index: -10;
 }

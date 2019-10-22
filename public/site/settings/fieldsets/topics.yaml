@@ -25,6 +25,13 @@ sections:
         type: taxonomy
         instructions: 'A singular, high-level category.'
         display: Category
+      related_video:
+        max_items: '1'
+        collection:
+          - videos
+        mode: panes
+        type: collection
+        display: 'Related Video'
 taxonomies: false
 hide: true
 title: 'Discovery Topics'
