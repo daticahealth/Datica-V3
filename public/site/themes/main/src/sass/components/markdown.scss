@@ -7,18 +7,37 @@
 */
 
 .markdown {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+  h1, h2 {
+
+  }
+  h3 {
+
+  }
+  h4 {
+
+  }
+  h5 {
+
+  }
+  h6 {
+
+  }
   ul {
-    @apply mb-1;
+    @apply mb-4;
     list-style: disc;
   }
 
   ol {
-    @apply mb-1;
-    list-stye: decimal;
+    @apply mb-4;
+    list-style: decimal;
   }
 
   li {
-    @apply mb-1;
+    @apply mb-1 ml-8;
+    font-size: inherit;
   }
 
   b,
@@ -29,11 +48,11 @@
     margin: 2rem 0 1rem 0;
   }
   p {
-    @apply text-sm mb-2;
+    @apply text-base mb-4;
     // font-size: smaller;
     // margin-bottom: 0.7em;
   }
-  blockquote {
-    @apply my-8 text-lg font-serif;
+  blockquote, blockquote p {
+    @apply text-gray-700 my-10 ml-4 text-lg font-serif;
   }
 }

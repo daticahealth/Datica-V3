@@ -1060,18 +1060,24 @@ a {
 |--------------------------------------------------------------------------
 */
 
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+  font-weight: 700;
+}
+
 .markdown ul {
-  margin-bottom: 0.25rem;
+  margin-bottom: 1rem;
   list-style: disc;
 }
 
 .markdown ol {
-  margin-bottom: 0.25rem;
-  list-stye: decimal;
+  margin-bottom: 1rem;
+  list-style: decimal;
 }
 
 .markdown li {
   margin-bottom: 0.25rem;
+  margin-left: 2rem;
+  font-size: inherit;
 }
 
 .markdown b,
@@ -1084,13 +1090,15 @@ a {
 }
 
 .markdown p {
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-.markdown blockquote {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.markdown blockquote, .markdown blockquote p {
+  color: #4a5568;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: 1rem;
   font-size: 1.125rem;
   font-family: "Source Serif Pro", Georgia, serif;
 }
