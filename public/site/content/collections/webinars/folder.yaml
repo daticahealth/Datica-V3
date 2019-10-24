@@ -1,3 +1,4 @@
 title: Webinars
 order: date
 fieldset: webinars
+template: webinars/webinar
