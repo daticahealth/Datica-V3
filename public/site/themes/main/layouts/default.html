@@ -46,10 +46,7 @@
     <header class="site-header bg-white" itemscope itemtype="http://schema.org/LocalBusiness">
         {{ partial:navbar }}
     </header>
-    
-    <div class="overflow-hidden relative">
-        {{ template_content }}
-    </div>
+    {{ template_content }}
     {{ partial:footer }}
 
     <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.4" media="print"> {{# Photoswipe gallery html loads below You might want to conditionally load this if there is a gallery on the page #}} {{ partial:photoswipe_markup }}

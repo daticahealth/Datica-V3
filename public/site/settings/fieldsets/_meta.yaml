@@ -29,8 +29,6 @@ sections:
         type: taxonomy
         instructions: 'Choose a single topic category to categorize the entry.'
         display: 'Discovery Topic (Category)'
-        show_when:
-          category: 'not null'
       tags:
         max_items: 5
         taxonomy: tags

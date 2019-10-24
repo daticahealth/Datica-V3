@@ -1,3 +1,7 @@
+:root {
+    --bg-color: @apply bg-gray-100;
+}
+
 body {
     background-color: var(--bg-color);
 }

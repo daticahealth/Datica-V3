@@ -1103,6 +1103,25 @@ a {
   font-family: "Source Serif Pro", Georgia, serif;
 }
 
+.markdown a {
+  color: #27516C;
+  border-bottom-width: 1px;
+  border-color: #718765;
+}
+
+.markdown a:hover {
+  color: #718765;
+  border-color: #718765;
+}
+
+.markdown pre {
+  overflow-x: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #edf2f7;
+}
+
 .blend-mode-multiply {
   mix-blend-mode: multiply;
 }
@@ -1211,6 +1230,10 @@ a {
 
 .transition-color {
   transition: color 150ms linear, box-shadow 150ms linear, background-color 150ms linear, border-color 150ms linear;
+}
+
+:root {
+  --bg-color: @apply bg-gray-100;
 }
 
 body {

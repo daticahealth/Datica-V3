@@ -10,20 +10,16 @@ sections:
       event_date:
         allow_blank: false
         allow_time: true
-        require_time: false
+        require_time: true
         earliest_date: 'January 1, 2013'
         type: date
         instructions: 'Starting date & time of the event.'
         width: 50
-        display: 'Date Start'
-      event_logo:
-        container: main
-        folder: logos
-        restrict: false
-        max_files: 1
-        type: assets
-        instructions: 'Upload a logo associated with the event. Transparent PNG or SVG.'
-        display: 'Event Logo'
+        display: 'Event Date & Time'
+      subhead:
+        type: text
+        display: Subhead
+        width: 50
       content:
         type: markdown
         display: 'Event Description'
@@ -33,9 +29,41 @@ sections:
         instructions: 'Event details'
         container: main
         folder: img
-      subhead:
-        type: text
-        display: Subhead
+      event_logo:
+        container: main
+        folder: logos
+        restrict: false
+        max_files: 1
+        type: assets
+        instructions: 'Upload a logo associated with the event. Transparent PNG or SVG.'
+        display: 'Event Logo'
+        width: 50
+      image_thumb:
+        container: main
+        folder: /
+        restrict: false
+        max_files: 1
+        type: assets
+        instructions: 'A preview, background, or screen capture to show before the video loads.'
+        width: 50
+        display: 'Image Thumb or Background'
+      related_form:
+        max_items: '1'
+        collection:
+          - forms
+        mode: panes
+        type: collection
+        display: 'Related Form'
+        width: 50
+      webinar_video:
+        max_items: '1'
+        collection:
+          - videos
+        mode: panes
+        type: collection
+        instructions: 'Link to the recorded video here.'
+        display: 'Webinar Video'
+        width: 50
   sidebar:
     display: 'Event Metadata'
     fields:

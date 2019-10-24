@@ -55,4 +55,14 @@
   blockquote, blockquote p {
     @apply text-gray-700 my-10 ml-4 text-lg font-serif;
   }
+  a {
+    @apply text-green-dark border-b border-green;
+    &:hover {
+        @apply text-green border-green;
+    }
+  }
+  pre {
+    @apply overflow-x-auto p-4 my-4;
+    background-color: theme('colors.gray.200');
+  }
 }

@@ -1,3 +1,4 @@
 title: 'Academy Articles'
 order: number
 fieldset: academy
+template: academy/article

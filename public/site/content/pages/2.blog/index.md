@@ -1,5 +1,5 @@
 ---
-title: My Magical Blogventure
+title: Datica Blog
 nav_title: Blog
 mount: blog
 template: blog/index
