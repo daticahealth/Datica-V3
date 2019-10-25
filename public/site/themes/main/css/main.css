@@ -744,6 +744,18 @@ video {
   font-style: italic;
 }
 
+.icon-inline {
+  vertical-align: baseline;
+  width: 1em;
+  height: 1em;
+  margin-bottom: -0.1em;
+}
+
+svg {
+  fill: currentColor;
+  display: inline-block;
+}
+
 img {
   height: auto;
   max-width: 100%;
@@ -809,7 +821,7 @@ small {
 
 .headline-spaced, .spaced-out {
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 
 .headline-1 {

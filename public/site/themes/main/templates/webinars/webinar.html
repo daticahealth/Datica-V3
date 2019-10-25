@@ -4,6 +4,12 @@
 	}
 </style>
 <main class="">
+    <header class="mx-auto p-6 text-center">
+        <a href="/webinars/" title="All Webinars">
+            {{ svg src="/assets/icons/icon-webinar.svg" class="w-16 h-16" a11y="Video Presentation Icon" }}
+            <h2 class="headline-4 spaced-out font-bold">Datica Webinars</h2>
+        </a>
+    </header>
     <section class="video mx-auto justify-center max-w-6xl">
         {{ if webinar_video }}
             {{ relate:webinar_video }}
@@ -13,7 +19,7 @@
     </section>    
     <div class="flex mx-auto justify-center flex-col md:flex-row">
         <article class="p-8 max-w-3xl w-full mb-6 z-10 md:w-2/3 lg:w-3/5 md:p-10 lg:p-16 xl:p-20">
-            <header class="mb-6">
+            <section class="mb-6">
                 <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
                 <h1 class="headline-3 mb-4">{{ title }}</h1>
                 <div class="flex flex-wrap items-center justify-between" md:flex-no-wrap="md:flex-no-wrap">
@@ -24,7 +30,7 @@
                         {{ partial:tag_list }}
                     {{ /if }}
                 </div>
-            </header>
+            </section>
             <div class="markdown">
                 {{ if lead }}{{ lead | markdown | wrap:div.text-lg.mb-6 }}{{ /if }}
                 {{ content }}
@@ -68,42 +74,4 @@
     </div>
 </main>
 
-{{#
-<section class="regular">
-
-	<header>
-		<div class="meta clearfix">
-			<div class="author">
-				<img src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/48.jpg" class="img-circle" width="48" height="48">
-				<div class="pull-left">
-					<a href="" class="name">{{ author_name }}</a>
-					<span class="length">{{ content | read_time }} minute read</span>
-				</div>
-			</div>
-			<div class="date">
-				{{ date format="F j, Y" }}
-			</div>
-		</div>
-		<h1>{{ title }}</h1>
-		{{ sub_title wrap="h2" }}
-	</header>
-
-	<article class="content">
-
-		{{ if intro_image }}
-			<p><img src="{{ intro_image }}" class="intro-image"></p>
-		{{ /if }}
-
-		{{ content }}
-
-		<ul class="tags">
-		{{ tags }}
-			<li><a href="{{ url }}">{{ title }}</a></li>
-		{{ /tags }}
-		</ul>
-	</article>
-
-</section>
-
-{{ partial:article-footer }}
-#}}
+{{# {{ partial:article-footer }} #}}

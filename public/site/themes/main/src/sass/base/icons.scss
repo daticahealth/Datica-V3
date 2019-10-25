@@ -6,3 +6,7 @@
         margin-bottom: -0.1em; // slight nudge down
     }
 }
+
+svg {
+    @apply fill-current inline-block;
+}

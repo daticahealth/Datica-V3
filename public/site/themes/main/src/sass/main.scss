@@ -7,7 +7,7 @@
 @import "utilities/mixins";
 @import "base/fonts"; // loading that font pack isn't working; substituting EB Garamond for now
 // @import "base/debug";
-// @import "base/icons"; we'll be using SVG icons inline or loaded lazily as img.
+@import "base/icons"; // we'll be using SVG icons inline or loaded lazily as img.
 @import "base/images";
 @import "base/lozad";
 @import "base/tables";
