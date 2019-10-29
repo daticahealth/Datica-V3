@@ -1,0 +1,48 @@
+---
+id: 3WgGJvG40EGu0sAOA4SQe2
+title: GDPR Data Breach Requirements
+slug: gdpr-data-breach-requirements
+pub_date: '2018-01-09'
+author: 1gpUmvd6yuOKUIUIY620i0
+tags:
+  - tags/gdpr
+discovery_topic: discovery_topic/gdpr
+summary: >-
+  One of the most challenging aspects of any security and compliance program,
+  including GDPR, is breach notification.
+lead: >-
+  One of the most challenging aspects of any security and compliance program is
+  breach notification. “Beach notification” is actually multiple tasks —
+  survelliance, investigation, and ultimately notification (to end users,
+  partner, and sometimes media). It is time consuming,
+  [expensive](https://www.csoonline.com/article/3234685/data-protection/how-much-will-non-compliance-with-gdpr-cost-you.html),
+  and, when handled poorly, embarrassing for organizations and can lead to more
+  investigations. 
+related_guide: 6ZjDEiocKI20ssIM4Eu4UO
+related_entries:
+  - 2qIYZSmGpOK2cSoMSomSOK
+  - 5Eape5yb0k0SGOu2Asw0ss
+  - E1VA55CiNq2Ioa4wm2y4Q
+  - 1cDUJOfihS6CamYeuSG2KW
+  - 6iyNBVdpAIgewyYekqISUG
+cta_ref: 6fm8uDgwG4eaQ2mQUUuSMQ
+---
+The 72-hour security breach requirement written into General Data Protection Regulation (GDPR) Article 33 is rightfully generating a lot of attention and angst. 72 hours is not enough time to do all of the things that organizations are used to doing ahead of notifying authorities and individuals about a breach.
+
+## HIPAA vs. GDPR Breach Notifications
+
+In the case of HIPAA in the United States, notifying affected individuals of a breach, especially when they number in the thousands or even millions, can be a massively resource-intensive endeavor; it is also very expensive. That said, in the United States under HIPAA often individuals are notified weeks or months after a breach is actually discovered. This is typically because healthcare organizations take time to investigate the scope and cause of breaches, mitigate the vulnerabilities that caused the breach, and develop and implement a process for managing notifications.
+
+The [HIPAA Breach Notification Rule](https://www.hhs.gov/hipaa/for-professionals/breach-notification) requires that covered entities, or the delegates of covered entities (business associates typically), notify individuals and Health and Human Services (HHS) “without unreasonable delay and in no case later than 60 days following a breach”. 60 days is a lot of time. Breach notification under HIPAA is often a part of a [business associates agreement](https://datica.com/blog/3-common-misconceptions-about-business-associate-agreements/) (BAA) between covered entities and business associates. In many cases, we see breach reporting times of 30 to 60 days for cloud service providers, which aligns with the 60-day breach reporting requirement in HIPAA. Datica guarantees 4-hour breach reporting in our BAA with partners because our philosophy has always been to proactively notify in order to expedite discovery, containment, and notification to individuals while minimizing the risk to our partners; delaying notification to our partners exposes them to more risk, not less.
+
+## GDPR Articles 33 and 34
+
+The GDPR breach notification requirement, contained in [Articles 33 and 34 of GDPR](http://ec.europa.eu/justice/data-protection/reform/files/regulation_oj_en.pdf) and [in contrast to HIPAA](https://datica.com/blog/how-does-gdpr-compare-to-hipaa/), states that “the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority.” 72 hours is not a lot of time, even only to notify authorities and not individuals. For organizations operating in Europe with HIPAA-oriented policies, changes are likely required.
+
+The first step to bringing your policies and procedures into compliance with GDPR is to accept that [GDPR breach reporting](https://gdpr-info.eu/art-33-gdpr/) is more prescriptive and more aggressive than with HIPAA, or likely any other compliance frameworks to which you are familiar. From this first step it’s a matter of running a stringent process to update both your technology and organizational practices. You will also want to review the breach reporting obligations that your processors and subprocessors have in your data protection agreements. And do all that quickly as May 2018, the date GDPR goes into effect, is rapidly approaching.
+
+*Learn more about GDPR — Find out the actual [definitions of security incident and data breach under HIPAA and GDPR.](https://datica.com/academy/what-is-data-breach-gdpr-and-hipaa/)* 
+
+
+
+  

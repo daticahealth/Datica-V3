@@ -1,0 +1,113 @@
+---
+id: 5HKp0QEjpmqSeIkE8cgsYw
+title: SOC 2 Type II Compliance for Cloud Computing
+slug: soc-2-type-ii-compliance-for-cloud-computing
+pub_date: '2018-09-05'
+author: 2DNY7XJvv2eYQ4CuyuwKIm
+tags:
+  - tags/compliance
+  - tags/hitrust
+  - tags/cloud-computing
+discovery_topic: discovery_topic/hitrust
+summary: >-
+  At Datica, we are often asked about SOC 2 Type II and how it relates to HIPAA
+  and HITRUST. This article is to help explain how a SOC 2 Type II audit
+  compares to HIPAA compliance and other regulatory audits in the United States.
+lead: >-
+  At Datica, we are often asked about SOC 2 Type II and how it relates to HIPAA
+  and HITRUST. This article is to help explain how a SOC 2 Type II audit
+  compares to HIPAA compliance and other regulatory audits in the United States.
+related_guide: 1t0tIH6KWIyWAAk6iS2Se2
+related_entries:
+  - 7BC902tFlKQwC6YygGECKY
+  - 20YHiTYApqcUS4sEqGSIyS
+  - 5Eape5yb0k0SGOu2Asw0ss
+  - RYKszr5xW6S4UyWyKUAgk
+  - 1hfBEAA0QOiK2YoM244YQI
+cta_ref: 6fm8uDgwG4eaQ2mQUUuSMQ
+---
+
+Before we explain SOC 2® Type II compliance, let’s get a baseline on SOC and the foundational SOC 1 report.
+
+## What is SOC 1?
+
+SOC is an abbreviation for Systems and Organizations Controls developed by the [Association of International for Certified Professional Accountants (AICPA)](https://www.aicpa.org/). SOC reports are in effect a product of the services that auditors provide their clients. A SOC 1 report is specifically for internal controls over financial reporting. 
+
+For example, if you have a customer that is undergoing a financial audit, and you are providing that customer your services, the auditors of your customer will need a SOC 1 report from your service organization. [A SOC 1 Type I report](https://www.ispartnersllc.com/blog/soc-1-soc-2-reports-difference/) would attest that your service organization is suitably designed to achieve financial controls. A SOC 1 Type II report would attest to the design and the operating effectiveness over a specified period of time.
+
+## SOC 2 and SOC 2 Type II Compliance Defined
+
+SOC 2 reports are attestations that your service organization has controls around the systems and processes that touch sensitive information that does not affect a customer’s financial reporting (remember that SOC 1 is for internal controls for financial reporting). 
+
+Similar to SOC 1, SOC 2 has two report types. The type 1 report tests and reports on the design of the organization’s controls. The SOC 2 type 2 report tests and verifies that the design was operationally effective for a specified period of time.
+
+SOC II reports cover what are referred to as the [Trust Services Criteria](https://www.ssae-16.com/soc-2/) of security, availability, processing integrity, confidentiality, and privacy. The criteria, or principles, are elaborated as:
+
+* *Security* - information is protected from unauthorized access and damage, and the system that store and process that information, are also protected.
+
+* *Availability* - that the systems are accessible for operation, are monitored and maintained.
+
+* *Processing Integrity* - that systems achieve their intended aim and are unimpaired and are not error-prone.
+
+* *Confidentiality* - that the information is protected as required by regulatory law, or by legal contract, or even commitments made between parties. Confidentiality differs from privacy in that privacy is concerned with personal information, whereas confidentiality can be about broader sensitive information.
+
+* *Privacy* - that the personal information is handled in a way that aligns to the “entity’s objectives.” The privacy trust principle is elaborated to include even more detailed criteria around notice and communication of objectives, choice and consent, collection, use-retention-disposal, access, disclosure and notification, quality and monitoring and enforcement.
+
+For more information, please reference the [Trust Services Criteria](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/aicpasoc2report.html) from the AICPA.
+
+When preparing a SOC 2 audit specifically for compliance the AICPA Trust Services Criteria are not generally used. The reason being is that in general, SOC 2 audits are for an internal audience and the evaluation of the organization by the principles is, by design, somewhat flexible, subjective, and sort of vague. However evaluating compliance to laws and regulations should not be too flexible.
+
+For a SOC 2 compliance audit, an auditor, commonly the “practitioner,” will refer to the guidelines in the document [AT-C Sections 105](https://www.aicpa.org/content/dam/aicpa/research/standards/auditattest/downloadabledocuments/at-c-00105.pdf) and [315 for Compliance Attestation](https://www.aicpa.org/content/dam/aicpa/research/standards/auditattest/downloadabledocuments/at-c-00315.pdf). These compliance attestation guidelines differ from the trust services principles in the specificity that the practitioner will bring to the preparation of the report. 
+
+## How does SOC 2 compare to HIPAA?
+
+First to keep in mind is that HIPAA is a regulation while SOC 2 is an auditing and reporting engagement. A SOC 2 Type 2 report is not inherently healthcare specific and is [not required for cloud computing vendors](https://www.incapsula.com/web-application-security/soc-2-compliance.html), however, it is a best practice in securing your data. The Trust Services Principles and Criteria provides evaluation methodology that is intended to be flexible and applicable to different industries and practices, not specifically healthcare.
+
+For a SOC 2 report on HIPAA compliance, the AICPA has worked with additioanl subject matters and criteria. They have developed an illustrative example, the [SOC for Service Organizations: SOC 2® HITRUST](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/soc2additionalsubjectmatter.html). This version of a SOC 2 Type II report draws on the HITRUST Common Security Framework (CSF). The partnership and working group also developed a mapping the controls of the HITRUST CSF to the AICPA’s Trust Services Principles. For the direct mappings, see [TSC Mapping to HITRST CSF worksheet](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/mappingsrelevanttothesocsuiteofservices.html). The benefit of this mapping is to make auditors more efficient in evaluating an entity regardless if they designed and executed audit procedures from either requirement.
+
+## What is a SOC 2 Report?
+
+A SOC 2 Type II report is the output of an SOC 2 audit from a third-party auditor. The report verifies whether or not that an entity has managed its data and protected the privacy of its clients. If one is applying for compliance, then a SOC 2 report attests whether the entity complied with regulatory requirements for a specified period of time.
+
+SOC 2 audits and reports are voluntary and are intended for management, shareholders, investors, and potentially as a signal of trustworthiness for customers. The reports provide transparency that an entity is protecting data and doing the right things. As an example, [Amazon (AWS) has a SOC 2 report](https://aws.amazon.com/compliance/soc-faqs/) description on their website that states what their audit covered. For shareholders, these reports signal that the organization is competent, well-managed and understands risk management. 
+
+The practitioner that prepares the report needs to determine whether or not the entity complied with requirements in all material respects, then expresses an opinion on whether that entity complied in all material respects. That the practitioner must express an opinion puts the onus on the auditor to be independent, impartial, and with a vested interest to maintain their professional reputation.
+
+## SOC 2 Compliance Checklist
+
+Datica created a [HIPAA & HITRUST self-assessment worksheet](https://datica.com/blog/take-compliance-self-assessment/) and following the guidance in this lightweight assessment is a good starting point to get ready for a SOC 2 audit. 
+
+In brief, here are the things you need to have done:
+
+* People are appointed and in charge of Privacy and Security in your organization
+* Policies are in place. Datica has [open-sourced its policies](https://datica.com/open-source/policies/) for your use.
+* A risk assessment has been completed within the past 12 months
+* The laundry list of controls in place that align to Trust Services Principles and/or HITRUST CSF (i.e. antivirus, backups, disaster recovery, encryption, intrusion detection, logging, monitoring, vulnerability scanning, etc.)
+
+## SOC 2 Compliance Audit
+
+As mentioned above, SOC 2 reports generally are internally facing documents that an organization is taking care and protecting data and its customers’ privacy. They are flexible, can be vague and subjective. However, if the SOC 2 audit is to evaluate regulatory compliance, flexibility and subjectivity must be removed.
+ 
+The attestation for compliance guidelines for a SOC 2 Type 2 report are very detailed and prescriptive about what a report should include (see section .20 ‘Content of the Practitioner’s Examination Report’). To summarize briefly, the report must include:
+
+* Identification of the compliance matters that are being reported on
+* The time period for which the evaluation relates
+* An opinion on whether the compliance matters were met
+
+The controls, in this case, those aligned to the trust services criteria, have been met for the time period specified. Typically the time period is semi-annual, for example, twice a year for periods of six months.
+
+## SOC 2 Penalties 
+
+There are no SOC 2 penalties as SOC 2 audits and reports are an analysis of internal controls, i.e. the competency and strength of a compliance regime. These audits are intended for identifying areas of risk and vulnerability for particular regulations. The penalties may be material in lost business opportunities. If an organization is in a regulated industry but hasn’t been audited by a reputable 3rd party, then it’s a potential red flag that the organization has risks that have not been thoroughly vetted and tested.
+
+Of course, the whole point of doing an internal audit like SOC 2 is to avoid penalties by breaking laws. If an organization is operating in the United States and its business involves dealing with sensitive information, say personal health information (PHI), it should be conducting audits to protect the organization. If the organization has a data breach then the penalties will be determined by the Department of Health and Human Services under HIPAA. Now with the rollout of the [EU’s new GDPR law](https://datica.com/guide/gdpr-compliance/), fines are much more severe than HIPAA if the organization is not properly managing the personal information of EU citizens.
+
+## SOC 2 Compliance + HITRUST
+
+Internal audits and reports, whether SOC 2 Type II or HITRUST, are a must for any organization operating within a regulated industry. Preparing for and undergoing internal audits is a best practice that management should undertake to protect the organization and to demonstrate trustworthiness to customers and prospects.
+
+A SOC 2 Type II audit using the HITRUST mapping is something that we at Datica highly recommend for any organization with a digital health product or service or using the public cloud. The CSF controls from the HITRUST Alliance have been integral to the evolution of Datica’s own products and services and our ability to provide compliant products and services to our customers. HITRUST has done a great job of aiming for big goals. With version 9.1 of the CSF, we believe there are few better options for the most stringent and comprehensive compliance auditing framework on the cloud. The HITRUST CSF is our DNA framework.
+
+
+
+  

@@ -1,0 +1,55 @@
+---
+id: 5IWeaTEI9yCAQYK8qeqa2I
+title: Why HIPAA is not PCI
+slug: why-hipaa-is-not-pci
+pub_date: '2018-04-16'
+author: 1gpUmvd6yuOKUIUIY620i0
+tags:
+  - tags/hipaa
+discovery_topic: discovery_topic/hipaa-compliance
+summary: >-
+  This post discusses HIPAA and different types of hosted infrastructure
+  options, answering the question of why HIPAA is not PCI. 
+related_guide: 6evss0t4I0IC2cQasg0K2O
+related_entries:
+  - 4yuVlN4hWw0wgM6SOaae0G
+  - 2uVitrbH7qy2OyeGwcGEO2
+  - 2aVxbQ5VAoqmKkQksiQSCA
+  - 5Eape5yb0k0SGOu2Asw0ss
+  - 45hh3YTAoweueQYcmaCKsW
+cta_ref: 6fm8uDgwG4eaQ2mQUUuSMQ
+---
+This post is part an answer to a question on Quora about HIPAA and different types of hosted infrastructure options. You can read more on Quora [here](http://www.quora.com/Health-Insurance-Portability-and-Accountability-Act-HIPAA/Becoming-HIPAA-Compliant-Should-you-use-a-Backend-As-A-Service-or-a-HIPAA-Server-Why).
+
+To start, and for full disclosure, I'm the co-founder of Datica. At Datica we offer APIs for developers looking to add HIPAA compliant hosted infrastructure to web and mobile apps. We take a different approach from either of the two examples cited, and we believe we have good reasons from a risk mitigation and application functionality standpoint. Mapping Datica to the various aspects of HIPAA, we currently address technical and physical requirements, and will be very shortly adding a tool to address the administrative and policy safeguards; for this last part (admin and policy), we needed a tool internally to proactively address the admin and policy rules of HIPAA and, after building it, we've been asked by multiple customers if we could offer it as a service, so we are - HIPAAboard.com.
+
+Back to the question. The answers so far are very thorough and the bulk of what I would say has been covered. The specific comparisons between HIPAA IaaS and PaaS options are nicely laid out, though the distinction between IaaS, PaaS, and BaaS have eroded and aren't clean cut. It's probably worthwhile to give examples in each bucket:
+
+- IaaS - AWS, Rackspace, Azure, SoftLayer, Firehost, OnlineTech, etc. You can think of these as a blank slate or terminal in the cloud. These were the pioneering services. Very powerful and have led to incredible disruption.
+
+- PaaS - Heroku, Cloud Foundry, OpenShift, DotCloud, etc. These services take care of application deployment and scaling so you don't have to worry about linux or unix, at least remotely (you still have to get a local environment running as you build and test). You still have to write your own APIs and web services, but you don't have to worry about configuring a server and database.
+
+- BaaS - Parse, Kinvey, StackMob, etc. These began as mobile backends, but have evolved to offer web developers the same SDKs (JS); web and mobile are converging so this makes sense. With BaaS you can focus on the front-end - UI and UX - and distribution, without having to worry about touching a server or database. With the explosion of mobile apps, and bespoke apps, over the last several years these services have seen tremendous growth.
+
+- EVERYTHINGELSEaaS - Twilio/Plivo, UrbanAirship, Keen.IO, MongoLab, etc.
+
+The reason I say these buckets are converging is we're seeing AWS offer services like messaging via it's SNS service and Parse offer analytics, like Keen.IO and Flurry, and Push, like UrbanAirship. Heroku also offers a myriad of services via Add-ons.
+
+As a developer, the service layer you choose in large part depends on the application you are building and the specific needs you have from a business and use case perspective. The more complex the app, especially as it relates to backend logic and data modeling, the more likely you'll need to use a secure IaaS like Firehost. If you're new or the app is new, you may not know how complex the app needs to be or what your backend needs are, so using an abstracted service layer, like what Datica offers via APIs and SDKs, is a much faster and cheaper way to get up and running, and ideally validate some of your hypotheses. I can say that at Datica we haven't had many cases where we can't support the business or use cases; most apps and developers that have approached us and are using Datica can use API-based services, like the ones we offer to get up and running on day one, without the need to roll their own infrastructure on Firehost, OnlineTech, AWS, or Rackspace. We also offer this at a considerable savings over Firehost, AWS, or Rackspace.
+
+There's also a question of flexibility when developing. The more infrastructure services you rely on, the faster you'll get started and the less ongoing maintenance you'll have, but you'll also have less flexibility, and you'll likely pay a bit more for the convenience. That is one of the major gripes that developers have with BaaS like Parse; they often complain that you can only build simple apps using BaaS. Flexibility may not be a big deal and, when it comes to building a vertical-specific infrastructure, which is what we're talking about here, hopefully the infrastructure (PaaS or BaaS) provider knows healthcare and is close enough to its customers to build out the services and features required to meet the majority of developer use cases. At Datica we think HIPAA is just one part of health app development, and expand upon that with additional tools like data models, mappings, and sources. The more health-specific features you can offer means you're just left with corner cases, and no one service, even a vertical specific offering, is going to be able to meet all the corner cases.
+
+We do, or I should say our attorneys, our HIPAA auditors (we just completed our independent 3rd party HIPAA audit this summer/fall), and at least two health system compliance offices we've worked with, disagree with the assessment that you can add a storage layer via API to an existing app (on Heroku or Google App Engine) and address the security rules within HIPAA. It's not as simple as the approach Stripe takes to making apps PCI compliant because the data isn't as simple, and PCI and payment processing is a different problem from HIPAA compliance.
+
+Stripe is a really good example to illustrate this. For an app to be PCI compliant using Stripe it has to use HTTPS, which isn't really a major hurdle, and use one of the front-end JS libraries or widgets from Stripe (currently Stripe.js or Checkout). The reason for this is that, by using one of those front-end libraries, all payment data passes directly to Stripe and the app that's using Stripe is out of scope for PCI. So Stripe technically doesn't make apps PCI compliant, it enables apps to process payments while not touching PCI-relevant data, and in the process enables apps to remain out of the scope for PCI compliance.
+
+At the end of the day, all you need from Stripe is to store payment information and process payments, either on demand or at scheduled times. This is a simple use case, really, and is the reason why it is easy to handoff payments and PCI compliance to Stripe; it's also the genius of Stripe. It's really a very powerful solution. We've used it and love it! You can read more on Stripe and PCI [here](https://support.stripe.com/questions/do-i-need-to-be-pci-compliant-what-do-i-have-to-do).
+
+The thing about payment processing is that it is necessary but not a core part of any app. And the subset of PCI-relevant data is much, much smaller than PHI data. Because of that, applying the Stripe model to HIPAA is much, much harder. Any identifiable information, as defined by [HHS](http://www.hhs.gov/ocr/privacy/hipaa/understanding/coveredentities/De-identification/guidance.html#safeharborguidance), linked to a health related service or payment, is considered PHI, and in scope for HIPAA. It's far more likely an app would store and use a phone number or email or an IP address (in a log maybe), as an example of identifiable data, than an app would need to store a credit card number. And it's far harder to build front-end libraries, like Stripe.js and Checkout, for the myriad of data and models health app developers will want to create and store that would be considered PHI.
+
+It's really hard, and we see it as a burden to developers, to prevent custom apps from acting as a passthrough and touching PHI. Separating logic from data is a hard thing to do, and we think has very limited use cases. And if apps touch (transmit, process, store) PHI then those apps are considered in scope of HIPAA and have to be secured to meet HIPAA requirements. And, as of 9/23/2013, so do all subcontractors used to build or run those apps.
+
+Another fundamental difference with HIPAA is that the data you are storing is part of the core value of the app; if you build a health app, health data IS is your app. It's not payment processing. It's the data collected via a glucose monitor or a WiFi scale or an intake form or a virtual visit app (asynchronous telemed). The app has to use that data to power the app (provide logic) and provide a customized user experience. In the overwhelming majority of cases the app needs access to that data, and you can't simply hand off the storage layer and make an app compliant or out of scope of HIPAA.
+
+It's why, after spending a lot of time researching the challenges of HIPAA security, we built Datica the way we did, with version 1 being essentially a HIPAA compliant BaaS offering, and not as an add-on for existing apps. Our platform (users, auth, storage, etc) is API-based, so could be used as storage layer, but we don't think that's a real path to HIPAA compliance. Datica Compliant Cloud includes additional features and flexibility, something we're really excited about and hope will address more and more of the market need. Ultimately we want to give developers a simple way to add modern web services to health apps and, in the process, we want to mitigate risk for them and help them overcome some of the compliance roadblocks we encountered in building and selling apps in healthcare.
+  

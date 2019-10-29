@@ -1,0 +1,97 @@
+---
+id: 1cDUJOfihS6CamYeuSG2KW
+title: GDPR Data Breach Notification Checklist
+slug: gdpr-data-breach-notification-checklist
+pub_date: '2018-01-10'
+author: 1gpUmvd6yuOKUIUIY620i0
+tags:
+  - tags/gdpr
+discovery_topic: discovery_topic/gdpr
+summary: >-
+  This GDPR data breach notification checklist outlines the steps that should be
+  orchestrated by your data protection officer to ensure GDPR compliance.
+lead: >-
+  The breach notification requirements outlined in GDPR Article 33 are
+  aggressive —“The controller shall without undue delay and, where feasible, not
+  later than 72 hours after having become aware of it, notify the personal data
+  breach to the supervisory authority.” We discussed how this is different from
+  [breach reporting requirements in
+  HIPAA](https://datica.com/academy/gdpr-data-breach-requirements/) in another
+  Academy article. This post walks through the steps you should take to evaluate
+  your breach reporting policies and procedures to bring them inline with GDPR.
+related_guide: 6ZjDEiocKI20ssIM4Eu4UO
+related_entries:
+  - 3WgGJvG40EGu0sAOA4SQe2
+  - 6Ft7DZOasgag8AgW0qsCQo
+  - 2qIYZSmGpOK2cSoMSomSOK
+  - 5Eape5yb0k0SGOu2Asw0ss
+  - E1VA55CiNq2Ioa4wm2y4Q
+cta_ref: 6fm8uDgwG4eaQ2mQUUuSMQ
+---
+
+At Datica, we’ve built and tested our breach notification process to meet the most stringent notification requirements of covered entities. At times, we’ve had to adjust our compliance program. The following steps are the ones we went through when we updated our breach reporting. All of these actions should be orchestrated by your data protection officer, the person at your organization who is ultimately responsible for your compliance with GDPR.
+
+## Define and get consensus on what you mean by “breach”
+
+It’s imperative to agree to the meaning of the term ahead of time, and educate your entire workforce and partners about it. Successfully meeting the 72-hour timeline for beach notification under GDPR requires that all members of your workforce are trained and activated when it comes to identifying a potential breach. Under GDPR, [the term “data breach” is more expansive](https://datica.com/academy/what-is-data-breach-gdpr-and-hipaa/) under GDPR  than under HIPAA, so it’s important to understand if you are complying with the GDPR definition before you go through the process of updating your breach notification processes.
+
+## Document your current process
+
+Start with your policies. Specifically, in regards to breach notification, these should outline 1) the steps and 2) the responsible parties when it comes to breach notification. You can look at our [Datica breach policies here](https://policy.datica.com/#12-breach-policy).
+There are several key things you need to identify and document:
+
+### Identify Major buckets of work 
+
+You don’t have to get into the details yet, but you should understand your broad areas of work. Examples are things like identification, investigation, containment, and notification (both internal and external).
+
+### Rank the criticality of each bucket of work
+
+Perfect is the enemy of the good, even when it comes to compliance. To condense a set of processes down to meet the 72 GDPR data breach requirement successfully, there’s an incredibly high likelihood you will have to sequence things in new ways. Understanding the criticality is essential to do this. The criticality is based predominantly on the risk to your organization of not doing that process.
+
+### Rank each bucket of work by the amount of time it takes to complete
+
+For each of the identified buckets of work, rank them by the amount of time they take to complete, from shortest to longest. Assume unlimited resources for these assessments.
+
+### Identify Key personnel
+
+Identify required roles for your current process. As a part of this, pay attention to bottlenecks and where additional resources might be able to shorten the overall time required.
+
+If this step of documenting your current process is hard to start or complete, you may want to quickly look for external assistance from an advisory firm that specializes in healthcare compliance. One of the features of GDPR is security by design and by default. Timely breach notification is a symptom that falls out of this underlying ethos, so it’s likely you need a broader revamp of your security and compliance programs.
+
+## Identify critical steps that must be completed before notifying authorities
+
+This part is challenging because it has a degree of subjectivity. Now that you’ve documented your current breach process, you have to identify things that can be delayed until after authorities are notified. The GDPR 72 hour timeline isn’t for informing individuals; it’s for notifying authorities. The only way you’re going to be able to meet the 72 hours is by trimming part of the process. Since informing authorities isn't publicly disclosing a breach, some activities, like investigation and media strategy, can be done after authorities are notified of a breach. The intent of the 72-hour timeline in GDPR is likely to notify authorities so they can be prepared proactively and potentially assist with, notifications to affected individuals.
+
+## Develop the new process that can be completed in 72 hours
+
+Now that you’ve documented the current process and made the hard decision about what can be delayed until after you notify authorities of a breach, you need to document your new process. You don’t need to list the 72-hour timeline for notifying authorities. You can outline this in your data protection agreements or contracts with customers.
+
+In light of the GDPR requirements, our view is that it is prudent to have one breach notification policy and process that differentiates notifying authorities and notifying individuals. You can educate your workforce and ensure you can meet the stringent 72 hours for authorities while then doing additional steps before you inform individuals.
+
+Below is a very high-level example breach notification process.
+
+1. Discovery
+2. Initial investigation
+3. Notify appropriate authorities
+4. Full investigation
+5. Risk assessment
+6. Risk mitigation
+7. Individual and public notification
+
+## Create templates/efficiencies
+
+Consistency is crucial to any compliance program. Taking the guesswork and busywork out of the breach reporting process by creating templates will help you move quickly, ideally meeting the GDPR 72 hour breach reporting requirement, and ensure repeatability. Templates can be used for the actual documents shared with authorities or with individuals. Depending on the workflow tool you’re using, you can create template processes in Jira or Trello or any number of project management systems. 
+
+## Test your new process (and document it)
+
+Testing your breach reporting process, and documenting the results of that testing, is a requirement. There are different forms of testing. Initial testing should be tabletop testing. This is a form of testing where you, and all of the responsible parties, walk through the different processes, inputs, and outputs that are a part of breach reporting. You don’t do all the steps, but you walk through them as a group to ensure everything is clear.
+
+Next, you should do a full test. It doesn’t have to be a secret within the organization. You simply simulate the discovery a breach and follow the necessary steps. You can make it more complicated by keeping it a secret but, at this stage, there is limited value in that. Go through the process and document everything. When you’re done, do a retrospective. Use the feedback to inform edits the breach notification process.
+
+## Notify customers and partners of your new breach reporting process
+
+Once you’ve created, tested, and documented the testing of your new GDPR-ready breach reporting process, you should inform your customers and partners. You want them to know that 1) GDOR is different and 2) you have ensured you comply with GDPR.
+
+*Learn more about GDPR—Understand the [requirements of data breach reporting](https://datica.com/academy/gdpr-data-breach-requirements/)*
+
+  

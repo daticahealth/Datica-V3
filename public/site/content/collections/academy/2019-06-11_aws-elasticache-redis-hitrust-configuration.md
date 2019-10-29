@@ -1,0 +1,166 @@
+---
+id: 6hIdZvZwfXyYbq01e42zDO
+title: 'Amazon ElastiCache for Redis HITRUST CSF Configuration Guide '
+slug: aws-elasticache-redis-hitrust-configuration
+pub_date: '2019-06-07'
+author: 2B98PdoITGQAYwcWk2muY4
+tags:
+  - tags/aws
+  - tags/hitrust
+  - tags/hipaa
+  - tags/healthcare-cloud
+  - tags/cloud-computing
+discovery_topic: discovery_topic/aws-hipaa
+summary: >
+  This step-by-step guide gives developers easy-to-understand instructions to
+  configure Amazon ElastiCache for Redis instances to be HITRUST CSF ready. In
+  the following sections we walk through the requirements, controls, and
+  configurations for ElastiCache for Redis.
+lead: >
+  This guide is intended to give developers an easy to understand, step by step
+  guide to configuring their Amazon ElastiCache for Redis instance (we will not
+  be covering Memcached in this article) to be HITRUST CSF ready. In the
+  following sections we’ll walk through the requirements, controls, and
+  configurations for ElastiCache for Redis.
+related_guide: 1L20oQXl3G2cKSm4gg2wuc
+related_entries:
+  - 1s1UlhAhkAwwewk20ugYsW
+  - 4STmWUVa5WwkaWyi2UYG8U
+  - UTYZcJYtm86gqicwYkgOc
+  - 43dQoBKc9OuQuyw8k2SmKO
+cta_ref: 6fm8uDgwG4eaQ2mQUUuSMQ
+---
+_Disclaimer: while utilizing these guides can provide alignment with HITRUST, it is still your responsibility as an organization to complete an audit and obtain certification._
+
+
+## 6 Steps to Configure Amazon ElastiCache for Redis to Comply with HITRUST CSF
+
+## Step 1: Ensure you have a signed BAA
+
+First and foremost, you’ll need a BAA in place with AWS before configuring any service (and subsequently handling PHI). AWS maintains a list of services that are covered under their BAA here ([ElastiCache included](https://aws.amazon.com/compliance/hipaa-eligible-services-reference/)). If you haven’t signed a BAA already with AWS, please see the steps below. If you already have a BAA with AWS, simply move on to step 2.
+
+More information on [BAAs from Datica can be found here](https://datica.com/academy/business-associate-agreements/).
+More information on [BAAs from AWS can be found here](https://aws.amazon.com/blogs/security/introducing-the-self-service-business-associate-addendum/).
+
+### To sign the AWS BAA: 
+- Navigate to [https://console.aws.amazon.com/artifact/](https://console.aws.amazon.com/artifact/)
+- Select the “AWS Business Associate Addendum” section
+- Download the AWS Business Associate Addendum
+- Confirm you’ve followed the steps properly by checking the three boxes show on the screen
+- Click the button that says “Accept the AWS Business Associate Addendum for this account”
+
+**You now have a BAA in place with AWS!** 
+
+| Rule     | API Reference    |
+| ---------- | ---------- |
+|HIPAA 164.308     | NA: AWS does not provide API access to their Artifact service       |
+
+
+## Step 2: Redis settings
+
+In this step, we’ll configure the base settings for your ElastiCache for Redis instance. 
+
+- Once logged into the AWS console, search for and select “ElastiCache” from the drop down. 
+- Once you’re on the “Create your Amazon ElastiCache cluster” page, select Redis for the Cluster engine and then view the Redis settings. 
+- Next you should give your Redis instance a useful name and description.
+- As far as selecting “Engine version compatibility”, [AWS requires either version 4.0.10 (Enhanced) or version 3.2.6 (Enhanced) in order to be eligible for HIPAA compliance](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/elasticache-compliance.html#elasticache-compliance-hipaa). However, AWS’s HIPAA guide contradicts that statement slightly, by saying “In order to store PHI, customers must ensure that they are running the latest Compliance-eligible ElastiCache for Redis engine version.”  In this case, it would seem anything later than version 3.2.6 (Enhanced) would be eligible. However, this is not entirely clear. Our recommendations would be to choose version 4.0.10 (Enhanced) as it is newer and also explicitly stated as a HIPAA compatible version.
+- After you’ve selected a version, you can enter the appropriate port for your instance. Redis defaults to port 6379. However, it is highly recommended that you update this to something other than the default. Additionally, the following is [recommended directly from Redis:](https://redis.io/topics/security) _“In the common case of a single computer directly exposed to the internet, such as a virtualized Linux instance (Linode, EC2, ...), the Redis port should be firewalled to prevent access from the outside. Clients will still be able to access Redis using the loopback interface.”_
+- Once you’ve entered a port number you will then need to select a parameter group. It’s important to note that a custom parameter group will be required if you’re planning on changing any of the default parameters (which you should be when accepting PHI). To learn how to create a parameter group, [see this guide from AWS](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/ParameterGroups.Creating.html). For more information on [Redis parameters in AWS, see this article](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/ParameterGroups.Redis.html).
+- Once you’ve selected a parameter group, you can finish out this section by providing a node type and number of replicas required (these choices have no bearing on compliance).
+
+**Controls addressed in this section**
+
+| Control ID     | Related to   | API Reference     |
+| ---------- | ---------- | ---------- |
+| HITRUST 0706.10b1 System.12       | Vulnerability management     | DescribeCacheEngineVersions       |
+
+
+## Step 3: Advanced Redis settings
+
+Next, we configure advanced settings for our ElastiCache Redis instance. 
+
+- In the AWS console, click the “Advanced Redis settings” section to reveal the advanced settings. First, ensure that “Multi-AZ with Auto-Failover” is enabled. From AWS: _“ElastiCache Multi-AZ provides enhanced High Availability through automatic failover to a read replica in case of a primary node failure”_
+- Next, create a new subnet (or select one you’ve previously created). Give it a name, description, select the appropriate VPC ID and then define a Subnet range.
+- In the next section either select your availability zones with at least 1 of the read replicas in a separate zone, or select no preference, which will automatically balance across multiple availability zones. HITRUST and HIPAA have requirements for availability so leveraging AWS functionality like AZs is an easy way to ensure redundancy of connectivity.
+
+**Controls addressed in this section** 
+
+| Control ID     | Related to     | API Reference     |
+| ---------- | ---------- | ---------- |
+| HITRUST 1410.09e2 System.23       | Disaster recovery       | DescribeCacheClusters       |
+| HITRUST 1601.12c1 Organizational.1238      | Disaster recovery       | DescribeCacheClusters       |
+|HITRUST 1618.09l1 Organizational.45       | Disaster recovery       | DescribeCacheClusters       |
+| HITRUST 1620.09l1 Organizational.8       | Disaster recovery       | DescribeCacheClusters       |
+| HITRUST 0805.01m1 Organizational.12       | Network segregation       | DescribeCacheSecurityGroups       |
+
+
+## Step 4: Security settings
+
+In the “Security” section under preferred availability zones, select a Security group that has been properly configured. From AWS: _“A Security Group acts like a firewall that controls network access to your clusters. Please select one or more Security Groups for this Cluster."_
+
+**Security group best practices**
+
+Security groups are worthy of their own article altogether. While we haven’t written that article yet, we recommend doing your proper research and ensuring you thoroughly understand the scope of your security groups.
+
+
+After you’ve selected the appropriate security group, you’ll need to select both “Encryption at-rest” and “Encryption in-transit”.
+
+**Controls addressed in this section**
+
+| Control ID     | Related to     | API Reference     |
+| ---------- | ---------- | ---------- |
+| HITRUST 0808.10b2 System.3       | Encryption       | CacheCluster       |
+| HITRUST 0903.10f1 Organizational.1      | Encryption       | CacheCluster       |
+| HITRUST 1903.06d1 Organizational.3456711       | Encryption      | CacheCluster       |
+| HITRUST 19141.06c1 Organizational.7       | Encryption       | CacheCluster      |
+
+
+## Step 5: Backups & maintenance
+
+First, ensure that the “Enable automatic backups” option is selected. The “Backup retention period” is going to be specific to your organization’s compliance policies. HITRUST requires audit records be retained for up to 90 days, but there is nothing specific to data backups — only requirements around PHI as a whole.
+
+Our recommendation is to retain backups within ElastiCache for a period of 35 days (the longest allowed by the AWS service). Beyond 35 days, we recommend compliant archiving and storage for at least 6 years (using a service like [AWS Glacier](https://aws.amazon.com/glacier/)).
+
+Next you’ll want to specify a window for both backups as well as maintenance (in the next section) that align with your organization’s policies and external SLAs.
+Finally, select an SNS topic (“Topic for SNS notification”) to receive important notifications about your cluster.
+
+**Controls addressed in this section**
+
+| Control ID     | Related to     | | API Reference     |
+| ---------- | ---------- | ---------- |
+| HITRUST 1616.09l1 Organizational.16       | Back-ups       | CacheCluster  |
+| HITRUST 1618.09l1 Organizational.45       | Back-ups       | CacheCluster  |
+| HITRUST 1620.09l1 Organizational.8       | Back-ups       | CacheCluster  |
+
+
+## Step 6: Logging & monitoring
+
+Like other HIPAA-eligible AWS services, ElastiCache is integrated with AWS CloudTrail which provides the ability to audit actions taken by users and other AWS services. CloudWatch provides both sufficient logging and monitoring capabilities for HITRUST if you configure and set it up properly.
+Users also have the ability to log and monitor these services using 3rd party tools outside of AWS. At a minimum, whether you’re using CloudTrail or any other system, the following requirements must be in place:
+
+- Provide an audit trail of all activities performed on the service. These records must include a unique identifier to signify the action, a user identifier, the performed action, the date and time the action was performed. They must also include records of actions performed by privileged users that include the action and outcome.
+- Audit logging must always be on and in place while the system is active.
+- Records must be retained for 90 days with older records being archived for at least one year.
+- The system must be checked for and alerting on irregularities indicative of malfunction or misuse;
+
+**Controls addressed in this section**
+
+| Control ID     | Related to     | API Reference     |
+| ---------- | ---------- | ---------- |
+| HITRUST 1202.09aa1 System.1       | Logging & Monitoring       | Variable       |
+| HITRUST 1203.09aa1 System.2       | Logging & Monitoring       | Variable       |
+| HITRUST 1204.09aa1 System.3       | Logging & Monitoring       | Variable       |
+| HITRUST 12100.09ab2 System.15       | Logging & Monitoring       | Variable      |
+| HITRUST 1270.09ad1 System.12       | Logging & Monitoring      | Variable      |
+
+
+## Wrapping up how to configure Amazon ElastiCache for Redis to be HITRUST CSF Compliant
+
+By following this guide, developers can ensure their new ElastiCache for Redis instance is ready to comply with HITRUST CSF. Maintaining these configurations for all new infrastructure, updating them for new versions of HITRUST and providing proof in the form of a digital papertrail, is an incredible amount of work. Having a partner like Datica can mean the difference between an audit taking 4 months or 4 weeks and your DevOps or engineering team dedicating resources to an assessment for months at a time.
+
+For more information on Datica’s products and services. Check out these helpful links:
+
+- [Cloud Compliance Management System](https://datica.com/ccms)
+- [Compliant Kubernetes Service](https://datica.com/cks)
+
+  
