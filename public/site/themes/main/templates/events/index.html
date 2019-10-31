@@ -1,0 +1,35 @@
+<section class="">
+
+	<header>
+		
+		<h1>{{ title }}</h1>
+		<h2>{{ content }}</h2>
+	</header>
+
+	<article class="list">
+		{{ collection:events paginate="true" as="posts" limit="" }}
+			{{ posts scope="tag" }}
+				{{# {{ partial:block }} #}}
+				<div class="flex justify-center w-full max-w-xl">
+					<div class="w-1/5">
+						{{ if featured_image }}
+						<img class="lozad pr-4 rounded-sm" 
+							{{ assets:featured_image }}data-src="{{ glide:id width="400" height="400" crop="focal_crop" }}" src="{{ glide:id width="100" height="100" crop="focal_crop" quality="10" }}" {{ /assets:featured_image }}
+						/>
+						{{ /if }}
+					</div>
+					<div class="w-4/5">
+						<a href="{{ url }}" title="Read {{ title }}">
+							{{ title | wrap:h3.headline-4 }}
+						</a>
+						{{ summary | wrap:div.text-sm }}
+					</div>
+				</div>
+				
+			{{ /posts }}
+
+			{{ partial:pagination }}
+		{{ /collection:events }}
+	</article>
+
+</section>

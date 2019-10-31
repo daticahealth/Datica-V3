@@ -1,4 +1,4 @@
 title: 'Academy Articles'
-order: number
+order: date
 fieldset: academy
 template: academy/article
