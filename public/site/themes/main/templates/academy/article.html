@@ -53,8 +53,9 @@
             
 			{{ /if }}
 			{{ if related_entries }}
+				<h4 class="headline-4 spaced-out mb-6">Related</h4>
 				{{ relate:related_entries }}
-					{{ partial:related-article }}
+					{{ partial:related-article size="small" }}
 				{{ /relate:related_entries }}
 			{{ /if }}
             <div class="mb-4">

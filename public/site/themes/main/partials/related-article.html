@@ -1,5 +1,5 @@
 {{ if collection == "blog" }}
-<a class="card card-hover" href="{{ url }}">
+<a class="card card-hover" href="{{ url }} title="Read {{ title }} in {{ collection | title }}">
     <div class="bg-white max-w-md overflow-hidden shadow-lg">
         <header class="bg-gray-500 lozad bg-cover" {{ assets:featured_image }}data-background-image="{{ glide:id width="600" height="240" }}" {{ /assets:featured_image }}">
             <h4 class="p-4 text-right text-sm font-bold tracking-widest uppercase mb-2 text-white">{{ collection }}</h4>
@@ -14,18 +14,26 @@
     </div>
 </a>
 {{ elseif collection == "academy" }}
-
-<a class="" href="{{ url }}" title="Read article">
-    <div class="card card-hover max-w-md bg-white mb-8 shadow-lg block p-6">
-        <h4 class="text-xs font-light tracking-widest uppercase mb-2 text-gray-800 text-right">{{ collection }}</h4>
-        <h3 class="font-bold text-xl text-black leading-tight mb-4">{{ title }}</h3>
-        {{ summary | wrap:p.text-sm.mb-2 }}
-        {{ if tags }}
-            <div class="">
-                {{ partial:tag_list }}
-            </div>
-        {{ /if }}
-    </div>
-</a>
+{{ unless size == "small" }}
+    <a class="" href="{{ url }}" title="Read {{ title }} in {{ collection | title }}">
+        <div class="card card-hover max-w-md bg-white mb-8 shadow-lg block p-6">
+            <h4 class="text-xs font-light tracking-widest uppercase mb-2 text-gray-800 text-right">{{ collection }}</h4>
+            <h3 class="font-bold text-xl text-black leading-tight mb-4">{{ title }}</h3>
+            {{ summary | wrap:p.text-sm.mb-2 }}
+            {{ if tags }}
+                <div class="">
+                    {{ partial:tag_list }}
+                </div>
+            {{ /if }}
+        </div>
+    </a>
+{{ else }}
+<div class="mb-8">
+    <h3 class="font-bold text-lg leading-tight mb-1">
+        <a class="" href="{{ url }}" title="Read {{ title }} in {{ collection | title }}">{{ title }}</a>
+    </h3>
+    {{ summary | wrap:p.text-sm.mb-2 }}
+</div>
+{{ /if }}
 
 {{ /if }}
