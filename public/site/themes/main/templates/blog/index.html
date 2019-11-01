@@ -3,11 +3,11 @@
 	<header>
 		
 		<h1>{{ title }}</h1>
-		<h2>{{ content }}</h2>
+		<p class="lead">{{ summary }}</p>
 	</header>
 
 	<article class="list">
-		{{ collection:blog paginate="true" as="posts" limit="" sort="pub_date" }}
+		{{ collection from="{section_collection}" paginate="true" as="posts" limit="" sort="pub_date:desc" }}
 			{{ posts scope="tag" }}
 				{{# {{ partial:block }} #}}
 				<div class="flex justify-center w-full mb-8">
@@ -30,7 +30,7 @@
 			{{ /posts }}
 
 			{{ partial:pagination }}
-		{{ /collection:blog }}
+		{{ /collection }}
 	</article>
 
 </section>

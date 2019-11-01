@@ -1,16 +1,16 @@
-<section class="">
+<section class="mx-auto max-w-2xl">
 
 	<header>
 		
 		<h1>{{ title }}</h1>
-		<h2>{{ content }}</h2>
+		<p class="lead">{{ summary }}</p>
 	</header>
 
 	<article class="list">
-		{{ collection:academy paginate="true" as="posts" limit="" }}
+		{{ collection from="{section_collection}" paginate="true" as="posts" limit="" sort="pub_date:desc" }}
 			{{ posts scope="tag" }}
 				{{# {{ partial:block }} #}}
-				<div class="flex justify-center w-full max-w-xl">
+				<div class="flex justify-center w-full mb-8">
 					<div class="w-1/5">
 						{{ if featured_image }}
 						<img class="lozad pr-4 rounded-sm" 
@@ -19,6 +19,7 @@
 						{{ /if }}
 					</div>
 					<div class="w-4/5">
+						<div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
 						<a href="{{ url }}" title="Read {{ title }}">
 							{{ title | wrap:h3.headline-4 }}
 						</a>
@@ -29,7 +30,7 @@
 			{{ /posts }}
 
 			{{ partial:pagination }}
-		{{ /collection:academy }}
+		{{ /collection }}
 	</article>
 
 </section>
