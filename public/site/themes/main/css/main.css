@@ -671,7 +671,7 @@ video {
 }
 
 @font-face {
-  src: url("/site/themes/main/fonts/gt-america-regularitalic.woff2") format("woff2");
+  src: url("/site/themes/main/fonts/gt-america-regular-italic.woff2") format("woff2");
 
   font-family: "GT America";
 
@@ -693,7 +693,7 @@ video {
 }
 
 @font-face {
-  src: url("/site/themes/main/fonts/gt-america-mediumitalic.woff2") format("woff2");
+  src: url("/site/themes/main/fonts/gt-america-medium-italic.woff2") format("woff2");
 
   font-family: "GT America";
 
@@ -715,7 +715,7 @@ video {
 }
 
 @font-face {
-  src: url("/site/themes/main/fonts/gt-america-bolditalic.woff2") format("woff2");
+  src: url("/site/themes/main/fonts/gt-america-bold-italic.woff2") format("woff2");
 
   font-family: "GT America";
 
