@@ -1,5 +1,4 @@
-title: 'Datica Webinars'
-nav_title: Webinars
+title: Webinars
 summary: 'In-depth presentations on solving the latest compliance and integration challenges.'
 section_collection: webinars
 pub_date: '2019-10-23'

@@ -5,6 +5,7 @@ social_links:
   -
     social_icon: linkedin
     url: 'https://www.linkedin.com/company/datica-health'
+facebook_default_share_image: /assets/seo/cta-generic-data.jpg
 twitter_username: '@daticahealth'
 twitter_card_type: summary_large_image
 twitter_default_summary_image: /assets/seo/cta-generic-data.jpg

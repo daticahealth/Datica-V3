@@ -1,4 +1,4 @@
-title: 'Datica Blog'
+title: Blog
 summary: 'Articles and insights from the team behind healthcare''s trusted cloud compliance experts.'
 section_collection: blog
 pub_date: '2019-11-01'
@@ -10,7 +10,6 @@ sitemap_changefreq: daily
 facebook_image:
   - /assets/articles/blog/blog-share-default.png
 twitter_share_setting: inherit
-nav_title: Blog
 mount: blog
 template: blog/index
 fieldset: section
