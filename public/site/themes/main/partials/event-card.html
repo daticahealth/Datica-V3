@@ -1,13 +1,18 @@
 <style>
     .event-card-grid {
         display: grid;
-        grid-template-columns: 66% 33%;
         grid-template-rows: auto auto;
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
         justify-items: stretch;
         align-items: stretch;
-     }
+        grid-template-columns: 100%;
+    }
+    @media (min-width: 480px) {
+        .event-card-grid {
+            grid-template-columns: 66% 33%;
+        }
+    }
 </style>
 <div class="event-card-grid">
     <div class="event-title">
@@ -16,7 +21,7 @@
     </div>
     <div class="event-logo">
         {{ if event_logo }}
-            <img class="lozad h-6" style="height: 2rem;" {{ assets:event_logo }}data-src="{{ event_logo }}" {{ /assets:event_logo }} />
+            <img class="lozad h-8" {{ assets:event_logo }}data-src="{{ event_logo }}" {{ /assets:event_logo }} />
         {{ /if }}
     </div>
     <div class="event-desc markdown">

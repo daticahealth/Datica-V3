@@ -100,5 +100,36 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: []
+  plugins: [
+    require('tailwind-css-variables')(
+      {
+        // modules
+        // colors: false,
+        // screens: false,
+        // fontFamily: false,
+        // fontSize: false,
+        // fontWeight: false,
+        lineHeight: false,
+        letterSpacing: false,
+        backgroundSize: false,
+        borderWidth: false,
+        borderRadius: false,
+        width: false,
+        height: false,
+        minWidth: false,
+        minHeight: false,
+        maxWidth: false,
+        maxHeight: false,
+        padding: false,
+        margin: false,
+        boxShadow: false,
+        zIndex: false,
+        // opacity: false,
+      },
+      {
+        // options
+        // postcssEachVariables: true;
+      }
+    )
+  ]
 }
