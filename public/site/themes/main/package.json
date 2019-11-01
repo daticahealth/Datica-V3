@@ -10,28 +10,28 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "acorn": "^6.1.1",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "acorn": "^6.3.0",
     "babel-preset-env": "*",
     "babel-preset-react": "*",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "*",
-    "cross-env": "*",
+    "cross-env": "^6.0.3",
     "css-loader": "^2.1.1",
-    "headroom.js": "*",
-    "laravel-mix": "^4.0.15",
-    "laravel-mix-purgecss": "*",
-    "lozad": "^1.9.0",
-    "postcss": "*",
+    "headroom.js": "^0.10.3",
+    "laravel-mix": "^4.1.4",
+    "laravel-mix-purgecss": "^4.2.0",
+    "lozad": "^1.14.0",
+    "postcss": "^7.0.21",
     "postcss-color-function": "^4.1.0",
-    "sass": "^1.17.3",
-    "sass-loader": "*",
-    "webpack": "^4.29.6"
+    "sass": "^1.23.3",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.41.2"
   },
   "dependencies": {
-    "npm": "^6.9.0",
-    "tailwindcss": "^1.1.2"
+    "npm": "^6.12.1",
+    "tailwindcss": "^1.1.3"
   },
   "name": "Datica-V3",
   "version": "1.0.0",
