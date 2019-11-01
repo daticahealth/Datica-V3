@@ -1,5 +1,6 @@
 title: Events
 summary: 'Nationally recognized speakers on compliance and healthcare'
+section_collection: events
 pub_date: '2019-10-31'
 meta_title: 'Datica Events'
 page_no_index: false

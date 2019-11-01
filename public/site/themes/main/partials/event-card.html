@@ -1,35 +1,44 @@
-<section class="flex mx-auto justify-center flex-col md:flex-row">
-        <article class="w-full mb-6 z-10 md:w-2/3 lg:w-3/5">
-            <header class="mb-6">
-                <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
-                <h1 class="headline-3 mb-4">{{ title }}</h1>
-                <div class="flex flex-wrap items-center justify-between" md:flex-no-wrap="md:flex-no-wrap">
-    
-                </div>
-            </header>
-            <div class="markdown">
-                {{ if lead }}{{ lead | markdown | wrap:div.text-lg.mb-6 }}{{ /if }}
-                {{ content }}
-                {{ if featured_image }}
-                <div class="mb-8">
-                    <img class="lozad" {{ assets:featured_image }}data-src="{{ glide:id width="800" }}" {{ /assets:featured_image }} />
-                </div>
-                {{ /if }}
-            </div>
-        </article>
-        
-         {{# for position-sticky to work: add .items-start to parent because https://stackoverflow.com/a/57830863 #}}
+<style>
+    .event-card-grid {
+        display: grid;
+        grid-template-columns: 66% 33%;
+        grid-template-rows: auto auto;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        justify-items: stretch;
+        align-items: stretch;
+     }
+</style>
+<div class="event-card-grid">
+    <div class="event-title">
+        <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
+        <h1 class="headline-3">{{ title }}</h1>
+    </div>
+    <div class="event-logo">
+        {{ if event_logo }}
+            <img class="lozad h-6" style="height: 2rem;" {{ assets:event_logo }}data-src="{{ event_logo }}" {{ /assets:event_logo }} />
+        {{ /if }}
+    </div>
+    <div class="event-desc markdown">
+        {{ if lead }}{{ lead | markdown | wrap:div.text-lg.mb-6 }}{{ /if }}
+        {{ content }}
+    </div>
+    <div class="event-meta">
+        {{ if featured_image }}
+        <img class="lozad" {{ assets:featured_image }}data-src="{{ glide:id width="800" }}" {{ /assets:featured_image }} />
+        {{ /if }}
+        {{ if event_related_people }}
+            {{ relate:event_related_people scope="entry" }}
+                {{ partial:author }}
+            {{ /relate:event_related_people }}
+        {{ /if }}
+        {{ if event_tags }}
+            {{ partial:tag_list }}
+        {{ /if }}
+    </div>
+</div>
+{{# 
         <aside class="block w-full items-start md:w-1/3 lg:w-2/5 xl:max-w-md">
-            <div class="sticky top-0 p-8">
-                {{ if event_logo }}
-                <img class="lozad" {{ assets:event_logo }}data-src="{{ glide:id height="100" format="png" }}" {{ /assets:event_logo }} />
-                {{ /if }}
-                {{ relate:event_related_people scope="entry" }}
-                    {{ partial:author }}
-                {{ /relate:event_related_people }}
-                {{ if event_tags }}
-                    {{ partial:tag_list }}
-                {{ /if }}
                 {{ if topics }}
                 {{ relate:discovery_topic }}
                     <div class="mb-8 lg:mb-12">
@@ -40,7 +49,6 @@
                                 {{ custom_form }}
                             {{ /relate:related_video }}
                         {{ /if }}
-                        {{# <img class="lozad" data-src="https://images.ctfassets.net/bfs863we7xd3/6m4CTI0Bd2esaf8pgRaTlJ/9f30e25ac314b5b16df6a7c5d104b9e7/video_poster_example.jpg?w=800"/> #}}
                     </div>
                 {{ /relate:discovery_topic }}
                 
@@ -53,6 +61,6 @@
                 {{ /if }}
                 <div class="mb-4">
                 </div>
-            </div>
+            
         </aside>
-    </section>
+     #}}
