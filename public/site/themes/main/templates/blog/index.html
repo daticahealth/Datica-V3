@@ -7,14 +7,14 @@
 	</header>
 
 	<article class="list">
-		{{ collection from="{section_collection}" paginate="true" as="posts" limit="" sort="pub_date:desc" }}
+		{{ collection from="{section_collection}" paginate="true" as="posts" limit="" sort="pub_date:desc" pub_date:starts_with="2019" }}
 			{{ posts scope="tag" }}
 				{{# {{ partial:block }} #}}
 				<div class="flex justify-center w-full mb-8">
 					<div class="w-1/5">
 						{{ if featured_image }}
 						<img class="lozad pr-4 rounded-sm" 
-							{{ assets:featured_image }}data-src="{{ glide:id width="400" height="400" crop="focal_crop" }}" src="{{ glide:id width="100" height="100" crop="focal_crop" quality="10" }}" {{ /assets:featured_image }}
+							{{ assets:featured_image }}data-src="{{ glide:id width="400" height="400" crop="focal_crop" }}" src="{{ glide:id width="200" height="200" crop="focal_crop" quality="10" }}" {{ /assets:featured_image }}
 						/>
 						{{ /if }}
 					</div>
