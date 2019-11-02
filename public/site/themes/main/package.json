@@ -7,7 +7,8 @@
     "watch-poll": "npm run watch -- --watch-poll",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "export-tailwind-config": "tailwindcss-export-config --config=tailwind.config.js --destination=src/sass/base/tailwind-vars --format=scss --flat=true"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -30,6 +31,7 @@
     "sass": "^1.23.3",
     "sass-loader": "^7.1.0",
     "tailwind-css-variables": "^2.0.3",
+    "tailwindcss-export-config": "^2.0.2",
     "webpack": "^4.41.2"
   },
   "dependencies": {
@@ -38,8 +40,8 @@
   },
   "name": "Datica-V3",
   "version": "1.0.0",
-  "description": "Tailwind + Laravel Mix.",
-  "main": "tailwind.js",
+  "description": "Statamic, Tailwind + Laravel Mix.",
+  "main": "webpack.mix.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daticahealth/Datica-V3.git"

@@ -1,4 +1,10 @@
-<section class="mx-auto max-w-2xl">
+{{# local styles, overrides #}}
+<style>
+	:root {
+		--bg-color: #edf2f7;
+	}
+</style>
+<section class="mx-auto max-w-5xl">
 
 	<header>
 		
@@ -7,25 +13,40 @@
 	</header>
 
 	<article class="list">
-		{{ collection from="{section_collection}" paginate="true" as="posts" limit="" sort="pub_date:desc" }}
-			{{ posts scope="tag" }}
+		{{ collection from="{section_collection}" paginate="true" as="posts" limit="1" sort="date_start:desc" }}
+			{{ posts }}
+				<div class="bg-white shadow-sm shadow-lg mb-12 p-6 md:p-8 lg:p-12 xl:p-16">
+					{{ partial:event-card }}
+				</div>
+			{{ /posts }}
+		{{ /collection }}
+
+		{{ collection from="{section_collection}" paginate="true" as="posts" limit="" offset="1" sort="date_start:desc" }}
+			{{ posts }}
 				{{# {{ partial:block }} #}}
 				<div class="flex justify-center w-full mb-8">
-					<div class="w-1/5">
-						{{ if featured_image }}
-						<img class="lozad pr-4 rounded-sm" 
-							{{ assets:featured_image }}data-src="{{ glide:id width="400" height="400" crop="focal_crop" }}" src="{{ glide:id width="100" height="100" crop="focal_crop" quality="10" }}" {{ /assets:featured_image }}
-						/>
-						{{ /if }}
-					</div>
-					<div class="w-4/5">
-						{{ if event_logo }}
-						<img class="lozad h-4 mb-2" style="height: 2rem;" {{ assets:event_logo }}data-src="{{ event_logo }}" {{ /assets:event_logo }} />
+					<div class="w-1/4 text-right pr-4">
+						{{ if date_start && date_end }}
+							<div class="date text-sm text-gray-800">
+								{{# {{ svg src="/assets/icons/icon-event-note.svg" class="fill-current text-gray-500 icon-inline" a11y="calendar" }} #}}
+								{{ date_start format="F j, Y" }} – {{ date_end format="F j, Y" }}
+							</div>
+						{{ elseif date_start }}
+							<div class="date text-sm text-gray-800">
+								{{# {{ svg src="/assets/icons/icon-event-note.svg" class="fill-current text-gray-500 icon-inline" a11y="calendar" }} #}}
+								{{ date_start format="F j, Y" }}
+							</div>
 						{{ /if }}
 
-						<div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
+					</div>
+					<div class="w-3/4">
+						{{ if event_logo }}
+						<img class="lozad h-4 mb-2 blend-mode-multiply" style="height: 2rem;" {{ assets:event_logo }}data-src="{{ event_logo }}" {{ /assets:event_logo }} />
+						{{ /if }}
+
+						{{# <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div> #}}
 						<a href="{{ url }}" title="Read {{ title }}">
-							{{ title | wrap:h3.headline-4 }}
+							{{ title | wrap:h3.headline-4.font-medium }}
 						</a>
 						{{ summary | wrap:div.text-sm }}
 					</div>

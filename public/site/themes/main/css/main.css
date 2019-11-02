@@ -680,6 +680,7 @@ video {
   --text-6xl-scale: calc(2vw + 3rem);
   --font-light: 300;
   --font-normal: 400;
+  --font-medium: 500;
   --font-bold: 700;
   --opacity-0: 0;
   --opacity-25: 0.25;
@@ -689,6 +690,8 @@ video {
 }
 
 /* Sass vars - pull from config('thing.item'); or set SCSS vars */
+
+/* Converted Tailwind Config to scss */
 
 /* Utility classes - for @extend or other use downstream */
 
@@ -864,7 +867,7 @@ small {
 }
 
 .headline-spaced, .headline-1, .headline-2, .headline-3, .headline-4 {
-  line-height: 1.35;
+  line-height: 1.15;
   margin-bottom: 0.25rem;
   font-family: "GT America", system-ui, sans-serif;
   font-weight: 700;
@@ -2746,6 +2749,10 @@ body {
   font-weight: 400;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2758,6 +2765,10 @@ body {
   font-weight: 400;
 }
 
+.hover\:font-medium:hover {
+  font-weight: 500;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2768,6 +2779,10 @@ body {
 
 .focus\:font-normal:focus {
   font-weight: 400;
+}
+
+.focus\:font-medium:focus {
+  font-weight: 500;
 }
 
 .focus\:font-bold:focus {
@@ -8098,6 +8113,10 @@ body {
     font-weight: 400;
   }
 
+  .sm\:font-medium {
+    font-weight: 500;
+  }
+
   .sm\:font-bold {
     font-weight: 700;
   }
@@ -8110,6 +8129,10 @@ body {
     font-weight: 400;
   }
 
+  .sm\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
   .sm\:hover\:font-bold:hover {
     font-weight: 700;
   }
@@ -8120,6 +8143,10 @@ body {
 
   .sm\:focus\:font-normal:focus {
     font-weight: 400;
+  }
+
+  .sm\:focus\:font-medium:focus {
+    font-weight: 500;
   }
 
   .sm\:focus\:font-bold:focus {
@@ -13451,6 +13478,10 @@ body {
     font-weight: 400;
   }
 
+  .md\:font-medium {
+    font-weight: 500;
+  }
+
   .md\:font-bold {
     font-weight: 700;
   }
@@ -13463,6 +13494,10 @@ body {
     font-weight: 400;
   }
 
+  .md\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
   .md\:hover\:font-bold:hover {
     font-weight: 700;
   }
@@ -13473,6 +13508,10 @@ body {
 
   .md\:focus\:font-normal:focus {
     font-weight: 400;
+  }
+
+  .md\:focus\:font-medium:focus {
+    font-weight: 500;
   }
 
   .md\:focus\:font-bold:focus {
@@ -18804,6 +18843,10 @@ body {
     font-weight: 400;
   }
 
+  .lg\:font-medium {
+    font-weight: 500;
+  }
+
   .lg\:font-bold {
     font-weight: 700;
   }
@@ -18816,6 +18859,10 @@ body {
     font-weight: 400;
   }
 
+  .lg\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
   .lg\:hover\:font-bold:hover {
     font-weight: 700;
   }
@@ -18826,6 +18873,10 @@ body {
 
   .lg\:focus\:font-normal:focus {
     font-weight: 400;
+  }
+
+  .lg\:focus\:font-medium:focus {
+    font-weight: 500;
   }
 
   .lg\:focus\:font-bold:focus {
@@ -24157,6 +24208,10 @@ body {
     font-weight: 400;
   }
 
+  .xl\:font-medium {
+    font-weight: 500;
+  }
+
   .xl\:font-bold {
     font-weight: 700;
   }
@@ -24169,6 +24224,10 @@ body {
     font-weight: 400;
   }
 
+  .xl\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
   .xl\:hover\:font-bold:hover {
     font-weight: 700;
   }
@@ -24179,6 +24238,10 @@ body {
 
   .xl\:focus\:font-normal:focus {
     font-weight: 400;
+  }
+
+  .xl\:focus\:font-medium:focus {
+    font-weight: 500;
   }
 
   .xl\:focus\:font-bold:focus {
@@ -29510,6 +29573,10 @@ body {
     font-weight: 400;
   }
 
+  .xxl\:font-medium {
+    font-weight: 500;
+  }
+
   .xxl\:font-bold {
     font-weight: 700;
   }
@@ -29522,6 +29589,10 @@ body {
     font-weight: 400;
   }
 
+  .xxl\:hover\:font-medium:hover {
+    font-weight: 500;
+  }
+
   .xxl\:hover\:font-bold:hover {
     font-weight: 700;
   }
@@ -29532,6 +29603,10 @@ body {
 
   .xxl\:focus\:font-normal:focus {
     font-weight: 400;
+  }
+
+  .xxl\:focus\:font-medium:focus {
+    font-weight: 500;
   }
 
   .xxl\:focus\:font-bold:focus {

@@ -1,0 +1,11 @@
+{{ if date_start && date_end }}
+    <div class="date text-sm font-bold text-gray-800">
+        {{ svg src="/assets/icons/icon-event-note.svg" class="fill-current text-gray-500 icon-inline" a11y="calendar" }}
+        {{ date_start format="F j, Y" }} – {{ date_end format="F j, Y" }}
+    </div>
+{{ elseif date_start }}
+    <div class="date text-sm font-bold text-gray-800">
+        {{ svg src="/assets/icons/icon-event-note.svg" class="fill-current text-gray-500 icon-inline" a11y="calendar" }}
+        {{ date_start format="F j, Y" }}
+    </div>
+{{ /if }}
