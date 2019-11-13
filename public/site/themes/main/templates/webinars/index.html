@@ -6,7 +6,7 @@
 	</header>
 
 	<article class="list">
-		{{ collection:webinars paginate="true" as="posts" limit="" }}
+		{{ collection:webinars paginate="true" as="posts" limit="" sort="pub_date:desc" }}
 			{{ posts scope="tag" }}
 				{{# {{ partial:block }} #}}
 				<div class="flex justify-center w-full max-w-xl mb-8">
@@ -18,7 +18,7 @@
 						{{ /if }}
 					</div>
 					<div class="w-4/5">
-						<div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
+						<div class="date text-xs font-bold tracking-widest uppercase">{{ event_date format="F j, Y" }}</div>
 						<a href="{{ url }}" title="Read {{ title }}">
 							{{ title | wrap:h3.headline-4 }}
 						</a>
