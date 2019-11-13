@@ -1,0 +1,8 @@
+{{ relate:cta_ref as="cta" }}
+{{ if url }}
+{{ url }}
+    <a class="" href="{{ url }}" title="{{ title }}">
+        <img class="lozad max-w-5xl" src="/assets/site/loader-rect.svg" {{ assets:share_image }}data-src="{{ glide:id width="800" }}" {{ /assets:share_image }} alt="{{ body or title }}" />
+    </a>
+{{ /if }}
+{{ /relate:cta_ref }}

@@ -23,6 +23,9 @@
 			{{ if lead }}{{ lead | markdown | wrap:div.text-lg.mb-6 }}{{ /if }}
 			{{ content }}
 		</div>
+		{{ if cta_ref }}
+			{{ partial:cta }}
+		{{ /if }}
 		<hr class="my-8"/>
 		{{# CTA #}}
 		{{ partial:next_prev }}
