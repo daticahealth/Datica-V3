@@ -1,0 +1,74 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        localizable: true
+      body:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: Body
+      section_destination:
+        type: section
+        instructions: 'Pick ONE below.'
+        display: Destination
+      destination_page:
+        depth: '2'
+        max_items: 1
+        mode: panes
+        type: pages
+        display: 'Destination Page'
+        hide_when:
+          destination_entry: 'not null'
+          or_url: 'not null'
+      destination_entry:
+        max_items: '1'
+        label: '{{ title }} {{ date }}'
+        collection:
+          - academy
+          - blog
+          - events
+          - webinars
+        mode: panes
+        type: collection
+        display: 'Destination Entry'
+        hide_when:
+          destination_page: 'not null'
+          or_url: 'not null'
+      url:
+        type: text
+        display: URL
+        hide_when:
+          destination_page: 'not null'
+          or_destination_entry: 'not null'
+  sidebar:
+    display: Sidebar
+    fields:
+      button_label:
+        type: text
+        display: 'Button Label'
+      share_image:
+        container: main
+        folder: seo
+        restrict: false
+        max_files: 1
+        type: assets
+        display: 'Share Image'
+      related_event:
+        max_items: '1'
+        sort: 'date:desc'
+        label: '{{ title }} {{ date }} # {{ category }}'
+        collection:
+          - events
+          - webinars
+        mode: panes
+        type: collection
+        instructions: 'Choose a related event to link this to. Optional.'
+        display: 'Related Event'
+taxonomies: false
+hide: true
+title: 'Call To Action'
+hide_aardvark_seo: true

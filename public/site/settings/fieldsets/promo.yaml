@@ -1,0 +1,44 @@
+sections:
+  compliance:
+    display: Compliance
+    fields:
+      page_compliance:
+        depth: '2'
+        max_items: 1
+        label: '{{ title }} {{ summary }}'
+        mode: panes
+        type: pages
+        display: 'Page, Compliance'
+      entry_compliance:
+        max_items: '1'
+        collection:
+          - academy
+          - blog
+          - events
+          - webinars
+        mode: panes
+        type: collection
+        display: 'Entry, Compliance'
+  integration:
+    display: Integration
+    fields:
+      page_integration:
+        depth: '2'
+        max_items: 1
+        label: '{{ title }} {{ summary }}'
+        mode: panes
+        type: pages
+        display: 'Page, Integration'
+      entry_integration:
+        max_items: '1'
+        collection:
+          - academy
+          - blog
+          - events
+          - webinars
+        mode: panes
+        type: collection
+        display: 'Entry, Integration'
+taxonomies: false
+hide: true
+title: 'Global - Site Promotion'
