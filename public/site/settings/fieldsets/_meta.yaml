@@ -35,6 +35,7 @@ sections:
         mode: tags
         type: taxonomy
         display: Tags
+        label: '{{ title }}'
       author:
         max_items: '3'
         label: '{{ title }}, {{ role }}'
