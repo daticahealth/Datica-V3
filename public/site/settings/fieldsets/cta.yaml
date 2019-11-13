@@ -23,7 +23,7 @@ sections:
         display: 'Destination Page'
         hide_when:
           destination_entry: 'not null'
-          or_url: 'not null'
+          or_destination_url: 'not null'
       destination_entry:
         max_items: '1'
         label: '{{ title }} {{ date }}'
@@ -37,8 +37,8 @@ sections:
         display: 'Destination Entry'
         hide_when:
           destination_page: 'not null'
-          or_url: 'not null'
-      url:
+          or_destination_url: 'not null'
+      destination_url:
         type: text
         display: URL
         hide_when:
