@@ -15,7 +15,7 @@
 					{{ partial:author }}
 				{{ /relate:author }}
 				{{ if tags }}
-					{{ partial:tag_list }}
+					{{ partial:tag-list }}
 				{{ /if }}
             </div>
         </header>
@@ -53,7 +53,7 @@
             
 			{{ /if }}
 			{{ if related_entries }}
-				{{ relate:related_entries }}
+				{{ relate:related_entries limit="1" }}
 					{{ partial:related-article }}
 				{{ /relate:related_entries }}
 			{{ /if }}
@@ -63,6 +63,19 @@
 	</aside>
 </main>
 </div>
+	
+<section class="pad-scale bg-gray-300 justify-center items-center">
+	<div class="card-gallery no-scrollbar mask-right">
+		{{ relate:related_entries offset="1" }}
+			{{ if count > 1 }}
+				{{ partial:related-article classes="mr-8 gallery-item" }}
+			{{ /if }}
+		{{ /relate:related_entries }}
+	</div>
+</section>
+
+
+	
 {{ if featured_image }}
 	<aside class="featured-image top-0 z--10 w-full absolute">
 		<img class="mask-bottom w-full lozad" {{ assets:featured_image }}data-src="{{ glide:id width="1800" height="600" }}" {{ /assets:featured_image }} />

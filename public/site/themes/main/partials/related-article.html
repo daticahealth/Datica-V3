@@ -1,34 +1,36 @@
 {{ if collection == "blog" }}
-<a class="card card-hover" href="{{ url }}" title="Read {{ title }} in {{ collection | title }}">
-    <div class="bg-white max-w-md overflow-hidden shadow-lg">
-        <header class="bg-gray-500 lozad bg-cover" {{ assets:featured_image }}data-background-image="{{ glide:id width="600" height="240" }}" {{ /assets:featured_image }}">
-            <h4 class="p-4 text-right text-sm font-bold tracking-widest uppercase mb-2 text-white">{{ collection }}</h4>
-            <h3 class="mt-10 font-bold text-xl bg-gray-900 inline-block pl-6 pr-2 py-2 text-white leading-tight max-w-xs">{{ title }}</h3>
-        </header>
-        {{ summary | wrap:p.text-gray-700.text-sm.px-6.py-4.mb-0 }}
-        {{ if tags }}
-            <div class="px-6 pb-6">
-                {{ partial:tag_list }}
+
+    <a class="card card-hover shadow hover:shadow-lg transition-all inline-block bg-white {{ classes }}" href="{{ url }}" title="Read {{ title }} in {{ collection | title }}">
+        {{# <div class=""> #}}
+            <div class="bg-gray-500 lozad bg-cover" {{ assets:featured_image }}data-background-image="{{ glide:id width="600" height="240" }}" {{ /assets:featured_image }}">
+                <h4 class="p-4 text-right text-sm font-bold tracking-widest uppercase mb-2 text-white">{{ collection }}</h4>
+                <h3 class="mt-10 font-bold text-xl bg-gray-900 inline-block pl-6 pr-2 py-2 text-white leading-tight max-w-xs">{{ title }}</h3>
             </div>
-        {{ /if }}
-    </div>
-</a>
+            {{ summary | wrap:p.text-gray-700.text-sm.px-6.py-4.mb-0.leading-tight }}
+            {{# {{ if tags }}
+                <div class="px-6 pb-6">
+                    {{ partial:tag-list-plain }}
+                </div>
+            {{ /if }} #}}
+        {{# </div> #}}
+    </a>
+
 {{ elseif collection == "academy" }}
     {{ unless size == "small" }}
-        <a class="" href="{{ url }}" title="Read {{ title }} in {{ collection | title }}">
-            <div class="card card-hover max-w-md bg-white mb-8 shadow-lg block p-6">
+        <a class="card card-hover shadow hover:shadow-lg transition-all inline-block {{ classes }}" href="{{ url }}" title="Read {{ title }} in {{ collection | title }}">
+            <div class="max-w-md bg-white mb-8 block p-6">
                 <h4 class="text-xs font-light tracking-widest uppercase mb-2 text-gray-800 text-right">{{ collection }}</h4>
                 <h3 class="font-bold text-xl text-black leading-tight mb-4">{{ title }}</h3>
                 {{ summary | wrap:p.text-sm.mb-2 }}
                 {{ if tags }}
                     <div class="">
-                        {{ partial:tag_list }}
+                        {{ partial:tag-list-plain }}
                     </div>
                 {{ /if }}
             </div>
         </a>
     {{ else }}
-    <div class="mb-8">
+    <div class="mb-8 {{ classes }}">
         <h3 class="font-bold text-lg leading-tight mb-1">
             <a class="" href="{{ url }}" title="Read {{ title }} in {{ collection | title }}">{{ title }}</a>
         </h3>
