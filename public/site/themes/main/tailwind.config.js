@@ -96,6 +96,9 @@ module.exports = {
       maxWidth: {
         '7xl': '84rem',
       },
+      borderWidth: {
+        '12': '12px',
+      }
     }
   },
   variants: {},

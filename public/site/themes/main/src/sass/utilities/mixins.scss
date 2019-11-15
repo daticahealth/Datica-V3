@@ -38,11 +38,6 @@ $underline: false !default;
 @mixin blur($r){ // covers most browsers...
     // $r: $radius * 1px;
     filter: blur($r); /* Someday, sigh ... */
-    -webkit-filter: blur($r); /* Prefixed CSS3 blur filters */
-    -moz-filter: blur($r);
-    -o-filter: blur($r);
-    -ms-filter: blur($r);
-    // filter: url(#blur); /* Firefox needs SVG */
     // filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='$radius'); /* IE lte 9 */
 }
 
@@ -79,4 +74,11 @@ $underline: false !default;
     //    mask: linear-gradient(-90deg, rgba(0,0,0,0) 3%, rgba(0,0,0,1) 20%);
     //    -webkit-mask: linear-gradient(-90deg, rgba(0,0,0,0) 3%, rgba(0,0,0,1) 20%);
     // }
+}
+
+@mixin gradient-greens($dir: to right) {
+    /* Green Grad (Emissary) */
+    // background: linear-gradient(169.97deg, #00ff8b -5.71%, #00BBC7 82.93%);
+    background: linear-gradient($dir, #00EE7B -4.44%, #00DAF8 95.67%);
+    color: black;
 }

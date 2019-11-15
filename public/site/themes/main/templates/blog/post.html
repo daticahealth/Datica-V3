@@ -3,6 +3,9 @@
 	:root {
 		--bg-color: #edf2f7;
 	}
+	.bg-color {
+		background-color: var(--bg-color);
+	}
 	@media (min-width: 1400px) {
 		.masthead {
 			padding-left: 0rem;
@@ -44,7 +47,7 @@
 	</article>
 	
      {{# for position-sticky to work: add .items-start to parent because https://stackoverflow.com/a/57830863 #}}
-    <aside class="block bg-gray-200 w-full max-w-md items-start md:mt-16 z-0">
+    <aside class="block bg-color w-full max-w-md items-start md:mt-16 z-0">
         <div class="sticky top-0 p-8">
             <div class="mb-8">
 				{{ partial:email-subscribe }}

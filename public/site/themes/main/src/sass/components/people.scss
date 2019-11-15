@@ -2,6 +2,12 @@
     img.avatar {
         @apply w-12 h-12;
     }
+    .person-title {
+        @apply text-base;
+    }
+    .person-role {
+        @apply text-sm;
+    }
     &.person-compact {
         img.avatar {
             @apply w-8 h-8;

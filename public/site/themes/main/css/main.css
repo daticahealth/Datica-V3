@@ -706,7 +706,7 @@ video {
 @font-face {
   src: url("/site/themes/main/fonts/gt-america-light.woff2") format("woff2");
 
-  font-family: "GT America";
+  font-family: '"GT America"';
 
   font-display: swap;
 
@@ -716,7 +716,7 @@ video {
 @font-face {
   src: url("/site/themes/main/fonts/gt-america-regular.woff2") format("woff2");
 
-  font-family: "GT America";
+  font-family: '"GT America"';
 
   font-display: swap;
 
@@ -726,7 +726,7 @@ video {
 @font-face {
   src: url("/site/themes/main/fonts/gt-america-regular-italic.woff2") format("woff2");
 
-  font-family: "GT America";
+  font-family: '"GT America"';
 
   font-display: swap;
 
@@ -738,7 +738,7 @@ video {
 @font-face {
   src: url("/site/themes/main/fonts/gt-america-medium.woff2") format("woff2");
 
-  font-family: "GT America";
+  font-family: '"GT America"';
 
   font-display: swap;
 
@@ -748,7 +748,7 @@ video {
 @font-face {
   src: url("/site/themes/main/fonts/gt-america-medium-italic.woff2") format("woff2");
 
-  font-family: "GT America";
+  font-family: '"GT America"';
 
   font-display: swap;
 
@@ -760,7 +760,7 @@ video {
 @font-face {
   src: url("/site/themes/main/fonts/gt-america-bold.woff2") format("woff2");
 
-  font-family: "GT America";
+  font-family: '"GT America"';
 
   font-display: swap;
 
@@ -770,7 +770,7 @@ video {
 @font-face {
   src: url("/site/themes/main/fonts/gt-america-bold-italic.woff2") format("woff2");
 
-  font-family: "GT America";
+  font-family: '"GT America"';
 
   font-display: swap;
 
@@ -1197,6 +1197,14 @@ a {
   height: 3rem;
 }
 
+.person .person-title {
+  font-size: 1rem;
+}
+
+.person .person-role {
+  font-size: 0.875rem;
+}
+
 .person.person-compact img.avatar {
   width: 2rem;
   height: 2rem;
@@ -1314,7 +1322,7 @@ a {
 
 .pad-scale-md {
   padding: 2rem;
-  padding: calc(1.2rem + 3vw);
+  padding: calc(1rem + 2vw);
 }
 
 .pad-scale-y-sm {
@@ -1412,11 +1420,11 @@ body {
   background-color: rgba(245, 244, 240, 0.9);
 }
 
-[class*=bg-] {
+[class*=bg-], [class*=-dark], .bg-gray-500, .bg-gray-600, .bg-gray-700, .bg-gray-800, .bg-gray-900, .bg-black {
   color: white;
 }
 
-.bg-white, .bg-gray-100, .bg-gray-200, .bg-gray-300, .bg-gray-400 {
+[class*=-light], [class*=-bright], .bg-white, .bg-gray-100, .bg-gray-200, .bg-gray-300, .bg-gray-400 {
   color: black;
 }
 
@@ -1452,6 +1460,15 @@ body {
   mask: linear-gradient(-90deg, rgba(0, 0, 0, 0) 3%, black 15%);
   -webkit-mask: -webkit-gradient(linear, right top, left top, color-stop(3%, rgba(0, 0, 0, 0)), color-stop(15%, black));
   -webkit-mask: linear-gradient(-90deg, rgba(0, 0, 0, 0) 3%, black 15%);
+}
+
+.border-bright {
+  -webkit-border-image: -webkit-gradient(linear, left top, left bottom, color-stop(-4.44%, #00EE7B), color-stop(95.67%, #00DAF8));
+  -webkit-border-image: linear-gradient(to bottom, #00EE7B -4.44%, #00DAF8 95.67%);
+       -o-border-image: linear-gradient(to bottom, #00EE7B -4.44%, #00DAF8 95.67%);
+          border-image: -webkit-gradient(linear, left top, left bottom, color-stop(-4.44%, #00EE7B), color-stop(95.67%, #00DAF8));
+          border-image: linear-gradient(to bottom, #00EE7B -4.44%, #00DAF8 95.67%);
+  border-image-slice: 1;
 }
 
 .page-design .block-1 {
@@ -2358,6 +2375,10 @@ body {
   border-width: 8px;
 }
 
+.border-12 {
+  border-width: 12px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -2424,6 +2445,22 @@ body {
 
 .border-l-8 {
   border-left-width: 8px;
+}
+
+.border-t-12 {
+  border-top-width: 12px;
+}
+
+.border-r-12 {
+  border-right-width: 12px;
+}
+
+.border-b-12 {
+  border-bottom-width: 12px;
+}
+
+.border-l-12 {
+  border-left-width: 12px;
 }
 
 .border-t {
@@ -7646,6 +7683,10 @@ body {
     border-width: 8px;
   }
 
+  .sm\:border-12 {
+    border-width: 12px;
+  }
+
   .sm\:border {
     border-width: 1px;
   }
@@ -7712,6 +7753,22 @@ body {
 
   .sm\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .sm\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .sm\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .sm\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .sm\:border-l-12 {
+    border-left-width: 12px;
   }
 
   .sm\:border-t {
@@ -12935,6 +12992,10 @@ body {
     border-width: 8px;
   }
 
+  .md\:border-12 {
+    border-width: 12px;
+  }
+
   .md\:border {
     border-width: 1px;
   }
@@ -13001,6 +13062,22 @@ body {
 
   .md\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .md\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .md\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .md\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .md\:border-l-12 {
+    border-left-width: 12px;
   }
 
   .md\:border-t {
@@ -18224,6 +18301,10 @@ body {
     border-width: 8px;
   }
 
+  .lg\:border-12 {
+    border-width: 12px;
+  }
+
   .lg\:border {
     border-width: 1px;
   }
@@ -18290,6 +18371,22 @@ body {
 
   .lg\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .lg\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .lg\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .lg\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .lg\:border-l-12 {
+    border-left-width: 12px;
   }
 
   .lg\:border-t {
@@ -23513,6 +23610,10 @@ body {
     border-width: 8px;
   }
 
+  .xl\:border-12 {
+    border-width: 12px;
+  }
+
   .xl\:border {
     border-width: 1px;
   }
@@ -23579,6 +23680,22 @@ body {
 
   .xl\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .xl\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .xl\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .xl\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .xl\:border-l-12 {
+    border-left-width: 12px;
   }
 
   .xl\:border-t {
@@ -28802,6 +28919,10 @@ body {
     border-width: 8px;
   }
 
+  .xxl\:border-12 {
+    border-width: 12px;
+  }
+
   .xxl\:border {
     border-width: 1px;
   }
@@ -28868,6 +28989,22 @@ body {
 
   .xxl\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .xxl\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .xxl\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .xxl\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .xxl\:border-l-12 {
+    border-left-width: 12px;
   }
 
   .xxl\:border-t {
