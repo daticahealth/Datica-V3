@@ -7,7 +7,7 @@
             </div>
             <div class="p-6">
             {{ relate:author use_context="true" }}
-                {{ partial:author classes="person-compact mb-4" }}
+                {{ partial:person classes="person-compact mb-4" }}
             {{ /relate:author }}
             {{ summary | wrap:div.text-gray-700.text-sm.leading-tight }}
             {{# {{ if tags }}

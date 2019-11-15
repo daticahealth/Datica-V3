@@ -28,6 +28,10 @@
 .pad-scale {
   padding: 2rem;
   padding: calc(2rem + 2vw);
+  &-sm {
+    padding: 2rem;
+    padding: calc(1rem + 1vw);
+  }
   &-md {
     padding: 2rem;
     padding: calc(1.2rem + 3vw);

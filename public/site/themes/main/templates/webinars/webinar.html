@@ -24,7 +24,7 @@
                 <h1 class="headline-3 mb-4">{{ title }}</h1>
                 <div class="flex flex-wrap items-center justify-between" md:flex-no-wrap="md:flex-no-wrap">
                     {{ relate:authors scope="entry" }}
-                        {{ partial:author }}
+                        {{ partial:person }}
                     {{ /relate:authors }}
                     {{ if tags }}
                         {{ partial:tag-list }}

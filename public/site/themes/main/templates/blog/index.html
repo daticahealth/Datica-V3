@@ -1,13 +1,48 @@
-<section class="mx-auto max-w-2xl">
-
-	<header>
+<style>
+	:root {
+		--bg-color: #edf2f7;
+	}
+</style>
+	{{# <header>
 		
 		<h1>{{ title }}</h1>
 		<p class="lead">{{ summary }}</p>
-	</header>
+	</header> #}}
+<section class="w-full flex flex-col md:flex-row">
+	{{ collection from="{section_collection}" paginate="false" as="posts" limit="1" sort="pub_date:desc" }}
+		{{ posts }}
+			<div class="w-full lg:w-2/3 flex justify-end pt-16 md:pt-24 lg:pt-40 lozad bg-cover bg-no-repeat bg-gray-500 overflow-hidden" {{ assets:featured_image }}data-background-image="{{ glide:id width="1200" height="800" }}" {{ /assets:featured_image }}>
+				<div class="card shadow-lg max-w-lg bg-white pad-scale-sm flex flex-col">
+					<div class="date text-sm font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
+					<a href="{{ url }}" title="Read {{ title }}">
+						{{ title | wrap:h3.headline-3.text-bold.mb-3 }}
+					</a>
+					{{ summary | wrap:div.text-sm.mb-2 }}
+					{{ relate:author use_context="true" }}
+						{{ partial:person classes="mb-4" }}
+					{{ /relate:author }}
+					{{ if tags }}
+                    <div class="">
+                        {{ partial:tag-list-plain }}
+                    </div>
+                {{ /if }}
+				</div>
+			</div>
+		{{ /posts }}
+
+	{{ /collection }}
+
+	<div class="w-full lg:w-1/3 flex justify-center items-center p-4 flex-col bg-gray-700 md:ml-6">
+		<div class="block">
+		{{ partial:email-subscribe }}
+		</div>
+	</div>
+
+</section>
+<section class="mx-auto max-w-2xl">
 
 	<article class="list">
-		{{ collection from="{section_collection}" paginate="true" as="posts" limit="" sort="pub_date:desc" pub_date:starts_with="2019" }}
+		{{ collection from="{section_collection}" paginate="true" as="posts" limit="20" sort="pub_date:desc" offset="3" }} {{# pub_date:starts_with="2019"#}}
 			{{ posts scope="tag" }}
 				{{# {{ partial:block }} #}}
 				<div class="flex justify-center w-full mb-8">

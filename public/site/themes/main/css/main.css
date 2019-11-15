@@ -455,7 +455,7 @@ html {
 *::after {
   border-width: 0;
   border-style: solid;
-  border-color: #e2e8f0;
+  border-color: hsl(31, 1%, 75%);
 }
 
 /*
@@ -637,15 +637,14 @@ video {
   --color-transparent: transparent;
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-gray-100: #f7fafc;
-  --color-gray-200: #edf2f7;
-  --color-gray-300: #e2e8f0;
-  --color-gray-400: #cbd5e0;
-  --color-gray-500: #a0aec0;
-  --color-gray-600: #718096;
-  --color-gray-700: #4a5568;
-  --color-gray-800: #2d3748;
-  --color-gray-900: #1a202c;
+  --color-gray-100: hsl(31, 1%, 91%);
+  --color-gray-200: hsl(31, 1%, 86%);
+  --color-gray-300: hsl(31, 1%, 75%);
+  --color-gray-400: hsl(31, 1%, 60%);
+  --color-gray-600: hsl(31, 1%, 40%);
+  --color-gray-700: hsl(31, 2%, 25%);
+  --color-gray-800: hsl(31, 3%, 16%);
+  --color-gray-900: hsl(31, 5%, 12%);
   --color-purple: #D73BFF;
   --color-purple-dark: #9B00FF;
   --color-purple-light: #5C00EB;
@@ -1166,7 +1165,7 @@ a {
 }
 
 .markdown blockquote, .markdown blockquote p {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   margin-left: 1rem;
@@ -1190,7 +1189,7 @@ a {
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: #edf2f7;
+  background-color: hsl(31, 1%, 86%);
 }
 
 .person img.avatar {
@@ -1306,6 +1305,11 @@ a {
 .pad-scale {
   padding: 2rem;
   padding: calc(2rem + 2vw);
+}
+
+.pad-scale-sm {
+  padding: 2rem;
+  padding: calc(1rem + 1vw);
 }
 
 .pad-scale-md {
@@ -1547,39 +1551,35 @@ body {
 }
 
 .bg-gray-100 {
-  background-color: #f7fafc;
+  background-color: hsl(31, 1%, 91%);
 }
 
 .bg-gray-200 {
-  background-color: #edf2f7;
+  background-color: hsl(31, 1%, 86%);
 }
 
 .bg-gray-300 {
-  background-color: #e2e8f0;
+  background-color: hsl(31, 1%, 75%);
 }
 
 .bg-gray-400 {
-  background-color: #cbd5e0;
-}
-
-.bg-gray-500 {
-  background-color: #a0aec0;
+  background-color: hsl(31, 1%, 60%);
 }
 
 .bg-gray-600 {
-  background-color: #718096;
+  background-color: hsl(31, 1%, 40%);
 }
 
 .bg-gray-700 {
-  background-color: #4a5568;
+  background-color: hsl(31, 2%, 25%);
 }
 
 .bg-gray-800 {
-  background-color: #2d3748;
+  background-color: hsl(31, 3%, 16%);
 }
 
 .bg-gray-900 {
-  background-color: #1a202c;
+  background-color: hsl(31, 5%, 12%);
 }
 
 .bg-purple {
@@ -1635,39 +1635,35 @@ body {
 }
 
 .hover\:bg-gray-100:hover {
-  background-color: #f7fafc;
+  background-color: hsl(31, 1%, 91%);
 }
 
 .hover\:bg-gray-200:hover {
-  background-color: #edf2f7;
+  background-color: hsl(31, 1%, 86%);
 }
 
 .hover\:bg-gray-300:hover {
-  background-color: #e2e8f0;
+  background-color: hsl(31, 1%, 75%);
 }
 
 .hover\:bg-gray-400:hover {
-  background-color: #cbd5e0;
-}
-
-.hover\:bg-gray-500:hover {
-  background-color: #a0aec0;
+  background-color: hsl(31, 1%, 60%);
 }
 
 .hover\:bg-gray-600:hover {
-  background-color: #718096;
+  background-color: hsl(31, 1%, 40%);
 }
 
 .hover\:bg-gray-700:hover {
-  background-color: #4a5568;
+  background-color: hsl(31, 2%, 25%);
 }
 
 .hover\:bg-gray-800:hover {
-  background-color: #2d3748;
+  background-color: hsl(31, 3%, 16%);
 }
 
 .hover\:bg-gray-900:hover {
-  background-color: #1a202c;
+  background-color: hsl(31, 5%, 12%);
 }
 
 .hover\:bg-purple:hover {
@@ -1723,39 +1719,35 @@ body {
 }
 
 .focus\:bg-gray-100:focus {
-  background-color: #f7fafc;
+  background-color: hsl(31, 1%, 91%);
 }
 
 .focus\:bg-gray-200:focus {
-  background-color: #edf2f7;
+  background-color: hsl(31, 1%, 86%);
 }
 
 .focus\:bg-gray-300:focus {
-  background-color: #e2e8f0;
+  background-color: hsl(31, 1%, 75%);
 }
 
 .focus\:bg-gray-400:focus {
-  background-color: #cbd5e0;
-}
-
-.focus\:bg-gray-500:focus {
-  background-color: #a0aec0;
+  background-color: hsl(31, 1%, 60%);
 }
 
 .focus\:bg-gray-600:focus {
-  background-color: #718096;
+  background-color: hsl(31, 1%, 40%);
 }
 
 .focus\:bg-gray-700:focus {
-  background-color: #4a5568;
+  background-color: hsl(31, 2%, 25%);
 }
 
 .focus\:bg-gray-800:focus {
-  background-color: #2d3748;
+  background-color: hsl(31, 3%, 16%);
 }
 
 .focus\:bg-gray-900:focus {
-  background-color: #1a202c;
+  background-color: hsl(31, 5%, 12%);
 }
 
 .focus\:bg-purple:focus {
@@ -1891,39 +1883,35 @@ body {
 }
 
 .border-gray-100 {
-  border-color: #f7fafc;
+  border-color: hsl(31, 1%, 91%);
 }
 
 .border-gray-200 {
-  border-color: #edf2f7;
+  border-color: hsl(31, 1%, 86%);
 }
 
 .border-gray-300 {
-  border-color: #e2e8f0;
+  border-color: hsl(31, 1%, 75%);
 }
 
 .border-gray-400 {
-  border-color: #cbd5e0;
-}
-
-.border-gray-500 {
-  border-color: #a0aec0;
+  border-color: hsl(31, 1%, 60%);
 }
 
 .border-gray-600 {
-  border-color: #718096;
+  border-color: hsl(31, 1%, 40%);
 }
 
 .border-gray-700 {
-  border-color: #4a5568;
+  border-color: hsl(31, 2%, 25%);
 }
 
 .border-gray-800 {
-  border-color: #2d3748;
+  border-color: hsl(31, 3%, 16%);
 }
 
 .border-gray-900 {
-  border-color: #1a202c;
+  border-color: hsl(31, 5%, 12%);
 }
 
 .border-purple {
@@ -1979,39 +1967,35 @@ body {
 }
 
 .hover\:border-gray-100:hover {
-  border-color: #f7fafc;
+  border-color: hsl(31, 1%, 91%);
 }
 
 .hover\:border-gray-200:hover {
-  border-color: #edf2f7;
+  border-color: hsl(31, 1%, 86%);
 }
 
 .hover\:border-gray-300:hover {
-  border-color: #e2e8f0;
+  border-color: hsl(31, 1%, 75%);
 }
 
 .hover\:border-gray-400:hover {
-  border-color: #cbd5e0;
-}
-
-.hover\:border-gray-500:hover {
-  border-color: #a0aec0;
+  border-color: hsl(31, 1%, 60%);
 }
 
 .hover\:border-gray-600:hover {
-  border-color: #718096;
+  border-color: hsl(31, 1%, 40%);
 }
 
 .hover\:border-gray-700:hover {
-  border-color: #4a5568;
+  border-color: hsl(31, 2%, 25%);
 }
 
 .hover\:border-gray-800:hover {
-  border-color: #2d3748;
+  border-color: hsl(31, 3%, 16%);
 }
 
 .hover\:border-gray-900:hover {
-  border-color: #1a202c;
+  border-color: hsl(31, 5%, 12%);
 }
 
 .hover\:border-purple:hover {
@@ -2067,39 +2051,35 @@ body {
 }
 
 .focus\:border-gray-100:focus {
-  border-color: #f7fafc;
+  border-color: hsl(31, 1%, 91%);
 }
 
 .focus\:border-gray-200:focus {
-  border-color: #edf2f7;
+  border-color: hsl(31, 1%, 86%);
 }
 
 .focus\:border-gray-300:focus {
-  border-color: #e2e8f0;
+  border-color: hsl(31, 1%, 75%);
 }
 
 .focus\:border-gray-400:focus {
-  border-color: #cbd5e0;
-}
-
-.focus\:border-gray-500:focus {
-  border-color: #a0aec0;
+  border-color: hsl(31, 1%, 60%);
 }
 
 .focus\:border-gray-600:focus {
-  border-color: #718096;
+  border-color: hsl(31, 1%, 40%);
 }
 
 .focus\:border-gray-700:focus {
-  border-color: #4a5568;
+  border-color: hsl(31, 2%, 25%);
 }
 
 .focus\:border-gray-800:focus {
-  border-color: #2d3748;
+  border-color: hsl(31, 3%, 16%);
 }
 
 .focus\:border-gray-900:focus {
-  border-color: #1a202c;
+  border-color: hsl(31, 5%, 12%);
 }
 
 .focus\:border-purple:focus {
@@ -5017,183 +4997,163 @@ body {
 }
 
 .placeholder-gray-100::-webkit-input-placeholder {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .placeholder-gray-100::-moz-placeholder {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .placeholder-gray-100:-ms-input-placeholder {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .placeholder-gray-100::-ms-input-placeholder {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .placeholder-gray-100::placeholder {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .placeholder-gray-200::-webkit-input-placeholder {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .placeholder-gray-200::-moz-placeholder {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .placeholder-gray-200:-ms-input-placeholder {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .placeholder-gray-200::-ms-input-placeholder {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .placeholder-gray-200::placeholder {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .placeholder-gray-300::-webkit-input-placeholder {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .placeholder-gray-300::-moz-placeholder {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .placeholder-gray-300:-ms-input-placeholder {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .placeholder-gray-300::-ms-input-placeholder {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .placeholder-gray-300::placeholder {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .placeholder-gray-400::-webkit-input-placeholder {
-  color: #cbd5e0;
+  color: hsl(31, 1%, 60%);
 }
 
 .placeholder-gray-400::-moz-placeholder {
-  color: #cbd5e0;
+  color: hsl(31, 1%, 60%);
 }
 
 .placeholder-gray-400:-ms-input-placeholder {
-  color: #cbd5e0;
+  color: hsl(31, 1%, 60%);
 }
 
 .placeholder-gray-400::-ms-input-placeholder {
-  color: #cbd5e0;
+  color: hsl(31, 1%, 60%);
 }
 
 .placeholder-gray-400::placeholder {
-  color: #cbd5e0;
-}
-
-.placeholder-gray-500::-webkit-input-placeholder {
-  color: #a0aec0;
-}
-
-.placeholder-gray-500::-moz-placeholder {
-  color: #a0aec0;
-}
-
-.placeholder-gray-500:-ms-input-placeholder {
-  color: #a0aec0;
-}
-
-.placeholder-gray-500::-ms-input-placeholder {
-  color: #a0aec0;
-}
-
-.placeholder-gray-500::placeholder {
-  color: #a0aec0;
+  color: hsl(31, 1%, 60%);
 }
 
 .placeholder-gray-600::-webkit-input-placeholder {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .placeholder-gray-600::-moz-placeholder {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .placeholder-gray-600:-ms-input-placeholder {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .placeholder-gray-600::-ms-input-placeholder {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .placeholder-gray-600::placeholder {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .placeholder-gray-700::-webkit-input-placeholder {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .placeholder-gray-700::-moz-placeholder {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .placeholder-gray-700:-ms-input-placeholder {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .placeholder-gray-700::-ms-input-placeholder {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .placeholder-gray-700::placeholder {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .placeholder-gray-800::-webkit-input-placeholder {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .placeholder-gray-800::-moz-placeholder {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .placeholder-gray-800:-ms-input-placeholder {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .placeholder-gray-800::-ms-input-placeholder {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .placeholder-gray-800::placeholder {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .placeholder-gray-900::-webkit-input-placeholder {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .placeholder-gray-900::-moz-placeholder {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .placeholder-gray-900:-ms-input-placeholder {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .placeholder-gray-900::-ms-input-placeholder {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .placeholder-gray-900::placeholder {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .placeholder-purple::-webkit-input-placeholder {
@@ -5457,183 +5417,163 @@ body {
 }
 
 .focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .focus\:placeholder-gray-100:focus::-moz-placeholder {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .focus\:placeholder-gray-100:focus::placeholder {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:placeholder-gray-200:focus::-moz-placeholder {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:placeholder-gray-200:focus::placeholder {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .focus\:placeholder-gray-300:focus::-moz-placeholder {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .focus\:placeholder-gray-300:focus::placeholder {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
-  color: #cbd5e0;
+  color: hsl(31, 1%, 60%);
 }
 
 .focus\:placeholder-gray-400:focus::-moz-placeholder {
-  color: #cbd5e0;
+  color: hsl(31, 1%, 60%);
 }
 
 .focus\:placeholder-gray-400:focus:-ms-input-placeholder {
-  color: #cbd5e0;
+  color: hsl(31, 1%, 60%);
 }
 
 .focus\:placeholder-gray-400:focus::-ms-input-placeholder {
-  color: #cbd5e0;
+  color: hsl(31, 1%, 60%);
 }
 
 .focus\:placeholder-gray-400:focus::placeholder {
-  color: #cbd5e0;
-}
-
-.focus\:placeholder-gray-500:focus::-webkit-input-placeholder {
-  color: #a0aec0;
-}
-
-.focus\:placeholder-gray-500:focus::-moz-placeholder {
-  color: #a0aec0;
-}
-
-.focus\:placeholder-gray-500:focus:-ms-input-placeholder {
-  color: #a0aec0;
-}
-
-.focus\:placeholder-gray-500:focus::-ms-input-placeholder {
-  color: #a0aec0;
-}
-
-.focus\:placeholder-gray-500:focus::placeholder {
-  color: #a0aec0;
+  color: hsl(31, 1%, 60%);
 }
 
 .focus\:placeholder-gray-600:focus::-webkit-input-placeholder {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .focus\:placeholder-gray-600:focus::-moz-placeholder {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .focus\:placeholder-gray-600:focus:-ms-input-placeholder {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .focus\:placeholder-gray-600:focus::-ms-input-placeholder {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .focus\:placeholder-gray-600:focus::placeholder {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .focus\:placeholder-gray-700:focus::-webkit-input-placeholder {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .focus\:placeholder-gray-700:focus::-moz-placeholder {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .focus\:placeholder-gray-700:focus:-ms-input-placeholder {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .focus\:placeholder-gray-700:focus::-ms-input-placeholder {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .focus\:placeholder-gray-700:focus::placeholder {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .focus\:placeholder-gray-800:focus::-webkit-input-placeholder {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .focus\:placeholder-gray-800:focus::-moz-placeholder {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .focus\:placeholder-gray-800:focus:-ms-input-placeholder {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .focus\:placeholder-gray-800:focus::-ms-input-placeholder {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .focus\:placeholder-gray-800:focus::placeholder {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .focus\:placeholder-gray-900:focus::-webkit-input-placeholder {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .focus\:placeholder-gray-900:focus::-moz-placeholder {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .focus\:placeholder-gray-900:focus:-ms-input-placeholder {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .focus\:placeholder-gray-900:focus::-ms-input-placeholder {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .focus\:placeholder-gray-900:focus::placeholder {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .focus\:placeholder-purple:focus::-webkit-input-placeholder {
@@ -6088,39 +6028,35 @@ body {
 }
 
 .text-gray-100 {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .text-gray-200 {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .text-gray-300 {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .text-gray-400 {
-  color: #cbd5e0;
-}
-
-.text-gray-500 {
-  color: #a0aec0;
+  color: hsl(31, 1%, 60%);
 }
 
 .text-gray-600 {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .text-gray-700 {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .text-gray-800 {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .text-gray-900 {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .text-purple {
@@ -6176,39 +6112,35 @@ body {
 }
 
 .hover\:text-gray-100:hover {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .hover\:text-gray-200:hover {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .hover\:text-gray-300:hover {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .hover\:text-gray-400:hover {
-  color: #cbd5e0;
-}
-
-.hover\:text-gray-500:hover {
-  color: #a0aec0;
+  color: hsl(31, 1%, 60%);
 }
 
 .hover\:text-gray-600:hover {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .hover\:text-gray-700:hover {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .hover\:text-gray-800:hover {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .hover\:text-gray-900:hover {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .hover\:text-purple:hover {
@@ -6264,39 +6196,35 @@ body {
 }
 
 .focus\:text-gray-100:focus {
-  color: #f7fafc;
+  color: hsl(31, 1%, 91%);
 }
 
 .focus\:text-gray-200:focus {
-  color: #edf2f7;
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:text-gray-300:focus {
-  color: #e2e8f0;
+  color: hsl(31, 1%, 75%);
 }
 
 .focus\:text-gray-400:focus {
-  color: #cbd5e0;
-}
-
-.focus\:text-gray-500:focus {
-  color: #a0aec0;
+  color: hsl(31, 1%, 60%);
 }
 
 .focus\:text-gray-600:focus {
-  color: #718096;
+  color: hsl(31, 1%, 40%);
 }
 
 .focus\:text-gray-700:focus {
-  color: #4a5568;
+  color: hsl(31, 2%, 25%);
 }
 
 .focus\:text-gray-800:focus {
-  color: #2d3748;
+  color: hsl(31, 3%, 16%);
 }
 
 .focus\:text-gray-900:focus {
-  color: #1a202c;
+  color: hsl(31, 5%, 12%);
 }
 
 .focus\:text-purple:focus {
@@ -6911,39 +6839,35 @@ body {
   }
 
   .sm\:bg-gray-100 {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .sm\:bg-gray-200 {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .sm\:bg-gray-300 {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .sm\:bg-gray-400 {
-    background-color: #cbd5e0;
-  }
-
-  .sm\:bg-gray-500 {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .sm\:bg-gray-600 {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .sm\:bg-gray-700 {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .sm\:bg-gray-800 {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .sm\:bg-gray-900 {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .sm\:bg-purple {
@@ -6999,39 +6923,35 @@ body {
   }
 
   .sm\:hover\:bg-gray-100:hover {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .sm\:hover\:bg-gray-200:hover {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .sm\:hover\:bg-gray-300:hover {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .sm\:hover\:bg-gray-400:hover {
-    background-color: #cbd5e0;
-  }
-
-  .sm\:hover\:bg-gray-500:hover {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .sm\:hover\:bg-gray-600:hover {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .sm\:hover\:bg-gray-700:hover {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .sm\:hover\:bg-gray-800:hover {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .sm\:hover\:bg-gray-900:hover {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .sm\:hover\:bg-purple:hover {
@@ -7087,39 +7007,35 @@ body {
   }
 
   .sm\:focus\:bg-gray-100:focus {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .sm\:focus\:bg-gray-200:focus {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:bg-gray-300:focus {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .sm\:focus\:bg-gray-400:focus {
-    background-color: #cbd5e0;
-  }
-
-  .sm\:focus\:bg-gray-500:focus {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .sm\:focus\:bg-gray-600:focus {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .sm\:focus\:bg-gray-700:focus {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .sm\:focus\:bg-gray-800:focus {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .sm\:focus\:bg-gray-900:focus {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .sm\:focus\:bg-purple:focus {
@@ -7255,39 +7171,35 @@ body {
   }
 
   .sm\:border-gray-100 {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .sm\:border-gray-200 {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .sm\:border-gray-300 {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .sm\:border-gray-400 {
-    border-color: #cbd5e0;
-  }
-
-  .sm\:border-gray-500 {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .sm\:border-gray-600 {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .sm\:border-gray-700 {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .sm\:border-gray-800 {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .sm\:border-gray-900 {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .sm\:border-purple {
@@ -7343,39 +7255,35 @@ body {
   }
 
   .sm\:hover\:border-gray-100:hover {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .sm\:hover\:border-gray-200:hover {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .sm\:hover\:border-gray-300:hover {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .sm\:hover\:border-gray-400:hover {
-    border-color: #cbd5e0;
-  }
-
-  .sm\:hover\:border-gray-500:hover {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .sm\:hover\:border-gray-600:hover {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .sm\:hover\:border-gray-700:hover {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .sm\:hover\:border-gray-800:hover {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .sm\:hover\:border-gray-900:hover {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .sm\:hover\:border-purple:hover {
@@ -7431,39 +7339,35 @@ body {
   }
 
   .sm\:focus\:border-gray-100:focus {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .sm\:focus\:border-gray-200:focus {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:border-gray-300:focus {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .sm\:focus\:border-gray-400:focus {
-    border-color: #cbd5e0;
-  }
-
-  .sm\:focus\:border-gray-500:focus {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .sm\:focus\:border-gray-600:focus {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .sm\:focus\:border-gray-700:focus {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .sm\:focus\:border-gray-800:focus {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .sm\:focus\:border-gray-900:focus {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .sm\:focus\:border-purple:focus {
@@ -10381,183 +10285,163 @@ body {
   }
 
   .sm\:placeholder-gray-100::-webkit-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:placeholder-gray-100::-moz-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:placeholder-gray-100:-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:placeholder-gray-100::-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:placeholder-gray-100::placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:placeholder-gray-200::-webkit-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:placeholder-gray-200::-moz-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:placeholder-gray-200:-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:placeholder-gray-200::-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:placeholder-gray-200::placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:placeholder-gray-300::-webkit-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:placeholder-gray-300::-moz-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:placeholder-gray-300:-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:placeholder-gray-300::-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:placeholder-gray-300::placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:placeholder-gray-400::-webkit-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:placeholder-gray-400::-moz-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:placeholder-gray-400:-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:placeholder-gray-400::-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:placeholder-gray-400::placeholder {
-    color: #cbd5e0;
-  }
-
-  .sm\:placeholder-gray-500::-webkit-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .sm\:placeholder-gray-500::-moz-placeholder {
-    color: #a0aec0;
-  }
-
-  .sm\:placeholder-gray-500:-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .sm\:placeholder-gray-500::-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .sm\:placeholder-gray-500::placeholder {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:placeholder-gray-600::-webkit-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:placeholder-gray-600::-moz-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:placeholder-gray-600:-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:placeholder-gray-600::-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:placeholder-gray-600::placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:placeholder-gray-700::-webkit-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:placeholder-gray-700::-moz-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:placeholder-gray-700:-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:placeholder-gray-700::-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:placeholder-gray-700::placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:placeholder-gray-800::-webkit-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:placeholder-gray-800::-moz-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:placeholder-gray-800:-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:placeholder-gray-800::-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:placeholder-gray-800::placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:placeholder-gray-900::-webkit-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:placeholder-gray-900::-moz-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:placeholder-gray-900:-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:placeholder-gray-900::-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:placeholder-gray-900::placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:placeholder-purple::-webkit-input-placeholder {
@@ -10821,183 +10705,163 @@ body {
   }
 
   .sm\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:focus\:placeholder-gray-100:focus::-moz-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:focus\:placeholder-gray-100:focus::placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:placeholder-gray-200:focus::-moz-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:placeholder-gray-200:focus::placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:focus\:placeholder-gray-300:focus::-moz-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:focus\:placeholder-gray-300:focus::placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:focus\:placeholder-gray-400:focus::-moz-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:focus\:placeholder-gray-400:focus:-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:focus\:placeholder-gray-400:focus::-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:focus\:placeholder-gray-400:focus::placeholder {
-    color: #cbd5e0;
-  }
-
-  .sm\:focus\:placeholder-gray-500:focus::-webkit-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .sm\:focus\:placeholder-gray-500:focus::-moz-placeholder {
-    color: #a0aec0;
-  }
-
-  .sm\:focus\:placeholder-gray-500:focus:-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .sm\:focus\:placeholder-gray-500:focus::-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .sm\:focus\:placeholder-gray-500:focus::placeholder {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:focus\:placeholder-gray-600:focus::-webkit-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:focus\:placeholder-gray-600:focus::-moz-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:focus\:placeholder-gray-600:focus:-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:focus\:placeholder-gray-600:focus::-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:focus\:placeholder-gray-600:focus::placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:focus\:placeholder-gray-700:focus::-webkit-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:focus\:placeholder-gray-700:focus::-moz-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:focus\:placeholder-gray-700:focus:-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:focus\:placeholder-gray-700:focus::-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:focus\:placeholder-gray-700:focus::placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:focus\:placeholder-gray-800:focus::-webkit-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:focus\:placeholder-gray-800:focus::-moz-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:focus\:placeholder-gray-800:focus:-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:focus\:placeholder-gray-800:focus::-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:focus\:placeholder-gray-800:focus::placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:focus\:placeholder-gray-900:focus::-webkit-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:focus\:placeholder-gray-900:focus::-moz-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:focus\:placeholder-gray-900:focus:-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:focus\:placeholder-gray-900:focus::-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:focus\:placeholder-gray-900:focus::placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:focus\:placeholder-purple:focus::-webkit-input-placeholder {
@@ -11452,39 +11316,35 @@ body {
   }
 
   .sm\:text-gray-100 {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:text-gray-200 {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:text-gray-300 {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:text-gray-400 {
-    color: #cbd5e0;
-  }
-
-  .sm\:text-gray-500 {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:text-gray-600 {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:text-gray-700 {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:text-gray-800 {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:text-gray-900 {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:text-purple {
@@ -11540,39 +11400,35 @@ body {
   }
 
   .sm\:hover\:text-gray-100:hover {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:hover\:text-gray-200:hover {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:hover\:text-gray-300:hover {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:hover\:text-gray-400:hover {
-    color: #cbd5e0;
-  }
-
-  .sm\:hover\:text-gray-500:hover {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:hover\:text-gray-600:hover {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:hover\:text-gray-700:hover {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:hover\:text-gray-800:hover {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:hover\:text-gray-900:hover {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:hover\:text-purple:hover {
@@ -11628,39 +11484,35 @@ body {
   }
 
   .sm\:focus\:text-gray-100:focus {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .sm\:focus\:text-gray-200:focus {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:text-gray-300:focus {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .sm\:focus\:text-gray-400:focus {
-    color: #cbd5e0;
-  }
-
-  .sm\:focus\:text-gray-500:focus {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .sm\:focus\:text-gray-600:focus {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .sm\:focus\:text-gray-700:focus {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .sm\:focus\:text-gray-800:focus {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .sm\:focus\:text-gray-900:focus {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .sm\:focus\:text-purple:focus {
@@ -12276,39 +12128,35 @@ body {
   }
 
   .md\:bg-gray-100 {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .md\:bg-gray-200 {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .md\:bg-gray-300 {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .md\:bg-gray-400 {
-    background-color: #cbd5e0;
-  }
-
-  .md\:bg-gray-500 {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .md\:bg-gray-600 {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .md\:bg-gray-700 {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .md\:bg-gray-800 {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .md\:bg-gray-900 {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .md\:bg-purple {
@@ -12364,39 +12212,35 @@ body {
   }
 
   .md\:hover\:bg-gray-100:hover {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .md\:hover\:bg-gray-200:hover {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .md\:hover\:bg-gray-300:hover {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .md\:hover\:bg-gray-400:hover {
-    background-color: #cbd5e0;
-  }
-
-  .md\:hover\:bg-gray-500:hover {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .md\:hover\:bg-gray-600:hover {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .md\:hover\:bg-gray-700:hover {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .md\:hover\:bg-gray-800:hover {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .md\:hover\:bg-gray-900:hover {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .md\:hover\:bg-purple:hover {
@@ -12452,39 +12296,35 @@ body {
   }
 
   .md\:focus\:bg-gray-100:focus {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .md\:focus\:bg-gray-200:focus {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:bg-gray-300:focus {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .md\:focus\:bg-gray-400:focus {
-    background-color: #cbd5e0;
-  }
-
-  .md\:focus\:bg-gray-500:focus {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .md\:focus\:bg-gray-600:focus {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .md\:focus\:bg-gray-700:focus {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .md\:focus\:bg-gray-800:focus {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .md\:focus\:bg-gray-900:focus {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .md\:focus\:bg-purple:focus {
@@ -12620,39 +12460,35 @@ body {
   }
 
   .md\:border-gray-100 {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .md\:border-gray-200 {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .md\:border-gray-300 {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .md\:border-gray-400 {
-    border-color: #cbd5e0;
-  }
-
-  .md\:border-gray-500 {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .md\:border-gray-600 {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .md\:border-gray-700 {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .md\:border-gray-800 {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .md\:border-gray-900 {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .md\:border-purple {
@@ -12708,39 +12544,35 @@ body {
   }
 
   .md\:hover\:border-gray-100:hover {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .md\:hover\:border-gray-200:hover {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .md\:hover\:border-gray-300:hover {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .md\:hover\:border-gray-400:hover {
-    border-color: #cbd5e0;
-  }
-
-  .md\:hover\:border-gray-500:hover {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .md\:hover\:border-gray-600:hover {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .md\:hover\:border-gray-700:hover {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .md\:hover\:border-gray-800:hover {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .md\:hover\:border-gray-900:hover {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .md\:hover\:border-purple:hover {
@@ -12796,39 +12628,35 @@ body {
   }
 
   .md\:focus\:border-gray-100:focus {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .md\:focus\:border-gray-200:focus {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:border-gray-300:focus {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .md\:focus\:border-gray-400:focus {
-    border-color: #cbd5e0;
-  }
-
-  .md\:focus\:border-gray-500:focus {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .md\:focus\:border-gray-600:focus {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .md\:focus\:border-gray-700:focus {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .md\:focus\:border-gray-800:focus {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .md\:focus\:border-gray-900:focus {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .md\:focus\:border-purple:focus {
@@ -15746,183 +15574,163 @@ body {
   }
 
   .md\:placeholder-gray-100::-webkit-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:placeholder-gray-100::-moz-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:placeholder-gray-100:-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:placeholder-gray-100::-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:placeholder-gray-100::placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:placeholder-gray-200::-webkit-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:placeholder-gray-200::-moz-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:placeholder-gray-200:-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:placeholder-gray-200::-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:placeholder-gray-200::placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:placeholder-gray-300::-webkit-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:placeholder-gray-300::-moz-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:placeholder-gray-300:-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:placeholder-gray-300::-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:placeholder-gray-300::placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:placeholder-gray-400::-webkit-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:placeholder-gray-400::-moz-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:placeholder-gray-400:-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:placeholder-gray-400::-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:placeholder-gray-400::placeholder {
-    color: #cbd5e0;
-  }
-
-  .md\:placeholder-gray-500::-webkit-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .md\:placeholder-gray-500::-moz-placeholder {
-    color: #a0aec0;
-  }
-
-  .md\:placeholder-gray-500:-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .md\:placeholder-gray-500::-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .md\:placeholder-gray-500::placeholder {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:placeholder-gray-600::-webkit-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:placeholder-gray-600::-moz-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:placeholder-gray-600:-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:placeholder-gray-600::-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:placeholder-gray-600::placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:placeholder-gray-700::-webkit-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:placeholder-gray-700::-moz-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:placeholder-gray-700:-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:placeholder-gray-700::-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:placeholder-gray-700::placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:placeholder-gray-800::-webkit-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:placeholder-gray-800::-moz-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:placeholder-gray-800:-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:placeholder-gray-800::-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:placeholder-gray-800::placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:placeholder-gray-900::-webkit-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:placeholder-gray-900::-moz-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:placeholder-gray-900:-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:placeholder-gray-900::-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:placeholder-gray-900::placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:placeholder-purple::-webkit-input-placeholder {
@@ -16186,183 +15994,163 @@ body {
   }
 
   .md\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:focus\:placeholder-gray-100:focus::-moz-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:focus\:placeholder-gray-100:focus::placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:placeholder-gray-200:focus::-moz-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:placeholder-gray-200:focus::placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:focus\:placeholder-gray-300:focus::-moz-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:focus\:placeholder-gray-300:focus::placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:focus\:placeholder-gray-400:focus::-moz-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:focus\:placeholder-gray-400:focus:-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:focus\:placeholder-gray-400:focus::-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:focus\:placeholder-gray-400:focus::placeholder {
-    color: #cbd5e0;
-  }
-
-  .md\:focus\:placeholder-gray-500:focus::-webkit-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .md\:focus\:placeholder-gray-500:focus::-moz-placeholder {
-    color: #a0aec0;
-  }
-
-  .md\:focus\:placeholder-gray-500:focus:-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .md\:focus\:placeholder-gray-500:focus::-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .md\:focus\:placeholder-gray-500:focus::placeholder {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:focus\:placeholder-gray-600:focus::-webkit-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:focus\:placeholder-gray-600:focus::-moz-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:focus\:placeholder-gray-600:focus:-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:focus\:placeholder-gray-600:focus::-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:focus\:placeholder-gray-600:focus::placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:focus\:placeholder-gray-700:focus::-webkit-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:focus\:placeholder-gray-700:focus::-moz-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:focus\:placeholder-gray-700:focus:-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:focus\:placeholder-gray-700:focus::-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:focus\:placeholder-gray-700:focus::placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:focus\:placeholder-gray-800:focus::-webkit-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:focus\:placeholder-gray-800:focus::-moz-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:focus\:placeholder-gray-800:focus:-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:focus\:placeholder-gray-800:focus::-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:focus\:placeholder-gray-800:focus::placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:focus\:placeholder-gray-900:focus::-webkit-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:focus\:placeholder-gray-900:focus::-moz-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:focus\:placeholder-gray-900:focus:-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:focus\:placeholder-gray-900:focus::-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:focus\:placeholder-gray-900:focus::placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:focus\:placeholder-purple:focus::-webkit-input-placeholder {
@@ -16817,39 +16605,35 @@ body {
   }
 
   .md\:text-gray-100 {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:text-gray-200 {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:text-gray-300 {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:text-gray-400 {
-    color: #cbd5e0;
-  }
-
-  .md\:text-gray-500 {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:text-gray-600 {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:text-gray-700 {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:text-gray-800 {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:text-gray-900 {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:text-purple {
@@ -16905,39 +16689,35 @@ body {
   }
 
   .md\:hover\:text-gray-100:hover {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:hover\:text-gray-200:hover {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:hover\:text-gray-300:hover {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:hover\:text-gray-400:hover {
-    color: #cbd5e0;
-  }
-
-  .md\:hover\:text-gray-500:hover {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:hover\:text-gray-600:hover {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:hover\:text-gray-700:hover {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:hover\:text-gray-800:hover {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:hover\:text-gray-900:hover {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:hover\:text-purple:hover {
@@ -16993,39 +16773,35 @@ body {
   }
 
   .md\:focus\:text-gray-100:focus {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .md\:focus\:text-gray-200:focus {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:text-gray-300:focus {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .md\:focus\:text-gray-400:focus {
-    color: #cbd5e0;
-  }
-
-  .md\:focus\:text-gray-500:focus {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .md\:focus\:text-gray-600:focus {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .md\:focus\:text-gray-700:focus {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .md\:focus\:text-gray-800:focus {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .md\:focus\:text-gray-900:focus {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .md\:focus\:text-purple:focus {
@@ -17641,39 +17417,35 @@ body {
   }
 
   .lg\:bg-gray-100 {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .lg\:bg-gray-200 {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .lg\:bg-gray-300 {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .lg\:bg-gray-400 {
-    background-color: #cbd5e0;
-  }
-
-  .lg\:bg-gray-500 {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .lg\:bg-gray-600 {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .lg\:bg-gray-700 {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .lg\:bg-gray-800 {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .lg\:bg-gray-900 {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .lg\:bg-purple {
@@ -17729,39 +17501,35 @@ body {
   }
 
   .lg\:hover\:bg-gray-100:hover {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .lg\:hover\:bg-gray-200:hover {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .lg\:hover\:bg-gray-300:hover {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .lg\:hover\:bg-gray-400:hover {
-    background-color: #cbd5e0;
-  }
-
-  .lg\:hover\:bg-gray-500:hover {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .lg\:hover\:bg-gray-600:hover {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .lg\:hover\:bg-gray-700:hover {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .lg\:hover\:bg-gray-800:hover {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .lg\:hover\:bg-gray-900:hover {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .lg\:hover\:bg-purple:hover {
@@ -17817,39 +17585,35 @@ body {
   }
 
   .lg\:focus\:bg-gray-100:focus {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .lg\:focus\:bg-gray-200:focus {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:bg-gray-300:focus {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .lg\:focus\:bg-gray-400:focus {
-    background-color: #cbd5e0;
-  }
-
-  .lg\:focus\:bg-gray-500:focus {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .lg\:focus\:bg-gray-600:focus {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .lg\:focus\:bg-gray-700:focus {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .lg\:focus\:bg-gray-800:focus {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .lg\:focus\:bg-gray-900:focus {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .lg\:focus\:bg-purple:focus {
@@ -17985,39 +17749,35 @@ body {
   }
 
   .lg\:border-gray-100 {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .lg\:border-gray-200 {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .lg\:border-gray-300 {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .lg\:border-gray-400 {
-    border-color: #cbd5e0;
-  }
-
-  .lg\:border-gray-500 {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .lg\:border-gray-600 {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .lg\:border-gray-700 {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .lg\:border-gray-800 {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .lg\:border-gray-900 {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .lg\:border-purple {
@@ -18073,39 +17833,35 @@ body {
   }
 
   .lg\:hover\:border-gray-100:hover {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .lg\:hover\:border-gray-200:hover {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .lg\:hover\:border-gray-300:hover {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .lg\:hover\:border-gray-400:hover {
-    border-color: #cbd5e0;
-  }
-
-  .lg\:hover\:border-gray-500:hover {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .lg\:hover\:border-gray-600:hover {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .lg\:hover\:border-gray-700:hover {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .lg\:hover\:border-gray-800:hover {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .lg\:hover\:border-gray-900:hover {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .lg\:hover\:border-purple:hover {
@@ -18161,39 +17917,35 @@ body {
   }
 
   .lg\:focus\:border-gray-100:focus {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .lg\:focus\:border-gray-200:focus {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:border-gray-300:focus {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .lg\:focus\:border-gray-400:focus {
-    border-color: #cbd5e0;
-  }
-
-  .lg\:focus\:border-gray-500:focus {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .lg\:focus\:border-gray-600:focus {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .lg\:focus\:border-gray-700:focus {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .lg\:focus\:border-gray-800:focus {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .lg\:focus\:border-gray-900:focus {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .lg\:focus\:border-purple:focus {
@@ -21111,183 +20863,163 @@ body {
   }
 
   .lg\:placeholder-gray-100::-webkit-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:placeholder-gray-100::-moz-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:placeholder-gray-100:-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:placeholder-gray-100::-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:placeholder-gray-100::placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:placeholder-gray-200::-webkit-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:placeholder-gray-200::-moz-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:placeholder-gray-200:-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:placeholder-gray-200::-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:placeholder-gray-200::placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:placeholder-gray-300::-webkit-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:placeholder-gray-300::-moz-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:placeholder-gray-300:-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:placeholder-gray-300::-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:placeholder-gray-300::placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:placeholder-gray-400::-webkit-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:placeholder-gray-400::-moz-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:placeholder-gray-400:-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:placeholder-gray-400::-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:placeholder-gray-400::placeholder {
-    color: #cbd5e0;
-  }
-
-  .lg\:placeholder-gray-500::-webkit-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .lg\:placeholder-gray-500::-moz-placeholder {
-    color: #a0aec0;
-  }
-
-  .lg\:placeholder-gray-500:-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .lg\:placeholder-gray-500::-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .lg\:placeholder-gray-500::placeholder {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:placeholder-gray-600::-webkit-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:placeholder-gray-600::-moz-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:placeholder-gray-600:-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:placeholder-gray-600::-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:placeholder-gray-600::placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:placeholder-gray-700::-webkit-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:placeholder-gray-700::-moz-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:placeholder-gray-700:-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:placeholder-gray-700::-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:placeholder-gray-700::placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:placeholder-gray-800::-webkit-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:placeholder-gray-800::-moz-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:placeholder-gray-800:-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:placeholder-gray-800::-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:placeholder-gray-800::placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:placeholder-gray-900::-webkit-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:placeholder-gray-900::-moz-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:placeholder-gray-900:-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:placeholder-gray-900::-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:placeholder-gray-900::placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:placeholder-purple::-webkit-input-placeholder {
@@ -21551,183 +21283,163 @@ body {
   }
 
   .lg\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:focus\:placeholder-gray-100:focus::-moz-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:focus\:placeholder-gray-100:focus::placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:placeholder-gray-200:focus::-moz-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:placeholder-gray-200:focus::placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:focus\:placeholder-gray-300:focus::-moz-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:focus\:placeholder-gray-300:focus::placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:focus\:placeholder-gray-400:focus::-moz-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:focus\:placeholder-gray-400:focus:-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:focus\:placeholder-gray-400:focus::-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:focus\:placeholder-gray-400:focus::placeholder {
-    color: #cbd5e0;
-  }
-
-  .lg\:focus\:placeholder-gray-500:focus::-webkit-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .lg\:focus\:placeholder-gray-500:focus::-moz-placeholder {
-    color: #a0aec0;
-  }
-
-  .lg\:focus\:placeholder-gray-500:focus:-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .lg\:focus\:placeholder-gray-500:focus::-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .lg\:focus\:placeholder-gray-500:focus::placeholder {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:focus\:placeholder-gray-600:focus::-webkit-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:focus\:placeholder-gray-600:focus::-moz-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:focus\:placeholder-gray-600:focus:-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:focus\:placeholder-gray-600:focus::-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:focus\:placeholder-gray-600:focus::placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:focus\:placeholder-gray-700:focus::-webkit-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:focus\:placeholder-gray-700:focus::-moz-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:focus\:placeholder-gray-700:focus:-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:focus\:placeholder-gray-700:focus::-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:focus\:placeholder-gray-700:focus::placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:focus\:placeholder-gray-800:focus::-webkit-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:focus\:placeholder-gray-800:focus::-moz-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:focus\:placeholder-gray-800:focus:-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:focus\:placeholder-gray-800:focus::-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:focus\:placeholder-gray-800:focus::placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:focus\:placeholder-gray-900:focus::-webkit-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:focus\:placeholder-gray-900:focus::-moz-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:focus\:placeholder-gray-900:focus:-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:focus\:placeholder-gray-900:focus::-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:focus\:placeholder-gray-900:focus::placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:focus\:placeholder-purple:focus::-webkit-input-placeholder {
@@ -22182,39 +21894,35 @@ body {
   }
 
   .lg\:text-gray-100 {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:text-gray-200 {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:text-gray-300 {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:text-gray-400 {
-    color: #cbd5e0;
-  }
-
-  .lg\:text-gray-500 {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:text-gray-600 {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:text-gray-700 {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:text-gray-800 {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:text-gray-900 {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:text-purple {
@@ -22270,39 +21978,35 @@ body {
   }
 
   .lg\:hover\:text-gray-100:hover {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:hover\:text-gray-200:hover {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:hover\:text-gray-300:hover {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:hover\:text-gray-400:hover {
-    color: #cbd5e0;
-  }
-
-  .lg\:hover\:text-gray-500:hover {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:hover\:text-gray-600:hover {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:hover\:text-gray-700:hover {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:hover\:text-gray-800:hover {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:hover\:text-gray-900:hover {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:hover\:text-purple:hover {
@@ -22358,39 +22062,35 @@ body {
   }
 
   .lg\:focus\:text-gray-100:focus {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .lg\:focus\:text-gray-200:focus {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:text-gray-300:focus {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .lg\:focus\:text-gray-400:focus {
-    color: #cbd5e0;
-  }
-
-  .lg\:focus\:text-gray-500:focus {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .lg\:focus\:text-gray-600:focus {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .lg\:focus\:text-gray-700:focus {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .lg\:focus\:text-gray-800:focus {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .lg\:focus\:text-gray-900:focus {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .lg\:focus\:text-purple:focus {
@@ -23006,39 +22706,35 @@ body {
   }
 
   .xl\:bg-gray-100 {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .xl\:bg-gray-200 {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xl\:bg-gray-300 {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .xl\:bg-gray-400 {
-    background-color: #cbd5e0;
-  }
-
-  .xl\:bg-gray-500 {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .xl\:bg-gray-600 {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .xl\:bg-gray-700 {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .xl\:bg-gray-800 {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .xl\:bg-gray-900 {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .xl\:bg-purple {
@@ -23094,39 +22790,35 @@ body {
   }
 
   .xl\:hover\:bg-gray-100:hover {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .xl\:hover\:bg-gray-200:hover {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xl\:hover\:bg-gray-300:hover {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .xl\:hover\:bg-gray-400:hover {
-    background-color: #cbd5e0;
-  }
-
-  .xl\:hover\:bg-gray-500:hover {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .xl\:hover\:bg-gray-600:hover {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .xl\:hover\:bg-gray-700:hover {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .xl\:hover\:bg-gray-800:hover {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .xl\:hover\:bg-gray-900:hover {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .xl\:hover\:bg-purple:hover {
@@ -23182,39 +22874,35 @@ body {
   }
 
   .xl\:focus\:bg-gray-100:focus {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .xl\:focus\:bg-gray-200:focus {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:bg-gray-300:focus {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .xl\:focus\:bg-gray-400:focus {
-    background-color: #cbd5e0;
-  }
-
-  .xl\:focus\:bg-gray-500:focus {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .xl\:focus\:bg-gray-600:focus {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .xl\:focus\:bg-gray-700:focus {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .xl\:focus\:bg-gray-800:focus {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .xl\:focus\:bg-gray-900:focus {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .xl\:focus\:bg-purple:focus {
@@ -23350,39 +23038,35 @@ body {
   }
 
   .xl\:border-gray-100 {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .xl\:border-gray-200 {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xl\:border-gray-300 {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .xl\:border-gray-400 {
-    border-color: #cbd5e0;
-  }
-
-  .xl\:border-gray-500 {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .xl\:border-gray-600 {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .xl\:border-gray-700 {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .xl\:border-gray-800 {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .xl\:border-gray-900 {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .xl\:border-purple {
@@ -23438,39 +23122,35 @@ body {
   }
 
   .xl\:hover\:border-gray-100:hover {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .xl\:hover\:border-gray-200:hover {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xl\:hover\:border-gray-300:hover {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .xl\:hover\:border-gray-400:hover {
-    border-color: #cbd5e0;
-  }
-
-  .xl\:hover\:border-gray-500:hover {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .xl\:hover\:border-gray-600:hover {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .xl\:hover\:border-gray-700:hover {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .xl\:hover\:border-gray-800:hover {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .xl\:hover\:border-gray-900:hover {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .xl\:hover\:border-purple:hover {
@@ -23526,39 +23206,35 @@ body {
   }
 
   .xl\:focus\:border-gray-100:focus {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .xl\:focus\:border-gray-200:focus {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:border-gray-300:focus {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .xl\:focus\:border-gray-400:focus {
-    border-color: #cbd5e0;
-  }
-
-  .xl\:focus\:border-gray-500:focus {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .xl\:focus\:border-gray-600:focus {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .xl\:focus\:border-gray-700:focus {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .xl\:focus\:border-gray-800:focus {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .xl\:focus\:border-gray-900:focus {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .xl\:focus\:border-purple:focus {
@@ -26476,183 +26152,163 @@ body {
   }
 
   .xl\:placeholder-gray-100::-webkit-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:placeholder-gray-100::-moz-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:placeholder-gray-100:-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:placeholder-gray-100::-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:placeholder-gray-100::placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:placeholder-gray-200::-webkit-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:placeholder-gray-200::-moz-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:placeholder-gray-200:-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:placeholder-gray-200::-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:placeholder-gray-200::placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:placeholder-gray-300::-webkit-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:placeholder-gray-300::-moz-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:placeholder-gray-300:-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:placeholder-gray-300::-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:placeholder-gray-300::placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:placeholder-gray-400::-webkit-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:placeholder-gray-400::-moz-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:placeholder-gray-400:-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:placeholder-gray-400::-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:placeholder-gray-400::placeholder {
-    color: #cbd5e0;
-  }
-
-  .xl\:placeholder-gray-500::-webkit-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xl\:placeholder-gray-500::-moz-placeholder {
-    color: #a0aec0;
-  }
-
-  .xl\:placeholder-gray-500:-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xl\:placeholder-gray-500::-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xl\:placeholder-gray-500::placeholder {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:placeholder-gray-600::-webkit-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:placeholder-gray-600::-moz-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:placeholder-gray-600:-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:placeholder-gray-600::-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:placeholder-gray-600::placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:placeholder-gray-700::-webkit-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:placeholder-gray-700::-moz-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:placeholder-gray-700:-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:placeholder-gray-700::-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:placeholder-gray-700::placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:placeholder-gray-800::-webkit-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:placeholder-gray-800::-moz-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:placeholder-gray-800:-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:placeholder-gray-800::-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:placeholder-gray-800::placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:placeholder-gray-900::-webkit-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:placeholder-gray-900::-moz-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:placeholder-gray-900:-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:placeholder-gray-900::-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:placeholder-gray-900::placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:placeholder-purple::-webkit-input-placeholder {
@@ -26916,183 +26572,163 @@ body {
   }
 
   .xl\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:focus\:placeholder-gray-100:focus::-moz-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:focus\:placeholder-gray-100:focus::placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:placeholder-gray-200:focus::-moz-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:placeholder-gray-200:focus::placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:focus\:placeholder-gray-300:focus::-moz-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:focus\:placeholder-gray-300:focus::placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:focus\:placeholder-gray-400:focus::-moz-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:focus\:placeholder-gray-400:focus:-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:focus\:placeholder-gray-400:focus::-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:focus\:placeholder-gray-400:focus::placeholder {
-    color: #cbd5e0;
-  }
-
-  .xl\:focus\:placeholder-gray-500:focus::-webkit-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xl\:focus\:placeholder-gray-500:focus::-moz-placeholder {
-    color: #a0aec0;
-  }
-
-  .xl\:focus\:placeholder-gray-500:focus:-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xl\:focus\:placeholder-gray-500:focus::-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xl\:focus\:placeholder-gray-500:focus::placeholder {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:focus\:placeholder-gray-600:focus::-webkit-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:focus\:placeholder-gray-600:focus::-moz-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:focus\:placeholder-gray-600:focus:-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:focus\:placeholder-gray-600:focus::-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:focus\:placeholder-gray-600:focus::placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:focus\:placeholder-gray-700:focus::-webkit-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:focus\:placeholder-gray-700:focus::-moz-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:focus\:placeholder-gray-700:focus:-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:focus\:placeholder-gray-700:focus::-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:focus\:placeholder-gray-700:focus::placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:focus\:placeholder-gray-800:focus::-webkit-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:focus\:placeholder-gray-800:focus::-moz-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:focus\:placeholder-gray-800:focus:-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:focus\:placeholder-gray-800:focus::-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:focus\:placeholder-gray-800:focus::placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:focus\:placeholder-gray-900:focus::-webkit-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:focus\:placeholder-gray-900:focus::-moz-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:focus\:placeholder-gray-900:focus:-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:focus\:placeholder-gray-900:focus::-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:focus\:placeholder-gray-900:focus::placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:focus\:placeholder-purple:focus::-webkit-input-placeholder {
@@ -27547,39 +27183,35 @@ body {
   }
 
   .xl\:text-gray-100 {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:text-gray-200 {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:text-gray-300 {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:text-gray-400 {
-    color: #cbd5e0;
-  }
-
-  .xl\:text-gray-500 {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:text-gray-600 {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:text-gray-700 {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:text-gray-800 {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:text-gray-900 {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:text-purple {
@@ -27635,39 +27267,35 @@ body {
   }
 
   .xl\:hover\:text-gray-100:hover {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:hover\:text-gray-200:hover {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:hover\:text-gray-300:hover {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:hover\:text-gray-400:hover {
-    color: #cbd5e0;
-  }
-
-  .xl\:hover\:text-gray-500:hover {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:hover\:text-gray-600:hover {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:hover\:text-gray-700:hover {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:hover\:text-gray-800:hover {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:hover\:text-gray-900:hover {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:hover\:text-purple:hover {
@@ -27723,39 +27351,35 @@ body {
   }
 
   .xl\:focus\:text-gray-100:focus {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xl\:focus\:text-gray-200:focus {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:text-gray-300:focus {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xl\:focus\:text-gray-400:focus {
-    color: #cbd5e0;
-  }
-
-  .xl\:focus\:text-gray-500:focus {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xl\:focus\:text-gray-600:focus {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xl\:focus\:text-gray-700:focus {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xl\:focus\:text-gray-800:focus {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xl\:focus\:text-gray-900:focus {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xl\:focus\:text-purple:focus {
@@ -28371,39 +27995,35 @@ body {
   }
 
   .xxl\:bg-gray-100 {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .xxl\:bg-gray-200 {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:bg-gray-300 {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .xxl\:bg-gray-400 {
-    background-color: #cbd5e0;
-  }
-
-  .xxl\:bg-gray-500 {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .xxl\:bg-gray-600 {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .xxl\:bg-gray-700 {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .xxl\:bg-gray-800 {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .xxl\:bg-gray-900 {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .xxl\:bg-purple {
@@ -28459,39 +28079,35 @@ body {
   }
 
   .xxl\:hover\:bg-gray-100:hover {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .xxl\:hover\:bg-gray-200:hover {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:hover\:bg-gray-300:hover {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .xxl\:hover\:bg-gray-400:hover {
-    background-color: #cbd5e0;
-  }
-
-  .xxl\:hover\:bg-gray-500:hover {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .xxl\:hover\:bg-gray-600:hover {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .xxl\:hover\:bg-gray-700:hover {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .xxl\:hover\:bg-gray-800:hover {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .xxl\:hover\:bg-gray-900:hover {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .xxl\:hover\:bg-purple:hover {
@@ -28547,39 +28163,35 @@ body {
   }
 
   .xxl\:focus\:bg-gray-100:focus {
-    background-color: #f7fafc;
+    background-color: hsl(31, 1%, 91%);
   }
 
   .xxl\:focus\:bg-gray-200:focus {
-    background-color: #edf2f7;
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:bg-gray-300:focus {
-    background-color: #e2e8f0;
+    background-color: hsl(31, 1%, 75%);
   }
 
   .xxl\:focus\:bg-gray-400:focus {
-    background-color: #cbd5e0;
-  }
-
-  .xxl\:focus\:bg-gray-500:focus {
-    background-color: #a0aec0;
+    background-color: hsl(31, 1%, 60%);
   }
 
   .xxl\:focus\:bg-gray-600:focus {
-    background-color: #718096;
+    background-color: hsl(31, 1%, 40%);
   }
 
   .xxl\:focus\:bg-gray-700:focus {
-    background-color: #4a5568;
+    background-color: hsl(31, 2%, 25%);
   }
 
   .xxl\:focus\:bg-gray-800:focus {
-    background-color: #2d3748;
+    background-color: hsl(31, 3%, 16%);
   }
 
   .xxl\:focus\:bg-gray-900:focus {
-    background-color: #1a202c;
+    background-color: hsl(31, 5%, 12%);
   }
 
   .xxl\:focus\:bg-purple:focus {
@@ -28715,39 +28327,35 @@ body {
   }
 
   .xxl\:border-gray-100 {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .xxl\:border-gray-200 {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:border-gray-300 {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .xxl\:border-gray-400 {
-    border-color: #cbd5e0;
-  }
-
-  .xxl\:border-gray-500 {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .xxl\:border-gray-600 {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .xxl\:border-gray-700 {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .xxl\:border-gray-800 {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .xxl\:border-gray-900 {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .xxl\:border-purple {
@@ -28803,39 +28411,35 @@ body {
   }
 
   .xxl\:hover\:border-gray-100:hover {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .xxl\:hover\:border-gray-200:hover {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:hover\:border-gray-300:hover {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .xxl\:hover\:border-gray-400:hover {
-    border-color: #cbd5e0;
-  }
-
-  .xxl\:hover\:border-gray-500:hover {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .xxl\:hover\:border-gray-600:hover {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .xxl\:hover\:border-gray-700:hover {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .xxl\:hover\:border-gray-800:hover {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .xxl\:hover\:border-gray-900:hover {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .xxl\:hover\:border-purple:hover {
@@ -28891,39 +28495,35 @@ body {
   }
 
   .xxl\:focus\:border-gray-100:focus {
-    border-color: #f7fafc;
+    border-color: hsl(31, 1%, 91%);
   }
 
   .xxl\:focus\:border-gray-200:focus {
-    border-color: #edf2f7;
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:border-gray-300:focus {
-    border-color: #e2e8f0;
+    border-color: hsl(31, 1%, 75%);
   }
 
   .xxl\:focus\:border-gray-400:focus {
-    border-color: #cbd5e0;
-  }
-
-  .xxl\:focus\:border-gray-500:focus {
-    border-color: #a0aec0;
+    border-color: hsl(31, 1%, 60%);
   }
 
   .xxl\:focus\:border-gray-600:focus {
-    border-color: #718096;
+    border-color: hsl(31, 1%, 40%);
   }
 
   .xxl\:focus\:border-gray-700:focus {
-    border-color: #4a5568;
+    border-color: hsl(31, 2%, 25%);
   }
 
   .xxl\:focus\:border-gray-800:focus {
-    border-color: #2d3748;
+    border-color: hsl(31, 3%, 16%);
   }
 
   .xxl\:focus\:border-gray-900:focus {
-    border-color: #1a202c;
+    border-color: hsl(31, 5%, 12%);
   }
 
   .xxl\:focus\:border-purple:focus {
@@ -31841,183 +31441,163 @@ body {
   }
 
   .xxl\:placeholder-gray-100::-webkit-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:placeholder-gray-100::-moz-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:placeholder-gray-100:-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:placeholder-gray-100::-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:placeholder-gray-100::placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:placeholder-gray-200::-webkit-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:placeholder-gray-200::-moz-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:placeholder-gray-200:-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:placeholder-gray-200::-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:placeholder-gray-200::placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:placeholder-gray-300::-webkit-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:placeholder-gray-300::-moz-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:placeholder-gray-300:-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:placeholder-gray-300::-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:placeholder-gray-300::placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:placeholder-gray-400::-webkit-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:placeholder-gray-400::-moz-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:placeholder-gray-400:-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:placeholder-gray-400::-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:placeholder-gray-400::placeholder {
-    color: #cbd5e0;
-  }
-
-  .xxl\:placeholder-gray-500::-webkit-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xxl\:placeholder-gray-500::-moz-placeholder {
-    color: #a0aec0;
-  }
-
-  .xxl\:placeholder-gray-500:-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xxl\:placeholder-gray-500::-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xxl\:placeholder-gray-500::placeholder {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:placeholder-gray-600::-webkit-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:placeholder-gray-600::-moz-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:placeholder-gray-600:-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:placeholder-gray-600::-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:placeholder-gray-600::placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:placeholder-gray-700::-webkit-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:placeholder-gray-700::-moz-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:placeholder-gray-700:-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:placeholder-gray-700::-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:placeholder-gray-700::placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:placeholder-gray-800::-webkit-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:placeholder-gray-800::-moz-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:placeholder-gray-800:-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:placeholder-gray-800::-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:placeholder-gray-800::placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:placeholder-gray-900::-webkit-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:placeholder-gray-900::-moz-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:placeholder-gray-900:-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:placeholder-gray-900::-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:placeholder-gray-900::placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:placeholder-purple::-webkit-input-placeholder {
@@ -32281,183 +31861,163 @@ body {
   }
 
   .xxl\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:focus\:placeholder-gray-100:focus::-moz-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:focus\:placeholder-gray-100:focus::placeholder {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:placeholder-gray-200:focus::-moz-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:placeholder-gray-200:focus::placeholder {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:focus\:placeholder-gray-300:focus::-moz-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:focus\:placeholder-gray-300:focus::placeholder {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:focus\:placeholder-gray-400:focus::-moz-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:focus\:placeholder-gray-400:focus:-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:focus\:placeholder-gray-400:focus::-ms-input-placeholder {
-    color: #cbd5e0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:focus\:placeholder-gray-400:focus::placeholder {
-    color: #cbd5e0;
-  }
-
-  .xxl\:focus\:placeholder-gray-500:focus::-webkit-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xxl\:focus\:placeholder-gray-500:focus::-moz-placeholder {
-    color: #a0aec0;
-  }
-
-  .xxl\:focus\:placeholder-gray-500:focus:-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xxl\:focus\:placeholder-gray-500:focus::-ms-input-placeholder {
-    color: #a0aec0;
-  }
-
-  .xxl\:focus\:placeholder-gray-500:focus::placeholder {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:focus\:placeholder-gray-600:focus::-webkit-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:focus\:placeholder-gray-600:focus::-moz-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:focus\:placeholder-gray-600:focus:-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:focus\:placeholder-gray-600:focus::-ms-input-placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:focus\:placeholder-gray-600:focus::placeholder {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:focus\:placeholder-gray-700:focus::-webkit-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:focus\:placeholder-gray-700:focus::-moz-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:focus\:placeholder-gray-700:focus:-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:focus\:placeholder-gray-700:focus::-ms-input-placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:focus\:placeholder-gray-700:focus::placeholder {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:focus\:placeholder-gray-800:focus::-webkit-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:focus\:placeholder-gray-800:focus::-moz-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:focus\:placeholder-gray-800:focus:-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:focus\:placeholder-gray-800:focus::-ms-input-placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:focus\:placeholder-gray-800:focus::placeholder {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:focus\:placeholder-gray-900:focus::-webkit-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:focus\:placeholder-gray-900:focus::-moz-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:focus\:placeholder-gray-900:focus:-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:focus\:placeholder-gray-900:focus::-ms-input-placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:focus\:placeholder-gray-900:focus::placeholder {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:focus\:placeholder-purple:focus::-webkit-input-placeholder {
@@ -32912,39 +32472,35 @@ body {
   }
 
   .xxl\:text-gray-100 {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:text-gray-200 {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:text-gray-300 {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:text-gray-400 {
-    color: #cbd5e0;
-  }
-
-  .xxl\:text-gray-500 {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:text-gray-600 {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:text-gray-700 {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:text-gray-800 {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:text-gray-900 {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:text-purple {
@@ -33000,39 +32556,35 @@ body {
   }
 
   .xxl\:hover\:text-gray-100:hover {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:hover\:text-gray-200:hover {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:hover\:text-gray-300:hover {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:hover\:text-gray-400:hover {
-    color: #cbd5e0;
-  }
-
-  .xxl\:hover\:text-gray-500:hover {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:hover\:text-gray-600:hover {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:hover\:text-gray-700:hover {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:hover\:text-gray-800:hover {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:hover\:text-gray-900:hover {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:hover\:text-purple:hover {
@@ -33088,39 +32640,35 @@ body {
   }
 
   .xxl\:focus\:text-gray-100:focus {
-    color: #f7fafc;
+    color: hsl(31, 1%, 91%);
   }
 
   .xxl\:focus\:text-gray-200:focus {
-    color: #edf2f7;
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:text-gray-300:focus {
-    color: #e2e8f0;
+    color: hsl(31, 1%, 75%);
   }
 
   .xxl\:focus\:text-gray-400:focus {
-    color: #cbd5e0;
-  }
-
-  .xxl\:focus\:text-gray-500:focus {
-    color: #a0aec0;
+    color: hsl(31, 1%, 60%);
   }
 
   .xxl\:focus\:text-gray-600:focus {
-    color: #718096;
+    color: hsl(31, 1%, 40%);
   }
 
   .xxl\:focus\:text-gray-700:focus {
-    color: #4a5568;
+    color: hsl(31, 2%, 25%);
   }
 
   .xxl\:focus\:text-gray-800:focus {
-    color: #2d3748;
+    color: hsl(31, 3%, 16%);
   }
 
   .xxl\:focus\:text-gray-900:focus {
-    color: #1a202c;
+    color: hsl(31, 5%, 12%);
   }
 
   .xxl\:focus\:text-purple:focus {
