@@ -35,7 +35,7 @@
 
 </head>
 
-<body class="text-base antialiased page-{{ template }} {{ settings }}{{ debug }}{{ if debug==1 }}development{{ /if }}{{ /debug }}{{ /settings }}">
+<body itemscope itemtype="http://schema.org/LocalBusiness" class="text-base antialiased page-{{ template }} {{ settings }}{{ debug }}{{ if debug==1 }}development{{ /if }}{{ /debug }}{{ /settings }}">
 
     {{ if environment!='local' and environment!='staging' }}
     <!-- Google Tag Manager (noscript) -->
@@ -44,9 +44,9 @@
     <!-- End Google Tag Manager (noscript) -->
     {{ /if }}
 
-    <header class="site-header bg-white" itemscope itemtype="http://schema.org/LocalBusiness">
+    {{# <header class="site-header bg-white"> #}}
         {{ partial:navbar }}
-    </header>
+    {{# </header> #}}
     {{ template_content }}
     {{ partial:footer }}
 

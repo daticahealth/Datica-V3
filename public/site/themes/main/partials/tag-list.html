@@ -1,6 +1,6 @@
 <div class="flex items-center">
     {{ svg src="/assets/icons/icon-tag.svg" class="fill-current text-gray-500 w-6" a11y="tag" }}
     {{ tags }}
-       <a class="label info rounded-full text-gray-700 bg-gray-300 text-xs px-2 py-1 ml-2" title="{{ summary or title }}" href="{{ url }}">{{ title }}</a>
+       <a class="label info rounded-full text-gray-700 bg-gray-300 text-xs px-2 py-1 ml-2" title="{{ tag_summary or "Read more about this tag" }}" href="{{ url }}">{{ title }}</a>
     {{ /tags }}
 </div>

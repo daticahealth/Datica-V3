@@ -1,3 +1,4 @@
 .card {
-    min-width: 300px;
+    @apply max-w-sm;
+    min-width: 22rem;
 }

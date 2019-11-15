@@ -92,3 +92,6 @@ body {
 .bg-blur {
     @include bg-blur(5px);
 }
+.mask-right {
+    @include mask-right;
+}

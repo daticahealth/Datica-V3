@@ -9,7 +9,7 @@ sections:
       slug:
         display: Slug
         type: text
-      summary:
+      tag_summary:
         type: textarea
         display: Summary
       body:

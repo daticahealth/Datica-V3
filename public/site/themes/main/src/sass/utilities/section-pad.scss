@@ -28,39 +28,28 @@
 .pad-scale {
   padding: 2rem;
   padding: calc(2rem + 2vw);
-  @screen lg {
-    padding: calc(4rem + 2vw);
-  }
-  &-sm {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    @screen md {
-      padding-top: calc(1rem + 2vw);
-      padding-bottom: calc(1rem + 2vw);
-    }
-  }
   &-md {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    @screen md {
-      padding-top: calc(2rem + 3vw);
-      padding-bottom: calc(2rem + 3vw);
-    }
+    padding: 2rem;
+    padding: calc(1.2rem + 3vw);
   }
-  &-lg {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    @screen md {
-      padding-top: calc(2rem + 8vw);
-      padding-bottom: calc(2rem + 8vw);
-    }
+  &-y-sm {
+    padding: 2rem;
+    padding-top: calc(1rem + 2vw);
+    padding-bottom: calc(1rem + 2vw);
   }
-  &-xl {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    @screen md {
-      padding-top: calc(2rem + 10vw);
-      padding-bottom: calc(2rem + 10vw);
-    }
+  &-y-md {
+    padding: 2rem;
+    padding-top: calc(2rem + 3vw);
+    padding-bottom: calc(2rem + 3vw);
+  }
+  &-y-lg {
+    padding: 2rem;
+    padding-top: calc(2rem + 8vw);
+    padding-bottom: calc(2rem + 8vw);
+  }
+  &-y-xl {
+    padding: 2rem;
+    padding-top: calc(2rem + 10vw);
+    padding-bottom: calc(2rem + 10vw);
   }
 }

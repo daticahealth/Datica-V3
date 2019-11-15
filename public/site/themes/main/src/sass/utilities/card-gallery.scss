@@ -19,12 +19,6 @@ $gutter: 1.5rem;
         width: 100px;
     }
 }
-.mask-right {
-    @media screen and (min-width: 640px) {
-       mask: linear-gradient(-90deg, rgba(0,0,0,0) 3%, rgba(0,0,0,1) 20%);
-       -webkit-mask: linear-gradient(-90deg, rgba(0,0,0,0) 3%, rgba(0,0,0,1) 20%);
-    }
-}
 .gallery-item {
     scroll-snap-align: center;
     padding: calc($gutter / 2 * 1.5);

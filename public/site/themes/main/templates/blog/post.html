@@ -3,10 +3,22 @@
 	:root {
 		--bg-color: #edf2f7;
 	}
+	@media (min-width: 1400px) {
+		.masthead {
+			padding-left: 0rem;
+		}
+	}
 </style>
+<header class="masthead pl-8 pt-24 lg:pt-48 max-w-7xl mx-auto mb-8 lg:mb-12">
+		{{# {{ svg src="/assets/icons/icon-webinar.svg" class="w-16 h-16" a11y="Video Presentation Icon" }} #}}
+		<h2 class="headline-2 font-bold">
+			<a class="text-white hover:text-green-bright" href="/blog/" title="Datica Blog">Datica Blog</a>
+		</h2>
+</header>
+
 <div class="relative">
-<main class="flex mx-auto justify-center flex-col md:flex-row" style="margin-top: calc(8vw + 1.5rem); overflow: unset;">
-    <article class="bg-white p-8 max-w-3xl w-full shadow-sm shadow-lg mb-6 z-10 md:w-2/3 lg:w-3/5 md:p-10 lg:p-16 xl:p-20">
+<main class="flex mx-auto max-w-7xl justify-center flex-col lg:flex-row" style="overflow: unset;"> {{# margin-top: calc(8vw + 1.5rem); #}}
+    <article class="bg-white w-full shadow-sm shadow-lg mb-6 z-10 pad-scale-md">
         <header class="mb-6">
             <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
             <h1 class="headline-3 mb-4">{{ title }}</h1>
@@ -32,30 +44,31 @@
 	</article>
 	
      {{# for position-sticky to work: add .items-start to parent because https://stackoverflow.com/a/57830863 #}}
-    <aside class="block bg-gray-200 w-full items-start md:w-1/3 lg:w-2/5 xl:max-w-md md:mt-16 z-0">
+    <aside class="block bg-gray-200 w-full max-w-md items-start md:mt-16 z-0">
         <div class="sticky top-0 p-8">
             <div class="mb-8">
 				{{ partial:email-subscribe }}
 			</div>
 			{{ if topics }}
-			{{ relate:discovery_topic }}
-				<div class="mb-8 lg:mb-12">
-					<div class="text-reg font-bold tracking-widest uppercase mb-2"><span class="font-light">Explore</span> {{ title }}</div>
-					{{ summary | wrap:div.text-sm.mb-4 }}
-					{{ if related_video }}
-						{{ relate:related_video }}
-							{{ custom_form }}
-						{{ /relate:related_video }}
-					{{ /if }}
-					{{# <img class="lozad" data-src="https://images.ctfassets.net/bfs863we7xd3/6m4CTI0Bd2esaf8pgRaTlJ/9f30e25ac314b5b16df6a7c5d104b9e7/video_poster_example.jpg?w=800"/> #}}
-				</div>
-			{{ /relate:discovery_topic }}
-            
+				{{ relate:discovery_topic }}
+					<div class="mb-8 lg:mb-12">
+						<div class="text-reg font-bold tracking-widest uppercase mb-2"><span class="font-light">Explore</span> {{ title }}</div>
+						{{ summary | wrap:div.text-sm.mb-4 }}
+						{{ if related_video }}
+							{{ relate:related_video }}
+								{{ custom_form }}
+							{{ /relate:related_video }}
+						{{ /if }}
+						{{# <img class="lozad" data-src="https://images.ctfassets.net/bfs863we7xd3/6m4CTI0Bd2esaf8pgRaTlJ/9f30e25ac314b5b16df6a7c5d104b9e7/video_poster_example.jpg?w=800"/> #}}
+					</div>
+				{{ /relate:discovery_topic }}
 			{{ /if }}
 			{{ if related_entries }}
-				{{ relate:related_entries limit="1" }}
-					{{ partial:related-article }}
-				{{ /relate:related_entries }}
+				{{ if total_results == 1 }}
+					{{ relate:related_entries limit="1" }}
+						{{ partial:related-article }}
+					{{ /relate:related_entries }}
+				{{ /if }}
 			{{ /if }}
             <div class="mb-4">
 			</div>
@@ -64,11 +77,12 @@
 </main>
 </div>
 	
-<section class="pad-scale bg-gray-300 justify-center items-center">
-	<div class="card-gallery no-scrollbar mask-right">
-		{{ relate:related_entries offset="1" }}
-			{{ if count > 1 }}
-				{{ partial:related-article classes="mr-8 gallery-item" }}
+<section class="pad-scale-y-md px-0 justify-center items-center">
+	<h3 class="headline-3 spaced-out text-center mb-8">Related Reading</h3>
+	<div class="card-gallery no-scrollbar mask-right justify-start">
+		{{ relate:related_entries }} {{# removed offset="1" and revealing w. css #}}
+			{{ if total_results > 1 }}
+				{{ partial:related-article classes="ml-10 gallery-item" }}
 			{{ /if }}
 		{{ /relate:related_entries }}
 	</div>
@@ -78,7 +92,7 @@
 	
 {{ if featured_image }}
 	<aside class="featured-image top-0 z--10 w-full absolute">
-		<img class="mask-bottom w-full lozad" {{ assets:featured_image }}data-src="{{ glide:id width="1800" height="600" }}" {{ /assets:featured_image }} />
+		<img class="mask-bottom w-full lozad" {{ assets:featured_image }}data-src="{{ glide:id width="1800" height="700" }}" {{ /assets:featured_image }} />
 	</aside>
 {{ /if }}
 {{#

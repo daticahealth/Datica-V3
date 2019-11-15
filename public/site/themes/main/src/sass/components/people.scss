@@ -1,0 +1,16 @@
+.person {
+    img.avatar {
+        @apply w-12 h-12;
+    }
+    &.person-compact {
+        img.avatar {
+            @apply w-8 h-8;
+        }
+        .person-title {
+            @apply text-sm;
+        }
+        .person-role {
+            @apply text-xs;
+        }
+    }
+}

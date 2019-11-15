@@ -21,10 +21,10 @@ module.exports = {
         light: '#5C00EB'
       },
       green: {
-        default: '#718765',
-        dark: '#27516C',
-        light: '#709DC9',
-        bright: '#718765',
+        default: '#009460',
+        dark: '#007b50',
+        light: '#00bd9a',
+        bright: '#00d9b1',
       },
       blue: {
         default: '#6689AB',
@@ -95,7 +95,7 @@ module.exports = {
     },
     extend: {
       maxWidth: {
-        '7xl': '96rem',
+        '7xl': '84rem',
       },
     }
   },

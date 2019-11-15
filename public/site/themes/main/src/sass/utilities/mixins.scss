@@ -71,4 +71,12 @@ $underline: false !default;
         width: 100%;
     }
 }
-    
+
+@mixin mask-right {
+    mask: linear-gradient(-90deg, rgba(0,0,0,0) 3%, rgba(0,0,0,1) 15%);
+    -webkit-mask: linear-gradient(-90deg, rgba(0,0,0,0) 3%, rgba(0,0,0,1) 15%);
+    // @media screen and (min-width: 640px) {
+    //    mask: linear-gradient(-90deg, rgba(0,0,0,0) 3%, rgba(0,0,0,1) 20%);
+    //    -webkit-mask: linear-gradient(-90deg, rgba(0,0,0,0) 3%, rgba(0,0,0,1) 20%);
+    // }
+}
