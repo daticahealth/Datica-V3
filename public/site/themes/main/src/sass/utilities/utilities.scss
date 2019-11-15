@@ -62,7 +62,7 @@ body {
     background-color: hsla(48, 20%, 95%, 0.9);
 }
 // set default text colors for containers. need a tailwind-native route 
-[class*="bg-"], [class*="-dark"], .bg-gray-500, .bg-gray-600, .bg-gray-700, .bg-gray-800, .bg-gray-900, .bg-black {
+[class*="-dark"], .bg-gray-500, .bg-gray-600, .bg-gray-700, .bg-gray-800, .bg-gray-900, .bg-black {
     color: white;
 }
 

@@ -1420,7 +1420,7 @@ body {
   background-color: rgba(245, 244, 240, 0.9);
 }
 
-[class*=bg-], [class*=-dark], .bg-gray-500, .bg-gray-600, .bg-gray-700, .bg-gray-800, .bg-gray-900, .bg-black {
+[class*=-dark], .bg-gray-500, .bg-gray-600, .bg-gray-700, .bg-gray-800, .bg-gray-900, .bg-black {
   color: white;
 }
 
