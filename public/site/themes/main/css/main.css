@@ -1470,28 +1470,6 @@ body {
   margin-bottom: 1rem;
 }
 
-.hs-button {
-  background-color: var(--color-green);
-  color: white;
-  font-weight: bold;
-  padding: 11px 18px;
-  width: 100%;
-}
-
-.hs-error-msgs li label {
-  font-style: italic;
-  color: #a32222;
-  margin-bottom: 1.2rem;
-}
-
-.hbspt-form label {
-  color: var(--color-gray-700);
-}
-
-.legal-consent-container {
-  font-size: 70%;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
