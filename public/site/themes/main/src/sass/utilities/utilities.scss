@@ -61,12 +61,14 @@ body {
     // }
     background-color: hsla(48, 20%, 95%, 0.9);
 }
-// set default text colors for containers. need a tailwind-native route 
-[class*="-dark"], .bg-gray-500, .bg-gray-600, .bg-gray-700, .bg-gray-800, .bg-gray-900, .bg-black {
+
+// [class*="-dark"], // set default text colors for containers. need a tailwind-native route 
+.bg-gray-500, .bg-gray-600, .bg-gray-700, .bg-gray-800, .bg-gray-900, .bg-black {
     color: white;
 }
 
-[class*="-light"], [class*="-bright"], .bg-white, .bg-gray-100, .bg-gray-200, .bg-gray-300, .bg-gray-400,  {
+// [class*="-light"], [class*="-bright"], 
+.bg-white, .bg-gray-100, .bg-gray-200, .bg-gray-300, .bg-gray-400,  {
     color: black;
 }
 .bg-white-grad {
@@ -95,6 +97,9 @@ body {
 }
 .mask-right {
     @include mask-right;
+}
+.slide-right { // easy anim for button icons
+    transition: all 200ms ease-in-out;
 }
 .border-bright {
     border-image: linear-gradient(to bottom, #00EE7B -4.44%, #00DAF8 95.67%);

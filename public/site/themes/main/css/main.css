@@ -887,13 +887,13 @@ small {
 }
 
 .headline-3 {
-  font-size: 1.5rem;
+  font-size: 1.875rem;
 }
 
 .headline-4 {
   font-size: 1.25rem;
   font-family: "GT America", system-ui, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -940,11 +940,26 @@ small {
   padding-left: 1rem;
   padding-right: 1rem;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 0.25rem;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  background-color: #009460;
+}
+
+.button:hover {
+  background-color: #00bd9a;
+}
+
+.button:hover .icon-inline.slide-right {
+  -webkit-transform: translate3d(3px, 0, 0);
+          transform: translate3d(3px, 0, 0);
+}
+
+.button:hover .icon-inline.slide-left {
+  -webkit-transform: translate3d(-3px, 0, 0);
+          transform: translate3d(-3px, 0, 0);
 }
 
 .button-primary {
@@ -1420,11 +1435,11 @@ body {
   background-color: rgba(245, 244, 240, 0.9);
 }
 
-[class*=-dark], .bg-gray-500, .bg-gray-600, .bg-gray-700, .bg-gray-800, .bg-gray-900, .bg-black {
+.bg-gray-500, .bg-gray-600, .bg-gray-700, .bg-gray-800, .bg-gray-900, .bg-black {
   color: white;
 }
 
-[class*=-light], [class*=-bright], .bg-white, .bg-gray-100, .bg-gray-200, .bg-gray-300, .bg-gray-400 {
+.bg-white, .bg-gray-100, .bg-gray-200, .bg-gray-300, .bg-gray-400 {
   color: black;
 }
 
@@ -1460,6 +1475,11 @@ body {
   mask: linear-gradient(-90deg, rgba(0, 0, 0, 0) 3%, black 15%);
   -webkit-mask: -webkit-gradient(linear, right top, left top, color-stop(3%, rgba(0, 0, 0, 0)), color-stop(15%, black));
   -webkit-mask: linear-gradient(-90deg, rgba(0, 0, 0, 0) 3%, black 15%);
+}
+
+.slide-right {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .border-bright {

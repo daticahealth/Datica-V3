@@ -57,10 +57,10 @@ small {
     @apply text-3xl-scale;
 }
 .headline-3 {
-    @apply text-2xl; // add .font-sans if needed
+    @apply text-3xl; // add .font-sans if needed
 }
 .headline-4 {
-    @apply text-xl font-sans font-light;
+    @apply text-xl font-sans font-bold;
 }
 .multicol .col-2 {
     @screen md {
