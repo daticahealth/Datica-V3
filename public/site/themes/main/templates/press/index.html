@@ -5,7 +5,7 @@
 	}
 	.card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
 		grid-template-rows: 1fr;
 		/*grid-auto-rows: 1fr;*/
 		grid-gap: var(--gap);
@@ -29,13 +29,16 @@
 </style>
 <header class="pad-scale-y-lg mx-auto text-center lozad bg-gray-700 bg-cover bg-no-repeat" {{ assets:featured_image }}data-background-image="{{ glide:id width="1400" height="900" }}" {{ /assets:featured_image }}>
 		{{# {{ svg src="/assets/icons/icon-webinar.svg" class="w-16 h-16" a11y="Video Presentation Icon" }} #}}
-		<h1 class="headline-2 spaced-out font-bold mb-2">
-			<a class="link-light" href="/press/" title="All Webinars">Datica In the News</a>
-		</h1>
-		{{ summary | wrap:p.text-xl.text-white }}
-	</a>
+		<h1 class="headline-5 spaced-out font-bold mb-2">Press releases</h1>
+		<h2 class="headline-2 font-bold mb-2">Datica In the News</h2>
+		{{ summary | wrap:p.text-xl.text-white.max-w-md.mx-auto.leading-tight }}
 </header>
-<main class="">
+<main class="mx-auto pad-scale-y-md">
+	<section class="mb-6 mx-auto flex justify-center">
+		<div class="block">
+				{{ partial:search-form-press }}
+		</div>
+	</section>
 	{{ collection from="{section_collection}" paginate="true" as="press_releases" limit="20" sort="pub_date:desc" }}
 		<article class="list card-grid mx-auto">
 				{{ press_releases scope="tag" }}

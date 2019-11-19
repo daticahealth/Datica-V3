@@ -30,6 +30,9 @@ sections:
         type: collections
         instructions: 'Choose a collection type to display.'
         display: 'Selected Collection'
+      template:
+        type: template
+        display: 'Choose a Template'
   sidebar:
     display: 'Article Metadata'
     fields:

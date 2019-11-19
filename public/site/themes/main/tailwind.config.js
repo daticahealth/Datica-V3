@@ -9,6 +9,7 @@ module.exports = {
         200: 'hsl(31, 1%, 86%)',
         300: 'hsl(31, 1%, 75%)',
         400: 'hsl(31, 1%, 60%)',
+        500: 'hsl(31, 1%, 50%)',
         600: 'hsl(31, 1%, 40%)',
         700: 'hsl(31, 2%, 25%)',
         800: 'hsl(31, 3%, 16%)',
@@ -58,7 +59,7 @@ module.exports = {
       ],
     },
     fontSize: {
-      xs: '0.75rem',
+      xs: '0.7rem',
       sm: '0.875rem',
       base: '1rem',
       lg: '1.125rem',
@@ -84,6 +85,15 @@ module.exports = {
       // extrabold: '800',
       // black: '900',
     },
+    letterSpacing: {
+      tightest: '-.075em',
+      tighter: '-.05em',
+      tight: '-.025em',
+      normal: '0',
+      wide: '.025em',
+      wider: '.05em',
+      widest: '.15em',
+    },
     lineHeight: {
       none: 1,
       tighter: 1.15,
@@ -98,7 +108,10 @@ module.exports = {
       },
       borderWidth: {
         '12': '12px',
-      }
+      },
+      // width: {
+      //   '72': '20rem',
+      // }
     }
   },
   variants: {},

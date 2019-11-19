@@ -62,6 +62,9 @@ small {
 .headline-4 {
     @apply text-xl font-sans font-bold;
 }
+.headline-5 {
+    @apply text-lg font-sans font-medium;
+}
 .multicol .col-2 {
     @screen md {
         columns: 2 15em;

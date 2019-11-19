@@ -11,16 +11,16 @@ a {
 }
 
 .link {
-    @apply text-blue-dark border-b border-transparent tracking-wider;
+    @apply text-green-dark border-b border-transparent;
     &:hover {
-        @apply text-blue border-blue;
+        @apply text-green border-green;
     }
 }
 
 .link-dark {
-    @apply text-blue-dark border-b border-blue;
+    @apply text-green-dark border-b border-green;
     &:hover {
-        @apply text-blue border-blue;
+        @apply text-green border-green;
     }
 }
 

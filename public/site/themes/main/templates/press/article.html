@@ -1,8 +1,21 @@
+---
+featured_image: /assets/general/guides/guide-integrations-hosp-bg.jpg
+---
+
 <style>
 	:root {
 		--bg-color: #edf2f7;
 	}
 </style>
+
+<header class="pad-scale-y-sm mx-auto text-center lozad bg-gray-700 bg-cover bg-no-repeat" {{ assets:featured_image }}data-background-image="{{ glide:id width="1400" height="900" }}" {{ /assets:featured_image }}>
+	<h1 class="headline-5 spaced-out font-bold mb-2">
+			<a class="link-light border-0" href="/press/" title="Datica Press Section">Press releases</a>
+	</h1>
+	<h2 class="headline-2 font-bold mb-2">Datica In the News</h2>
+	{{# {{ summary | wrap:p.text-xl.text-white.max-w-md.mx-auto.leading-tight }} #}}
+</a>
+</header>
 <main class="flex mx-auto justify-center flex-col md:flex-row" style="margin-top: calc(8vw + 1.5rem);">
     <article class="bg-white p-8 max-w-3xl w-full shadow-sm shadow-lg mb-6 z-10 md:w-2/3 lg:w-3/5 md:p-10 lg:p-16 xl:p-20">
         <header class="mb-6">
@@ -12,27 +25,25 @@
 				{{ relate:author scope="entry" }}
 					{{ partial:person }}
 				{{ /relate:author }}
-				{{ if tags }}
-					{{ partial:tag-list }}
-				{{ /if }}
             </div>
         </header>
-        <div class="markdown">
+        <div class="markdown mb-8">
 			{{ if lead }}{{ lead | markdown | wrap:div.text-lg.mb-6 }}{{ /if }}
 			{{ content }}
 		</div>
+		{{ if tags }}
+			{{ partial:tag-list }}
+		{{ /if }}
+
 		<hr class="my-8"/>
+		
 		{{# CTA #}}
 		{{ partial:next_prev }}
 	</article>
 	
      {{# for position-sticky to work: add .items-start to parent because https://stackoverflow.com/a/57830863 #}}
     <aside class="block bg-color w-full items-start md:w-1/3 lg:w-2/5 xl:max-w-md md:mt-16 z-0">
-        {{ if featured_image }}
-        <div class="mb-8">
-            <img class="lozad" {{ assets:featured_image }}data-src="{{ glide:id width="800" }}" {{ /assets:featured_image }} />
-        </div>
-        {{ /if }}
+
         <div class="sticky top-0 p-8">
             {{# <div class="mb-8">
                 {{ partial:email-subscribe }}

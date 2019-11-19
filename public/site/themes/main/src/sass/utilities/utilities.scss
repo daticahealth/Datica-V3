@@ -76,21 +76,21 @@ body {
     background: white;
     background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 46%); 
 }
-.pill {
-    display:inline-block;
-    line-height:0px;
-    border-radius:50%;
-    font-size: 1.8rem;
-}
+// .pill {
+//     display:inline-block;
+//     line-height:0px;
+//     border-radius:50%;
+//     font-size: 1.8rem;
+// }
 
-.pill span {
-    // color: white;
-    display:inline-block;
-    padding-top:    50%;
-    padding-bottom: 50%;
-    margin-left:  12px;
-    margin-right: 12px;
-}
+// .pill span {
+//     // color: white;
+//     display:inline-block;
+//     padding-top:    50%;
+//     padding-bottom: 50%;
+//     margin-left:  12px;
+//     margin-right: 12px;
+// }
 
 .bg-blur {
     @include bg-blur(5px);

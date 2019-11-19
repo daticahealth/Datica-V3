@@ -1,0 +1,9 @@
+driver: local
+auto_index: true
+default_index: default
+searchable:
+  - title
+  - summary
+  - tags
+  - subhead
+  - lead 
