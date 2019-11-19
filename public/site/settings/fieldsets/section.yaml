@@ -13,11 +13,11 @@ sections:
         localizable: true
       featured_image:
         type: assets
-        display: 'Featured Image'
+        display: 'Featured/background Image'
         container: main
         folder: img
         max_files: 1
-        instructions: 'Choose a large image for the entry.'
+        instructions: 'Choose a large image (as a background image) for the entry.'
         restrict: false
         mode: grid
       lead:
