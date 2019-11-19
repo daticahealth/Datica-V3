@@ -45,7 +45,7 @@
 				{{ unless last }}
 				{{ partial:press-card-h classes="" }}
 				{{ else }}
-					<a href="" class="button self-center">More</a>
+					{{# <a href="" class="button self-center">More</a> #}}
 				{{ /unless }}
 				{{# {{ if index == 5 }}
 				{{ entries:listing folder="blog" paginate="false" as="posts" limit="1" sort="pub_date:desc" }}

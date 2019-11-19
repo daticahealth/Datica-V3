@@ -16,7 +16,7 @@ featured_image: /assets/general/guides/guide-integrations-hosp-bg.jpg
 	{{# {{ summary | wrap:p.text-xl.text-white.max-w-md.mx-auto.leading-tight }} #}}
 </a>
 </header>
-<main class="flex mx-auto justify-center flex-col md:flex-row" style="margin-top: calc(8vw + 1.5rem);">
+<main class="flex mx-auto justify-center flex-col md:flex-row mt-8">
     <article class="bg-white p-8 max-w-3xl w-full shadow-sm shadow-lg mb-6 z-10 md:w-2/3 lg:w-3/5 md:p-10 lg:p-16 xl:p-20">
         <header class="mb-6">
             <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
@@ -45,9 +45,12 @@ featured_image: /assets/general/guides/guide-integrations-hosp-bg.jpg
     <aside class="block bg-color w-full items-start md:w-1/3 lg:w-2/5 xl:max-w-md md:mt-16 z-0">
 
         <div class="sticky top-0 p-8">
-            {{# <div class="mb-8">
+			<div class="mb-8">
+					{{ partial:search-form-press }}
+			</div>
+            <div class="mb-8 pad-scale-sm bg-gray-700 rounded-lg">
                 {{ partial:email-subscribe }}
-			</div> #}}
+			</div>
 			{{ if topics }}
 			{{ relate:discovery_topic }}
 				<div class="mb-8 lg:mb-12">
