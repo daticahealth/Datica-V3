@@ -1,0 +1,25 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+    & li {
+        &.active, & span, & a {
+            @apply rounded-full mx-1 text-center border-2 border-transparent;
+            display: table-cell;
+            vertical-align: middle;
+            width: 2em;
+            height: 2em;
+        }
+        & a {
+            @apply text-green-dark font-medium;
+        }
+        & a:hover {
+            @apply border-green;
+        }
+        &.active {
+            @apply border-0 bg-gray-600 text-white;
+        }
+        &.disabled {
+            @apply opacity-50;
+        }
+    }
+}

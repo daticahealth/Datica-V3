@@ -1238,6 +1238,46 @@ a {
   min-width: 22rem;
 }
 
+.pagination {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.pagination li.active, .pagination li span, .pagination li a {
+  border-radius: 9999px;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  text-align: center;
+  border-width: 2px;
+  border-color: transparent;
+  display: table-cell;
+  vertical-align: middle;
+  width: 2em;
+  height: 2em;
+}
+
+.pagination li a {
+  color: #007b50;
+  font-weight: 500;
+}
+
+.pagination li a:hover {
+  border-color: #009460;
+}
+
+.pagination li.active {
+  border-width: 0;
+  background-color: hsl(31, 1%, 40%);
+  color: #ffffff;
+}
+
+.pagination li.disabled {
+  opacity: 0.5;
+}
+
 .blend-mode-multiply {
   mix-blend-mode: multiply;
 }

@@ -1,7 +1,9 @@
 {{ if paginate:total_pages > 1 }}
+    <div class="flex flex-row justify-center">
     {{ paginate }}
-        <hr>
-        <p>Page {{ current_page }} of {{ total_pages }} ({{ total_results }} total entries)</p>
+        {{# <hr> #}}
+        <p class="mb-0">Page {{ current_page }} of {{ total_pages }} ({{ total_results }} total entries)</p>
     {{ /paginate }}
     {{ paginate:auto_links }}
+    </div>
 {{ /if }}
