@@ -8,10 +8,11 @@ $color-pinterest: #bd081c;
 $color-rss:       orange;
 $color-youtube:   red;
 
-// :root {
+:root {
+    --bg-light: theme('colors.gray.100');
 //     --screen-sm: theme('screens.sm');
 //     --screen-md: theme('screens.md');
 //     --screen-lg: theme('screens.lg');
 //     --screen-xl: theme('screens.xl');
 //     --screen-xxl: theme('screens.xxl');
-// }
+}
