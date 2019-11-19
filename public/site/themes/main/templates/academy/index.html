@@ -1,3 +1,10 @@
+<style>
+		:root {
+			--bg-color: var(--color-gray-100);
+		}
+	
+</style>
+
 <section class="mx-auto max-w-2xl">
 
 	<header>
@@ -9,8 +16,9 @@
 	<article class="list">
 		{{ collection from="{section_collection}" paginate="true" as="posts" limit="" sort="pub_date:desc" }}
 			{{ posts scope="tag" }}
+				{{ partial:academy-card-h }}
 				{{# {{ partial:block }} #}}
-				<div class="flex justify-center w-full mb-8">
+				{{# <div class="flex justify-center w-full mb-8">
 					<div class="w-1/5">
 						{{ if featured_image }}
 						<img class="lozad pr-4 rounded-sm" 
@@ -25,7 +33,7 @@
 						</a>
 						{{ summary | wrap:div.text-sm }}
 					</div>
-				</div>
+				</div> #}}
 				
 			{{ /posts }}
 

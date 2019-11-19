@@ -3,7 +3,7 @@
     transition: color 0.3s, background-color 0.3s;
     @apply rounded-full text-gray-800 bg-gray-200 text-xs ml-2 tracking-tight;
     &-light {
-        @apply text-gray-800 bg-gray-100;
+        @apply text-gray-800 bg-gray-200;
         &:hover {
             @apply bg-gray-300 text-black;
         }

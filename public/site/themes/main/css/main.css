@@ -455,7 +455,7 @@ html {
 *::after {
   border-width: 0;
   border-style: solid;
-  border-color: hsl(31, 1%, 75%);
+  border-color: hsl(31, 1%, 86%);
 }
 
 /*
@@ -637,9 +637,9 @@ video {
   --color-transparent: transparent;
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-gray-100: hsl(31, 1%, 91%);
-  --color-gray-200: hsl(31, 1%, 86%);
-  --color-gray-300: hsl(31, 1%, 75%);
+  --color-gray-100: hsl(31, 1%, 96%);
+  --color-gray-200: hsl(31, 1%, 90%);
+  --color-gray-300: hsl(31, 1%, 86%);
   --color-gray-400: hsl(31, 1%, 60%);
   --color-gray-500: hsl(31, 1%, 50%);
   --color-gray-600: hsl(31, 1%, 40%);
@@ -942,7 +942,7 @@ small {
   transition: color 0.3s, background-color 0.3s;
   border-radius: 9999px;
   color: hsl(31, 3%, 16%);
-  background-color: hsl(31, 1%, 86%);
+  background-color: hsl(31, 1%, 90%);
   font-size: 0.7rem;
   margin-left: 0.5rem;
   letter-spacing: -.025em;
@@ -950,11 +950,11 @@ small {
 
 .pill-light {
   color: hsl(31, 3%, 16%);
-  background-color: hsl(31, 1%, 91%);
+  background-color: hsl(31, 1%, 90%);
 }
 
 .pill-light:hover {
-  background-color: hsl(31, 1%, 75%);
+  background-color: hsl(31, 1%, 86%);
   color: #000000;
 }
 
@@ -1233,7 +1233,7 @@ a {
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: hsl(31, 1%, 86%);
+  background-color: hsl(31, 1%, 90%);
 }
 
 .person img.avatar {
@@ -1717,15 +1717,15 @@ body {
 }
 
 .bg-gray-100 {
-  background-color: hsl(31, 1%, 91%);
+  background-color: hsl(31, 1%, 96%);
 }
 
 .bg-gray-200 {
-  background-color: hsl(31, 1%, 86%);
+  background-color: hsl(31, 1%, 90%);
 }
 
 .bg-gray-300 {
-  background-color: hsl(31, 1%, 75%);
+  background-color: hsl(31, 1%, 86%);
 }
 
 .bg-gray-400 {
@@ -1809,15 +1809,15 @@ body {
 }
 
 .hover\:bg-gray-100:hover {
-  background-color: hsl(31, 1%, 91%);
+  background-color: hsl(31, 1%, 96%);
 }
 
 .hover\:bg-gray-200:hover {
-  background-color: hsl(31, 1%, 86%);
+  background-color: hsl(31, 1%, 90%);
 }
 
 .hover\:bg-gray-300:hover {
-  background-color: hsl(31, 1%, 75%);
+  background-color: hsl(31, 1%, 86%);
 }
 
 .hover\:bg-gray-400:hover {
@@ -1901,15 +1901,15 @@ body {
 }
 
 .focus\:bg-gray-100:focus {
-  background-color: hsl(31, 1%, 91%);
+  background-color: hsl(31, 1%, 96%);
 }
 
 .focus\:bg-gray-200:focus {
-  background-color: hsl(31, 1%, 86%);
+  background-color: hsl(31, 1%, 90%);
 }
 
 .focus\:bg-gray-300:focus {
-  background-color: hsl(31, 1%, 75%);
+  background-color: hsl(31, 1%, 86%);
 }
 
 .focus\:bg-gray-400:focus {
@@ -2073,15 +2073,15 @@ body {
 }
 
 .border-gray-100 {
-  border-color: hsl(31, 1%, 91%);
+  border-color: hsl(31, 1%, 96%);
 }
 
 .border-gray-200 {
-  border-color: hsl(31, 1%, 86%);
+  border-color: hsl(31, 1%, 90%);
 }
 
 .border-gray-300 {
-  border-color: hsl(31, 1%, 75%);
+  border-color: hsl(31, 1%, 86%);
 }
 
 .border-gray-400 {
@@ -2165,15 +2165,15 @@ body {
 }
 
 .hover\:border-gray-100:hover {
-  border-color: hsl(31, 1%, 91%);
+  border-color: hsl(31, 1%, 96%);
 }
 
 .hover\:border-gray-200:hover {
-  border-color: hsl(31, 1%, 86%);
+  border-color: hsl(31, 1%, 90%);
 }
 
 .hover\:border-gray-300:hover {
-  border-color: hsl(31, 1%, 75%);
+  border-color: hsl(31, 1%, 86%);
 }
 
 .hover\:border-gray-400:hover {
@@ -2257,15 +2257,15 @@ body {
 }
 
 .focus\:border-gray-100:focus {
-  border-color: hsl(31, 1%, 91%);
+  border-color: hsl(31, 1%, 96%);
 }
 
 .focus\:border-gray-200:focus {
-  border-color: hsl(31, 1%, 86%);
+  border-color: hsl(31, 1%, 90%);
 }
 
 .focus\:border-gray-300:focus {
-  border-color: hsl(31, 1%, 75%);
+  border-color: hsl(31, 1%, 86%);
 }
 
 .focus\:border-gray-400:focus {
@@ -5231,63 +5231,63 @@ body {
 }
 
 .placeholder-gray-100::-webkit-input-placeholder {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .placeholder-gray-100::-moz-placeholder {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .placeholder-gray-100:-ms-input-placeholder {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .placeholder-gray-100::-ms-input-placeholder {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .placeholder-gray-100::placeholder {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .placeholder-gray-200::-webkit-input-placeholder {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .placeholder-gray-200::-moz-placeholder {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .placeholder-gray-200:-ms-input-placeholder {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .placeholder-gray-200::-ms-input-placeholder {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .placeholder-gray-200::placeholder {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .placeholder-gray-300::-webkit-input-placeholder {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .placeholder-gray-300::-moz-placeholder {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .placeholder-gray-300:-ms-input-placeholder {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .placeholder-gray-300::-ms-input-placeholder {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .placeholder-gray-300::placeholder {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .placeholder-gray-400::-webkit-input-placeholder {
@@ -5691,63 +5691,63 @@ body {
 }
 
 .focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .focus\:placeholder-gray-100:focus::-moz-placeholder {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .focus\:placeholder-gray-100:focus::placeholder {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .focus\:placeholder-gray-200:focus::-moz-placeholder {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .focus\:placeholder-gray-200:focus::placeholder {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:placeholder-gray-300:focus::-moz-placeholder {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:placeholder-gray-300:focus::placeholder {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
@@ -6342,15 +6342,15 @@ body {
 }
 
 .text-gray-100 {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .text-gray-200 {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .text-gray-300 {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .text-gray-400 {
@@ -6434,15 +6434,15 @@ body {
 }
 
 .hover\:text-gray-100:hover {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .hover\:text-gray-200:hover {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .hover\:text-gray-300:hover {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .hover\:text-gray-400:hover {
@@ -6526,15 +6526,15 @@ body {
 }
 
 .focus\:text-gray-100:focus {
-  color: hsl(31, 1%, 91%);
+  color: hsl(31, 1%, 96%);
 }
 
 .focus\:text-gray-200:focus {
-  color: hsl(31, 1%, 86%);
+  color: hsl(31, 1%, 90%);
 }
 
 .focus\:text-gray-300:focus {
-  color: hsl(31, 1%, 75%);
+  color: hsl(31, 1%, 86%);
 }
 
 .focus\:text-gray-400:focus {
@@ -7181,15 +7181,15 @@ body {
   }
 
   .sm\:bg-gray-100 {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .sm\:bg-gray-200 {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .sm\:bg-gray-300 {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .sm\:bg-gray-400 {
@@ -7273,15 +7273,15 @@ body {
   }
 
   .sm\:hover\:bg-gray-100:hover {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .sm\:hover\:bg-gray-200:hover {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .sm\:hover\:bg-gray-300:hover {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .sm\:hover\:bg-gray-400:hover {
@@ -7365,15 +7365,15 @@ body {
   }
 
   .sm\:focus\:bg-gray-100:focus {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .sm\:focus\:bg-gray-200:focus {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .sm\:focus\:bg-gray-300:focus {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:bg-gray-400:focus {
@@ -7537,15 +7537,15 @@ body {
   }
 
   .sm\:border-gray-100 {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .sm\:border-gray-200 {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .sm\:border-gray-300 {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .sm\:border-gray-400 {
@@ -7629,15 +7629,15 @@ body {
   }
 
   .sm\:hover\:border-gray-100:hover {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .sm\:hover\:border-gray-200:hover {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .sm\:hover\:border-gray-300:hover {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .sm\:hover\:border-gray-400:hover {
@@ -7721,15 +7721,15 @@ body {
   }
 
   .sm\:focus\:border-gray-100:focus {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .sm\:focus\:border-gray-200:focus {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .sm\:focus\:border-gray-300:focus {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:border-gray-400:focus {
@@ -10695,63 +10695,63 @@ body {
   }
 
   .sm\:placeholder-gray-100::-webkit-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:placeholder-gray-100::-moz-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:placeholder-gray-100:-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:placeholder-gray-100::-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:placeholder-gray-100::placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:placeholder-gray-200::-webkit-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:placeholder-gray-200::-moz-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:placeholder-gray-200:-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:placeholder-gray-200::-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:placeholder-gray-200::placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:placeholder-gray-300::-webkit-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:placeholder-gray-300::-moz-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:placeholder-gray-300:-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:placeholder-gray-300::-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:placeholder-gray-300::placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:placeholder-gray-400::-webkit-input-placeholder {
@@ -11155,63 +11155,63 @@ body {
   }
 
   .sm\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:focus\:placeholder-gray-100:focus::-moz-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:focus\:placeholder-gray-100:focus::placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:focus\:placeholder-gray-200:focus::-moz-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:focus\:placeholder-gray-200:focus::placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:placeholder-gray-300:focus::-moz-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:placeholder-gray-300:focus::placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
@@ -11806,15 +11806,15 @@ body {
   }
 
   .sm\:text-gray-100 {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:text-gray-200 {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:text-gray-300 {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:text-gray-400 {
@@ -11898,15 +11898,15 @@ body {
   }
 
   .sm\:hover\:text-gray-100:hover {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:hover\:text-gray-200:hover {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:hover\:text-gray-300:hover {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:hover\:text-gray-400:hover {
@@ -11990,15 +11990,15 @@ body {
   }
 
   .sm\:focus\:text-gray-100:focus {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .sm\:focus\:text-gray-200:focus {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .sm\:focus\:text-gray-300:focus {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .sm\:focus\:text-gray-400:focus {
@@ -12646,15 +12646,15 @@ body {
   }
 
   .md\:bg-gray-100 {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .md\:bg-gray-200 {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .md\:bg-gray-300 {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .md\:bg-gray-400 {
@@ -12738,15 +12738,15 @@ body {
   }
 
   .md\:hover\:bg-gray-100:hover {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .md\:hover\:bg-gray-200:hover {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .md\:hover\:bg-gray-300:hover {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .md\:hover\:bg-gray-400:hover {
@@ -12830,15 +12830,15 @@ body {
   }
 
   .md\:focus\:bg-gray-100:focus {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .md\:focus\:bg-gray-200:focus {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .md\:focus\:bg-gray-300:focus {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:bg-gray-400:focus {
@@ -13002,15 +13002,15 @@ body {
   }
 
   .md\:border-gray-100 {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .md\:border-gray-200 {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .md\:border-gray-300 {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .md\:border-gray-400 {
@@ -13094,15 +13094,15 @@ body {
   }
 
   .md\:hover\:border-gray-100:hover {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .md\:hover\:border-gray-200:hover {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .md\:hover\:border-gray-300:hover {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .md\:hover\:border-gray-400:hover {
@@ -13186,15 +13186,15 @@ body {
   }
 
   .md\:focus\:border-gray-100:focus {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .md\:focus\:border-gray-200:focus {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .md\:focus\:border-gray-300:focus {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:border-gray-400:focus {
@@ -16160,63 +16160,63 @@ body {
   }
 
   .md\:placeholder-gray-100::-webkit-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:placeholder-gray-100::-moz-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:placeholder-gray-100:-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:placeholder-gray-100::-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:placeholder-gray-100::placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:placeholder-gray-200::-webkit-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:placeholder-gray-200::-moz-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:placeholder-gray-200:-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:placeholder-gray-200::-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:placeholder-gray-200::placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:placeholder-gray-300::-webkit-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:placeholder-gray-300::-moz-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:placeholder-gray-300:-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:placeholder-gray-300::-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:placeholder-gray-300::placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:placeholder-gray-400::-webkit-input-placeholder {
@@ -16620,63 +16620,63 @@ body {
   }
 
   .md\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:focus\:placeholder-gray-100:focus::-moz-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:focus\:placeholder-gray-100:focus::placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:focus\:placeholder-gray-200:focus::-moz-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:focus\:placeholder-gray-200:focus::placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:placeholder-gray-300:focus::-moz-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:placeholder-gray-300:focus::placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
@@ -17271,15 +17271,15 @@ body {
   }
 
   .md\:text-gray-100 {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:text-gray-200 {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:text-gray-300 {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:text-gray-400 {
@@ -17363,15 +17363,15 @@ body {
   }
 
   .md\:hover\:text-gray-100:hover {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:hover\:text-gray-200:hover {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:hover\:text-gray-300:hover {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:hover\:text-gray-400:hover {
@@ -17455,15 +17455,15 @@ body {
   }
 
   .md\:focus\:text-gray-100:focus {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .md\:focus\:text-gray-200:focus {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .md\:focus\:text-gray-300:focus {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .md\:focus\:text-gray-400:focus {
@@ -18111,15 +18111,15 @@ body {
   }
 
   .lg\:bg-gray-100 {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .lg\:bg-gray-200 {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .lg\:bg-gray-300 {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .lg\:bg-gray-400 {
@@ -18203,15 +18203,15 @@ body {
   }
 
   .lg\:hover\:bg-gray-100:hover {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .lg\:hover\:bg-gray-200:hover {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .lg\:hover\:bg-gray-300:hover {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .lg\:hover\:bg-gray-400:hover {
@@ -18295,15 +18295,15 @@ body {
   }
 
   .lg\:focus\:bg-gray-100:focus {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .lg\:focus\:bg-gray-200:focus {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .lg\:focus\:bg-gray-300:focus {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:bg-gray-400:focus {
@@ -18467,15 +18467,15 @@ body {
   }
 
   .lg\:border-gray-100 {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .lg\:border-gray-200 {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .lg\:border-gray-300 {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .lg\:border-gray-400 {
@@ -18559,15 +18559,15 @@ body {
   }
 
   .lg\:hover\:border-gray-100:hover {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .lg\:hover\:border-gray-200:hover {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .lg\:hover\:border-gray-300:hover {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .lg\:hover\:border-gray-400:hover {
@@ -18651,15 +18651,15 @@ body {
   }
 
   .lg\:focus\:border-gray-100:focus {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .lg\:focus\:border-gray-200:focus {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .lg\:focus\:border-gray-300:focus {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:border-gray-400:focus {
@@ -21625,63 +21625,63 @@ body {
   }
 
   .lg\:placeholder-gray-100::-webkit-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:placeholder-gray-100::-moz-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:placeholder-gray-100:-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:placeholder-gray-100::-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:placeholder-gray-100::placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:placeholder-gray-200::-webkit-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:placeholder-gray-200::-moz-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:placeholder-gray-200:-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:placeholder-gray-200::-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:placeholder-gray-200::placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:placeholder-gray-300::-webkit-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:placeholder-gray-300::-moz-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:placeholder-gray-300:-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:placeholder-gray-300::-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:placeholder-gray-300::placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:placeholder-gray-400::-webkit-input-placeholder {
@@ -22085,63 +22085,63 @@ body {
   }
 
   .lg\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:focus\:placeholder-gray-100:focus::-moz-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:focus\:placeholder-gray-100:focus::placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:focus\:placeholder-gray-200:focus::-moz-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:focus\:placeholder-gray-200:focus::placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:placeholder-gray-300:focus::-moz-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:placeholder-gray-300:focus::placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
@@ -22736,15 +22736,15 @@ body {
   }
 
   .lg\:text-gray-100 {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:text-gray-200 {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:text-gray-300 {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:text-gray-400 {
@@ -22828,15 +22828,15 @@ body {
   }
 
   .lg\:hover\:text-gray-100:hover {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:hover\:text-gray-200:hover {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:hover\:text-gray-300:hover {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:hover\:text-gray-400:hover {
@@ -22920,15 +22920,15 @@ body {
   }
 
   .lg\:focus\:text-gray-100:focus {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .lg\:focus\:text-gray-200:focus {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .lg\:focus\:text-gray-300:focus {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .lg\:focus\:text-gray-400:focus {
@@ -23576,15 +23576,15 @@ body {
   }
 
   .xl\:bg-gray-100 {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .xl\:bg-gray-200 {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .xl\:bg-gray-300 {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xl\:bg-gray-400 {
@@ -23668,15 +23668,15 @@ body {
   }
 
   .xl\:hover\:bg-gray-100:hover {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .xl\:hover\:bg-gray-200:hover {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .xl\:hover\:bg-gray-300:hover {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xl\:hover\:bg-gray-400:hover {
@@ -23760,15 +23760,15 @@ body {
   }
 
   .xl\:focus\:bg-gray-100:focus {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .xl\:focus\:bg-gray-200:focus {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .xl\:focus\:bg-gray-300:focus {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:bg-gray-400:focus {
@@ -23932,15 +23932,15 @@ body {
   }
 
   .xl\:border-gray-100 {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .xl\:border-gray-200 {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .xl\:border-gray-300 {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xl\:border-gray-400 {
@@ -24024,15 +24024,15 @@ body {
   }
 
   .xl\:hover\:border-gray-100:hover {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .xl\:hover\:border-gray-200:hover {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .xl\:hover\:border-gray-300:hover {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xl\:hover\:border-gray-400:hover {
@@ -24116,15 +24116,15 @@ body {
   }
 
   .xl\:focus\:border-gray-100:focus {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .xl\:focus\:border-gray-200:focus {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .xl\:focus\:border-gray-300:focus {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:border-gray-400:focus {
@@ -27090,63 +27090,63 @@ body {
   }
 
   .xl\:placeholder-gray-100::-webkit-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:placeholder-gray-100::-moz-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:placeholder-gray-100:-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:placeholder-gray-100::-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:placeholder-gray-100::placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:placeholder-gray-200::-webkit-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:placeholder-gray-200::-moz-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:placeholder-gray-200:-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:placeholder-gray-200::-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:placeholder-gray-200::placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:placeholder-gray-300::-webkit-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:placeholder-gray-300::-moz-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:placeholder-gray-300:-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:placeholder-gray-300::-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:placeholder-gray-300::placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:placeholder-gray-400::-webkit-input-placeholder {
@@ -27550,63 +27550,63 @@ body {
   }
 
   .xl\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:focus\:placeholder-gray-100:focus::-moz-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:focus\:placeholder-gray-100:focus::placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:focus\:placeholder-gray-200:focus::-moz-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:focus\:placeholder-gray-200:focus::placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:placeholder-gray-300:focus::-moz-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:placeholder-gray-300:focus::placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
@@ -28201,15 +28201,15 @@ body {
   }
 
   .xl\:text-gray-100 {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:text-gray-200 {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:text-gray-300 {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:text-gray-400 {
@@ -28293,15 +28293,15 @@ body {
   }
 
   .xl\:hover\:text-gray-100:hover {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:hover\:text-gray-200:hover {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:hover\:text-gray-300:hover {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:hover\:text-gray-400:hover {
@@ -28385,15 +28385,15 @@ body {
   }
 
   .xl\:focus\:text-gray-100:focus {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xl\:focus\:text-gray-200:focus {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xl\:focus\:text-gray-300:focus {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xl\:focus\:text-gray-400:focus {
@@ -29041,15 +29041,15 @@ body {
   }
 
   .xxl\:bg-gray-100 {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .xxl\:bg-gray-200 {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .xxl\:bg-gray-300 {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:bg-gray-400 {
@@ -29133,15 +29133,15 @@ body {
   }
 
   .xxl\:hover\:bg-gray-100:hover {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .xxl\:hover\:bg-gray-200:hover {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .xxl\:hover\:bg-gray-300:hover {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:hover\:bg-gray-400:hover {
@@ -29225,15 +29225,15 @@ body {
   }
 
   .xxl\:focus\:bg-gray-100:focus {
-    background-color: hsl(31, 1%, 91%);
+    background-color: hsl(31, 1%, 96%);
   }
 
   .xxl\:focus\:bg-gray-200:focus {
-    background-color: hsl(31, 1%, 86%);
+    background-color: hsl(31, 1%, 90%);
   }
 
   .xxl\:focus\:bg-gray-300:focus {
-    background-color: hsl(31, 1%, 75%);
+    background-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:bg-gray-400:focus {
@@ -29397,15 +29397,15 @@ body {
   }
 
   .xxl\:border-gray-100 {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .xxl\:border-gray-200 {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .xxl\:border-gray-300 {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:border-gray-400 {
@@ -29489,15 +29489,15 @@ body {
   }
 
   .xxl\:hover\:border-gray-100:hover {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .xxl\:hover\:border-gray-200:hover {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .xxl\:hover\:border-gray-300:hover {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:hover\:border-gray-400:hover {
@@ -29581,15 +29581,15 @@ body {
   }
 
   .xxl\:focus\:border-gray-100:focus {
-    border-color: hsl(31, 1%, 91%);
+    border-color: hsl(31, 1%, 96%);
   }
 
   .xxl\:focus\:border-gray-200:focus {
-    border-color: hsl(31, 1%, 86%);
+    border-color: hsl(31, 1%, 90%);
   }
 
   .xxl\:focus\:border-gray-300:focus {
-    border-color: hsl(31, 1%, 75%);
+    border-color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:border-gray-400:focus {
@@ -32555,63 +32555,63 @@ body {
   }
 
   .xxl\:placeholder-gray-100::-webkit-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:placeholder-gray-100::-moz-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:placeholder-gray-100:-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:placeholder-gray-100::-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:placeholder-gray-100::placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:placeholder-gray-200::-webkit-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:placeholder-gray-200::-moz-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:placeholder-gray-200:-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:placeholder-gray-200::-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:placeholder-gray-200::placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:placeholder-gray-300::-webkit-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:placeholder-gray-300::-moz-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:placeholder-gray-300:-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:placeholder-gray-300::-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:placeholder-gray-300::placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:placeholder-gray-400::-webkit-input-placeholder {
@@ -33015,63 +33015,63 @@ body {
   }
 
   .xxl\:focus\:placeholder-gray-100:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:focus\:placeholder-gray-100:focus::-moz-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:focus\:placeholder-gray-100:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:focus\:placeholder-gray-100:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:focus\:placeholder-gray-100:focus::placeholder {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:focus\:placeholder-gray-200:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:focus\:placeholder-gray-200:focus::-moz-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:focus\:placeholder-gray-200:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:focus\:placeholder-gray-200:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:focus\:placeholder-gray-200:focus::placeholder {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:focus\:placeholder-gray-300:focus::-webkit-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:placeholder-gray-300:focus::-moz-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:placeholder-gray-300:focus:-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:placeholder-gray-300:focus::-ms-input-placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:placeholder-gray-300:focus::placeholder {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:placeholder-gray-400:focus::-webkit-input-placeholder {
@@ -33666,15 +33666,15 @@ body {
   }
 
   .xxl\:text-gray-100 {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:text-gray-200 {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:text-gray-300 {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:text-gray-400 {
@@ -33758,15 +33758,15 @@ body {
   }
 
   .xxl\:hover\:text-gray-100:hover {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:hover\:text-gray-200:hover {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:hover\:text-gray-300:hover {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:hover\:text-gray-400:hover {
@@ -33850,15 +33850,15 @@ body {
   }
 
   .xxl\:focus\:text-gray-100:focus {
-    color: hsl(31, 1%, 91%);
+    color: hsl(31, 1%, 96%);
   }
 
   .xxl\:focus\:text-gray-200:focus {
-    color: hsl(31, 1%, 86%);
+    color: hsl(31, 1%, 90%);
   }
 
   .xxl\:focus\:text-gray-300:focus {
-    color: hsl(31, 1%, 75%);
+    color: hsl(31, 1%, 86%);
   }
 
   .xxl\:focus\:text-gray-400:focus {

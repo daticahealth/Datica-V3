@@ -1,0 +1,24 @@
+<div class="{{ classes }} rounded card card-hover shadow hover:shadow-lg transition-all bg-white flex justify-start items-stretch max-w-3xl mb-8">
+    {{ if featured_image }}
+        <div class="w-1/4">
+            <img class="lozad rounded-sm object-cover w-full h-full" 
+                {{ assets:featured_image }}data-src="{{ glide:id width="400" height="400" crop="focal_crop" }}" src="{{ glide:id width="200" height="200" crop="focal_crop" quality="10" }}" {{ /assets:featured_image }}
+            />
+        </div>
+    {{ /if }}
+    <div class="{{ if featured_image }}w-3/4 {{ /if }}pad-scale-sm">
+        <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
+        <h3 class="headline-4 font-bold mb-2"><a href="{{ url }}" title="Read {{ title }}">{{ title }}</a></h3>
+        {{ relate:author use_context="true" }}
+            {{ partial:person classes="mb-4" }}
+        {{ /relate:author }}
+
+        {{ summary | wrap:div.mb-6 }}
+        {{ if tags }}
+            <div class="">
+                {{ partial:tag-list-plain }}
+            </div>
+        {{ /if }}
+    </div>
+</div>
+
