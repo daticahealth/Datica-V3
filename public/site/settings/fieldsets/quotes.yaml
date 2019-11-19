@@ -14,7 +14,7 @@ sections:
         cheatsheet: true
         restrict_assets: false
         instructions: 'The quote itself.'
-      url:
+      quote_url:
         type: text
         display: 'Quote Citation URL'
         validate: url

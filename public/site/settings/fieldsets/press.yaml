@@ -1,0 +1,46 @@
+title: 'Press Releases'
+sections:
+  main:
+    display: Details
+    fields:
+      basics:
+        type: partial
+        display: 'Entry basics'
+        fieldset: _basics
+      content:
+        type: markdown
+        display: 'Press Release Content'
+        localizable: true
+        cheatsheet: true
+        restrict_assets: false
+        container: main
+        folder: /
+  sidebar:
+    display: 'Press Release Metadata'
+    fields:
+      post_meta:
+        type: partial
+        display: 'Post Metadata'
+        fieldset: _meta
+      press_url:
+        type: text
+        display: 'Citation URL'
+        validate: url
+      featured_person:
+        max_items: '1'
+        label: '{{ title }}, {{ role }}'
+        collection:
+          - people
+        mode: panes
+        type: collection
+        display: 'Featured Person'
+      related_entries:
+        max_items: '3'
+        label: '{{ title }} {{ topic }}'
+        collection:
+          - blog
+          - cta
+        mode: panes
+        type: collection
+        display: 'Related Entries'
+taxonomies: false

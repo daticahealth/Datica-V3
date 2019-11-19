@@ -1,0 +1,105 @@
+<style>
+	:root {
+		--bg-color: #edf2f7;
+	}
+</style>
+<main class="flex mx-auto justify-center flex-col md:flex-row" style="margin-top: calc(8vw + 1.5rem);">
+    <article class="bg-white p-8 max-w-3xl w-full shadow-sm shadow-lg mb-6 z-10 md:w-2/3 lg:w-3/5 md:p-10 lg:p-16 xl:p-20">
+        <header class="mb-6">
+            <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
+            <h1 class="headline-3 mb-4">{{ title }}</h1>
+            <div class="flex flex-wrap items-center justify-between" md:flex-no-wrap="md:flex-no-wrap">
+				{{ relate:author scope="entry" }}
+					{{ partial:person }}
+				{{ /relate:author }}
+				{{ if tags }}
+					{{ partial:tag-list }}
+				{{ /if }}
+            </div>
+        </header>
+        <div class="markdown">
+			{{ if lead }}{{ lead | markdown | wrap:div.text-lg.mb-6 }}{{ /if }}
+			{{ content }}
+		</div>
+		<hr class="my-8"/>
+		{{# CTA #}}
+		{{ partial:next_prev }}
+	</article>
+	
+     {{# for position-sticky to work: add .items-start to parent because https://stackoverflow.com/a/57830863 #}}
+    <aside class="block bg-color w-full items-start md:w-1/3 lg:w-2/5 xl:max-w-md md:mt-16 z-0">
+        {{ if featured_image }}
+        <div class="mb-8">
+            <img class="lozad" {{ assets:featured_image }}data-src="{{ glide:id width="800" }}" {{ /assets:featured_image }} />
+        </div>
+        {{ /if }}
+        <div class="sticky top-0 p-8">
+            {{# <div class="mb-8">
+                {{ partial:email-subscribe }}
+			</div> #}}
+			{{ if topics }}
+			{{ relate:discovery_topic }}
+				<div class="mb-8 lg:mb-12">
+					<div class="text-reg font-bold tracking-widest uppercase mb-2"><span class="font-light">Explore</span> {{ title }}</div>
+					{{ summary | wrap:div.text-sm.mb-4 }}
+					{{ if related_video }}
+						{{ relate:related_video }}
+							{{ custom_form }}
+						{{ /relate:related_video }}
+					{{ /if }}
+					{{# <img class="lozad" data-src="https://images.ctfassets.net/bfs863we7xd3/6m4CTI0Bd2esaf8pgRaTlJ/9f30e25ac314b5b16df6a7c5d104b9e7/video_poster_example.jpg?w=800"/> #}}
+				</div>
+			{{ /relate:discovery_topic }}
+            
+			{{ /if }}
+			{{ if related_entries }}
+				<h4 class="headline-4 spaced-out mb-6">Related</h4>
+				{{ relate:related_entries }}
+					{{ partial:related-article size="small" classes="mb-6" }}
+				{{ /relate:related_entries }}
+			{{ /if }}
+            <div class="mb-4">
+			</div>
+        </div>
+	</aside>
+</main>
+
+{{#
+<section class="regular">
+
+	<header>
+		<div class="meta clearfix">
+			<div class="author">
+				<img src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/48.jpg" class="img-circle" width="48" height="48">
+				<div class="pull-left">
+					<a href="" class="name">{{ author_name }}</a>
+					<span class="length">{{ content | read_time }} minute read</span>
+				</div>
+			</div>
+			<div class="date">
+				{{ date format="F j, Y" }}
+			</div>
+		</div>
+		<h1>{{ title }}</h1>
+		{{ sub_title wrap="h2" }}
+	</header>
+
+	<article class="content">
+
+		{{ if intro_image }}
+			<p><img src="{{ intro_image }}" class="intro-image"></p>
+		{{ /if }}
+
+		{{ content }}
+
+		<ul class="tags">
+		{{ tags }}
+			<li><a href="{{ url }}">{{ title }}</a></li>
+		{{ /tags }}
+		</ul>
+	</article>
+
+</section>
+
+{{ partial:article-footer }}
+#}}

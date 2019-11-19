@@ -3,6 +3,7 @@ collections:
   academy: '/academy/{slug}'
   events: '/events/{slug}'
   webinars: '/webinar/{slug}'
+  press: '/press/{slug}'
 taxonomies:
   tags: '/tag/{slug}'
   topics: '/discover/{slug}'
