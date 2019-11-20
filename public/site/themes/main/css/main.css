@@ -1274,6 +1274,11 @@ a {
   min-width: 22rem;
 }
 
+.card-title {
+  -webkit-transition: color 0.2s linear, border 0.2s ease-out;
+  transition: color 0.2s linear, border 0.2s ease-out;
+}
+
 .card-hover {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -1282,6 +1287,10 @@ a {
 
 .card-hover:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-hover:hover .card-title {
+  color: #009460;
 }
 
 .pagination {
@@ -1540,35 +1549,35 @@ input[type=search]:focus::placeholder, input[type=text]:focus::placeholder {
 }
 
 .pad-scale-sm {
-  padding: 2rem;
+  padding: 2rem initial;
   padding: calc(1rem + 1vw);
 }
 
 .pad-scale-md {
-  padding: 2rem;
+  padding: 2rem initial;
   padding: calc(1rem + 2vw);
 }
 
 .pad-scale-y-sm {
-  padding: 2rem;
+  padding: 2rem initial;
   padding-top: calc(1rem + 2vw);
   padding-bottom: calc(1rem + 2vw);
 }
 
 .pad-scale-y-md {
-  padding: 2rem;
+  padding: 2rem initial;
   padding-top: calc(2rem + 3vw);
   padding-bottom: calc(2rem + 3vw);
 }
 
 .pad-scale-y-lg {
-  padding: 2rem;
+  padding: 2rem initial;
   padding-top: calc(2rem + 8vw);
   padding-bottom: calc(2rem + 8vw);
 }
 
 .pad-scale-y-xl {
-  padding: 2rem;
+  padding: 2rem initial;
   padding-top: calc(2rem + 10vw);
   padding-bottom: calc(2rem + 10vw);
 }

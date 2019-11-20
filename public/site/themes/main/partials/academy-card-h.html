@@ -1,18 +1,18 @@
 <!-- academy-card-h -->
-<a class="{{ classes }} relative rounded card-hover shadow hover:shadow-lg transition-all bg-white flex justify-start items-stretch"
+<a class="{{ classes }} relative rounded card-hover shadow hover:shadow-lg transition-all bg-white flex flex-col sm:flex-row justify-start items-stretch"
     href="{{ url }}" title="Read {{ title }} in Datica {{ collection | title }}"
 >
     {{ if show_collection == "true" }}
         <div class="absolute top-0 right-0 py-1 px-2 bg-gray-400 font-mono text-white text-sm">{{ collection | lower }}</div>
     {{ /if }}
     {{ if featured_image }}
-        <div class="w-1/4">
+        <div class="w-full h-24 sm:h-auto sm:w-1/4">
             <img class="lozad rounded-sm object-cover w-full h-full" 
                 {{ assets:featured_image }}data-src="{{ glide:id width="400" height="400" crop="focal_crop" }}" src="{{ glide:id width="200" height="200" crop="focal_crop" quality="10" }}" {{ /assets:featured_image }}
             />
         </div>
     {{ /if }}
-    <div class="{{ if featured_image }}w-3/4 {{ /if }}pad-scale-sm">
+    <div class="{{ if featured_image }}w-full sm:w-3/4 {{ /if }}pad-scale-sm">
         <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
         <h3 class="headline-4 font-bold mb-2">{{ title }}</h3>
         {{ summary | wrap:div.mb-6 }}

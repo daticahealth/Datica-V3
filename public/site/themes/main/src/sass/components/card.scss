@@ -2,10 +2,16 @@
     @apply max-w-sm;
     min-width: 22rem;
 }
+.card-title {
+    transition: color 0.2s linear, border 0.2s ease-out;
+}
 .card-hover {
     transition: all 0.2s ease-out;
     @apply shadow;
     &:hover {
         @apply shadow-lg;
+        .card-title { // for cases with a title that we want to hover-color
+            @apply text-green;
+        }
     }
 }

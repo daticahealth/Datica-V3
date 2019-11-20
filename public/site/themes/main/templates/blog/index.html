@@ -19,17 +19,14 @@
 	{{ collection from="{section_collection}" paginate="false" as="posts" limit="1" sort="pub_date:desc" }}
 		{{ posts }}
 			<div class="h-feature-1 bg-gray-300 w-full md:w-1/2 lg:w-2/3 xl:w-3/4 md:mr-6 flex items-end justify-end lozad bg-cover bg-no-repeat bg-gray-500 overflow-hidden" {{ assets:featured_image }}data-background-image="{{ glide:id width="2400" height="900" }}" {{ /assets:featured_image }}>
-				<div class="card relative border-l-12 border-bright shadow-lg max-w-2xl bg-white pad-scale-md flex flex-col">
+				<a href="{{ url }}" title="Read {{ title }}" class="card card-hover relative border-l-12 border-bright shadow-lg max-w-2xl bg-white pad-scale-md flex flex-col">
 					<div class="meta flex justify-between">
 						<div class="date text-sm mb-2 font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
 					</div>
 					{{ if categories_blog or category }}
 						<div class="absolute top-0 right-0 py-2 px-4 bg-gray-900 font-mono text-white text-sm"># {{ categories_blog or category | lower }}</div>
 					{{ /if }}
-
-					<a href="{{ url }}" title="Read {{ title }}">
-						{{ title | wrap:h3.headline-3.font-bold.mb-3 }}
-					</a>
+					<h3 class="headline-3 mb-3 card-title">{{ title }}</h3>
 					{{ summary | wrap:div.text-sm.mb-4 }}
 					{{ relate:author use_context="true" }}
 						{{ partial:person classes="" }}
@@ -39,7 +36,7 @@
 							{{ partial:tag-list-plain }}
 						</div>
 					{{ /if }} #}}
-				</div>
+				</a>
 			</div>
 		{{ /posts }}
 	{{ /collection }}
@@ -56,15 +53,13 @@
 	{{ collection from="{section_collection}" paginate="false" as="posts" limit="2" sort="pub_date:desc" offset="1" }}
 		{{ posts }}
 			<div class="h-feature-2 bg-gray-300 {{ if index == 1 }}mr-6 justify-end items-start {{ else }} justify-start items-end {{ /if }} mb-6 w-full lg:w-1/2 flex lozad bg-cover bg-no-repeat bg-gray-500 overflow-hidden" {{ assets:featured_image }}data-background-image="{{ glide:id width="800" height="500" }}" {{ /assets:featured_image }}>
-				<div class="card relative max-w-lg border-l-12 border-bright bg-white pad-scale-sm flex flex-col">
+				<a href="{{ url }}" title="Read {{ title }}" class="card card-hover relative max-w-lg border-l-12 border-bright bg-white pad-scale-sm flex flex-col">
 					{{ if categories_blog or category }}
 						<div class="absolute top-0 right-0 py-2 px-4 bg-gray-900 font-mono text-white text-sm"># {{ categories_blog or category | lower }}</div>
 					{{ /if }}
 
 					<div class="date text-sm mb-2 font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
-					<a href="{{ url }}" title="Read {{ title }}">
-						{{ title | wrap:h3.headline-4.font-bold.mb-3 }}
-					</a>
+					{{ title | wrap:h3.headline-4.font-bold.mb-3.card-title }}
 					{{ summary | wrap:div.text-sm.mb-4 }}
 					{{ relate:author use_context="true" }}
 						{{ partial:person classes="" }}
@@ -74,7 +69,7 @@
 						{{ partial:tag-list-plain }}
 					</div>
 				{{ /if }} #}}
-				</div>
+				</a>
 			</div>
 		{{ /posts }}
 	{{ /collection }}
