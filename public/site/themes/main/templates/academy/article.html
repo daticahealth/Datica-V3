@@ -3,7 +3,14 @@
 		--bg-color: var(--bg-light);
 	}
 </style>
-<main class="flex mx-auto justify-center flex-col md:flex-row" style="margin-top: calc(8vw + 1.5rem);">
+<header class="text-center pad-scale-y-md max-w-xl mx-auto">
+	<h2>
+		<a href="/academy/" class="link-dark text-black border-0 hover:text-green">
+		{{ svg src="/assets/icons/academy-logo.svg" class="fill-current h-12 mb-4" a11y="Datica Academy" }}
+		</a>
+	</h2>
+</header>
+<main class="flex mx-auto justify-center flex-col md:flex-row">
     <article class="bg-white p-8 max-w-3xl w-full shadow-sm shadow-lg mb-6 z-10 md:w-2/3 lg:w-3/5 md:p-10 lg:p-16 xl:p-20">
         <header class="mb-6">
             <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
@@ -37,6 +44,8 @@
             {{# <div class="mb-8">
                 {{ partial:email-subscribe }}
 			</div> #}}
+			{{ partial:search-form-academy classes="mb-8" }}
+
 			{{ if topics }}
 			{{ relate:discovery_topic }}
 				<div class="mb-8 lg:mb-12">

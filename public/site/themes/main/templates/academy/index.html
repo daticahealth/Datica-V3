@@ -4,22 +4,27 @@
 		}
 </style>
 
-<section class="mx-auto max-w-2xl pad-scale-md">
+<div class="pad-scale-md">
 
-	<header>
-		{{ svg src="/assets/icons/academy-logo.svg" class="fill-current text-black h-12 mb-4" a11y="Datica Academy" }}
-		<h1>{{ title }}</h1>
-		<p class="lead">{{ summary }}</p>
+	<header class="text-center mb-12 max-w-xl mx-auto">
+		<h1>{{ svg src="/assets/icons/academy-logo.svg" class="fill-current text-black h-12 mb-4" a11y="Datica Academy" }}</h1>
+		<p class="lead text-lg">{{ summary }}</p>
 	</header>
-
-	<article class="list">
-		{{ collection from="{section_collection}" paginate="true" as="posts" limit="" sort="pub_date:desc" }}
-			{{ posts scope="tag" }}
-				{{ partial:academy-card-h classes="max-w-3xl mb-8" }}				
-			{{ /posts }}
-
-			{{ partial:pagination }}
-		{{ /collection }}
-	</article>
-
-</section>
+	<div class="flex mx-auto justify-center flex-col lg:flex-row">
+		<main class="list">
+			{{ collection from="{section_collection}" paginate="true" as="posts" limit="20" sort="pub_date:desc" }}
+				{{ posts scope="tag" }}
+					{{ partial:academy-card-h classes="max-w-3xl mb-8" }}				
+				{{ /posts }}
+				<div class="mx-auto p-6 w-full">
+					{{ partial:pagination }}
+				</div>
+			{{ /collection }}
+		</main>
+		<aside class="block bg-color w-full max-w-md items-start z-0">
+			<div class="sticky top-0 p-8">
+				{{ partial:search-form-academy }}
+			</div>
+		</aside>
+</div>
+</div>

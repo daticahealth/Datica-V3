@@ -11,16 +11,17 @@
     <div class="{{ if featured_image }}w-3/4 {{ /if }}pad-scale-sm">
         <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
         <h3 class="headline-4 font-bold mb-2">{{ title }}</h3>
-        {{ relate:author use_context="true" }}
-            {{ partial:person classes="mb-4" }}
-        {{ /relate:author }}
-
         {{ summary | wrap:div.mb-6 }}
+        <div class="flex flex-col md:flex-row md:justify-between md:items-end">
+        {{ relate:author use_context="true" }}
+            {{ partial:person classes="" }}
+        {{ /relate:author }}
         {{ if tags }}
             <div class="">
                 {{ partial:tag-list-plain }}
             </div>
         {{ /if }}
+        </div>
     </div>
 </a>
 

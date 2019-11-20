@@ -16,11 +16,6 @@ module.exports = {
         900: 'hsl(31, 5%, 12%)',
         a: 'hsla(31, 5%, 12%, 0.3)',
       },
-      purple: {
-        default: '#D73BFF',
-        dark: '#9B00FF',
-        light: '#5C00EB'
-      },
       green: {
         default: '#009460',
         dark: '#007b50',
@@ -31,6 +26,16 @@ module.exports = {
         default: '#6689AB',
         dark: '#27516C',
         light: '#709DC9',
+      },
+      teal: {
+        light: '#1CFCE3',
+        default: '#00D6D6',
+        dark: '#00A2AF'
+      },
+      purple: {
+        light: '#EE8FFF',
+        default: '#C03BFF',
+        dark: '#8444B4'
       }
     },
     screens: {

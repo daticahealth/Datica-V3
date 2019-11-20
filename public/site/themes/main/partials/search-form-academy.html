@@ -1,0 +1,11 @@
+<div class="{{ classes }}">
+    <h3 class="headline-4 font-medium mb-2">Search Academy Articles</h3>
+    <form class="mb-2" action="/academy/search-results" method="GET">
+        <input class="search icon-search icon-left mb-2" type="search" name="q" placeholder="{{ get:q or 'tags or terms' }}" />
+        <button class="button text-sm mb-2">Search</button>
+    </form>
+    <h4 class="headline-5 text-base">Common Searches</h4>
+    <a href="/academy/search-results?q=HIPAA" class="px-2 py-1 button rounded-full bg-blue-light text-xs" title="Common search: HIPAA">HIPAA</a>
+    <a href="/academy/search-results?q=HITRUST" class="px-2 py-1 button rounded-full bg-purple-light text-xs" title="Common search: HITRUST">HITRUST</a>
+    <a href="/academy/search-results?q=HL7" class="px-2 py-1 button rounded-full bg-gray-600 text-xs" title="Common search: HL7">HL7</a>
+</div>
