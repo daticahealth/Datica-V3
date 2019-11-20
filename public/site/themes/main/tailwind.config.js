@@ -7,8 +7,8 @@ module.exports = {
       gray: {
         100: 'hsl(31, 2%, 95%)',
         200: 'hsl(31, 2%, 90%)',
-        300: 'hsl(31, 2%, 86%)',
-        400: 'hsl(31, 2%, 60%)',
+        300: 'hsl(31, 2%, 80%)',
+        400: 'hsl(31, 2%, 65%)',
         500: 'hsl(31, 2%, 50%)',
         600: 'hsl(31, 2%, 40%)',
         700: 'hsl(31, 2%, 25%)',
@@ -122,6 +122,16 @@ module.exports = {
   },
   variants: {},
   plugins: [
+    require('tailwindcss-alpha')({
+      modules: {
+        backgroundColors: true,
+        textColors: false, 
+        borderColors: false
+      },
+      alpha: {
+        '50': 0.5
+      }
+    }),
     require('tailwind-css-variables')(
       {
         // modules

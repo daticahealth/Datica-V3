@@ -2,3 +2,10 @@
     @apply max-w-sm;
     min-width: 22rem;
 }
+.card-hover {
+    transition: all 0.2s ease-out;
+    @apply shadow;
+    &:hover {
+        @apply shadow-lg;
+    }
+}

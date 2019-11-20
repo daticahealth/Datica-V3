@@ -2,3 +2,8 @@ title: 'Academy Articles'
 order: date
 fieldset: academy
 template: academy/article
+searchable:
+  - title
+  - summary
+  - tags
+  - lead 

@@ -1,0 +1,17 @@
+<!-- event-card-sm -->
+<a class="{{ classes }} relative block pad-scale-sm rounded card-hover bg-white"
+    href="{{ url }}" title="Read {{ title }}"
+>
+    {{# <div class=""> #}}
+    {{ if show_collection == "true" }}
+        <div class="absolute top-0 right-0 py-1 px-2 bg-gray-400 font-mono text-white text-sm">{{ collection | lower }}</div>
+    {{ /if }}
+    {{ if event_logo }}
+        <img class="lozad h-8 float-right ml-2" {{ assets:event_logo }}data-src="{{ event_logo }}" {{ /assets:event_logo }} />
+    {{ /if }}
+    <h4 class="headline-4 leading-tighter">{{ title }}</h4>
+        {{# {{ if lead }}{{ lead | markdown | wrap:div.text-lg.mb-6 }}{{ /if }} #}}
+        {{# {{ content | safe_truncate:40:... }} #}}
+    {{ summary }}
+    {{# </div> #}}
+</a>

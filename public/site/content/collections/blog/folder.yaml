@@ -2,3 +2,8 @@ title: Blog
 order: date
 fieldset: blog
 template: blog/post
+searchable:
+  - title
+  - summary
+  - tags
+  - lead

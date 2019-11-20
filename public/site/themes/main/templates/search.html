@@ -1,0 +1,43 @@
+<style>
+	:root {
+		--bg-color: var(--bg-light);
+	}
+</style>
+<header class="text-center pad-scale-y-md max-w-xl mx-auto">
+    <h1 class="headline-2 font-medium mb-2">Search Datica</h1>
+    <div class="flex flex-row items-center">
+        <form action="/search" method="GET" role="search">
+            <input class="search icon-search icon-left w-64 mb-2" type="search" name="q" placeholder="{{ get:q or 'Search' }}" />
+            <button class="button text-sm mb-2">Search</button>
+        </form>
+    </div>
+</header>
+<main class="mx-auto max-w-6xl pad-scale-y-md">
+    <h4 class="headline-5 mb-12">Showing {{ results | count }} results for "{{ get:q }}".</h4>
+    <div class="max-w-3xl">
+    {{ search:results supplement_data="true" from="academy|blog|events|webinars|press" limit="20" }}
+    <div class="mb-8">
+        {{ if no_results }}
+            <h4 class="headline-5">We didn't find anything for "{{ get:q }}".</h4>
+            <p>Try searching with another term. </p>
+        {{ elseif is_entry=="true" }}
+            {{ if collection == "academy" || collection == "blog" }}
+                {{ partial:academy-card-h classes="" show_collection="true" }}
+            {{ /if }}
+            {{# {{ if collection == "blog" }}
+                {{ partial:article-card-h classes="" show_collection="true" }}
+            {{ /if }} #}}
+            {{ if collection == "events" }}
+                {{ partial:event-card-sm classes="" show_collection="true" }}
+            {{ /if }}
+            {{ if collection == "cta" }}
+                {{ if share_image }}
+                    {{ partial:cta classes="max-w-md block" }}
+                {{ /if }}
+            {{ /if }}
+        {{ else }}
+        {{ /if }}
+    </div>
+    {{ /search:results }}
+    </div>
+</section>

@@ -2,3 +2,8 @@ title: Events
 order: date
 fieldset: events
 template: events/event
+searchable:
+  - title
+  - summary
+  - tags
+  - content 

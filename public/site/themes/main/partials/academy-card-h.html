@@ -1,6 +1,10 @@
-<a class="{{ classes }} rounded card card-hover shadow hover:shadow-lg transition-all bg-white flex justify-start items-stretch"
-    href="{{ url }}" title="Read {{ title }} in {{ collection | title }}"
+<!-- academy-card-h -->
+<a class="{{ classes }} relative rounded card-hover shadow hover:shadow-lg transition-all bg-white flex justify-start items-stretch"
+    href="{{ url }}" title="Read {{ title }} in Datica {{ collection | title }}"
 >
+    {{ if show_collection == "true" }}
+        <div class="absolute top-0 right-0 py-1 px-2 bg-gray-400 font-mono text-white text-sm">{{ collection | lower }}</div>
+    {{ /if }}
     {{ if featured_image }}
         <div class="w-1/4">
             <img class="lozad rounded-sm object-cover w-full h-full" 
@@ -13,9 +17,11 @@
         <h3 class="headline-4 font-bold mb-2">{{ title }}</h3>
         {{ summary | wrap:div.mb-6 }}
         <div class="flex flex-col md:flex-row md:justify-between md:items-end">
-        {{ relate:author use_context="true" }}
-            {{ partial:person classes="" }}
-        {{ /relate:author }}
+        {{ if author or authors }}
+            {{ relate:author use_context="true" }}
+                {{ partial:person classes="" }}
+            {{ /relate:author }}
+        {{ /if }}
         {{ if tags }}
             <div class="">
                 {{ partial:tag-list-plain }}

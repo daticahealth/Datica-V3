@@ -7,8 +7,8 @@ $gutter: 1.5rem;
     scroll-snap-points-x: repeat(100%);
     scroll-snap-type: mandatory;
     scroll-snap-destination: 100% 0%;
-    padding-bottom: calc(.75 * $gutter);
-    margin-bottom: calc(-.25 * $gutter);
+    padding-bottom: .75 * $gutter;
+    margin-bottom: .25 * $gutter;
     -webkit-overflow-scrolling: touch;
     &::-webkit-scrollbar {
        display: none;
@@ -21,7 +21,7 @@ $gutter: 1.5rem;
 }
 .gallery-item {
     scroll-snap-align: center;
-    padding: calc($gutter / 2 * 1.5);
+    padding: $gutter * 1.5;
     transition: all $speed-default;
     &:nth-last-child {
         margin-right: 5rem;

@@ -1,5 +1,5 @@
 {{ if collection == "blog" }} {{# {{ if total_results > 1 }}{{ if index == 1 }}hidden{{ /if }}{{ /if }} #}}
-    <a class=" {{ index }} card card-hover shadow hover:shadow-lg transition-all inline-block bg-white {{ classes }}" href="{{ url }}" title="Read {{ title }} in {{ collection | title }}">
+    <a class=" {{ index }} card card-hover inline-block bg-white {{ classes }}" href="{{ url }}" title="Read {{ title }} in {{ collection | title }}">
         {{# <div class=""> #}}
             <div class="bg-gray-500 lozad bg-cover" {{ assets:featured_image }}data-background-image="{{ glide:id width="600" height="240" }}" {{ /assets:featured_image }}">
                 <h4 class="p-4 text-right text-sm font-bold tracking-widest uppercase mb-2 text-white">{{ collection }}</h4>
@@ -20,7 +20,7 @@
 
 {{ elseif collection == "academy" }}
     {{ unless size == "small" }}
-        <a class="card card-hover shadow hover:shadow-lg transition-all inline-block {{ classes }}" href="{{ url }}" title="Read {{ title }} in {{ collection | title }}">
+        <a class="card card-hover inline-block {{ classes }}" href="{{ url }}" title="Read {{ title }} in {{ collection | title }}">
             <div class="max-w-md bg-white mb-8 block p-6">
                 <h4 class="text-xs font-light tracking-widest uppercase mb-2 text-gray-800 text-right">{{ collection }}</h4>
                 <h3 class="font-bold text-xl text-black leading-tight mb-4">{{ title }}</h3>

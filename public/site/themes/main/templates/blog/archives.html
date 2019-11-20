@@ -25,16 +25,22 @@
             <h2 class="headline-3 font-bold mb-6">
                 <a class="hover:text-green" href="/blog/" title="Datica Blog">Datica Blog</a>
             </h2>        
-            <div class="block bg-gray-700 pad-scale-sm">
-            {{ partial:email-subscribe }}
+            <div class="block bg-gray-700 pad-scale-sm mb-8">
+                {{ partial:email-subscribe }}
             </div>
+            <div class="mb-6">
+				{{ partial:search-form-blog }}
+			</div>
         </div>
     </aside>
     <div class="w-full lg:w-auto list flex-1">
-        {{ collection from="{section_collection}" paginate="true" as="posts" limit="" sort="pub_date:desc" offset="15" }} {{# pub_date:starts_with="2019"#}}
+        {{ collection from="{section_collection}" paginate="true" as="posts" limit="20" sort="pub_date:desc" offset="15" }} {{# pub_date:starts_with="2019"#}}
             {{ posts scope="tag" }}
                 {{ partial:article-card-h }}
             {{ /posts }}
+            <div class="mx-auto p-6 w-full">
+                {{ partial:pagination }}
+            </div>
         {{ /collection }}
     </div>
 </section>
