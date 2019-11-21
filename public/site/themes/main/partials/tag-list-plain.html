@@ -1,6 +1,7 @@
 <div class="flex items-center">
     {{ svg src="/assets/icons/icon-tag.svg" class="fill-current text-gray-300 w-4" a11y="tag" }}
-    {{ tags }}
-       <span class="pill pill-light">{{ title }}</span>
+    {{ tags limit="4" }}
+       <span class="pill pill-light">{{ value }}</span>
     {{ /tags }}
 </div>
+

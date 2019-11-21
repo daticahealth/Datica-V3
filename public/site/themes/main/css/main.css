@@ -1100,7 +1100,7 @@ small {
   background-color: hsl(31, 2%, 90%);
 }
 
-.pill-light:hover {
+a.pill-light:hover {
   background-color: hsl(31, 2%, 80%);
   color: #000000;
 }
