@@ -1,19 +1,22 @@
 <!-- academy-card-h -->
-<a class="{{ classes }} relative rounded card-hover shadow hover:shadow-lg transition-all bg-white flex flex-col sm:flex-row justify-start items-stretch"
+<a class="{{ classes }} relative rounded card-hover shadow hover:shadow-lg transition-all bg-white flex flex-col sm:flex-row justify-start items-stretch overflow-hidden"
     href="{{ url }}" title="Read {{ title }} in Datica {{ collection | title }}"
 >
-    {{ if show_collection == "true" }}
-        <div class="absolute top-0 right-0 py-1 px-2 bg-gray-400 font-mono text-white text-sm">{{ collection | lower }}</div>
+    {{ if show_collection == "true" && featured_image }}
+        <div class="absolute top-0 left-0 bg-gray-800 py-1 px-2 font-bold text-white text-sm capitalize">{{ collection | lower }}</div>
     {{ /if }}
     {{ if featured_image }}
         <div class="w-full h-24 sm:h-auto sm:w-1/4">
-            <img class="lozad rounded-sm object-cover w-full h-full" 
+            <img class="lozad object-cover w-full h-full" 
                 {{ assets:featured_image }}data-src="{{ glide:id width="400" height="400" crop="focal_crop" }}" src="{{ glide:id width="200" height="200" crop="focal_crop" quality="10" }}" {{ /assets:featured_image }}
             />
         </div>
     {{ /if }}
     <div class="{{ if featured_image }}w-full sm:w-3/4 {{ /if }}pad-scale-sm">
-        <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
+        <div class="">
+            <span class="date text-sm font-regular tracking-widest uppercase">{{ pub_date format="F j, Y" }}</span>
+            {{ if show_collection == "true" && ! featured_image }}<span class="font-regular opacity-75">in </span><span class="text-sm capitalize font-bold">Datica {{ collection }}</span>{{ /if }}
+        </div>
         <h3 class="headline-4 font-bold mb-2">{{ title }}</h3>
         {{ summary | wrap:div.mb-6 }}
         <div class="flex flex-col md:flex-row md:justify-between md:items-end">
