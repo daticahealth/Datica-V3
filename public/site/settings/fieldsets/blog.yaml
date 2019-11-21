@@ -15,10 +15,10 @@ sections:
         type: assets
         display: 'Featured Image'
         container: main
-        folder: img
+        folder: general
         max_files: 1
         instructions: 'Choose a large image for the entry.'
-        restrict: true
+        restrict: false
         mode: grid
       lead:
         cheatsheet: false
