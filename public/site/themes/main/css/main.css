@@ -922,6 +922,146 @@ small {
   }
 }
 
+.waypoint {
+  -webkit-animation: pulse 1.5s infinite;
+          animation: pulse 1.5s infinite;
+}
+
+.anim-1 {
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+}
+
+.anim-2 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.anim-3 {
+  -webkit-animation-delay: 1.05s;
+          animation-delay: 1.05s;
+}
+
+.anim-4 {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+.anim-1, .anim-2, .anim-3, .anim-4 {
+  -webkit-animation-name: animSeries;
+          animation-name: animSeries;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.anim-3 {
+  -webkit-animation-name: animUp;
+          animation-name: animUp;
+}
+
+.anim-4 {
+  -webkit-animation-name: animUp;
+          animation-name: animUp;
+}
+
+/* purgecss start ignore */
+
+.anim-in {
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  opacity: 0;
+  -webkit-transform: translate3d(-20px, 0, 0);
+          transform: translate3d(-20px, 0, 0);
+}
+
+.anim-in.animated {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* purgecss end ignore */
+
+@-webkit-keyframes animSeries {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 0, 0);
+            transform: translate3d(20px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes animSeries {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 0, 0);
+            transform: translate3d(20px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes animUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes animUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes showLazyImg {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showLazyImg {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .dropdown {
   -webkit-box-flex: 1;
           flex-grow: 1;
@@ -1524,7 +1664,6 @@ input[type=search]:focus::placeholder, input[type=text]:focus::placeholder {
 
 .gallery-item {
   scroll-snap-align: center;
-  padding: 2.25rem;
   -webkit-transition: all 150ms;
   transition: all 150ms;
 }

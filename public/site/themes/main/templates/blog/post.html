@@ -12,9 +12,9 @@
 		}
 	}
 </style>
-<header class="masthead pl-8 pt-24 lg:pt-48 max-w-7xl mx-auto mb-8 lg:mb-12">
+<header class="masthead pl-8 pt-24 lg:pt-48 max-w-7xl mx-auto mt-8 lg:mt-12">
 		{{# {{ svg src="/assets/icons/icon-webinar.svg" class="w-16 h-16" a11y="Video Presentation Icon" }} #}}
-		<h2 class="headline-2 font-bold">
+		<h2 class="headline-2 font-bold bg-gray-800 pt-2 pb-3 px-4 m-0 inline-block">
 			<a class="text-white hover:text-green-bright" href="/blog/" title="Datica Blog">Datica Blog</a>
 		</h2>
 </header>
@@ -79,7 +79,7 @@
 	</aside>
 </main>
 </div>
-	
+{{ if related_entries }}
 <section class="pad-scale-y-md px-0 justify-center items-center">
 	<h3 class="headline-3 spaced-out text-center mb-8">Related Reading</h3>
 	<div class="card-gallery no-scrollbar mask-right justify-start">
@@ -90,7 +90,7 @@
 		{{ /relate:related_entries }}
 	</div>
 </section>
-
+{{ /if }}
 
 	
 {{ if featured_image }}

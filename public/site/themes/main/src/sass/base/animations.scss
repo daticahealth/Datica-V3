@@ -1,0 +1,67 @@
+
+.waypoint {
+    animation: pulse 1.5s infinite;
+}
+
+@for $i from 1 through 4 { // add a small bit of delay for n children. Estimating \
+    $t: 0.25s * $i + 0.3s;
+    .anim-#{$i} { 
+        animation-delay: $t;
+        // transition-delay: $t;
+        // opacity: 0;
+    }
+}
+.anim-1, .anim-2, .anim-3, .anim-4 {
+    animation-name: animSeries;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.anim-3 {
+    animation-name: animUp;
+}
+.anim-4 {
+    animation-name: animUp;
+    // animation-delay: 2.5s;
+}
+/* purgecss start ignore */
+.anim-in {
+    transition: all 200ms ease-out;
+    opacity: 0;
+    transform: translate3d(-20px,0,0);
+}
+.anim-in.animated {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+/* purgecss end ignore */
+@keyframes animSeries {
+    0% { 
+        opacity: 0;
+        transform: translate3d(20px,0,0);
+    }
+    100% { 
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+@keyframes animUp {
+    0% { 
+        opacity: 0;
+        transform: translate3d(0,20px,0);
+    }
+    100% { 
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+@keyframes showLazyImg {
+    0% { 
+        opacity: 0;
+        // transform: translate3d(20px,0,0);
+    }
+    100% { 
+        opacity: 1;
+        // transform: translate3d(0,0,0);
+    }
+}

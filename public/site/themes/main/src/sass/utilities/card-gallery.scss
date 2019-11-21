@@ -21,7 +21,7 @@ $gutter: 1.5rem;
 }
 .gallery-item {
     scroll-snap-align: center;
-    padding: $gutter * 1.5;
+    // padding: $gutter * 1.5;
     transition: all $speed-default;
     &:nth-last-child {
         margin-right: 5rem;
