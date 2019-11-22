@@ -3,13 +3,16 @@
 namespace Statamic\Addons\AardvarkSeo;
 
 use Stataimc\Events\Event;
+use Statamic\Addons\AardvarkSeo\Controllers\Controller as AardvarkController;
 use Statamic\Addons\AardvarkSeo\Controllers\RedirectsController;
 use Statamic\Addons\AardvarkSeo\Controllers\SitemapController;
+use Statamic\Addons\AardvarkSeo\Controllers\DefaultsController;
 use Statamic\Addons\AardvarkSeo\Sitemaps\Sitemap;
 use Statamic\Addons\AardvarkSeo\Traits\TransformsAssetsFieldtypes;
 use Statamic\API\File;
 use Statamic\API\Nav;
 use Statamic\API\YAML;
+use Statamic\API\Config;
 use Statamic\Extend\Listener;
 
 /**
@@ -43,8 +46,14 @@ class AardvarkSeoListener extends Listener
     {
         $seo_section = Nav::item('aardvark-seo')->title('SEO')->route('aardvark-seo')->icon('line-graph');
 
+        $errors = AardvarkController::getErrors();
+        if (count($errors)) {
+            $seo_section->badge(count($errors));
+        }
+
         $seo_section->add(function ($item) {
             $item->add(Nav::item('General')->route('aardvark-seo.general'));
+            $item->add(Nav::item('Content defaults')->route('aardvark-seo.defaults'));
             $item->add(Nav::item('Marketing')->route('aardvark-seo.marketing'));
             $item->add(Nav::item('Social')->route('aardvark-seo.social'));
             $item->add(Nav::item('Redirects')->route('aardvark-seo.redirects')->badge('BETA'));
@@ -75,6 +84,31 @@ class AardvarkSeoListener extends Listener
         $fields = YAML::parse($seoFieldsetContents)['fields'];
         $assetContainer = $this->getConfig('asset_container') ?: 'main';
         $processedFields = $this->transformAssetsFields($fields, $assetContainer);
+
+        $ctx = [
+            'page_object' => $event->data,
+        ];
+
+        if ($event->data) {
+            switch ($event->type) {
+                case 'entry':
+                    $collection = $event->data->collection();
+                    $ctx['collection'] = $collection->path();
+                    break;
+                case 'term':
+                    $taxonomy = $event->data->taxonomy();
+                    $ctx['taxonomy'] = $taxonomy->path();
+                    break;
+            }
+        }
+
+        $defaults = collect($this->getDefaults(collect($ctx), Config::getDefaultLocale()));
+        $localisedDefaults = $defaults->merge($this->getDefaults(collect($ctx), site_locale()));
+
+        $processedFields = collect($processedFields)->map(function ($field, $name) use ($localisedDefaults) {
+            $field['placeholder'] = $localisedDefaults->get($name, '');
+            return $field;
+        });
 
         $fieldsetSections = $fieldset->sections();
 
@@ -182,6 +216,19 @@ class AardvarkSeoListener extends Listener
         $storage = $this->storage->getYAML(RedirectsController::STORAGE_KEY);
         $isEnabled = collect($storage)->get($requiredAttr);
         return $isEnabled;
+    }
+
+    /**
+     * Forward a call to the defaults controller getDefaults method
+     *
+     * @param array $ctx
+     * @param string $locale
+     *
+     * @return array
+     */
+    private function getDefaults($ctx, $locale)
+    {
+        return DefaultsController::getDefaults($ctx, $locale);
     }
 
     /**

@@ -9,7 +9,7 @@ const MetaAnalysis = {
 
   methods: {
     handleKeyUp: function(e) {
-      this.contentLength = this.data.length;
+      this.contentLength = this.data && this.data.length;
       this.validation = this._getValidation(this.data.length);
     }
   }
@@ -94,8 +94,8 @@ Vue.component("aardvark_seo-valid_meta_title-fieldtype", {
       return validation;
     },
     _generateDefaultTitle() {
-      const parentTitle = this.$parent.$parent.data.title;
-      return `${parentTitle} ${this.title_separator} ${this.site_name}`;
+      const parentTitle = this.$parent.$parent.data.title || '';
+      return this.config.placeholder || `${parentTitle} ${this.title_separator} ${this.site_name}`;
     }
   }
 });
@@ -112,7 +112,7 @@ Vue.component("aardvark_seo-valid_meta_description-fieldtype", {
   data: function() {
     return {
       placeholder:
-        "No meta description has been set for this page, search engines will use a relevent body of text from the page content instead."
+        this.config.placeholder || "No meta description has been set for this page, search engines will use a relevent body of text from the page content instead."
     };
   },
 
@@ -181,7 +181,7 @@ Vue.component("aardvark_seo-meta_preview-fieldtype", {
 
   created: function() {
     metaBus.$watch("title", title => {
-      this.metaTitle = title;
+      this.metaTitle = title.trim();
     });
     metaBus.$watch("loading", loading => {
       this.loading = loading;
