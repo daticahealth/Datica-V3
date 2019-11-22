@@ -77,3 +77,26 @@
         transform: rotate(-135deg);
     }
 }
+
+// kahuna styles
+
+.nav-group-header {
+    @apply mb-4;
+    & a {
+        font-weight: bold;
+    }
+    .submenu {
+        & a {
+            @apply font-normal;
+            &:hover {
+                @apply text-green;
+            }
+        }
+    }
+}
+#nav-footer {
+    @apply flex;
+    .nav-group-header {
+        @apply mr-8;
+    }
+}

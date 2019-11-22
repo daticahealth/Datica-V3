@@ -1313,6 +1313,31 @@ a {
           transform: rotate(-135deg);
 }
 
+.nav-group-header {
+  margin-bottom: 1rem;
+}
+
+.nav-group-header a {
+  font-weight: bold;
+}
+
+.nav-group-header .submenu a {
+  font-weight: 400;
+}
+
+.nav-group-header .submenu a:hover {
+  color: #009460;
+}
+
+#nav-footer {
+  display: -webkit-box;
+  display: flex;
+}
+
+#nav-footer .nav-group-header {
+  margin-right: 2rem;
+}
+
 /*
 |--------------------------------------------------------------------------
 | Wysiwyg/markdown block styling

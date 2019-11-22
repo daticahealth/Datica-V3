@@ -1,0 +1,17 @@
+<div class="mx-auto flex items-center justify-between max-w-7xl my-2 py-2">
+    <a class="" href="/" title="{{ site_name }} Home">
+        {{ svg src="/assets/icons/datica-logo-horiz.svg" class="fill-current h-12 mr-3" a11y="Datica" }}
+    </a>
+    <div class="block relative">{{#lg:hidden ##}}
+        <a aria-controls="menu" class="toggle-me" id="nav-toggle" href="#"><span></span></a>
+    </div>
+    {{# <div class="nav-pane toggle-target w-full flex-shrink lg:flex lg:items-center lg:w-auto"> #}}
+    <div class="hidden">
+        <div class="nav-items text-sm lg:flex-grow lg:mr-4">
+            {{ big_kahuna menu="main-nav" id="nav-footer" }}
+        </div> 
+        <div class="text-center mx-auto block">
+            <a class="inline-block btn btn-hollow mt-4 lg:mt-0 px-4 py-2" title="Schedule a consultation with {{ site_name }}" href="/contact">Get Pricing</a>
+        </div>
+    </div>
+</div>
