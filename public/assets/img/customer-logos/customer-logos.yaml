@@ -1,0 +1,177 @@
+customer-logos:
+    -
+        name: Allscripts
+        file: allscripts-logo
+        url:  allscripts.com
+    -
+        name: Aurora
+        file: aurora-logo
+        url:  aurorahealthcare.org
+    -
+        name: Ayogo
+        file: ayogo-logo
+        url:  ayogo.com
+    -
+        name: BCGDV
+        file: bcgdv-logo
+        url:  bcgdv.com
+    -
+        name: BlueHub
+        file: bluehub-logo
+        url:  bluehubhealth.com
+    -
+        name: BSC
+        file: bsc-logo
+        url:  blueshieldca.com
+    -
+        name: CareKinesis
+        file: carekinesis-logo
+        url:  carekinesis.com
+    -
+        name: CareMessage
+        file: caremessage-logo
+        url:  caremessage.org
+    -
+        name: Cerner
+        file: cerner-logo
+        url:  cerner.com
+    -
+        name: CirrusMD
+        file: cirrusmd-logo
+        url:  cirrusmd.com
+    -
+        name: CloudMetrx
+        file: cloudmetrx-logo
+        url:  cloudmetrx.com
+    -
+        name: Cohere
+        file: cohere-logo
+        url:  coherehealth.com
+    -
+        name: Cordata Health
+        file: cordata-logo
+        url:  cordatahealth.com
+    -
+        name: COTA
+        file: cota-logo
+        url:  oncota.com
+    -
+        name: Crossover
+        file: crossover-logo
+        url:  crossoverhealth.com
+    -
+        name: Dispatch Health
+        file: dispatchhealth-logo
+        url:  dispatchhealth.com
+    -
+        name: DocbookMD
+        file: docbookmd-logo
+        url:  docbookmd.com
+    -
+        name: eClinicalWorks
+        file: ecw-logo
+        url:  eclinicalworks.com
+    -
+        name: Epic
+        file: epic-logo
+        url:  epic.com
+    -
+        name: Fairview Health Services
+        file: fairview-logo
+        url:  fairview.org
+    -
+        name: Hackensack UMC
+        file: hackensack-logo
+        url:  hackensackumc.org
+    -
+        name: Hale Health
+        file: hale-health-logo
+        url:  hale-health
+    -
+        name: HCMC
+        file: hcmc-logo
+        url:  hcmc.org
+    -
+        name: HealthFinch
+        file: healthfinch-logo
+        url:  healthfinch.com
+    -
+        name: HealthLoop
+        file: healthloop-logo
+        url:  healthloop.com
+    -
+        name: Hennepin County Medical Center
+        file: humc-logo
+        url:  hcmc.org
+    -
+        name: InsightRX
+        file: insightrx-logo
+        url:  insight-rx.com
+    -
+        name: John Muir Health
+        file: johnmuir-logo
+        url:  johnmuirhealth.com
+    -
+        name: McKesson
+        file: mckesson-logo
+        url:  mckesson.com
+    -
+        name: MetaBahn
+        file: metabahn-logo
+        url:  metabahn.com
+    -
+        name: MolecularMatch
+        file: molecularmatch-logo
+        url:  molecularmatch.com
+    -
+        name: NavHealth
+        file: navhealth-logo
+        url:  navhealth.com
+    -
+        name: NextGen
+        file: nextgen-logo
+        url:  nextgen.com
+    -
+        name: Pact
+        file: pact-logo
+        url:  pactapp.com
+    -
+        name: PINT
+        file: pint-logo
+        url:  pint.com
+    -
+        name: Propeller Health
+        file: propellerhealth-logo
+        url:  propellerhealth.com
+    -
+        name: Rady
+        file: rady-logo
+        url:  rchsd.org
+    -
+        name: Reach
+        file: reach-logo
+        url:  reachhealth.com
+    -
+        name: SmallPlanet
+        file: smallplanet-logo
+        url:  smallplanet.com
+    -
+        name: SwipeSense
+        file: swipesense-logo
+        url:  swipesense.com
+    -
+        name: Texas Health Resources
+        file: texashr-logo
+        url:  texashealth.org
+    -
+        name: Veterans Administration
+        file: veterans-affairs-logo
+        url:  va.org
+    -
+        name: Welkin
+        file: welkin-logo
+        url:  welkinhealth.com
+    -
+        name: Zipnosis
+        file: zipnosis-logo
+        url:  zipnosis.co

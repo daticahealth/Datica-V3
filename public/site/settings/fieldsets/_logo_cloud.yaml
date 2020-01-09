@@ -1,0 +1,45 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: 'Logo Cloud Header'
+        type: text
+        localizable: true
+      subtitle:
+        type: text
+        display: Subtitle
+      lead_content:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        instructions: 'Optional paragraph.'
+        display: 'Lead Content'
+      logos:
+        container: main
+        folder: /
+        restrict: false
+        max_files: 30
+        mode: grid
+        type: assets
+        instructions: 'Pick logos for the cloud. The sizing will be automatic.'
+        display: Logos
+      cta_link:
+        depth: '3'
+        max_items: 1
+        mode: panes
+        type: pages
+        instructions: 'Button to link to any page.'
+        display: 'CTA Link'
+      block_icon:
+        container: main
+        folder: icons
+        restrict: false
+        max_files: 1
+        mode: grid
+        type: assets
+        instructions: 'An optional svg icon that appears above the logo cloud.'
+        display: 'Block Icon'
+taxonomies: false
+hide: true
+title: 'Logo Cloud'
