@@ -17,7 +17,7 @@ sections:
         display: 'Lead Content'
       logos:
         container: main
-        folder: /
+        folder: img
         restrict: false
         max_files: 30
         mode: grid

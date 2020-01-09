@@ -25,6 +25,16 @@ sections:
         restrict_assets: false
         type: markdown
         display: Lead
+      content_blocks:
+        fieldset: _blocks
+        type: partial
+        instructions: 'Build the page with content modules (blocks).'
+        display: 'Content Blocks'
+      cta_footer:
+        fieldset: _cta_form
+        type: partial
+        display: 'CTA Footer'
+        instructions: 'Large CTA section with a related form.'
   sidebar:
     display: 'Entry Metadata'
     fields:

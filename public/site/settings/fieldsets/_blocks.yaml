@@ -64,6 +64,28 @@ sections:
                 type: pages
                 instructions: 'Link to any page. Doesn''t link to collection entries.'
                 display: 'CTA Link'
+          logo_cloud:
+            display: 'Logo Cloud'
+            fields:
+              related_logo_cloud:
+                max_items: '1'
+                collection:
+                  - logo_cloud
+                mode: panes
+                type: collection
+                display: 'Related Logo Cloud'
+          related_feature:
+            display: 'Related Feature'
+            instructions: 'Guide, report, etc.'
+            fields:
+              related_feature:
+                max_items: '1'
+                collection:
+                  - webinars
+                  - cta
+                mode: panes
+                type: collection
+                display: 'Related Feature'
         type: replicator
         display: 'Content Blocks'
 taxonomies: false

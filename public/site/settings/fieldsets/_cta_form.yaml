@@ -1,0 +1,39 @@
+sections:
+  main:
+    display: Main
+    fields:
+      cta_title:
+        type: text
+        display: 'Call to action + Form'
+      cta_body:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: 'Body Content'
+      quote:
+        max_items: '1'
+        collection:
+          - quotes
+        mode: panes
+        type: collection
+        instructions: 'Choose a customer quote/proof point.'
+        display: Quote
+      icon:
+        container: main
+        folder: icons
+        restrict: false
+        max_files: 1
+        mode: grid
+        type: assets
+        display: Icon
+      cta_form:
+        max_items: '1'
+        collection:
+          - forms
+        mode: panes
+        type: collection
+        instructions: 'Choose a form for the entry.'
+        display: 'CTA Form'
+taxonomies: true
+hide: true
+title: 'Form CTA'
