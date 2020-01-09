@@ -1,0 +1,51 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        display: 'Guide Title'
+        localizable: true
+        width: 50
+      subtitle:
+        type: text
+        display: Subtitle
+        width: 50
+      cta_body:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: 'Body Content'
+      cta_form:
+        max_items: '1'
+        collection:
+          - forms
+        mode: panes
+        type: collection
+        instructions: 'Choose a form for the entry.'
+        display: 'CTA Form'
+      quote:
+        max_items: '1'
+        collection:
+          - quotes
+        mode: panes
+        type: collection
+        instructions: 'Choose a customer quote/proof point.'
+        display: Quote
+      thumbnail:
+        container: main
+        restrict: false
+        max_files: 1
+        mode: grid
+        type: assets
+        display: 'Thumbnail Image'
+      bg_image:
+        container: main
+        folder: /
+        restrict: false
+        max_files: 1
+        type: assets
+        instructions: 'A background image or texture, optional.'
+        display: 'Background Image'
+taxonomies: true
+title: 'Guides & Reports'

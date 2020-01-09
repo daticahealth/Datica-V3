@@ -1,0 +1,61 @@
+<style>
+	:root {
+		--bg-color: var(--bg-light);
+	}
+</style>
+<main class="">
+    <header class="mx-auto p-6 text-center bg-gray-800">
+        {{# {{ svg src="/assets/icons/icon-webinar.svg" class="w-16 h-16" a11y="Video Presentation Icon" }} #}}
+        <h2 class="headline-4 spaced-out font-bold">Datica Guides</h2>
+        <h1 class="headline-3 mb-4">{{ title }}</h1>
+        {{ if subtitle }}{{ subtitle | wrap:h3.headline-4 }}{{ /if }}
+    </header>
+
+    <div class="flex mx-auto justify-center flex-col md:flex-row">
+        <article class="p-8 max-w-3xl w-full mb-6 z-10 md:w-2/3 lg:w-3/5 md:p-10 lg:p-16 xl:p-20">
+            <section class="mb-6">                
+                <div class="flex flex-wrap items-center justify-between" md:flex-no-wrap="md:flex-no-wrap">
+                    {{ relate:authors scope="entry" }}
+                        {{ partial:person }}
+                    {{ /relate:authors }}
+                    {{ if tags }}
+                        {{ partial:tag-list }}
+                    {{ /if }}
+                </div>
+            </section>
+            <div class="markdown">
+                {{ if lead }}{{ lead | markdown | wrap:div.text-lg.mb-6 }}{{ /if }}
+                {{ content }}
+            </div>
+            <hr class="my-8"/>
+            {{# CTA #}}
+            {{ partial:next_prev }}
+        </article>
+        
+        {{# for position-sticky to work: add .items-start to parent because https://stackoverflow.com/a/57830863 #}}
+        <aside class="block bg-color w-full items-start md:w-1/3 lg:w-2/5 xl:max-w-md md:mt-16 z-0">
+            {{ if related_form }}
+                {{ relate:related_form }}
+                    {{ partial:form-hubspot the_form={custom_form} }}
+                {{ /relate:related_form }}
+            {{ /if }}
+            <div class="sticky top-0 p-8">
+                {{# <div class="mb-8">
+                    {{ partial:email-subscribe }}
+                </div> #}}
+                {{ if topics }}
+                {{ relate:discovery_topic }}
+                    <div class="mb-8 lg:mb-12">
+                        <div class="text-reg font-bold tracking-widest uppercase mb-2"><span class="font-light">Explore</span> {{ title }}</div>
+                        {{ summary | wrap:div.text-sm.mb-4 }}
+                        
+                        {{# <img class="lozad" data-src="https://images.ctfassets.net/bfs863we7xd3/6m4CTI0Bd2esaf8pgRaTlJ/9f30e25ac314b5b16df6a7c5d104b9e7/video_poster_example.jpg?w=800"/> #}}
+                    </div>
+                {{ /relate:discovery_topic }}
+                {{ /if }}
+            </div>
+        </aside>
+    </div>
+</main>
+
+{{# {{ partial:article-footer }} #}}

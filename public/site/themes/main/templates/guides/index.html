@@ -1,0 +1,34 @@
+<style>
+		:root {
+			--bg-color: var(--bg-light);
+		}
+</style>
+
+<div class="pad-scale-md">
+
+	<header class="text-center mb-12 max-w-xl mx-auto">
+        {{ svg src="/assets/icons/academy-logo.svg" class="fill-current text-black h-12 mb-4" a11y="Datica Academy" }}
+        <a href="/guides/" title="All Guides">
+            {{ svg src="/assets/icons/icon-webinar.svg" class="w-16 h-16" a11y="Video Presentation Icon" }}
+            <h2 class="headline-4 spaced-out font-bold">Datica Guides</h2>
+        </a>
+		<p class="lead text-lg">{{ summary }}</p>
+	</header>
+	<div class="flex mx-auto justify-center flex-col lg:flex-row">
+		<main class="list">
+			{{ collection from="{section_collection}" paginate="true" as="posts" limit="20" sort="pub_date:desc" }}
+				{{ posts scope="tag" }}
+					{{ partial:academy-card-h classes="max-w-3xl mb-8" show_collection="false" }}				
+				{{ /posts }}
+				<div class="mx-auto p-6 w-full">
+					{{ partial:pagination }}
+				</div>
+			{{ /collection }}
+		</main>
+		{{# <aside class="block bg-color w-full max-w-md items-start z-0">
+			<div class="sticky top-0 p-8">
+				{{ partial:search-form-academy }}
+			</div>
+		</aside> #}}
+</div>
+</div>
