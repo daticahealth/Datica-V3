@@ -1,0 +1,4 @@
+fields:
+  default_asset_container:
+    default: main
+    type: asset_container

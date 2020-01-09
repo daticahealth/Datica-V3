@@ -2033,7 +2033,7 @@
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/mustangostang/spyc.git",
+            "url": "git@github.com:mustangostang/spyc.git",
             "reference": "dfd9aadc1f5224065d55b42b712c7e99a50a3f4d"
         },
         "dist": {
@@ -2660,6 +2660,27 @@
             }
         ],
         "description": "Easily add new or override built-in providers in Laravel Socialite."
+    },
+    {
+        "name": "statamic-svg",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "dist": {
+            "type": "path",
+            "url": "../site/addons/svg",
+            "reference": "f54644649390a43e915b3df118624f544da70612",
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "./"
+            ]
+        },
+        "transport-options": {
+            "symlink": false
+        }
     },
     {
         "name": "statamic/stringy",

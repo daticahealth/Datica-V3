@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7cdc701fb81365b655f1231bc47b006",
+    "content-hash": "de3ed327e3261d59533e4e6a1834dd13",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1971,7 +1971,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mustangostang/spyc.git",
+                "url": "git@github.com:mustangostang/spyc.git",
                 "reference": "dfd9aadc1f5224065d55b42b712c7e99a50a3f4d"
             },
             "dist": {
@@ -2575,6 +2575,25 @@
             ],
             "description": "Easily add new or override built-in providers in Laravel Socialite.",
             "time": "2016-12-04T07:11:20+00:00"
+        },
+        {
+            "name": "statamic-svg",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../site/addons/svg",
+                "reference": "f54644649390a43e915b3df118624f544da70612",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "./"
+                ]
+            },
+            "transport-options": {
+                "symlink": false
+            }
         },
         {
             "name": "statamic/stringy",
@@ -4444,8 +4463,7 @@
             "authors": [
                 {
                     "name": "Chris Boulton",
-                    "homepage": "http://github.com/chrisboulton",
-                    "role": "Original developer"
+                    "homepage": "http://github.com/chrisboulton"
                 }
             ],
             "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
@@ -5554,7 +5572,8 @@
         "league/flysystem-ziparchive": 20,
         "mustangostang/spyc": 20,
         "michelf/php-smartypants": 20,
-        "netcarver/textile": 20
+        "netcarver/textile": 20,
+        "statamic-svg": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

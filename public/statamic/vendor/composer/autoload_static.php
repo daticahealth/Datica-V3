@@ -4,28 +4,28 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b
+class ComposerStaticInit05329eecb35dddf054fcf04696635d7b
 {
     public static $files = array (
         '95a22d2145ae40de20dc7ea7be07a610' => __DIR__ . '/../..' . '/bootstrap/helpers.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'b067bc7112e384b61c701452d53a14a8' => __DIR__ . '/..' . '/mtdowling/jmespath.php/src/JmesPath.php',
         '8a9dc1de0ca7e01f3e08231539562f61' => __DIR__ . '/..' . '/aws/aws-sdk-php/src/functions.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
-        'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         '65fec9ebcfbb3cbb4fd0d519687aea01' => __DIR__ . '/..' . '/danielstjules/stringy/src/Create.php',
+        'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
+        '4a1f389d6ce373bda9e57857d3b61c84' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/helpers.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '4a1f389d6ce373bda9e57857d3b61c84' => __DIR__ . '/..' . '/barryvdh/laravel-debugbar/src/helpers.php',
         'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
         '04c6c5c2f7095ccf6c481d3e53e1776f' => __DIR__ . '/..' . '/mustangostang/spyc/Spyc.php',
         '3d52f551daf8fb18ca65f91322628905' => __DIR__ . '/..' . '/statamic/stringy/src/Create.php',
@@ -289,8 +289,8 @@ class ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b
         'League\\Glide\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/glide/src',
-            1 => __DIR__ . '/..' . '/league/glide-symfony/src',
-            2 => __DIR__ . '/..' . '/league/glide-laravel/src',
+            1 => __DIR__ . '/..' . '/league/glide-laravel/src',
+            2 => __DIR__ . '/..' . '/league/glide-symfony/src',
         ),
         'League\\Flysystem\\ZipArchive\\' => 
         array (
@@ -1069,8 +1069,11 @@ class ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b
         'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
         'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
         'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
+        'ComposerAutoloaderInit32d79ee24f8ba1e0dee6333082993a2c' => __DIR__ . '/..' . '/statamic-svg/vendor/composer/autoload_real.php',
         'ComposerIncludeFiles\\Composer\\AutoloadGenerator' => __DIR__ . '/..' . '/funkjedi/composer-include-files/src/Composer/AutoloadGenerator.php',
         'ComposerIncludeFiles\\Plugin' => __DIR__ . '/..' . '/funkjedi/composer-include-files/src/Plugin.php',
+        'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/statamic-svg/vendor/composer/ClassLoader.php',
+        'Composer\\Autoload\\ComposerStaticInit32d79ee24f8ba1e0dee6333082993a2c' => __DIR__ . '/..' . '/statamic-svg/vendor/composer/autoload_static.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/DayOfMonthField.php',
@@ -1716,6 +1719,12 @@ class ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b
         'Illuminate\\View\\View' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/View.php',
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'InlineSvg\\Collection' => __DIR__ . '/..' . '/statamic-svg/vendor/InlineSvg/Collection.php',
+        'InlineSvg\\FileSystem' => __DIR__ . '/..' . '/statamic-svg/vendor/InlineSvg/FileSystem.php',
+        'InlineSvg\\Interfaces\\SourceInterface' => __DIR__ . '/..' . '/statamic-svg/vendor/InlineSvg/Interfaces/SourceInterface.php',
+        'InlineSvg\\NotFoundException' => __DIR__ . '/..' . '/statamic-svg/vendor/InlineSvg/NotFoundException.php',
+        'InlineSvg\\Svg' => __DIR__ . '/..' . '/statamic-svg/vendor/InlineSvg/Svg.php',
+        'InlineSvg\\Transformers\\Cleaner' => __DIR__ . '/..' . '/statamic-svg/vendor/InlineSvg/transformers/Cleaner.php',
         'Intervention\\Image\\AbstractColor' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/AbstractColor.php',
         'Intervention\\Image\\AbstractDecoder' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/AbstractDecoder.php',
         'Intervention\\Image\\AbstractDriver' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/AbstractDriver.php',
@@ -2772,6 +2781,29 @@ class ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b
         'Statamic\\API\\Widont' => __DIR__ . '/../..' . '/core/API/Widont.php',
         'Statamic\\API\\YAML' => __DIR__ . '/../..' . '/core/API/YAML.php',
         'Statamic\\API\\Zip' => __DIR__ . '/../..' . '/core/API/Zip.php',
+        'Statamic\\Addons\\AardvarkSeo\\AardvarkSeoListener' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/AardvarkSeoListener.php',
+        'Statamic\\Addons\\AardvarkSeo\\AardvarkSeoTags' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/AardvarkSeoTags.php',
+        'Statamic\\Addons\\AardvarkSeo\\Controllers\\AardvarkSeoController' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Controllers/AardvarkSeoController.php',
+        'Statamic\\Addons\\AardvarkSeo\\Controllers\\AardvarkSeoJsonController' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Controllers/AardvarkSeoJsonController.php',
+        'Statamic\\Addons\\AardvarkSeo\\Controllers\\Controller' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Controllers/Controller.php',
+        'Statamic\\Addons\\AardvarkSeo\\Controllers\\DefaultsController' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Controllers/DefaultsController.php',
+        'Statamic\\Addons\\AardvarkSeo\\Controllers\\RedirectsController' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Controllers/RedirectsController.php',
+        'Statamic\\Addons\\AardvarkSeo\\Controllers\\SitemapController' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Controllers/SitemapController.php',
+        'Statamic\\Addons\\AardvarkSeo\\Fieldtypes\\AardvarkSeoFieldtype' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Fieldtypes/AardvarkSeoFieldtype.php',
+        'Statamic\\Addons\\AardvarkSeo\\Fieldtypes\\MetaPreviewFieldtype' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Fieldtypes/MetaPreviewFieldtype.php',
+        'Statamic\\Addons\\AardvarkSeo\\Fieldtypes\\ToggleIndexFieldtype' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Fieldtypes/ToggleIndexFieldtype.php',
+        'Statamic\\Addons\\AardvarkSeo\\Fieldtypes\\ValidMetaDescriptionFieldtype' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Fieldtypes/ValidMetaDescriptionFieldtype.php',
+        'Statamic\\Addons\\AardvarkSeo\\Fieldtypes\\ValidMetaTitleFieldtype' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Fieldtypes/ValidMetaTitleFieldtype.php',
+        'Statamic\\Addons\\AardvarkSeo\\Sitemaps\\Sitemap' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Sitemaps/Sitemap.php',
+        'Statamic\\Addons\\AardvarkSeo\\Sitemaps\\SitemapItem' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Sitemaps/SitemapItem.php',
+        'Statamic\\Addons\\AardvarkSeo\\SuggestModes\\SocialIconSuggestMode' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/SuggestModes/SocialIconSuggestMode.php',
+        'Statamic\\Addons\\AardvarkSeo\\Tests\\ControllerTest' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Tests/ControllerTest.php',
+        'Statamic\\Addons\\AardvarkSeo\\Tests\\ControllerTextFixtures' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Tests/ControllerTest.php',
+        'Statamic\\Addons\\AardvarkSeo\\Tests\\RedirectsControllerTest' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Tests/RedirectsControllerTest.php',
+        'Statamic\\Addons\\AardvarkSeo\\Tests\\RedirectsControllerTestFixtures' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Tests/RedirectsControllerTest.php',
+        'Statamic\\Addons\\AardvarkSeo\\Tests\\SitemapTest' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Tests/SitemapTest.php',
+        'Statamic\\Addons\\AardvarkSeo\\Traits\\Redirects\\GeneratesDataUris' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Traits/Redirects/GeneratesDataUris.php',
+        'Statamic\\Addons\\AardvarkSeo\\Traits\\TransformsAssetsFieldtypes' => __DIR__ . '/../..' . '/../site/addons/AardvarkSeo/Traits/TransformsAssetsFieldtypes.php',
         'Statamic\\Addons\\Arr\\ArrFieldtype' => __DIR__ . '/../..' . '/bundles/Arr/ArrFieldtype.php',
         'Statamic\\Addons\\AssetContainer\\AssetContainerFieldtype' => __DIR__ . '/../..' . '/bundles/AssetContainer/AssetContainerFieldtype.php',
         'Statamic\\Addons\\AssetFolder\\AssetFolderFieldtype' => __DIR__ . '/../..' . '/bundles/AssetFolder/AssetFolderFieldtype.php',
@@ -2780,6 +2812,13 @@ class ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b
         'Statamic\\Addons\\Assets\\AssetsTags' => __DIR__ . '/../..' . '/bundles/Assets/AssetsTags.php',
         'Statamic\\Addons\\BardButtonsSetting\\BardButtonsSettingFieldtype' => __DIR__ . '/../..' . '/bundles/BardButtonsSetting/BardButtonsSettingFieldtype.php',
         'Statamic\\Addons\\Bard\\BardFieldtype' => __DIR__ . '/../..' . '/bundles/Bard/BardFieldtype.php',
+        'Statamic\\Addons\\BigKahuna\\BigKahunaController' => __DIR__ . '/../..' . '/../site/addons/BigKahuna/BigKahunaController.php',
+        'Statamic\\Addons\\BigKahuna\\BigKahunaListener' => __DIR__ . '/../..' . '/../site/addons/BigKahuna/BigKahunaListener.php',
+        'Statamic\\Addons\\BigKahuna\\BigKahunaTags' => __DIR__ . '/../..' . '/../site/addons/BigKahuna/BigKahunaTags.php',
+        'Statamic\\Addons\\CacheManager\\CacheManager' => __DIR__ . '/../..' . '/../site/addons/CacheManager/CacheManager.php',
+        'Statamic\\Addons\\CacheManager\\CacheManagerController' => __DIR__ . '/../..' . '/../site/addons/CacheManager/CacheManagerController.php',
+        'Statamic\\Addons\\CacheManager\\CacheManagerListener' => __DIR__ . '/../..' . '/../site/addons/CacheManager/CacheManagerListener.php',
+        'Statamic\\Addons\\CacheManager\\CacheManagerWidget' => __DIR__ . '/../..' . '/../site/addons/CacheManager/CacheManagerWidget.php',
         'Statamic\\Addons\\Cache\\CacheTags' => __DIR__ . '/../..' . '/bundles/Cache/CacheTags.php',
         'Statamic\\Addons\\Can\\CanAPI' => __DIR__ . '/../..' . '/bundles/Can/CanAPI.php',
         'Statamic\\Addons\\Can\\CanTags' => __DIR__ . '/../..' . '/bundles/Can/CanTags.php',
@@ -2788,6 +2827,8 @@ class ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b
         'Statamic\\Addons\\Collection\\CollectionTags' => __DIR__ . '/../..' . '/bundles/Collection/CollectionTags.php',
         'Statamic\\Addons\\Collection\\CollectionWidget' => __DIR__ . '/../..' . '/bundles/Collection/CollectionWidget.php',
         'Statamic\\Addons\\Collections\\CollectionsFieldtype' => __DIR__ . '/../..' . '/bundles/Collections/CollectionsFieldtype.php',
+        'Statamic\\Addons\\ColorSwatches\\ColorSwatchesFieldtype' => __DIR__ . '/../..' . '/../site/addons/ColorSwatches/ColorSwatchesFieldtype.php',
+        'Statamic\\Addons\\ColorSwatches\\ColorSwatchesListener' => __DIR__ . '/../..' . '/../site/addons/ColorSwatches/ColorSwatchesListener.php',
         'Statamic\\Addons\\Date\\DateFieldtype' => __DIR__ . '/../..' . '/bundles/Date/DateFieldtype.php',
         'Statamic\\Addons\\Dump\\DumpTags' => __DIR__ . '/../..' . '/bundles/Dump/DumpTags.php',
         'Statamic\\Addons\\Entries\\EntriesTags' => __DIR__ . '/../..' . '/bundles/Entries/EntriesTags.php',
@@ -2804,6 +2845,13 @@ class ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b
         'Statamic\\Addons\\Glide\\GlideTags' => __DIR__ . '/../..' . '/bundles/Glide/GlideTags.php',
         'Statamic\\Addons\\Grid\\GridFieldtype' => __DIR__ . '/../..' . '/bundles/Grid/GridFieldtype.php',
         'Statamic\\Addons\\Hidden\\HiddenFieldtype' => __DIR__ . '/../..' . '/bundles/Hidden/HiddenFieldtype.php',
+        'Statamic\\Addons\\ImageOptimizer\\Commands\\ImageOptimizerCommand' => __DIR__ . '/../..' . '/../site/addons/ImageOptimizer/Commands/ImageOptimizerCommand.php',
+        'Statamic\\Addons\\ImageOptimizer\\Controllers\\ImageOptimizerController' => __DIR__ . '/../..' . '/../site/addons/ImageOptimizer/Controllers/ImageOptimizerController.php',
+        'Statamic\\Addons\\ImageOptimizer\\Fieldtypes\\ImageOptimizerFieldtype' => __DIR__ . '/../..' . '/../site/addons/ImageOptimizer/Fieldtypes/ImageOptimizerFieldtype.php',
+        'Statamic\\Addons\\ImageOptimizer\\Fieldtypes\\StatisticsFieldtype' => __DIR__ . '/../..' . '/../site/addons/ImageOptimizer/Fieldtypes/StatisticsFieldtype.php',
+        'Statamic\\Addons\\ImageOptimizer\\HasStatistics' => __DIR__ . '/../..' . '/../site/addons/ImageOptimizer/HasStatistics.php',
+        'Statamic\\Addons\\ImageOptimizer\\ImageOptimizer' => __DIR__ . '/../..' . '/../site/addons/ImageOptimizer/ImageOptimizer.php',
+        'Statamic\\Addons\\ImageOptimizer\\ImageOptimizerListener' => __DIR__ . '/../..' . '/../site/addons/ImageOptimizer/ImageOptimizerListener.php',
         'Statamic\\Addons\\In\\InAPI' => __DIR__ . '/../..' . '/bundles/In/InAPI.php',
         'Statamic\\Addons\\In\\InTags' => __DIR__ . '/../..' . '/bundles/In/InTags.php',
         'Statamic\\Addons\\Increment\\IncrementTags' => __DIR__ . '/../..' . '/bundles/Increment/IncrementTags.php',
@@ -2816,9 +2864,13 @@ class ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b
         'Statamic\\Addons\\LocaleSettings\\LocaleSettingsFieldtype' => __DIR__ . '/../..' . '/bundles/LocaleSettings/LocaleSettingsFieldtype.php',
         'Statamic\\Addons\\Locales\\LocalesTags' => __DIR__ . '/../..' . '/bundles/Locales/LocalesTags.php',
         'Statamic\\Addons\\Locales\\NoDataException' => __DIR__ . '/../..' . '/bundles/Locales/NoDataException.php',
+        'Statamic\\Addons\\Location\\LocationFieldtype' => __DIR__ . '/../..' . '/../site/addons/Location/LocationFieldtype.php',
+        'Statamic\\Addons\\Location\\LocationListener' => __DIR__ . '/../..' . '/../site/addons/Location/LocationListener.php',
         'Statamic\\Addons\\Markdown\\MarkdownFieldtype' => __DIR__ . '/../..' . '/bundles/Markdown/MarkdownFieldtype.php',
         'Statamic\\Addons\\Markdown\\MarkdownTags' => __DIR__ . '/../..' . '/bundles/Markdown/MarkdownTags.php',
         'Statamic\\Addons\\Member\\MemberTags' => __DIR__ . '/../..' . '/bundles/Member/MemberTags.php',
+        'Statamic\\Addons\\MinifyHTML\\MinifyHTMLMiddleware' => __DIR__ . '/../..' . '/../site/addons/MinifyHTML/MinifyHTMLMiddleware.php',
+        'Statamic\\Addons\\MinifyHTML\\MinifyHTMLServiceProvider' => __DIR__ . '/../..' . '/../site/addons/MinifyHTML/MinifyHTMLServiceProvider.php',
         'Statamic\\Addons\\Nav\\NavTags' => __DIR__ . '/../..' . '/bundles/Nav/NavTags.php',
         'Statamic\\Addons\\Nav\\Tree' => __DIR__ . '/../..' . '/bundles/Nav/Tree.php',
         'Statamic\\Addons\\Nav\\TreeFactory' => __DIR__ . '/../..' . '/bundles/Nav/TreeFactory.php',
@@ -2874,6 +2926,7 @@ class ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b
         'Statamic\\Addons\\Suggest\\SuggestController' => __DIR__ . '/../..' . '/bundles/Suggest/SuggestController.php',
         'Statamic\\Addons\\Suggest\\SuggestFieldtype' => __DIR__ . '/../..' . '/bundles/Suggest/SuggestFieldtype.php',
         'Statamic\\Addons\\Suggest\\TypeMode' => __DIR__ . '/../..' . '/bundles/Suggest/TypeMode.php',
+        'Statamic\\Addons\\Svg\\SvgTags' => __DIR__ . '/../..' . '/../site/addons/svg/SvgTags.php',
         'Statamic\\Addons\\Table\\TableFieldtype' => __DIR__ . '/../..' . '/bundles/Table/TableFieldtype.php',
         'Statamic\\Addons\\Tags\\TagsFieldtype' => __DIR__ . '/../..' . '/bundles/Tags/TagsFieldtype.php',
         'Statamic\\Addons\\Taxonomy\\TaxonomyFieldtype' => __DIR__ . '/../..' . '/bundles/Taxonomy/TaxonomyFieldtype.php',
@@ -4022,11 +4075,11 @@ class ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit5390dda57ffa7bbe1cedd8c746ccc40b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit05329eecb35dddf054fcf04696635d7b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit05329eecb35dddf054fcf04696635d7b::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit05329eecb35dddf054fcf04696635d7b::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit05329eecb35dddf054fcf04696635d7b::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit05329eecb35dddf054fcf04696635d7b::$classMap;
 
         }, null, ClassLoader::class);
     }
