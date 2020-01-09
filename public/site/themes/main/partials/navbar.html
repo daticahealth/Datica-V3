@@ -27,7 +27,8 @@
 var toggler = document.querySelector('.toggle-me');
 var toggleTarget = document.querySelector('.toggle-target');
 
-toggler.addEventListener('click', function() {
+toggler.addEventListener('click', function(e) {
+    e.preventDefault();
     toggler.toggleAttribute('aria-expanded');
     toggleTarget.classList.toggle('is-active');
     toggler.classList.toggle('is-toggled');

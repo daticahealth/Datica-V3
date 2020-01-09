@@ -5,7 +5,7 @@
 body {
     background-color: var(--bg-color);
 }
-.z--10 { // other z settings in tailwind
+.z--10 { // other z settings in tailwind. They may have a new 1.0 syntax
     z-index: -10;
 }
 
