@@ -1,0 +1,35 @@
+
+<div class="mx-auto flex items-center justify-between max-w-7xl my-2 py-2">
+    <a class="" href="/" title="{{ site_name }} Home">
+        {{ svg src="/assets/icons/datica-logo-horiz.svg" class="fill-current h-12 w-32 mr-3" a11y="Datica" }}
+    </a>
+     <div class="block relative"><!--  lg:hidden-->
+        <a aria-controls="menu" class="toggle-me" id="nav-toggle" href="#"><span></span></a>
+    </div>
+    
+</div>
+<div id="nav-menu" class="toggle-target hidden">
+    <div class="nav-items mx-auto flex items-center justify-between max-w-7xl my-2 py-2 text-base p-8">
+        {{ big_kahuna menu="main-nav" id="nav-main" }}
+    </div> 
+
+</div>
+{{# 
+    <div class="text-center mx-auto sm:block md:inline-block">
+        <a class="inline-block btn btn-hollow mt-4 lg:mt-0 px-4 py-2" title="Schedule a consultation with {{ site_name }}" href="/contact">Get Pricing</a>
+    </div>    
+    <div class="nav-pane toggle-target w-full flex-shrink lg:flex lg:items-center lg:w-auto">
+#}}
+
+
+
+<script>
+var toggler = document.querySelector('.toggle-me');
+var toggleTarget = document.querySelector('.toggle-target');
+
+toggler.addEventListener('click', function() {
+    toggler.toggleAttribute('aria-expanded');
+    toggleTarget.classList.toggle('is-active');
+    toggler.classList.toggle('is-toggled');
+});
+</script>

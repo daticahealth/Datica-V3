@@ -55,7 +55,7 @@ if (mix.inProduction()) {
             path.join(__dirname, 'img/**.svg'),
         ],
         extensions: ['html', 'js', 'php', 'svg'],
-        whitelist: ['animated', 'active', 'loaded', 'pagination'],
+        whitelist: ['animated', 'active', 'loaded', 'pagination', 'is-active', 'is-toggled'],
         whitelistPatterns: [/$lg-/],
     })
 };

@@ -8,6 +8,7 @@
     {{ if environment!='local' and environment!='staging' }}
 
     <!-- Google Tag Manager -->
+    {{#
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{ gtm_id }}"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
@@ -25,7 +26,7 @@
                 '//www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', '{{ gtm_id }}');
-    </script>
+    </script>#}}
     <!-- End Google Tag Manager -->
 
     {{ /if }} {{ partial:metadata }} {{ partial:device_icons }} {{ theme:css cache_bust="true" tag="true" }} {{ theme:css src="vendor.css" cache_bust="true" tag="true" }}
@@ -45,7 +46,7 @@
     {{ /if }}
 
     {{# <header class="site-header bg-white"> #}}
-        {{ partial:navbar }}
+    {{ partial:navbar }}
     {{# </header> #}}
     {{ template_content }}
     {{ partial:footer }}

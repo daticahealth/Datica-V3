@@ -1,8 +1,4 @@
-// var observer = lozad('.lozad', {
-//     loaded: function(el) {
-//         el.classList.add('loaded');
-//     }
-// });
+// lazy loading
 var observer = lozad('.lozad', {
     loaded: function(el) {
         el.classList.add('loaded');
