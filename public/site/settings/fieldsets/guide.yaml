@@ -2,28 +2,24 @@ sections:
   main:
     display: Main
     fields:
+      basics:
+        type: partial
+        display: 'Entry basics'
+        fieldset: _basics
       title:
         type: text
         display: 'Guide Title'
         localizable: true
         width: 50
-      subtitle:
+      subhead:
         type: text
-        display: Subtitle
+        display: Subheading
         width: 50
-      cta_body:
+      content:
         cheatsheet: false
         restrict_assets: false
         type: markdown
         display: 'Body Content'
-      cta_form:
-        max_items: '1'
-        collection:
-          - forms
-        mode: panes
-        type: collection
-        instructions: 'Choose a form for the entry.'
-        display: 'CTA Form'
       quote:
         max_items: '1'
         collection:
@@ -32,13 +28,24 @@ sections:
         type: collection
         instructions: 'Choose a customer quote/proof point.'
         display: Quote
-      thumbnail:
+        width: 50
+      related_form:
+        max_items: '1'
+        collection:
+          - forms
+        mode: panes
+        type: collection
+        display: 'Related Form'
+        width: 50
+      image_thumb:
         container: main
+        folder: /
         restrict: false
         max_files: 1
         mode: grid
         type: assets
         display: 'Thumbnail Image'
+        width: 50
       bg_image:
         container: main
         folder: /
@@ -47,5 +54,13 @@ sections:
         type: assets
         instructions: 'A background image or texture, optional.'
         display: 'Background Image'
+        width: 50
+  sidebar:
+    display: 'Entry Metadata'
+    fields:
+      post_meta:
+        type: partial
+        display: 'Entry Metadata'
+        fieldset: _meta
 taxonomies: true
 title: 'Guides & Reports'

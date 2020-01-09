@@ -4,7 +4,7 @@ collections:
   events: '/events/{slug}'
   webinars: '/webinar/{slug}'
   press: '/press/{slug}'
-  guides: '/guides/{slug}'
+  guides: '/guide/{slug}'
 taxonomies:
   tags: '/tag/{slug}'
   topics: '/discover/{slug}'
