@@ -7,9 +7,6 @@
 .nav-pane {
     display: none;
 }
-.is-active { // when toggle is triggered, the target gets .is-active
-    display: block;
-}
 // $speed-default: 150ms;
 // .icon, .toggle-me, .nav-item {
 //    transition: color $speed-default ease, opacity $speed-default ease, position $speed-default ease;
@@ -99,4 +96,15 @@
     .nav-group-header {
         @apply mr-8;
     }
+}
+#nav-main {
+    @screen md {
+        @apply flex;
+        .nav-group-header {
+            @apply mr-8;
+        }
+    }
+}
+.is-active { // when toggle is triggered, the target gets .is-active
+    display: block;
 }
