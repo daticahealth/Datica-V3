@@ -143,6 +143,46 @@ sections:
                         display: 'Link to page button'
                 type: replicator
                 display: 'Content Columns'
+          feature_blocks_set:
+            display: 'Feature blocks set'
+            fields:
+              set_title:
+                type: text
+                display: 'Set Title'
+              set_subhead:
+                type: text
+                display: Subheader
+              set_body:
+                cheatsheet: true
+                restrict_assets: false
+                type: markdown
+                display: 'Set Paragraph'
+              set_blocks:
+                sets:
+                  set_items:
+                    display: Items
+                    instructions: 'Layout rules are handled in the template and may vary.'
+                    fields:
+                      item_header:
+                        type: text
+                        display: 'Header Text'
+                      item_art:
+                        container: main
+                        folder: img/art
+                        restrict: false
+                        max_files: 1
+                        mode: grid
+                        type: assets
+                        instructions: 'Appears at the top of the content'
+                        display: 'Artwork or icon'
+                      item_content:
+                        cheatsheet: true
+                        restrict_assets: false
+                        type: markdown
+                        display: 'Item Content'
+                type: replicator
+                display: 'Content Columns'
+            instructions: 'These are larger image & text blocks, grouped as a set. Various layout rules handled in templates.'
         type: replicator
         display: 'Content Blocks'
 taxonomies: false

@@ -34,6 +34,25 @@ blocks:
     type: related_feature
     related_feature: v3Inn3xhHaskmq4ywwmkI
   -
+    type: feature_blocks_set
+    set_title: 'How it works'
+    set_blocks:
+      -
+        type: set_items
+        item_content: 'Datica creates a secure cloud environment for you on AWS that’s HIPAA-compliant and HITRUST-ready.'
+      -
+        type: set_items
+        item_content: 'We implement guardrails to help you stay secure and compliant as you grow and scale. No matter the changes to the outside world, you can trust your cloud environment  stays compliant.'
+      -
+        type: set_items
+        item_content: 'These guardrails apply not only to your account, but also the services you use. Storing, computing, or caching – you’re free to add any HIPAA-eligible AWS service to your environment without restriction.'
+      -
+        type: set_items
+        item_content: 'Datica manages the compliance of your environment over time. Monitoring, alert logging, vulnerability scanning, and intrusion detection are just some of the security controls available.'
+      -
+        type: set_items
+        item_content: 'Your favorite development tools are available as a standard, and the most advanced health data integration available today extends the capabilities of your cloud environment to places never thought possible before in healthcare.'
+  -
     type: col_text
     content_columns:
       -
@@ -65,7 +84,6 @@ blocks:
           - SSEC
           - and more
         icon_align: right
-        button_link: false
       -
         type: items
         item_header: 'Data Integration'
