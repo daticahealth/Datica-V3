@@ -81,11 +81,24 @@ sections:
               related_feature:
                 max_items: '1'
                 collection:
+                  - guides
                   - webinars
                   - cta
+                  - academy
+                  - blog
                 mode: panes
                 type: collection
                 display: 'Related Feature'
+          freeform_block:
+            instructions: 'Know what you''re doing here! A full-width area of static HTML for custom stuff.'
+            display: Freeform
+            fields:
+              freeform:
+                cheatsheet: false
+                container: main
+                folder: /
+                restrict_assets: false
+                type: markdown
         type: replicator
         display: 'Content Blocks'
 taxonomies: false
