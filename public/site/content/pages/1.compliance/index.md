@@ -6,9 +6,81 @@ icon: /assets/icons/logo--monitor-icon.svg
 subhead: 'Managed Service for your solution in the cloud'
 blocks:
   -
-    type: text_image
-    block_title: 'Healthcare cloud compliance needs to be flexible'
-    block_body: 'Compliance on the cloud isn’t a one-size-fits-all challenge. Maybe you don’t have the expertise, time, and resources to build your HIPAA-compliant infrastructure, but still need the flexibility to scale without an overly rigid partner. That’s where we can help– with Datica Cloud Compliance, an end-to-end solution for cloud managed services.'
+    type: video_text
+    related_video: 1ucmmX9i5Lo4gNY1UKpWOz
+    video_title: 'Healthcare cloud compliance needs to be flexible'
+    video_text: 'Compliance on the cloud isn’t a one-size-fits-all challenge. Maybe you don’t have the expertise, time, and resources to build your HIPAA-compliant infrastructure, but still need the flexibility to scale without an overly rigid partner. That’s where we can help– with Datica Cloud Compliance, an end-to-end solution for cloud managed services.'
+    icon_align: right
+  -
+    type: col_text
+    content_columns:
+      -
+        type: items
+        item_art: /assets/general/guides/logo-hitrust.png
+        icon_align: right
+      -
+        type: items
+        item_art: /assets/img/art/logo-hipaa-federal.png
+        icon_align: right
+      -
+        type: items
+        item_art: '/assets/img/art/100m records.svg'
+        icon_align: right
+      -
+        type: items
+        item_art: '/assets/img/art/1k assessments.svg'
+        icon_align: right
+  -
+    type: related_feature
+    related_feature: v3Inn3xhHaskmq4ywwmkI
+  -
+    type: col_text
+    content_columns:
+      -
+        type: items
+        item_header: 'AWS HIPAA-Eligble Services'
+        item_content: |
+          - S3
+          - EC2
+          - RDs
+          - Elasticache
+        icon_align: right
+      -
+        type: items
+        item_header: 'Compliance & Security Controls'
+        item_content: |
+          - Alert logging
+          - Vulnerability scanning
+          - Monitoring
+          - Intrusion detection
+          - And more
+        icon_align: right
+      -
+        type: items
+        item_header: 'Common Developer Tools'
+        item_content: |
+          - Splunk
+          - Prometheus
+          - AquaSec
+          - SSEC
+          - and more
+        icon_align: right
+        button_link: false
+      -
+        type: items
+        item_header: 'Data Integration'
+        item_content: |
+          - Standards-based
+          - Custom endpoints
+          - Any-to-any
+        icon_align: right
+    block_title: 'Datica Compliance Services'
+  -
+    type: related_feature
+    related_feature: 3VsDfgWFYcksgkUq2iyMAQ
+  -
+    type: logo_cloud
+    related_logo_cloud: aed4d0d4-c0be-4b28-b3ac-9ef90a1de041
 cta_title: 'Datica Monitor is here.'
 cta_icon: /assets/icons/logo--monitor-icon.svg
 cta_body: 'See Datica Monitor in action. Fill out this form and one of our product specialists will reach out to schedule your demo.'

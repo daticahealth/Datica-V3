@@ -2,19 +2,35 @@ sections:
   main:
     display: 'Button Content'
     fields:
+      button_component_section:
+        type: section
+        display: 'Button Component'
       button_label:
         type: text
         display: Label
+        width: 33
       button_icon:
         restrict: false
         type: assets
         display: Icon
-      button_link:
-        max_items: 1
-        mode: panes
-        type: pages
-        instructions: 'Choose a page to link to.'
-        display: 'Page Link'
+        width: 33
+        container: main
+        folder: icons
+        max_files: 1
+        mode: grid
+        show_when:
+          button_label: true
+      icon_align:
+        options:
+          left: Left
+          right: Right
+        inline: true
+        type: radio
+        width: 33
+        display: 'Icon Alignment'
+        default: right
+        show_when:
+          button_icon: true
       button_classes:
         type: text
         instructions: |
@@ -24,6 +40,18 @@ sections:
           
           But any [TailwindCSS](https://tailwindcss.com/docs/) class can be added, like margin or layout stuff.
         display: 'CSS Classes'
+        width: 50
+        show_when:
+          button_label: true
+      button_link:
+        max_items: 1
+        mode: panes
+        type: pages
+        instructions: 'Choose a page to link to.'
+        display: 'Page Link'
+        width: 50
+        show_when:
+          button_label: true
 taxonomies: false
 hide: true
 title: 'Button (partial)'

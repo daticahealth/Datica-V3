@@ -18,3 +18,7 @@ assets:
     title: Dame
     alt: Dametime
     focus: 34-13
+  'img/art/1k assessments.svg':
+    alt: 'Assessments number'
+  'img/art/100m records.svg':
+    alt: 'millions of records accessed'

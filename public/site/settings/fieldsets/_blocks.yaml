@@ -27,7 +27,7 @@ sections:
                 mode: grid
                 type: assets
                 instructions: 'Choose an image for the artwork.'
-                display: block_image
+                display: 'Block Image'
               cta_link:
                 depth: '3'
                 max_items: 1
@@ -35,6 +35,10 @@ sections:
                 type: pages
                 instructions: 'Link to any page. Doesn''t link to collection entries.'
                 display: 'CTA Link'
+              cta_jump:
+                type: text
+                instructions: 'This will make a button that jumps to the CTA at the page footer. style defined by template.'
+                display: 'Jump to CTA Button'
           video_text:
             display: 'Video + text'
             fields:
@@ -46,24 +50,21 @@ sections:
                 mode: panes
                 type: collection
                 display: 'Related Video'
-              block_title:
+              video_title:
                 type: text
                 display: Title
-              block_subtitle:
+              video_subhead:
                 type: text
                 display: Subtitle
-              block_body:
+              video_text:
                 cheatsheet: true
                 restrict_assets: false
                 type: markdown
                 display: 'Block Body Content'
-              cta_link:
-                depth: '3'
-                max_items: 1
-                mode: panes
-                type: pages
-                instructions: 'Link to any page. Doesn''t link to collection entries.'
-                display: 'CTA Link'
+              cta_button:
+                fieldset: _button
+                type: partial
+                display: 'CTA Button'
           logo_cloud:
             display: 'Logo Cloud'
             fields:
@@ -102,6 +103,17 @@ sections:
           col_text:
             display: 'Multicolumn Text'
             fields:
+              block_title:
+                type: text
+                display: 'Block Title'
+              block_subhead:
+                type: text
+                display: Subheader
+              block_body:
+                cheatsheet: true
+                restrict_assets: false
+                type: markdown
+                display: 'Block Paragraph'
               content_columns:
                 sets:
                   items:
@@ -126,12 +138,9 @@ sections:
                         type: markdown
                         display: 'Item Content'
                       item_link:
-                        depth: '3'
-                        max_items: 1
-                        mode: panes
-                        type: pages
-                        instructions: 'Optional CTA link to other pages, appears as a small link or button.'
-                        display: 'Link to page'
+                        fieldset: _button
+                        type: partial
+                        display: 'Link to page button'
                 type: replicator
                 display: 'Content Columns'
         type: replicator
