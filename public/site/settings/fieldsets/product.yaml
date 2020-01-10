@@ -1,0 +1,49 @@
+sections:
+  main:
+    display: Main
+    fields:
+      basics:
+        type: partial
+        display: 'Entry basics'
+        fieldset: _basics
+      lead:
+        type: textarea
+        display: Lead
+      bg_image:
+        container: main
+        folder: bg
+        restrict: false
+        max_files: 1
+        mode: grid
+        type: assets
+        display: 'Theme Background Image'
+      icon:
+        container: main
+        folder: icons
+        restrict: false
+        max_files: 1
+        type: assets
+        display: Icon
+      subhead:
+        type: text
+        display: Subhead
+  content_blocks_section:
+    display: 'Content Blocks'
+    fields:
+      content_blocks:
+        fieldset: _blocks
+        type: partial
+        display: 'Content Blocks'
+      cta:
+        fieldset: _cta_form
+        type: partial
+        display: 'Footer CTA'
+  sidebar:
+    display: 'Article Metadata'
+    fields:
+      post_meta:
+        type: partial
+        display: 'Post Metadata'
+        fieldset: _meta
+taxonomies: true
+title: 'Product Page'

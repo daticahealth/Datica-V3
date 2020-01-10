@@ -99,6 +99,41 @@ sections:
                 folder: /
                 restrict_assets: false
                 type: markdown
+          col_text:
+            display: 'Multicolumn Text'
+            fields:
+              content_columns:
+                sets:
+                  items:
+                    display: Items
+                    instructions: 'For responsive columns. Layout rules are handled in the template and may vary.'
+                    fields:
+                      item_header:
+                        type: text
+                        display: 'Header Text'
+                      item_art:
+                        container: main
+                        folder: img/art
+                        restrict: false
+                        max_files: 1
+                        mode: grid
+                        type: assets
+                        instructions: 'Appears at the top of the content'
+                        display: 'Artwork or icon'
+                      item_content:
+                        cheatsheet: true
+                        restrict_assets: false
+                        type: markdown
+                        display: 'Item Content'
+                      item_link:
+                        depth: '3'
+                        max_items: 1
+                        mode: panes
+                        type: pages
+                        instructions: 'Optional CTA link to other pages, appears as a small link or button.'
+                        display: 'Link to page'
+                type: replicator
+                display: 'Content Columns'
         type: replicator
         display: 'Content Blocks'
 taxonomies: false

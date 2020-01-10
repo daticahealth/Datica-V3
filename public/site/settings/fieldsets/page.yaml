@@ -1,4 +1,4 @@
-title: 'Page (modular content)'
+title: 'Content Blocks Partial'
 sections:
   main:
     display: Main
@@ -43,3 +43,4 @@ sections:
         display: 'Page Metadata'
         fieldset: _meta
 taxonomies: false
+hide: true

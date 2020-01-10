@@ -1,0 +1,29 @@
+sections:
+  main:
+    display: 'Button Content'
+    fields:
+      button_label:
+        type: text
+        display: Label
+      button_icon:
+        restrict: false
+        type: assets
+        display: Icon
+      button_link:
+        max_items: 1
+        mode: panes
+        type: pages
+        instructions: 'Choose a page to link to.'
+        display: 'Page Link'
+      button_classes:
+        type: text
+        instructions: |
+          CSS classes for the button, space-separated. Primary is the default, hollow options for lighter visuals. Current styles (pick one):
+          
+          `button-primary button-hollow button-hollow-white button-hollow-dark button-large`
+          
+          But any [TailwindCSS](https://tailwindcss.com/docs/) class can be added, like margin or layout stuff.
+        display: 'CSS Classes'
+taxonomies: false
+hide: true
+title: 'Button (partial)'

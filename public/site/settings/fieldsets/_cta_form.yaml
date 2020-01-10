@@ -4,21 +4,8 @@ sections:
     fields:
       cta_title:
         type: text
-        display: 'Call to action + Form'
-      cta_body:
-        cheatsheet: false
-        restrict_assets: false
-        type: markdown
-        display: 'Body Content'
-      quote:
-        max_items: '1'
-        collection:
-          - quotes
-        mode: panes
-        type: collection
-        instructions: 'Choose a customer quote/proof point.'
-        display: Quote
-      icon:
+        display: 'CTA Title'
+      cta_icon:
         container: main
         folder: icons
         restrict: false
@@ -26,7 +13,20 @@ sections:
         mode: grid
         type: assets
         display: Icon
-      cta_form:
+      cta_body:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        display: 'CTA Body'
+      related_quote:
+        max_items: '1'
+        collection:
+          - quotes
+        mode: panes
+        type: collection
+        instructions: 'Choose a customer quote/proof point.'
+        display: Quote
+      related_form:
         max_items: '1'
         collection:
           - forms
@@ -34,6 +34,6 @@ sections:
         type: collection
         instructions: 'Choose a form for the entry.'
         display: 'CTA Form'
-taxonomies: true
+taxonomies: false
 hide: true
-title: 'Form CTA'
+title: 'Form CTA (partial)'

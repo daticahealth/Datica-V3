@@ -1,11 +1,11 @@
 theme: main
 default_layout: default
 default_page_template: default
-default_entry_template: post
+default_entry_template: blog
 default_taxonomy_template: taxonomy
 error_template_folder: errors
 default_fieldset: default
-default_page_fieldset: page
+default_page_fieldset: product
 default_entry_fieldset: entry
 default_term_fieldset: tag
 default_asset_fieldset: asset
