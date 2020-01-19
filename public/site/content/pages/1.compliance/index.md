@@ -4,6 +4,7 @@ summary: 'Datica compliance solutions help you pass a HITRUST assessment with HI
 bg_image: /assets/bg/share-monitor-home-bg.svg
 icon: /assets/icons/logo--monitor-icon.svg
 subhead: 'Managed Service for your solution in the cloud'
+template: content_blocks
 blocks:
   -
     type: video_text

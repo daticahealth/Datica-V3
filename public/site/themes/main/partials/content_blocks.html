@@ -1,10 +1,10 @@
 {{# content block replicator partial #}}
-
-{{ if content_blocks }}
+<!-- partials/content_blocks -->
+{{ if blocks }}
 <section class="content-blocks">
-    {{ content_blocks }}
+    {{ blocks }}
     {{ partial src="sets/{type}" }}
     {{# <h1>{{ type }}</h1> #}}
-    {{ /content_blocks }}
+    {{ /blocks }}
 </section>
 {{ /if }}
