@@ -1,0 +1,51 @@
+<!-- block: feature_blocks_set -->
+<section class="blocks block-feature">
+    <div class="w-full max-w-6xl mx-auto pad-scale-y-lg">
+        <div class="w-full">
+            {{ if set_title }}
+                {{ set_title | wrap:h2.headline-3 }}
+            {{ /if }}
+            {{ if set_subhead }}
+                {{ set_subhead | wrap:h2.headline-3 }}
+            {{ /if }}
+            {{ if set_body }}
+                {{ set_body | markdown | wrap:div.block-content }}
+            {{ /if }}
+        </div>
+        <div class="block-feature--set">
+            {{ if set_blocks }}
+                {{ set_blocks }}
+                    <div class="block-feature--set-block w-full flex">
+                        <div class="block-feature--set-item w-full md:w-1/3 lg:w-1/3">
+                            {{ if item_art }}
+                            <img class="lozad h-24" 
+                                {{#{{ assets:item_art }}data-src="{{ glide:id height="200" }}" src="{{ glide:id height="200" height="200" crop="focal_crop" quality="10" }}" {{ /assets:item_art }}
+                                #}}
+                                data-src="{{ assets:item_art }}{{ item_art }}{{ /assets:item_art }}" 
+                                src="/assets/site/loader-rect.svg"
+
+                            />
+                                {{# svg src="{ item_art }" class="fill-current icon-inline {{ if icon_align != 'right' }} {{ icon_align }}{{ /if }}" a11y="icon" #}}
+                            {{ /if }}
+                            {{ if item_header }}
+                                {{ item_header | wrap:h3.headline-4.mb-4 }}
+                            {{ /if }}
+                            {{ if item_content }}
+                                {{ item_content | markdown | wrap:div.item-content }}
+                            {{ /if }}
+                        </div>
+                    </div>
+                {{ /set_blocks }}
+            {{ /if }}
+        </div>
+    </div>
+</section>
+{{# move these to stylesheets #}}
+<style>
+    .block-col-text .block-col-text--item {
+        margin-right: 1rem;
+    }
+    .block-feature--set-block:nth-child(2n) {
+        justify-content: flex-end;
+    }
+</style>
