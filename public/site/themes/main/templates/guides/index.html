@@ -18,7 +18,7 @@
 		<main class="list">
 			{{ collection from="{section_collection}" paginate="true" as="posts" limit="20" sort="pub_date:desc" }}
 				{{ posts scope="tag" }}
-					{{ partial:academy-card-h classes="max-w-3xl mb-8" show_collection="false" }}				
+					{{ partial:guide-card-h classes="max-w-3xl mb-8" show_collection="false" }}				
 				{{ /posts }}
 				<div class="mx-auto p-6 w-full">
 					{{ partial:pagination }}

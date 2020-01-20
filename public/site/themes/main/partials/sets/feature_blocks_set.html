@@ -1,7 +1,7 @@
 <!-- block: feature_blocks_set -->
 <section class="blocks block-feature">
-    <div class="w-full max-w-6xl mx-auto pad-scale-y-lg">
-        <div class="w-full">
+    <div class="w-full max-w-6xl mx-auto pad-scale">
+        <div class="w-full lg:max-w-2xl mx-auto text-center">
             {{ if set_title }}
                 {{ set_title | wrap:h2.headline-3 }}
             {{ /if }}
@@ -9,7 +9,7 @@
                 {{ set_subhead | wrap:h2.headline-3 }}
             {{ /if }}
             {{ if set_body }}
-                {{ set_body | markdown | wrap:div.block-content }}
+                {{ set_body | markdown | wrap:div.block-content.text-xl }}
             {{ /if }}
         </div>
         <div class="block-feature--set">

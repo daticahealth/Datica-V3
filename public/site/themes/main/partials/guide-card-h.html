@@ -1,0 +1,40 @@
+<!-- academy-card-h -->
+<a class="{{ classes }} relative rounded card-hover shadow hover:shadow-lg transition-all bg-white flex flex-col sm:flex-row justify-start items-stretch overflow-hidden pad-scale-sm"
+    href="{{ url }}" title="Read {{ title }} in Datica {{ collection | title }}"
+>
+    {{ slug }}
+    {{ image_thumb }}
+    {{ if show_collection == "true" && featured_image }}
+        <div class="absolute top-0 left-0 bg-gray-800 py-1 px-2 font-bold text-white text-sm capitalize">{{ collection | upper }}</div>
+    {{ /if }}
+    {{ if image_thumb }}
+        <div class="w-32 sm:w-auto sm:w-1/4 sm:mr-4 md:mr-6 lg:mr-8">
+            <img class="lozad" 
+                {{ assets:image_thumb }}data-src="{{ glide:id width="400" height="400" crop="focal_crop" }}" src="{{ glide:id width="200" height="200" crop="focal_crop" quality="10" }}" {{ /assets:image_thumb }}
+            />
+        </div>
+    {{ /if }}
+    <div class="{{ if image_thumb }}w-full sm:w-3/4 {{ /if }}">
+        <div class="">
+            <span class="date text-sm font-regular tracking-widest uppercase">{{ pub_date format="F j, Y" }}</span>
+            {{ if show_collection == "true" && ! featured_image }}<span class="font-regular opacity-75">in </span><span class="text-sm capitalize font-bold">Datica {{ collection }}</span>{{ /if }}
+        </div>
+        <h3 class="headline-4 font-bold mb-2">{{ title }}</h3>
+        {{ summary | wrap:div.mb-4 }}
+        <div class="flex flex-col md:flex-row md:justify-between md:items-end">
+        {{#
+        {{ if author or authors }}
+            {{ relate:authors scope="entry" }}
+                {{ partial:person classes="" }}
+            {{ /relate:authors }}
+        {{ /if }}
+        #}}
+        {{ if tags }}
+            <div class="">
+                {{ partial:tag-list-plain }}
+            </div>
+        {{ /if }}
+        </div>
+    </div>
+</a>
+
