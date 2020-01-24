@@ -2,7 +2,7 @@
 <!-- partials/content_blocks -->
 {{ if blocks }}
 <section class="content-blocks bg-color">
-    {{ blocks }}
+    {{ blocks use_context="true" }}
     <!-- partial:sets/{{ type }} -->
     {{ partial src="sets/{type}" }}
     {{ /blocks }}

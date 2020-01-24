@@ -39,6 +39,10 @@ sections:
                 type: text
                 instructions: 'This will make a button that jumps to the CTA at the page footer. style defined by template.'
                 display: 'Jump to CTA Button'
+              block_theme:
+                fieldset: _colors
+                type: partial
+                display: 'Block Theme'
           video_text:
             display: 'Video + text'
             fields:
@@ -65,6 +69,10 @@ sections:
                 fieldset: _button
                 type: partial
                 display: 'CTA Button'
+              block_theme:
+                fieldset: _colors
+                type: partial
+                display: 'Block Theme'
           logo_cloud:
             display: 'Logo Cloud'
             fields:
@@ -100,6 +108,10 @@ sections:
                 folder: /
                 restrict_assets: false
                 type: markdown
+              block_theme:
+                fieldset: _colors
+                type: partial
+                display: 'Block Theme'
           col_text:
             display: 'Multicolumn Text'
             fields:
@@ -114,6 +126,10 @@ sections:
                 restrict_assets: false
                 type: markdown
                 display: 'Block Paragraph'
+              block_theme:
+                fieldset: _colors
+                type: partial
+                display: 'Block Theme'
               content_columns:
                 sets:
                   items:
@@ -157,6 +173,10 @@ sections:
                 restrict_assets: false
                 type: markdown
                 display: 'Set Paragraph'
+              block_theme:
+                fieldset: _colors
+                type: partial
+                display: 'Block Theme'
               set_blocks:
                 sets:
                   set_items:

@@ -4,7 +4,6 @@ summary: 'Datica compliance solutions help you pass a HITRUST assessment with HI
 bg_image: /assets/bg/share-monitor-home-bg.svg
 icon: /assets/icons/logo--monitor-icon.svg
 subhead: 'Managed Service for your solution in the cloud'
-template: content_blocks
 blocks:
   -
     type: video_text
@@ -33,7 +32,7 @@ blocks:
         icon_align: right
   -
     type: related_feature
-    related_feature: v3Inn3xhHaskmq4ywwmkI
+    related_feature: 3VsDfgWFYcksgkUq2iyMAQ
   -
     type: feature_blocks_set
     set_title: 'How it works'
@@ -53,6 +52,8 @@ blocks:
       -
         type: set_items
         item_content: 'Your favorite development tools are available as a standard, and the most advanced health data integration available today extends the capabilities of your cloud environment to places never thought possible before in healthcare.'
+    block_bg_image: /assets/general/videos/hex-pattern-light-bg.jpg
+    color_theme: gray-200
   -
     type: col_text
     content_columns:
@@ -94,9 +95,11 @@ blocks:
           - Any-to-any
         icon_align: right
     block_title: 'Datica Compliance Services'
+    block_bg_image: /assets/general/videos/hexagon-bg-purple-green.jpg
+    color_theme: gray-800
   -
     type: related_feature
-    related_feature: 3VsDfgWFYcksgkUq2iyMAQ
+    related_feature: v3Inn3xhHaskmq4ywwmkI
   -
     type: logo_cloud
     related_logo_cloud: aed4d0d4-c0be-4b28-b3ac-9ef90a1de041
@@ -114,6 +117,7 @@ sitemap_changefreq: daily
 facebook_image:
   - /assets/cta/cta-compliance-share.jpg
 twitter_share_setting: inherit
+template: content_blocks
 sub_title: 'Managed Service for your solutions in the cloud'
 featured_image: /assets/cta/cta-compliance-share.jpg
 fieldset: product

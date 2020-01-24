@@ -1,5 +1,10 @@
 <!-- block: feature_blocks_set -->
-<section class="blocks block-feature">
+<section class="blocks block-feature lozad bg-cover 
+    {{ if color_theme }} bg-{{ color_theme }}{{ /if }}"
+    {{ if block_bg_image }}
+        {{ assets:block_bg_image }}data-background-image="{{ glide:id width="1200" height="1200" }}" {{ /assets:block_bg_image }} 
+    {{ /if }}
+    >
     <div class="w-full max-w-6xl mx-auto pad-scale">
         <div class="w-full lg:max-w-2xl mx-auto text-center">
             {{ if set_title }}

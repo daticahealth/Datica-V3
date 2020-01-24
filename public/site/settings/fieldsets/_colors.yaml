@@ -1,0 +1,31 @@
+sections:
+  main:
+    display: Main
+    fields:
+      color_theme:
+        options:
+          white: White
+          gray-100: 'Gray 100 (very light)'
+          gray-200: 'Gray 200'
+          gray-700: 'Gray 700'
+          gray-800: 'Gray 800 (dark gray)'
+          black: Black
+          grad-bright: 'Gradient, Bright, Brand Colors'
+          brand-primary: 'Brand Primary Color'
+          compliance: 'Compliance Category'
+          integration: 'Integration Category'
+        type: select
+        display: 'Color Style'
+        width: 50
+      block_bg_image:
+        container: main
+        folder: bg
+        restrict: false
+        max_files: 1
+        type: assets
+        instructions: 'Background image for the block.'
+        display: 'Background Image'
+        width: 50
+taxonomies: false
+hide: true
+title: 'Color Style'

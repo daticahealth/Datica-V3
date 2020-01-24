@@ -1,9 +1,7 @@
-<!-- academy-card-h -->
+<!-- guide-card-h -->
 <a class="{{ classes }} relative rounded card-hover shadow hover:shadow-lg transition-all bg-white flex flex-col sm:flex-row justify-start items-stretch overflow-hidden pad-scale-sm"
     href="{{ url }}" title="Read {{ title }} in Datica {{ collection | title }}"
 >
-    {{ slug }}
-    {{ image_thumb }}
     {{ if show_collection == "true" && featured_image }}
         <div class="absolute top-0 left-0 bg-gray-800 py-1 px-2 font-bold text-white text-sm capitalize">{{ collection | upper }}</div>
     {{ /if }}
