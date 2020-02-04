@@ -13,8 +13,8 @@
 	<div class="flex mx-auto justify-center flex-col lg:flex-row">
 		<main class="list">
 			{{ collection from="{section_collection}" paginate="true" as="posts" limit="20" sort="pub_date:desc" }}
-				{{ posts scope="tag" }}
-					{{ partial:academy-card-h classes="max-w-3xl mb-8" show_collection="false" }}				
+				{{ posts }}
+					{{ partial:academy-card-h classes="max-w-3xl mb-8" show_collection="false" }}
 				{{ /posts }}
 				<div class="mx-auto p-6 w-full">
 					{{ partial:pagination }}

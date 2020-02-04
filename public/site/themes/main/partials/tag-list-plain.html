@@ -1,7 +1,8 @@
 <div class="flex items-center">
-    {{ svg src="/assets/icons/icon-tag.svg" class="fill-current text-gray-300 w-4" a11y="tag" }}
-    {{ tags limit="3" }}
-       <span class="pill pill-light">{{ value }}</span>
+    {{ svg src="/assets/icons/icon-tag.svg" class="w-4 text-gray-300 fill-current" a11y="tag" }}
+    {{ tags }}
+        {{ if index < 4 }}
+            <span class="pill pill-light">{{ title }}</span>
+        {{ /if }}
     {{ /tags }}
 </div>
-
