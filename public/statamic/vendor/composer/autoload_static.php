@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit05329eecb35dddf054fcf04696635d7b
+class ComposerStaticInitb6c49246a84e99fb2600505d01c9d9f7
 {
     public static $files = array (
         '95a22d2145ae40de20dc7ea7be07a610' => __DIR__ . '/../..' . '/bootstrap/helpers.php',
@@ -85,6 +85,7 @@ class ComposerStaticInit05329eecb35dddf054fcf04696635d7b
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Michelf\\' => 8,
         ),
         'L' => 
         array (
@@ -282,6 +283,10 @@ class ComposerStaticInit05329eecb35dddf054fcf04696635d7b
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Michelf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/michelf/php-markdown/Michelf',
+        ),
         'League\\OAuth1\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/oauth1-client/src',
@@ -408,8 +413,7 @@ class ComposerStaticInit05329eecb35dddf054fcf04696635d7b
         array (
             'Michelf' => 
             array (
-                0 => __DIR__ . '/..' . '/michelf/php-markdown',
-                1 => __DIR__ . '/..' . '/michelf/php-smartypants',
+                0 => __DIR__ . '/..' . '/michelf/php-smartypants',
             ),
         ),
         'J' => 
@@ -2911,6 +2915,18 @@ class ComposerStaticInit05329eecb35dddf054fcf04696635d7b
         'Statamic\\Addons\\Section\\SectionTags' => __DIR__ . '/../..' . '/bundles/Section/SectionTags.php',
         'Statamic\\Addons\\Select\\SelectFieldtype' => __DIR__ . '/../..' . '/bundles/Select/SelectFieldtype.php',
         'Statamic\\Addons\\Session\\SessionTags' => __DIR__ . '/../..' . '/bundles/Session/SessionTags.php',
+        'Statamic\\Addons\\Spock\\Commander' => __DIR__ . '/../..' . '/../site/addons/Spock/Commander.php',
+        'Statamic\\Addons\\Spock\\CommanderTest' => __DIR__ . '/../..' . '/../site/addons/Spock/tests/CommanderTest.php',
+        'Statamic\\Addons\\Spock\\DataSaved' => __DIR__ . '/../..' . '/../site/addons/Spock/tests/GitTest.php',
+        'Statamic\\Addons\\Spock\\ExampleEvent' => __DIR__ . '/../..' . '/../site/addons/Spock/tests/CommanderTest.php',
+        'Statamic\\Addons\\Spock\\ExampleIgnoredEvent' => __DIR__ . '/../..' . '/../site/addons/Spock/tests/CommanderTest.php',
+        'Statamic\\Addons\\Spock\\FakeDispatcher' => __DIR__ . '/../..' . '/../site/addons/Spock/tests/CommanderTest.php',
+        'Statamic\\Addons\\Spock\\Git' => __DIR__ . '/../..' . '/../site/addons/Spock/Git.php',
+        'Statamic\\Addons\\Spock\\GitTest' => __DIR__ . '/../..' . '/../site/addons/Spock/tests/GitTest.php',
+        'Statamic\\Addons\\Spock\\Process' => __DIR__ . '/../..' . '/../site/addons/Spock/Process.php',
+        'Statamic\\Addons\\Spock\\RunProcesses' => __DIR__ . '/../..' . '/../site/addons/Spock/RunProcesses.php',
+        'Statamic\\Addons\\Spock\\SpockListener' => __DIR__ . '/../..' . '/../site/addons/Spock/SpockListener.php',
+        'Statamic\\Addons\\Spock\\SpockServiceProvider' => __DIR__ . '/../..' . '/../site/addons/Spock/SpockServiceProvider.php',
         'Statamic\\Addons\\Suggest\\Mode' => __DIR__ . '/../..' . '/bundles/Suggest/Mode.php',
         'Statamic\\Addons\\Suggest\\Modes\\AbstractMode' => __DIR__ . '/../..' . '/bundles/Suggest/Modes/AbstractMode.php',
         'Statamic\\Addons\\Suggest\\Modes\\BardLinkMode' => __DIR__ . '/../..' . '/bundles/Suggest/Modes/BardLinkMode.php',
@@ -2987,6 +3003,7 @@ class ComposerStaticInit05329eecb35dddf054fcf04696635d7b
         'Statamic\\Config\\Globals' => __DIR__ . '/../..' . '/core/Config/Globals.php',
         'Statamic\\Config\\Roles' => __DIR__ . '/../..' . '/core/Config/Roles.php',
         'Statamic\\Config\\Settings' => __DIR__ . '/../..' . '/core/Config/Settings.php',
+        'Statamic\\Console\\Application' => __DIR__ . '/../..' . '/core/Console/Application.php',
         'Statamic\\Console\\Commands\\AbstractCommand' => __DIR__ . '/../..' . '/core/Console/Commands/AbstractCommand.php',
         'Statamic\\Console\\Commands\\Assets\\AssetsFindCommand' => __DIR__ . '/../..' . '/core/Console/Commands/Assets/AssetsFindCommand.php',
         'Statamic\\Console\\Commands\\Assets\\AssetsGeneratePresetsCommand' => __DIR__ . '/../..' . '/core/Console/Commands/Assets/AssetsGeneratePresetsCommand.php',
@@ -4075,11 +4092,11 @@ class ComposerStaticInit05329eecb35dddf054fcf04696635d7b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit05329eecb35dddf054fcf04696635d7b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit05329eecb35dddf054fcf04696635d7b::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit05329eecb35dddf054fcf04696635d7b::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit05329eecb35dddf054fcf04696635d7b::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit05329eecb35dddf054fcf04696635d7b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb6c49246a84e99fb2600505d01c9d9f7::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb6c49246a84e99fb2600505d01c9d9f7::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitb6c49246a84e99fb2600505d01c9d9f7::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitb6c49246a84e99fb2600505d01c9d9f7::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitb6c49246a84e99fb2600505d01c9d9f7::$classMap;
 
         }, null, ClassLoader::class);
     }

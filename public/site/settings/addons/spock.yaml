@@ -1,0 +1,4 @@
+environments:
+  - develop
+  - staging
+git_push: true
