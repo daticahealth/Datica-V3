@@ -1,7 +1,7 @@
 <div class="flex items-center">
     {{ svg src="/assets/icons/icon-tag.svg" class="w-4 text-gray-300 fill-current" a11y="tag" }}
     {{ tags }}
-        {{ if index < 4 }}
+        {{ if index < 4 }}{{# statamic bug on limit #}}
             <span class="pill pill-light">{{ title }}</span>
         {{ /if }}
     {{ /tags }}

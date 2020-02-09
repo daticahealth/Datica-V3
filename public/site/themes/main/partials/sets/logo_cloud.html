@@ -1,8 +1,20 @@
-<!-- block: related_logo_cloud -->
+<!-- block: logo_cloud -->
 <section class="blocks block-related w-full {{ classes }}">
     <div class="w-full max-w-4xl mx-auto pad-scale-y-lg">
         {{ relate:related_logo_cloud use_context="true" }}
-            {{ partial:logo-cloud classes="max-w-6xl pad-scale" }}
+        {{ if title }}
+            <div class="mx-auto text-center mb-8 max-w-lg">
+                {{ title | wrap:h2.headline-3.font-light }}
+            </div>
+        {{ /if }}
+        <div class="flex flex-row flex-wrap justify-center items-center">
+            {{ logos }}
+                <img class="lozad h-{{ logo-height or "12" }} px-4 mb-4"
+                    {{ assets:value }}data-src="{{ glide:value height="200" }}" src="/assets/site/loader-rect.png"  alt="{{ alt or filename }}" {{ /assets:value }}
+                />
+            {{ /logos }}
+        </div>    
+        
         {{ /relate:related_logo_cloud }}
     </div>
 </section>
