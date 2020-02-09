@@ -1,9 +1,9 @@
 title: 'Cloud Compliance'
 nav_title: Compliance
 summary: 'Datica compliance solutions help you pass a HITRUST assessment with HIPAA compliant cloud infrastructure, monitoring, and more.'
+subhead: 'Managed Service for your solution in the cloud'
 bg_image: /assets/bg/share-monitor-home-bg.svg
 icon: /assets/icons/logo--monitor-icon.svg
-subhead: 'Managed Service for your solution in the cloud'
 blocks:
   -
     type: video_text
@@ -32,7 +32,6 @@ blocks:
         icon_align: right
   -
     type: related_feature
-    related_feature: 3VsDfgWFYcksgkUq2iyMAQ
   -
     type: feature_blocks_set
     set_title: 'How it works'
@@ -117,8 +116,9 @@ sitemap_changefreq: daily
 facebook_image:
   - /assets/cta/cta-compliance-share.jpg
 twitter_share_setting: inherit
-template: content_blocks
+template: product/page
 sub_title: 'Managed Service for your solutions in the cloud'
 featured_image: /assets/cta/cta-compliance-share.jpg
 fieldset: product
 id: b586aa03-c5a1-4a01-ad2e-63fc7a2bb76a
+category: compliance

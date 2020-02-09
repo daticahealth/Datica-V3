@@ -6,7 +6,7 @@
 {{ /if }}
 <div class="flex flex-row flex-wrap justify-center items-center">
 {{ logos }}
-    <img class="lozad h-{{ logo-height or "12" }} px-4 mb-4"
+    <img class="lozad h-{{ item_height or "12" }} px-4 mb-4"
         {{ assets:value }}data-src="{{ glide:value height="200" }}" src="/assets/site/loader-rect.png"  alt="{{ alt or filename }}" {{ /assets:value }}
     />
 {{ /logos }}

@@ -1,8 +1,8 @@
 <!-- block: col_text -->
 <section class="blocks block-col-text">
-    <div class="w-full max-w-6xl mx-auto flex flex-col md:flex-row pad-scale-md md:justify-center">
+    <div class="w-full max-w-6xl mx-auto flex flex-col sm:flex-row pad-scale-md sm:justify-center">
         {{ content_columns }}
-            <div class="block-col-text--item w-full md:w-1/3 lg:w-1/3">
+            <div class="block-col-text--item w-full md:w-1/2 mb-6">
                 {{ if item_art }}
                 <img class="lozad h-24" 
                     {{#{{ assets:item_art }}data-src="{{ glide:id height="200" }}" src="{{ glide:id height="200" height="200" crop="focal_crop" quality="10" }}" {{ /assets:item_art }}
@@ -14,7 +14,7 @@
                     {{# svg src="{ item_art }" class="fill-current icon-inline {{ if icon_align != 'right' }} {{ icon_align }}{{ /if }}" a11y="icon" #}}
                 {{ /if }}
                 {{ if item_header }}
-                    {{ item_header | wrap:h3.headline-4.mb-4 }}
+                    {{ item_header | wrap:h3.headline-4.mb-2 }}
                 {{ /if }}
                 {{ if item_content }}
                     {{ item_content | markdown | wrap:div.item-content }}

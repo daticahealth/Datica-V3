@@ -6,6 +6,9 @@ sections:
         type: partial
         display: 'Entry basics'
         fieldset: _basics
+      subhead:
+        type: text
+        display: Subhead
       lead:
         type: textarea
         display: Lead
@@ -17,6 +20,7 @@ sections:
         mode: grid
         type: assets
         display: 'Theme Background Image'
+        width: 50
       icon:
         container: main
         folder: icons
@@ -24,9 +28,7 @@ sections:
         max_files: 1
         type: assets
         display: Icon
-      subhead:
-        type: text
-        display: Subhead
+        width: 50
   content_blocks_section:
     display: 'Content Blocks'
     fields:
@@ -45,5 +47,5 @@ sections:
         type: partial
         display: 'Post Metadata'
         fieldset: _meta
-taxonomies: true
+taxonomies: false
 title: 'Product Page'
