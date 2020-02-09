@@ -1,14 +1,1 @@
-// lazy loading
-var observer = lozad('.lozad', {
-  loaded: function loaded(el) {
-    el.classList.add('loaded');
-  }
-});
-observer.observe(); // nav toggle on mobile
-// var toggler = document.querySelector('.toggle-me');
-// var toggleTarget = document.querySelector('.toggle-target');
-// toggler.addEventListener('click', function() {
-//         toggler.toggleAttribute('aria-expanded');
-//         toggleTarget.classList.toggle('is-active');
-//         toggler.classList.toggle('is-toggled');
-// });
+var observer=lozad(".lozad",{loaded:function(d){d.classList.add("loaded")}});observer.observe();
