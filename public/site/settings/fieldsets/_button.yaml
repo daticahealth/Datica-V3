@@ -8,29 +8,29 @@ sections:
       button_label:
         type: text
         display: Label
-        width: 33
-      button_icon:
-        restrict: false
-        type: assets
-        display: Icon
-        width: 33
-        container: main
-        folder: icons
-        max_files: 1
-        mode: grid
-        show_when:
-          button_label: true
+        width: 50
       icon_align:
         options:
           left: Left
           right: Right
         inline: true
         type: radio
-        width: 33
+        width: 50
         display: 'Icon Alignment'
         default: right
         show_when:
           button_icon: true
+      button_icon:
+        restrict: false
+        type: assets
+        display: Icon
+        width: 50
+        container: main
+        folder: icons
+        max_files: 1
+        mode: grid
+        show_when:
+          button_label: true
       button_classes:
         type: text
         instructions: |
@@ -52,6 +52,11 @@ sections:
         width: 50
         show_when:
           button_label: true
+      button_anchor:
+        type: text
+        instructions: 'If there''s an anchor (href #) on the page, write the `id` of the anchor. Must be unique, overrides any page link.'
+        width: 50
+        display: button_anchor
 taxonomies: false
 hide: true
 title: 'Button (partial)'

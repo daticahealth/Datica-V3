@@ -29,6 +29,10 @@ sections:
         type: assets
         display: Icon
         width: 50
+      template:
+        type: template
+        display: Template
+        default: product/page
   content_blocks_section:
     display: 'Content Blocks'
     fields:

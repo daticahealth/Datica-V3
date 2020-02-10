@@ -1,12 +1,12 @@
 {{# content block replicator partial #}}
 <!-- partials/content_blocks -->
 {{ if blocks }}
-<section class="content-blocks bg-color">
+<div class="content-blocks bg-color">
     {{ blocks use_context="true" }}
     <!-- partial:sets/{{ type }} -->
     {{ partial src="sets/{type}" }}
     {{ /blocks }}
-</section>
+</div>
 {{ /if }}
 <style>
 	:root {

@@ -28,21 +28,16 @@ sections:
                 type: assets
                 instructions: 'Choose an image for the artwork.'
                 display: 'Block Image'
-              cta_link:
-                depth: '3'
-                max_items: 1
-                mode: panes
-                type: pages
-                instructions: 'Link to any page. Doesn''t link to collection entries.'
-                display: 'CTA Link'
-              cta_jump:
-                type: text
-                instructions: 'This will make a button that jumps to the CTA at the page footer. style defined by template.'
-                display: 'Jump to CTA Button'
+                width: 33
               block_theme:
                 fieldset: _colors
                 type: partial
                 display: 'Block Theme'
+                width: 33
+              block_cta_button:
+                fieldset: _button
+                type: partial
+                display: 'CTA Button'
           video_text:
             display: 'Video + text'
             fields:
