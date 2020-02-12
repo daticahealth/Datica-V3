@@ -8,3 +8,4 @@ local/temp/*
 installer.php
 
 public/.vscode/
+public/site/themes/main/css/*
