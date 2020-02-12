@@ -17,3 +17,28 @@
         -webkit-mask: linear-gradient(0deg, rgba(0,0,0,0) 3%, rgba(0,0,0,1) 20%);
     }
 }
+
+.grad-bright {
+    @include gradient-bright;
+}
+.grad-blue-purple {
+    @include gradient-blue-purple;
+}
+.grad-blue-green {
+    @include gradient-blue-green;
+}
+.grad-purple, .grad-compliance {
+    @include gradient-purple;
+}
+.grad-reds {
+    @include gradient-reds;
+}
+.grad-services {
+    @include gradient-services;
+}
+.grad-greens, .grad-brand, .grad-integration {
+    @include gradient-greens;
+}
+.grad-greens-dark, .grad-brand-dark {
+    @include gradient-greens-dark;
+}

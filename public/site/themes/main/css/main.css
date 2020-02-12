@@ -7200,6 +7200,61 @@ input[type=search]:focus::placeholder, input[type=text]:focus::placeholder {
   -webkit-mask: linear-gradient(0deg, rgba(0, 0, 0, 0) 3%, black 20%);
 }
 
+.grad-bright {
+  background: to right, #00e1ff 1%, #00c4ff 22%, #a200ff 100%;
+  color: white;
+}
+
+.grad-blue-purple {
+  /* blue to blue-purple */
+  background: -webkit-gradient(linear, left top, right top, color-stop(6.72%, #4CC0F1), color-stop(96.96%, #6929D1));
+  background: linear-gradient(to right, #4CC0F1 6.72%, #6929D1 96.96%);
+  color: white;
+}
+
+.grad-blue-green {
+  /* blue-green */
+  background: -webkit-gradient(linear, left top, right top, color-stop(-5.71%, #008FDF), color-stop(82.93%, #00E3BA));
+  background: linear-gradient(to right, #008FDF -5.71%, #00E3BA 82.93%);
+  color: white;
+}
+
+.grad-purple, .grad-compliance {
+  /* blue-purple */
+  background: -webkit-gradient(linear, left top, right top, color-stop(2.29%, #4C66F1), color-stop(98.71%, #D129C3));
+  background: linear-gradient(to right, #4C66F1 2.29%, #D129C3 98.71%);
+  color: white;
+}
+
+.grad-reds {
+  /* orange-red */
+  background: -webkit-gradient(linear, left top, right top, color-stop(16.59%, #E85C86), color-stop(59.68%, #EC7474), color-stop(99.57%, #FFC177));
+  background: linear-gradient(to right, #E85C86 16.59%, #EC7474 59.68%, #FFC177 99.57%);
+  /* red-purple - orange */
+  color: white;
+}
+
+.grad-services {
+  /* red - pale green */
+  background: -webkit-gradient(linear, left top, right top, color-stop(13.96%, #E6699E), color-stop(57.53%, #7AB2E9), color-stop(96.11%, #08E1D4));
+  background: linear-gradient(to right, #E6699E 13.96%, #7AB2E9 57.53%, #08E1D4 96.11%);
+  color: white;
+}
+
+.grad-greens, .grad-brand, .grad-integration {
+  /* Green Grad (Emissary) */
+  background: -webkit-gradient(linear, left top, right top, color-stop(-4.44%, #00EE7B), color-stop(95.67%, #00DAF8));
+  background: linear-gradient(to right, #00EE7B -4.44%, #00DAF8 95.67%);
+  color: black;
+}
+
+.grad-greens-dark, .grad-brand-dark {
+  /* Green Grad (Emissary) */
+  background: -webkit-gradient(linear, left top, right top, color-stop(3.31%, #3FBA72), color-stop(100.72%, #00AFAF));
+  background: linear-gradient(to right, #3FBA72 3.31%, #00AFAF 100.72%);
+  color: white;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -7508,6 +7563,10 @@ body {
 
 .is-active {
   display: block;
+}
+
+.nav__item {
+  margin-right: 1rem;
 }
 
 @media (min-width: 576px) {

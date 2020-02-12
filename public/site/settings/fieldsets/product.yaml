@@ -20,7 +20,7 @@ sections:
         mode: grid
         type: assets
         display: 'Theme Background Image'
-        width: 50
+        width: 33
       icon:
         container: main
         folder: icons
@@ -28,7 +28,12 @@ sections:
         max_files: 1
         type: assets
         display: Icon
-        width: 50
+        width: 33
+      color_accent:
+        fieldset: _color-accents
+        type: partial
+        display: 'Color Accent'
+        width: 33
       template:
         type: template
         display: Template
@@ -40,6 +45,9 @@ sections:
         fieldset: _blocks
         type: partial
         display: 'Content Blocks'
+  footer_cta:
+    display: 'Footer CTA'
+    fields:
       cta:
         fieldset: _cta_form
         type: partial

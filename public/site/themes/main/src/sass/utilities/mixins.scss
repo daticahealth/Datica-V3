@@ -76,9 +76,45 @@ $underline: false !default;
     // }
 }
 
+@mixin gradient-bright ($dir: to right) { // super-saturated green-blue-purple for accent strips like .strip-bright
+    background: ($dir, hsl(187,100%,50%) 1%, hsl(194,100%,50%) 22%, hsl(278,100%,50%) 100%);
+    color: white;
+}
+@mixin gradient-blue-purple($dir: to right) {
+    /* blue to blue-purple */
+    background: linear-gradient($dir, #4CC0F1 6.72%, #6929D1 96.96%);
+    color: white;
+}
+@mixin gradient-blue-green($dir: to right) {
+    /* blue-green */
+    background: linear-gradient($dir, #008FDF -5.71%, #00E3BA 82.93%);
+    color: white;
+}
+@mixin gradient-purple($dir: to right) {
+    /* blue-purple */
+    background: linear-gradient($dir, #4C66F1 2.29%, #D129C3 98.71%);
+    color: white;
+}
+@mixin gradient-reds($dir: to right) {
+    /* orange-red */
+    background: linear-gradient($dir, #E85C86 16.59%, #EC7474 59.68%, #FFC177 99.57%);
+    /* red-purple - orange */
+    // background: linear-gradient($dir, #DD48AA 16.59%, #FFE177 99.57%);
+    color: white;
+}
+@mixin gradient-services($dir: to right) {
+    /* red - pale green */
+    background: linear-gradient($dir, #E6699E 13.96%, #7AB2E9 57.53%, #08E1D4 96.11%);
+    color: white;
+}
 @mixin gradient-greens($dir: to right) {
     /* Green Grad (Emissary) */
     // background: linear-gradient(169.97deg, #00ff8b -5.71%, #00BBC7 82.93%);
     background: linear-gradient($dir, #00EE7B -4.44%, #00DAF8 95.67%);
     color: black;
+}
+@mixin gradient-greens-dark($dir: to right) {
+    /* Green Grad (Emissary) */
+    background: linear-gradient($dir, #3FBA72 3.31%, #00AFAF 100.72%);
+    color: white;
 }

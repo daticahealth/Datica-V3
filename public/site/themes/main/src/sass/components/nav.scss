@@ -108,3 +108,7 @@
 .is-active { // when toggle is triggered, the target gets .is-active
     display: block;
 }
+
+.nav__item { // Big Kahuna classes, may need to replace
+    @apply mr-4;
+}

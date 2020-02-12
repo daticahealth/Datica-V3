@@ -4,6 +4,7 @@ summary: 'Datica compliance solutions help you pass a HITRUST assessment with HI
 subhead: 'Managed Service for your solution in the cloud'
 bg_image: /assets/bg/share-monitor-home-bg.svg
 icon: /assets/icons/logo--monitor-icon.svg
+color_theme: grad-compliance
 template: product/page
 blocks:
   -
@@ -23,6 +24,7 @@ blocks:
     related_logo_cloud: 71efba74-f379-4143-9ebc-38d96eff3643
   -
     type: related_feature
+    related_feature: v3Inn3xhHaskmq4ywwmkI
   -
     type: feature_blocks_set
     set_title: 'How it works'
@@ -49,6 +51,9 @@ blocks:
         item_art: /assets/articles/blog/loader-rect.png
     block_bg_image: /assets/general/videos/hex-pattern-light-bg.jpg
     color_theme: gray-200
+  -
+    type: gradient_accent
+    size_height: sm
   -
     type: col_text
     content_columns:
@@ -92,15 +97,16 @@ blocks:
     block_title: 'Datica Compliance Services'
     block_bg_image: /assets/general/videos/hexagon-bg-purple-green.jpg
     color_theme: gray-800
+    classes: mb-24
   -
     type: related_feature
-    related_feature: v3Inn3xhHaskmq4ywwmkI
+    related_feature: 1L20oQXl3G2cKSm4gg2wuc
   -
     type: logo_cloud
     related_logo_cloud: aed4d0d4-c0be-4b28-b3ac-9ef90a1de041
-cta_title: 'Datica Monitor is here.'
+cta_title: 'Datica Cloud Compliance is here.'
 cta_icon: /assets/icons/logo--monitor-icon.svg
-cta_body: 'See Datica Monitor in action. Fill out this form and one of our product specialists will reach out to schedule your demo.'
+cta_body: 'See Datica Cloud Compliance in action. Fill out this form and one of our product specialists will reach out to schedule your demo.'
 related_form: 1sd7ExrRIkg0SgQ0CsiiaO
 pub_date: '2020-01-09'
 discovery_topic: topics/hipaa-compliance
@@ -116,3 +122,4 @@ sub_title: 'Managed Service for your solutions in the cloud'
 featured_image: /assets/cta/cta-compliance-share.jpg
 fieldset: product
 id: b586aa03-c5a1-4a01-ad2e-63fc7a2bb76a
+category: compliance
