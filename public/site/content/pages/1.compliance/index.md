@@ -9,32 +9,18 @@ blocks:
   -
     type: text_image
     block_title: 'Compliance for the modern cloud'
-    block_body: 'Compliance on the cloud isn’t a one-size-fits-all challenge. Maybe you don’t have the expertise, time, and resources to build your HIPAA-compliant infrastructure, but still need the flexibility to scale without an overly rigid partner. That’s where we can help– with Datica Cloud Compliance, an end-to-end solution for cloud managed services.'
+    block_body: 'Compliance on the cloud isn’t a one-size-fits-all challenge. Maybe you don’t have the expertise, time, and resources to build your HIPAA-compliant infrastructure, but still need the flexibility to scale without an overly rigid partner. That’s where we can help — with Datica Cloud Compliance, an end-to-end solution for cloud managed services.'
     block_image: '/assets/art/book art - hitrust history, thumb.png'
     icon_align: right
     button_icon: /assets/icons/icon-chevron-down.svg
     button_label: 'Explore Cloud Compliance'
     button_classes: 'button button-primary'
     button_anchor: cta
+    block_image_caption: '"HITRUST History" from the Datica book, _[Complete Cloud Compliance](https://completecloudcompliance.com)_'
+    color_theme: white
   -
-    type: col_text
-    content_columns:
-      -
-        type: items
-        item_art: /assets/general/guides/logo-hitrust.png
-        icon_align: right
-      -
-        type: items
-        item_art: /assets/img/art/logo-hipaa-federal.png
-        icon_align: right
-      -
-        type: items
-        item_art: '/assets/img/art/100m records.svg'
-        icon_align: right
-      -
-        type: items
-        item_art: '/assets/img/art/1k assessments.svg'
-        icon_align: right
+    type: logo_cloud
+    related_logo_cloud: 71efba74-f379-4143-9ebc-38d96eff3643
   -
     type: related_feature
   -
@@ -130,4 +116,3 @@ sub_title: 'Managed Service for your solutions in the cloud'
 featured_image: /assets/cta/cta-compliance-share.jpg
 fieldset: product
 id: b586aa03-c5a1-4a01-ad2e-63fc7a2bb76a
-category: compliance

@@ -3,18 +3,31 @@ sections:
     display: Main
     fields:
       title:
+        type: text
+        instructions: 'Internal label for logo cloud block, can be descriptive and will not show publicly.'
+        display: 'Title (internal)'
+        localizable: true
+      logo_block_header:
         display: 'Logo Cloud Header'
         type: text
         localizable: true
+        instructions: 'An optional header that appears above the logo cloud.'
+        width: 50
       subtitle:
         type: text
         display: Subtitle
+        width: 50
+        instructions: 'A short subtitle, optional.'
       lead_content:
         cheatsheet: false
         restrict_assets: false
         type: markdown
         instructions: 'Optional paragraph.'
         display: 'Lead Content'
+      media:
+        type: section
+        instructions: 'Add logos or art here.'
+        display: Media
       logos:
         container: main
         folder: img
@@ -24,13 +37,9 @@ sections:
         type: assets
         instructions: 'Pick logos for the cloud. The sizing will be automatic.'
         display: Logos
-      cta_link:
-        depth: '3'
-        max_items: 1
-        mode: panes
-        type: pages
-        instructions: 'Button to link to any page.'
-        display: 'CTA Link'
+  sidebar:
+    display: Settings
+    fields:
       block_icon:
         container: main
         folder: icons
@@ -40,6 +49,17 @@ sections:
         type: assets
         instructions: 'An optional svg icon that appears above the logo cloud.'
         display: 'Block Icon'
+      item_size:
+        options:
+          sm: Small
+          md: Medium
+          lg: Large
+          xl: X-Large
+        type: select
+        display: 'Item Size'
+        default: sm
+        instructions: 'Size of all the items; tailwind height classes are in the `logo-cloud-core` partial.'
 taxonomies: false
 hide: true
 title: 'Logo Cloud'
+hide_aardvark_seo: true

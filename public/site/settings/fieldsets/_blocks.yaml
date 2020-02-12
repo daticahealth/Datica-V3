@@ -11,9 +11,11 @@ sections:
               block_title:
                 type: text
                 display: Title
+                width: 33
               block_subtitle:
                 type: text
                 display: Subtitle
+                width: 33
               block_body:
                 cheatsheet: true
                 restrict_assets: false
@@ -28,7 +30,14 @@ sections:
                 type: assets
                 instructions: 'Choose an image for the artwork.'
                 display: 'Block Image'
-                width: 33
+                width: 50
+              block_image_caption:
+                cheatsheet: false
+                restrict_assets: false
+                type: markdown
+                instructions: 'If the artwork needs a caption, give it one here.'
+                width: 50
+                display: 'Block Image Caption'
               block_theme:
                 fieldset: _colors
                 type: partial
@@ -78,6 +87,7 @@ sections:
                 mode: panes
                 type: collection
                 display: 'Related Logo Cloud'
+                label: '{{ title }} ("{{ logo_block_header }}")'
           related_feature:
             display: 'Related Feature'
             instructions: 'Guide, report, etc.'
@@ -103,6 +113,7 @@ sections:
                 folder: /
                 restrict_assets: false
                 type: markdown
+                display: block_freeform
               block_theme:
                 fieldset: _colors
                 type: partial
@@ -203,3 +214,4 @@ sections:
 taxonomies: false
 hide: true
 title: 'Content Modules (blocks)'
+hide_aardvark_seo: true

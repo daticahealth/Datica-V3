@@ -18,8 +18,6 @@ sections:
         width: 50
         display: 'Icon Alignment'
         default: right
-        show_when:
-          button_icon: true
       button_icon:
         restrict: false
         type: assets
@@ -29,8 +27,6 @@ sections:
         folder: icons
         max_files: 1
         mode: grid
-        show_when:
-          button_label: true
       button_classes:
         type: text
         instructions: |
@@ -41,8 +37,6 @@ sections:
           But any [TailwindCSS](https://tailwindcss.com/docs/) class can be added, like margin or layout stuff.
         display: 'CSS Classes'
         width: 50
-        show_when:
-          button_label: true
       button_link:
         max_items: 1
         mode: panes
@@ -50,8 +44,6 @@ sections:
         instructions: 'Choose a page to link to.'
         display: 'Page Link'
         width: 50
-        show_when:
-          button_label: true
       button_anchor:
         type: text
         instructions: 'If there''s an anchor (href #) on the page, write the `id` of the anchor. Must be unique, overrides any page link.'
@@ -60,3 +52,4 @@ sections:
 taxonomies: false
 hide: true
 title: 'Button (partial)'
+hide_aardvark_seo: true

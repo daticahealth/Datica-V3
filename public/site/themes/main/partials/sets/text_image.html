@@ -14,12 +14,19 @@
         </div>
         <div class="w-auto md:w-1/2">
             {{ if block_image }}
-            <img class="lozad w-auto" 
-            {{ assets:block_image }}
-            data-src="{{ glide:id width="800" }}" src="{{ glide:id width="800" quality="10" }}"
-            {{ /assets:block_image }}
-            {{# src="/assets/site/loader-rect.svg" #}}
-            />
+            <figure>
+                <img class="lozad w-auto" 
+                {{ assets:block_image }}
+                data-src="{{ glide:id width="800" }}" src="{{ glide:id width="800" quality="10" }}"
+                {{ /assets:block_image }}
+                {{# src="/assets/site/loader-rect.svg" #}}
+                />
+                {{ if block_image_caption }}
+                <figcaption class="text-xs mt-2 text-center markdown">
+                    {{ block_image_caption | markdown }}
+                </figcaption>
+                {{ /if }}
+            </figure>
             {{ /if }}
         </div>
     </div>

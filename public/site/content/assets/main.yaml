@@ -26,3 +26,5 @@ assets:
     alt: 'Johnson & Johnson Logo'
   img/customer-logos/zipnosis-logo.png:
     alt: 'Zipnosis Logo'
+  'img/art/HITRUST controls.svg':
+    alt: '149 HITRUST Controls'
