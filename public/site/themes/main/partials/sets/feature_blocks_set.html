@@ -23,7 +23,7 @@
                     <div class="block-feature--set-block w-full flex">
                         <div class="block-feature--set-item w-full md:w-1/2 lg:w-2/5">
                             {{ if item_art }}
-                            <img class="lozad w-auto mb-4" 
+                            <img class="lozad w-auto mb-4 h-48" 
                                 {{#{{ assets:item_art }}data-src="{{ glide:id height="200" }}" src="{{ glide:id height="200" height="200" crop="focal_crop" quality="10" }}" {{ /assets:item_art }}
                                 #}}
                                 data-src="{{ assets:item_art }}{{ item_art }}{{ /assets:item_art }}" 
