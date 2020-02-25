@@ -36,11 +36,11 @@ blocks:
       -
         type: set_items
         item_content: 'We implement guardrails to help you stay secure and compliant as you grow and scale. No matter the changes to the outside world, you can trust your cloud environment  stays compliant.'
-        item_art: /assets/articles/blog/loader-rect.png
+        item_art: /assets/img/art/guardrails-01-art.svg
       -
         type: set_items
         item_content: 'These guardrails apply not only to your account, but also the services you use. Storing, computing, or caching – you’re free to add any HIPAA-eligible AWS service to your environment without restriction.'
-        item_art: /assets/articles/blog/loader-rect.png
+        item_art: /assets/img/art/services-connected-art.svg
       -
         type: set_items
         item_content: 'Datica manages the compliance of your environment over time. Monitoring, alert logging, vulnerability scanning, and intrusion detection are just some of the security controls available.'
@@ -122,4 +122,3 @@ sub_title: 'Managed Service for your solutions in the cloud'
 featured_image: /assets/cta/cta-compliance-share.jpg
 fieldset: product
 id: b586aa03-c5a1-4a01-ad2e-63fc7a2bb76a
-category: compliance
