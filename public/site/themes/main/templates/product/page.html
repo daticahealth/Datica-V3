@@ -1,0 +1,55 @@
+<style>
+	:root {
+		--bg-color: var(--bg-light);
+	}
+</style>
+<main class="">
+    <header
+        class="bg-gray-800 lozad bg-cover bg-no-repeat lozad" 
+        {{ if bg_image }}
+            data-background-image="{{ bg_image or "/assets/bg/bg-masthead-pattern.svg" }}" 
+        {{ /if }}
+    >
+        <div class="mx-auto flex justify-start items-start max-w-6xl pad-scale-y-xl px-4">
+            {{# {{ svg src="/assets/icons/icon-webinar.svg" class="w-16 h-16" a11y="Video Presentation Icon" }} #}}
+            {{ if icon }}
+                <div class="w-16 h-16 md:w-24 md:h-24 mr-4">
+                    {{ svg src={ icon } class="w-full h-full" a11y="icon" }}
+                </div>
+            {{ /if }}
+            <div class="w-2/3 mt-2 mb-2">
+                {{# <h2 class="headline-4 spaced-out font-bold opacity-50">Datica {{ category }}</h2> #}}
+                <h1 class="headline-2 mb-2">{{ title }}</h1>
+                {{ if subhead }}{{ subhead | wrap:h3.text-xl.leading-tight.mb-8 }}{{ /if }}
+                <a class="button button-hollow-white" href="#cta">Learn More 
+                    {{ svg src="/assets/icons/icon-chevron-down.svg" class="icon-inline slide-down fill-current" a11y="arrow" }}
+                </a>
+            </div>
+            
+
+        </div>
+    </header>
+    {{ partial:content_blocks }}
+    <section id="cta" 
+        class="bg-gray-800 lozad bg-cover bg-no-repeat lozad" 
+            {{ if bg_image }}
+                data-background-image="{{ bg_image or "/assets/bg/bg-masthead-pattern.svg" }}" 
+            {{ /if }}
+    >
+        <div class="flex mx-auto justify-center items-center flex-col md:flex-row max-w-6xl pad-scale-y-md">
+            <div class="p-4 max-w-3xl w-full mb-6 z-10 md:w-2/3 lg:w-3/5 md:p-10 lg:p-16 xl:p-20">
+                {{ cta_title | wrap:h2.headline-3.mb-3 }}
+                {{ cta_body | markdown | wrap:item-content.text-xl }}
+            </div>
+            <aside class="block w-full items-start md:w-1/3 lg:w-2/5 xl:max-w-md z-0">
+                {{ if related_form }}
+                    {{ relate:related_form }}
+                    <div class="bg-white pad-scale-sm shadow-sm shadow-xl">
+                        {{ partial:form-hubspot the_form={custom_form} }}
+                    </div>
+                    {{ /relate:related_form }}
+                {{ /if }}
+            </aside>
+        </div>
+    </section>
+</main>

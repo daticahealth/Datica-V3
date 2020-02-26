@@ -1,4 +1,5 @@
-title: 'Trusted By The Best'
+title: 'Customer Logos, all'
+logo_block_header: 'Trusted By The Best'
 logos:
   - /assets/img/customer-logos/jnj-logo.png
   - /assets/img/customer-logos/zipnosis-logo.png

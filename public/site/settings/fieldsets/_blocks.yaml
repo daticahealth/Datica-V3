@@ -11,9 +11,11 @@ sections:
               block_title:
                 type: text
                 display: Title
+                width: 33
               block_subtitle:
                 type: text
                 display: Subtitle
+                width: 33
               block_body:
                 cheatsheet: true
                 restrict_assets: false
@@ -28,21 +30,27 @@ sections:
                 type: assets
                 instructions: 'Choose an image for the artwork.'
                 display: 'Block Image'
-              cta_link:
-                depth: '3'
-                max_items: 1
-                mode: panes
-                type: pages
-                instructions: 'Link to any page. Doesn''t link to collection entries.'
-                display: 'CTA Link'
-              cta_jump:
-                type: text
-                instructions: 'This will make a button that jumps to the CTA at the page footer. style defined by template.'
-                display: 'Jump to CTA Button'
+                width: 50
+              block_image_caption:
+                cheatsheet: false
+                restrict_assets: false
+                type: markdown
+                instructions: 'If the artwork needs a caption, give it one here.'
+                width: 50
+                display: 'Block Image Caption'
               block_theme:
                 fieldset: _colors
                 type: partial
                 display: 'Block Theme'
+                width: 33
+              block_cta_button:
+                fieldset: _button
+                type: partial
+                display: 'CTA Button'
+              classes:
+                type: text
+                instructions: '[TailwindCSS classes](https://nerdcave.com/tailwind-cheat-sheet), typically for spacing, margin, and background colors. Examples: `bg-white mb-4`'
+                display: 'Block CSS Classes'
           video_text:
             display: 'Video + text'
             fields:
@@ -83,6 +91,11 @@ sections:
                 mode: panes
                 type: collection
                 display: 'Related Logo Cloud'
+                label: '{{ title }} ("{{ logo_block_header }}")'
+              classes:
+                type: text
+                instructions: '[TailwindCSS classes](https://nerdcave.com/tailwind-cheat-sheet), typically for spacing, margin, and background colors. Examples: `bg-white mb-4`'
+                display: 'CSS Classes'
           related_feature:
             display: 'Related Feature'
             instructions: 'Guide, report, etc.'
@@ -108,6 +121,7 @@ sections:
                 folder: /
                 restrict_assets: false
                 type: markdown
+                display: block_freeform
               block_theme:
                 fieldset: _colors
                 type: partial
@@ -159,6 +173,12 @@ sections:
                         display: 'Link to page button'
                 type: replicator
                 display: 'Content Columns'
+              classes:
+                type: text
+                instructions: |
+                  [TailwindCSS classes](https://nerdcave.com/tailwind-cheat-sheet), typically for spacing, margin, and background colors; applied at outermost part of the component. Examples: `bg-white mb-4`. 
+                  First check for other theming options in the fieldset.
+                display: 'CSS Classes'
           feature_blocks_set:
             display: 'Feature blocks set'
             fields:
@@ -202,9 +222,26 @@ sections:
                         display: 'Item Content'
                 type: replicator
                 display: 'Content Columns'
+              classes:
+                type: text
+                instructions: |
+                  [TailwindCSS classes](https://nerdcave.com/tailwind-cheat-sheet), typically for spacing, margin, and background colors; applied at outermost part of the component. Examples: `bg-white mb-4`. 
+                  First check for other theming options in the fieldset.
+                display: 'CSS Classes'
             instructions: 'These are larger image & text blocks, grouped as a set. Various layout rules handled in templates.'
+          gradient_accent:
+            display: 'Gradient Accent'
+            instructions: 'A simple strip of bright, gradient color. Pick a size; color determined by the page theme.'
+            fields:
+              size_height:
+                options:
+                  sm: Small
+                  lg: Large
+                type: select
+                display: 'Size (height)'
         type: replicator
         display: 'Content Blocks'
 taxonomies: false
 hide: true
 title: 'Content Modules (blocks)'
+hide_aardvark_seo: true

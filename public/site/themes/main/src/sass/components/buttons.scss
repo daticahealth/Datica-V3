@@ -35,9 +35,9 @@ button-primary button-hollow button-hollow-white button-hollow-dark button-large
     }
     &-hollow-white {
         @apply bg-transparent border border-solid border-white text-white;
-        // &:hover {
-        //     @apply border-2;
-        // }
+        &:hover {
+            @apply text-green-bright border-green-bright bg-transparent;
+        }
     }
     &-hollow-dark {
         @apply bg-transparent border border-solid border-green-dark text-green-dark;

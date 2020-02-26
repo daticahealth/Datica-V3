@@ -22,3 +22,9 @@ assets:
     alt: 'Assessments number'
   'img/art/100m records.svg':
     alt: 'millions of records accessed'
+  img/customer-logos/jnj-logo.png:
+    alt: 'Johnson & Johnson Logo'
+  img/customer-logos/zipnosis-logo.png:
+    alt: 'Zipnosis Logo'
+  'img/art/HITRUST controls.svg':
+    alt: '149 HITRUST Controls'

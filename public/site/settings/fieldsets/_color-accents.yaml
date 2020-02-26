@@ -1,0 +1,18 @@
+sections:
+  main:
+    display: 'Color Accents'
+    fields:
+      color_theme:
+        options:
+          none: 'None (default)'
+          grad-bright: 'Gradient, Bright, Brand Colors'
+          grad-brand: 'Brand Primary Color'
+          grad-compliance: 'Compliance Category'
+          grad-integration: 'Integration Category'
+        type: select
+        display: 'Color Style'
+        instructions: 'A bright accent if needed.'
+        default: none
+taxonomies: false
+hide: true
+title: 'Color Accents'

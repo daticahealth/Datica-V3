@@ -1,4 +1,5 @@
-title: 'Proven and Reliable'
+title: 'Internal stats'
+logo_block_header: 'Proven and Reliable'
 logos:
   - '/assets/img/art/100m records.svg'
   - '/assets/img/art/featured partners.svg'

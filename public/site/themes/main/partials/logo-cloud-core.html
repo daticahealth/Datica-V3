@@ -1,0 +1,27 @@
+<!-- logo-cloud -->
+{{ if logo_block_header }}
+    <div class="mx-auto text-center mb-8 max-w-lg">
+        {{ logo_block_header | wrap:h2.headline-3.font-light }}
+    </div>
+{{ /if }}
+<div class="flex flex-row flex-wrap justify-center items-center">
+    {{ logos }}
+        <img
+            class="lozad px-4 mb-4
+            {{ if item_size == "sm" }}     h-10
+            {{ elseif item_size == "md" }} h-16
+            {{ elseif item_size == "lg" }} h-24
+            {{ else }} h-10
+            {{ /if }}
+            "
+            {{ assets:value }}
+                {{ if value | extension == "svg" }}
+                    data-src="{{ value }}"
+                {{ else }}
+                    data-src="{{ glide:value height="200" }}"
+                {{ /if }}
+                 src="/assets/site/loader-rect.png" alt="{{ alt or filename }}"
+            {{ /assets:value }}
+        />
+    {{ /logos }}
+</div>    

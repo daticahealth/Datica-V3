@@ -25,6 +25,7 @@
 //   }
 // }
 // ====== containers - these will scale with viewport at different rates. 
+// horizontal (x) padding is not included at mobile widths
 .pad-scale {
   padding: 2rem;
   padding: calc(2rem + 2vw);
