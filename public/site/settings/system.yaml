@@ -4,7 +4,7 @@ locales:
   en:
     full: en_US
     name: English
-    url: 'http://statica.test/'
+    url: '{env:APP_DOMAIN}'
 timezone: America/Los_Angeles
 license_key: "{env:LICENSE_KEY}"
 date_format: 'F jS, Y'
