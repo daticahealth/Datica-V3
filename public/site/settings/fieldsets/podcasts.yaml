@@ -1,0 +1,77 @@
+title: 'Podcast Episode'
+sections:
+  main:
+    display: 'Podcast Details'
+    fields:
+      basics:
+        type: partial
+        display: 'Entry basics'
+        fieldset: _basics
+      pub_date:
+        allow_blank: false
+        allow_time: false
+        require_time: false
+        earliest_date: 'January 1, 2013'
+        type: date
+        instructions: 'Starting date & time of the event.'
+        width: 50
+        display: 'Episode Date'
+      podcast_embed:
+        cheatsheet: false
+        restrict_assets: false
+        type: markdown
+        instructions: 'Paste the player share code here; use the horiztontal player style.'
+        display: 'Podcast Embed Code'
+      content:
+        type: markdown
+        display: 'Podcast Details'
+        localizable: true
+        cheatsheet: true
+        restrict_assets: false
+        instructions: 'Add the article body or transcript here.'
+        container: main
+        folder: img
+      image_thumb:
+        container: main
+        folder: /
+        restrict: false
+        max_files: 1
+        type: assets
+        instructions: 'A preview, background, or screen capture to show before the video loads.'
+        width: 50
+        display: 'Image Thumb or Background'
+      related_form:
+        max_items: '1'
+        collection:
+          - forms
+        mode: panes
+        type: collection
+        display: 'Related Form'
+        width: 50
+  sidebar:
+    display: 'Event Metadata'
+    fields:
+      post_meta:
+        type: partial
+        display: 'Post Metadata'
+        fieldset: _meta
+      key_takeaways:
+        type: markdown
+        display: 'Key Takeaways'
+      guest:
+        max_items: '3'
+        label: '{{ title }}, {{ role }}'
+        collection:
+          - people
+        mode: panes
+        type: collection
+        display: 'Episode Guest'
+      related_entries:
+        max_items: '3'
+        label: '{{ title }} {{ topic }}'
+        collection:
+          - podcasts
+        mode: panes
+        type: collection
+        display: 'Related Entries'
+taxonomies: false

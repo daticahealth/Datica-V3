@@ -19,4 +19,15 @@
             @apply text-xs;
         }
     }
+    &.person-large {
+        img.avatar {
+            @apply w-16 h-16;
+        }
+        .person-title {
+            @apply text-lg;
+        }
+        .person-role {
+            @apply text-base italic;
+        }
+    }
 }
