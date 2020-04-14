@@ -1,7 +1,10 @@
 <div class="person person-horizontal flex items-center {{ classes }}">
-    <img class="avatar rounded-full mr-3 lozad" {{ if profile_pic }}{{ assets:profile_pic }}data-src="{{ glide:id width="200" height="200" crop="focal_crop" }}" src="/assets/site/loader-disc.svg" }}" {{ /assets:profile_pic }}{{ /if }} alt="{{ title }}"/>
+    <img class="avatar rounded-full mr-3 lozad" 
+    {{ if profile_pic }}
+        {{ assets:profile_pic }}data-src="{{ glide:id width="200" height="200" fit="crop" crop="focal_crop" }}" src="/assets/site/loader-disc.svg" }}" {{ /assets:profile_pic }}
+    {{ /if }} alt="{{ title }}"/>
     <div class="person-info">
-        <h4 class="person-title text-gray-900 leading-none font-bold mb-1">{{ title }}</h4>
-        <p class="person-role text-gray-700 mb-0 leading-none">{{ role }}</p>
+        <h4 class="person-title leading-none font-bold mb-1">{{ title }}</h4>
+        <p class="person-role opacity-75 mb-0 leading-none">{{ role }}</p>
     </div>
 </div>

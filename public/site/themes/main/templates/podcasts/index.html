@@ -1,0 +1,75 @@
+<style>
+	:root {
+		--bg-color: var(--bg-light);
+	}
+</style>
+
+
+	<header class="mx-auto text-center bg-dark lozad pad-scale bg-no-repeat bg-cover" data-background-image="/assets/img/art/podcast-4x4-full-bg.svg">
+		<div class="flex flex-col md:flex-row justify-center items-center text-white">
+			<div class="p-4">
+				<h1 class="headline-spaced text-sm text-light mb-3">Datica Podcasts</h1>
+				<img class="lozad w-64" data-src="/assets/img/art/podcast-4x4-logo-white.png" alt="Datica 4x4 Health Podcast" src="/assets/site/loader-rect.svg" />
+				<!-- {{ svg src="/assets/img/art/podcast-4x4-logo-white.svg" class="w-48 h-48" a11y="Datica 4x4 Health Podcast" }} -->
+			</div>
+			<div class="text-center p-4 leading-tight">
+				<img class="w-32 lozad avatar rounded-full mb-4 mx-auto" 
+				data-src="{{ glide src="/assets/people/Leadership-Dave.jpg" width="500" height="500" crop="focal_crop" }}" 
+				src="/assets/site/loader-disc.svg" }}" 
+				alt="Dave Levin">
+				<div class="text-xl mb-0 italic font-serif">Hosted By</div>
+				<div class="text-3xl mb-0 font-bold font-serif">Dave Levin</div>
+				<div class="text-base mb-0 font-serif">Chief Medical Officer, Datica</div>
+			</div>
+		</div>
+
+    </header>
+
+	<section class="mx-auto max-w-7xl pad-scale-md">
+		<div class="flex mx-auto justify-center flex-col lg:flex-row">
+			<main class="list">
+				
+				{{ collection from="podcasts" paginate="false" as="featured" limit="1" offset="1" sort="pub_date:desc" }}
+				{{ featured }}
+					<header class="max-w-3xl mb-8 lg:mb-16">
+						<div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
+						<h1 class="headline-3 mb-4">{{ title }}</h1>
+						<div class="mb-6">
+							<h3 class="headline-4 font-light mb-4 spaced-out">With Guest</h3>
+							{{ relate:guest scope="entry" }}
+								{{ partial:person classes="mb-4 text-lg person-large" }}
+								<div class="text-sm">{{ bio or bio_short | markdown }}</div>
+							{{ /relate:guest }}
+						</div>
+						{{ podcast_embed | markdown | wrap:div.mb-12 }}
+						<div class="flex flex-wrap items-center justify-between" md:flex-no-wrap="md:flex-no-wrap">
+							{{ if tags }}
+								{{ partial:tag-list }}
+							{{ /if }}
+						</div>
+					</header>
+					
+				{{ /featured }}
+				{{ /collection }}
+				<h2 class="headline-4 font-light mb-8 text-center spaced-out">Earlier Episodes</h2>
+				{{ collection from="podcasts" paginate="true" as="posts" limit="20" offset="2" sort="pub_date:desc" }}
+					{{ posts }}
+						{{ partial:academy-card-h classes="max-w-3xl mb-8 lg:mb-16" show_collection="false"  featured_image="{image_thumb}" author="{guest}" }}
+					{{ /posts }}
+					<div class="mx-auto p-6 w-full">
+						{{ partial:pagination }}
+					</div>
+				{{ /collection }}
+			</main>
+			<aside class="block bg-color w-full max-w-md items-start z-0">
+				<div class="sticky top-0 p-8">
+					{{# partial:search-form-academy #}}
+
+					<div class="mb-16">{{ partial:email-subscribe }}</div>
+
+					<div class="promo bg-gray-300 p-16 lg:w-auto">promo item</div>
+				</div>
+			</aside>
+		</div>
+		
+	</section>

@@ -1,7 +1,7 @@
 title: Podcasts
 order: pub_date
 fieldset: podcasts
-template: podcast/episode
+template: podcasts/episode
 searchable:
   - title
   - summary

@@ -11,11 +11,14 @@
 			padding-left: 0rem;
 		}
 	}
+	.lead p {
+		font-size: larger;
+	}
 </style>
-<header class="masthead pl-8 pt-24 lg:pt-48 max-w-7xl mx-auto mt-8 lg:mt-12">
+<header class="masthead pl-8 max-w-7xl mx-auto mt-8 lg:mt-12">
 		{{# {{ svg src="/assets/icons/icon-webinar.svg" class="w-16 h-16" a11y="Video Presentation Icon" }} #}}
 		<h2 class="headline-2 font-bold bg-gray-800 pt-2 pb-3 px-4 m-0 inline-block">
-			<a class="text-white hover:text-green-bright" href="/blog/" title="Datica Blog">Datica Blog</a>
+			<a class="text-white hover:text-green-bright" href="/podcast/" title="Datica Podcast">Datica Podcast</a>
 		</h2>
 </header>
 
@@ -23,35 +26,47 @@
 <main class="flex mx-auto max-w-7xl justify-center flex-col lg:flex-row" style="overflow: unset;"> {{# margin-top: calc(8vw + 1.5rem); #}}
     <article class="bg-white w-full shadow-sm shadow-lg mb-6 z-10 pad-scale-md">
         <header class="mb-6">
+			{{ podcast_embed | markdown | wrap:div.mb-12 }}
             <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
             <h1 class="headline-3 mb-4">{{ title }}</h1>
             <div class="flex flex-wrap items-center justify-between" md:flex-no-wrap="md:flex-no-wrap">
-				{{ relate:author scope="entry" }}
-					{{ partial:person }}
-				{{ /relate:author }}
 				{{ if tags }}
 					{{ partial:tag-list }}
 				{{ /if }}
             </div>
         </header>
-        <div class="markdown">
-			{{ if lead }}{{ lead | markdown | wrap:div.text-lg.mb-6 }}{{ /if }}
-			{{ content }}
-		</div>
+		<!-- {{ if lead }}{{ lead | markdown | wrap:div.text-xl.mb-10 }}{{ /if }} -->
+		{{ content | markdown | wrap:div.lead.mb-8 }}
+		{{ transcript | markdown | wrap:div.markdown }}
 		{{ if cta_ref }}
 			{{ partial:cta }}
 		{{ /if }}
 		<hr class="my-8"/>
 		{{# CTA #}}
-		{{ partial:next_prev }}
+		{{ partial:next_prev path="podcasts" }}
 	</article>
 	
      {{# for position-sticky to work: add .items-start to parent because https://stackoverflow.com/a/57830863 #}}
     <aside class="block bg-color w-full max-w-md items-start md:mt-16 z-0">
         <div class="sticky top-0 p-8">
-            <div class="mb-8">
+            <div class="mb-12">
 				{{ partial:email-subscribe }}
 			</div>
+			<div class="mb-6">
+				<h3 class="headline-4 spaced-out mb-3">Episode Guest</h3>
+				{{ relate:guest scope="entry" }}
+					{{ partial:person classes="mb-4 text-lg person-large" }}
+					<div class="text-sm">{{ bio or bio_short | markdown }}</div>
+				{{ /relate:guest }}
+			</div>
+			<div class="mb-6">
+				<h3 class="headline-4 spaced-out mb-3">Our Host</h3>
+				{{ relate:author scope="entry" }}
+					{{ partial:person classes="mb-4 text-lg person-large" }}
+					<div class="text-sm">{{ bio or bio_short | markdown }}</div>
+				{{ /relate:author }}
+			</div>
+
 			{{ if topics }}
 				{{ relate:discovery_topic }}
 					<div class="mb-8 lg:mb-12">
@@ -93,11 +108,11 @@
 {{ /if }}
 
 	
-{{ if featured_image }}
+{{# if featured_image #}}
 	<aside class="featured-image top-0 z--10 w-full absolute">
-		<img class="mask-bottom w-full lozad" {{ assets:featured_image }}data-src="{{ glide:id width="1800" height="700" }}" {{ /assets:featured_image }} />
+		<img class="mask-bottom w-full lozad" data-src="/assets/bg/podcast-4x4-background.svg" />
 	</aside>
-{{ /if }}
+{{# /if #}}
 {{#
 <section class="regular">
 
