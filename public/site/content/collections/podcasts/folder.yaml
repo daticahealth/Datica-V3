@@ -1,0 +1,10 @@
+title: Podcasts
+order: pub_date
+fieldset: podcasts
+template: podcasts/episode
+searchable:
+  - title
+  - summary
+  - tags
+  - lead
+  - content

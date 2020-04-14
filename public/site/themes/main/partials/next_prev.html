@@ -1,28 +1,41 @@
 <footer class="list article-footer flex justify-between">
-{{ collection:previous in={ segment_1 } limit="1" as="prev_posts" }}
+    {{# collection grouping by custom field not working. - AW   group_by_date="M D, Y|pub_date" sort="pub_date"   #}}
+{{ collection:previous in={ path or segment_1 } limit="1" as="prev_posts" }}
 <div class="w-auto md:w-1/2">
     {{ unless no_results }}
         <h6 class="uppercase text-bold text-xs">Previously</h6>
         <div class="leading-tight mx-auto">
             {{ prev_posts scope="tag" }}
                 {{# {{ partial:block }} #}}
-                <a class="text-sm w-1/2 mr-4" href="{{ url }}" title="Read {{ title }}">
-                    {{ title | wrap:h4.text-sm.font-bold }}
+                <a class="text-sm w-1/2 mr-4 link" href="{{ url }}" title="Read {{ title }}">
+                    {{ title | wrap:h4.mb-2.text-base.font-bold }}
+                {{# summary | wrap:p.text-sm #}}
+                {{ if guest }}
+                    {{ relate:guest scope="entry" }}
+                        {{ partial:person classes="mb-4 text-lg text-left" }}
+                    {{ /relate:guest }}
+                {{ /if }}
                 </a>
             {{ /prev_posts }}
         </div>
     {{ /unless }}
 </div>
 {{ /collection:previous }}
-{{ collection:next in={ segment_1 } limit="1" as="next_posts" }}
-<div class="w-auto md:w-1/2 text-right">
+{{ collection:next in={ path or segment_1 } limit="1" as="next_posts" }}
+<div class="w-auto md:w-1/2 {{ unless guest }}text-right{{ /unless }}">
     {{ unless no_results }}
         <h6 class="uppercase text-bold text-xs">Next</h6>
         <div class="leading-tight mx-auto">
             {{ next_posts scope="tag" }}
                 {{# {{ partial:block }} #}}
-                <a class="text-sm w-1/2 mr-4" href="{{ url }}" title="Read {{ title }}">
-                    {{ title | wrap:h4.text-sm.font-bold }}
+                <a class="text-sm w-1/2 mr-4 link" href="{{ url }}" title="Read {{ title }}">
+                    {{ title | wrap:h4.mb-2.text-base.font-bold }}
+                {{# summary | wrap:p.text-sm #}}
+                {{ if guest }}
+                    {{ relate:guest scope="entry" }}
+                        {{ partial:person classes="mb-4 text-lg text-left" }}
+                    {{ /relate:guest }}
+                {{ /if }}
                 </a>
             {{ /next_posts }}
         </div>

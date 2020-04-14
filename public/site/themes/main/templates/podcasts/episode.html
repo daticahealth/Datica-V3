@@ -1,0 +1,154 @@
+{{# local styles, overrides #}}
+<style>
+	:root {
+		--bg-color: var(--bg-light);
+	}
+	.bg-color {
+		background-color: var(--bg-color);
+	}
+	@media (min-width: 1400px) {
+		.masthead {
+			padding-left: 0rem;
+		}
+	}
+	.lead p {
+		font-size: larger;
+	}
+</style>
+<header class="masthead pl-8 max-w-7xl mx-auto mt-8 lg:mt-12">
+		{{# {{ svg src="/assets/icons/icon-webinar.svg" class="w-16 h-16" a11y="Video Presentation Icon" }} #}}
+		<h2 class="headline-2 font-bold bg-gray-800 pt-2 pb-3 px-4 m-0 inline-block">
+			<a class="text-white hover:text-green-bright" href="/podcast/" title="Datica Podcast">Datica Podcast</a>
+		</h2>
+</header>
+
+<div class="relative">
+<main class="flex mx-auto max-w-7xl justify-center flex-col lg:flex-row" style="overflow: unset;"> {{# margin-top: calc(8vw + 1.5rem); #}}
+    <article class="bg-white w-full shadow-sm shadow-lg mb-6 z-10 pad-scale-md">
+        <header class="mb-6">
+			{{ podcast_embed | markdown | wrap:div.mb-12 }}
+            <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
+            <h1 class="headline-3 mb-4">{{ title }}</h1>
+            <div class="flex flex-wrap items-center justify-between" md:flex-no-wrap="md:flex-no-wrap">
+				{{ if tags }}
+					{{ partial:tag-list }}
+				{{ /if }}
+            </div>
+        </header>
+		<!-- {{ if lead }}{{ lead | markdown | wrap:div.text-xl.mb-10 }}{{ /if }} -->
+		{{ content | markdown | wrap:div.lead.mb-8 }}
+		{{ transcript | markdown | wrap:div.markdown }}
+		{{ if cta_ref }}
+			{{ partial:cta }}
+		{{ /if }}
+		<hr class="my-8"/>
+		{{# CTA #}}
+		{{ partial:next_prev path="podcasts" }}
+	</article>
+	
+     {{# for position-sticky to work: add .items-start to parent because https://stackoverflow.com/a/57830863 #}}
+    <aside class="block bg-color w-full max-w-md items-start md:mt-16 z-0">
+        <div class="sticky top-0 p-8">
+            <div class="mb-12">
+				{{ partial:email-subscribe }}
+			</div>
+			<div class="mb-6">
+				<h3 class="headline-4 spaced-out mb-3">Episode Guest</h3>
+				{{ relate:guest scope="entry" }}
+					{{ partial:person classes="mb-4 text-lg person-large" }}
+					<div class="text-sm">{{ bio or bio_short | markdown }}</div>
+				{{ /relate:guest }}
+			</div>
+			<div class="mb-6">
+				<h3 class="headline-4 spaced-out mb-3">Our Host</h3>
+				{{ relate:author scope="entry" }}
+					{{ partial:person classes="mb-4 text-lg person-large" }}
+					<div class="text-sm">{{ bio or bio_short | markdown }}</div>
+				{{ /relate:author }}
+			</div>
+
+			{{ if topics }}
+				{{ relate:discovery_topic }}
+					<div class="mb-8 lg:mb-12">
+						<div class="text-reg font-bold tracking-widest uppercase mb-2"><span class="font-light">Explore</span> {{ title }}</div>
+						{{ summary | wrap:div.text-sm.mb-4 }}
+						{{ if related_video }}
+							{{ relate:related_video }}
+								{{ custom_form }}
+							{{ /relate:related_video }}
+						{{ /if }}
+						{{# <img class="lozad" data-src="https://images.ctfassets.net/bfs863we7xd3/6m4CTI0Bd2esaf8pgRaTlJ/9f30e25ac314b5b16df6a7c5d104b9e7/video_poster_example.jpg?w=800"/> #}}
+					</div>
+				{{ /relate:discovery_topic }}
+			{{ /if }}
+			{{ if related_entries }}
+				{{ if total_results == 1 }}
+					{{ relate:related_entries limit="1" }}
+						{{ partial:related-article }}
+					{{ /relate:related_entries }}
+				{{ /if }}
+			{{ /if }}
+            <div class="mb-4">
+			</div>
+        </div>
+	</aside>
+</main>
+</div>
+{{ if related_entries }}
+<section class="pad-scale-y-md px-0 justify-center items-center">
+	<h3 class="headline-3 spaced-out text-center mb-8">Related Reading</h3>
+	<div class="card-gallery no-scrollbar mask-right justify-start">
+		{{ relate:related_entries }} {{# removed offset="1" and revealing w. css #}}
+			{{ if total_results > 1 }}
+				{{ partial:related-article classes="ml-10 gallery-item" }}
+			{{ /if }}
+		{{ /relate:related_entries }}
+	</div>
+</section>
+{{ /if }}
+
+	
+{{# if featured_image #}}
+	<aside class="featured-image top-0 z--10 w-full absolute">
+		<img class="mask-bottom w-full lozad" data-src="/assets/bg/podcast-4x4-background.svg" />
+	</aside>
+{{# /if #}}
+{{#
+<section class="regular">
+
+	<header>
+		<div class="meta clearfix">
+			<div class="author">
+				<img src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/48.jpg" class="img-circle" width="48" height="48">
+				<div class="pull-left">
+					<a href="" class="name">{{ author_name }}</a>
+					<span class="length">{{ content | read_time }} minute read</span>
+				</div>
+			</div>
+			<div class="date">
+				{{ date format="F j, Y" }}
+			</div>
+		</div>
+		<h1>{{ title }}</h1>
+		{{ sub_title wrap="h2" }}
+	</header>
+
+	<article class="content">
+
+		{{ if intro_image }}
+			<p><img src="{{ intro_image }}" class="intro-image"></p>
+		{{ /if }}
+
+		{{ content }}
+
+		<ul class="tags">
+		{{ tags }}
+			<li><a href="{{ url }}">{{ title }}</a></li>
+		{{ /tags }}
+		</ul>
+	</article>
+
+</section>
+
+{{ partial:article-footer }}
+#}}

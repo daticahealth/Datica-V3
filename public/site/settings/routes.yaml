@@ -5,6 +5,7 @@ collections:
   webinars: '/webinar/{slug}'
   press: '/press/{slug}'
   guides: '/guide/{slug}'
+  podcasts: '/podcast/{slug}'
 taxonomies:
   tags: '/tag/{slug}'
   topics: '/discover/{slug}'
