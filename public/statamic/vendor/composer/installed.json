@@ -768,7 +768,8 @@
                 "name": "Jakub Onderka",
                 "email": "jakub.onderka@gmail.com"
             }
-        ]
+        ],
+        "abandoned": "php-parallel-lint/php-console-color"
     },
     {
         "name": "jakub-onderka/php-console-highlighter",
@@ -814,7 +815,8 @@
                 "email": "acci@acci.cz",
                 "homepage": "http://www.acci.cz/"
             }
-        ]
+        ],
+        "abandoned": "php-parallel-lint/php-console-highlighter"
     },
     {
         "name": "jeremeamia/superclosure",
@@ -874,7 +876,8 @@
             "serializable",
             "serialize",
             "tokenizer"
-        ]
+        ],
+        "abandoned": "opis/closure"
     },
     {
         "name": "kylekatarnls/update-helper",
@@ -2662,8 +2665,8 @@
     },
     {
         "name": "statamic-svg",
-        "version": "dev-updates/2.11.19",
-        "version_normalized": "dev-updates/2.11.19",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "dist": {
             "type": "path",
             "url": "../site/addons/svg",
