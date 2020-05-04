@@ -34,6 +34,8 @@
 
     {{ head_tags }}
 
+    {{ yield:head_styles }}
+
 </head>
 
 <body itemscope itemtype="http://schema.org/LocalBusiness" class="text-base antialiased section-{{ segment_1 }} {{ template }} {{ settings }}{{ debug }}{{ if debug==1 }}development{{ /if }}{{ /debug }}{{ /settings }}">

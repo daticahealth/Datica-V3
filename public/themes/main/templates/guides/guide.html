@@ -1,8 +1,10 @@
+{{ section:head_styles }}
 <style>
 	:root {
 		--bg-color: var(--bg-light);
 	}
 </style>
+{{ /section:head_styles }}
 <main class="">
     <header class="bg-gray-800 pt-12 md:pt-20 pb-0">
         <div class="mx-auto flex flex-col justify-center items-start md:flex-row max-w-6xl px-6">
@@ -22,11 +24,9 @@
 
     <div class="flex mx-auto justify-center flex-col md:flex-row max-w-6xl">
         <article class="p-8 max-w-3xl w-full mb-6 z-10 md:w-2/3 lg:w-3/5 md:p-10 lg:p-16 xl:p-20">
-            <section class="mb-6">                
+            <section class="mb-6">
                 <h3 class="headline-4 mb-4 block">With expert authors:</h3>
-                    {{ relate:authors scope="entry" }}
-                        {{ partial:person classes="mb-2 mr-3" }}
-                    {{ /relate:authors }}
+
             </section>
             <div class="markdown">
                 {{ if lead }}{{ lead | markdown | wrap:div.text-lg.mb-6 }}{{ /if }}
@@ -36,7 +36,7 @@
             {{# CTA #}}
             {{ partial:next_prev }}
         </article>
-        
+
         {{# for position-sticky to work: add .items-start to parent because https://stackoverflow.com/a/57830863 #}}
         <aside class="block bg-color w-full items-start md:w-1/3 lg:w-2/5 xl:max-w-md z-0">
             {{ if related_form }}
@@ -55,7 +55,7 @@
                     <div class="mb-8 lg:mb-12">
                         <div class="text-reg font-bold tracking-widest uppercase mb-2"><span class="font-light">Explore</span> {{ title }}</div>
                         {{ summary | wrap:div.text-sm.mb-4 }}
-                        
+
                         {{# <img class="lozad" data-src="https://images.ctfassets.net/bfs863we7xd3/6m4CTI0Bd2esaf8pgRaTlJ/9f30e25ac314b5b16df6a7c5d104b9e7/video_poster_example.jpg?w=800"/> #}}
                     </div>
                 {{ /relate:discovery_topic }}
