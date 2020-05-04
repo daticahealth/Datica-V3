@@ -1,7 +1,0 @@
-{{ if logged_out }}
-    {{ 404 }}
-{{ else }}
-    {{ user }}
-        {{ redirect to="/users/{username}" }}
-    {{ /user }}
-{{ /if }}
