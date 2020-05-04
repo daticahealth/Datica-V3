@@ -23,8 +23,8 @@ filesystems:
     root: site/users
   themes:
     driver: local
-    root: site/themes
-    url: /site/themes
+    root: public/themes
+    url: /themes
 redactor:
   -
     name: Standard

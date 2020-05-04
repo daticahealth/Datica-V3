@@ -10,3 +10,5 @@ installer.php
 public/.vscode/
 public/site/themes/main/css/main.css
 public/site/themes/main/css/vendor.css
+/public/themes/main/css/vendor.css
+/public/themes/main/css/main.css
