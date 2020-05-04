@@ -1,4 +1,5 @@
 environments:
+  - staging
   - production
 git_username: Datica
 git_email: marketing@datica.com
