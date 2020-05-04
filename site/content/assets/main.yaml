@@ -1,5 +1,5 @@
 title: 'Main Assets'
-path: assets
+path: public/assets
 url: /assets
 assets:
   img/black-bear-cubs.jpg:
