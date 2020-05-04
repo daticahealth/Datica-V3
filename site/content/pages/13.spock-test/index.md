@@ -1,4 +1,4 @@
-title: 'Spock Test Change'
+title: 'Spock Test'
 use_meta_keywords: false
 page_no_index: false
 no_follow_links: false
