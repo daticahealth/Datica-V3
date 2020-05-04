@@ -1,6 +1,6 @@
 <footer class="list article-footer flex justify-between">
     {{# collection grouping by custom field not working. - AW   group_by_date="M D, Y|pub_date" sort="pub_date"   #}}
-{{ collection:previous in={ path or segment_1 } limit="1" as="prev_posts" }}
+{{ collection:previous in="{ path or segment_1 }" limit="1" as="prev_posts" }}
 <div class="w-auto md:w-1/2">
     {{ unless no_results }}
         <h6 class="uppercase text-bold text-xs">Previously</h6>
@@ -21,7 +21,7 @@
     {{ /unless }}
 </div>
 {{ /collection:previous }}
-{{ collection:next in={ path or segment_1 } limit="1" as="next_posts" }}
+{{ collection:next in="{ path or segment_1 }" limit="1" as="next_posts" }}
 <div class="w-auto md:w-1/2 {{ unless guest }}text-right{{ /unless }}">
     {{ unless no_results }}
         <h6 class="uppercase text-bold text-xs">Next</h6>
