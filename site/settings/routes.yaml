@@ -6,6 +6,7 @@ collections:
   press: '/press/{slug}'
   guides: '/guide/{slug}'
   podcasts: '/podcast/{slug}'
+  people: '/about/{slug}'
 taxonomies:
   tags: '/tag/{slug}'
   topics: '/discover/{slug}'

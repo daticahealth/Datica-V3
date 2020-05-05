@@ -1,0 +1,44 @@
+{{ section:head_styles }}
+    <style>
+        :root {
+            --bg-color: var(--bg-light);
+        }
+    </style>
+{{ /section:head_styles }}
+
+<section class="mx-auto max-w-2xl my-12">
+    <header class="flex flex-col justify-center items-center">
+        {{ if profile_pic }}
+            {{ profile_pic }}
+                <img class="w-32 h-32 rounded-full mb-2" src="{{ value }}" alt="{{ title }}">
+            {{ /profile_pic }}
+        {{ /if }}
+
+        <h1 class="text-center text-3xl text-gray-800 font-bold">{{ title }}</h1>
+        <h2 class="text-center w-1/2 text-gray-800 tracking-wider text-center text-sm font-bold uppercase leading-tight">{{ role }}</h2>
+
+        <div class="my-4 flex flex-row items-center">
+            {{ if profile_twitter }}
+                <a class="text-green hover:text-green-light font-medium mx-6" href="https://twitter.com/{{ profile_twitter }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 32" class="icon-inline"><title>blue/icon-ui-twitter-blue</title><path fill="currentColor" fill-rule="evenodd" d="M.2 27.8l.3.6 1.8 1a22.9 22.9 0 0 0 23-1 21.5 21.5 0 0 0 4.7-4c1.4-1.6 2.5-3.2 3.3-5a25.7 25.7 0 0 0 1.8-5c.4-1.8.6-3.5.6-5v-.8c1.6-1.2 2.8-2.5 3.7-4l.2-.3a.6.6 0 0 0-.2-.5.6.6 0 0 0-.5-.2c-.1 0-.3 0-.5.2a76.7 76.7 0 0 0-1.2.4 4 4 0 0 1-.4.1c.4-.4.8-1 1.1-1.6.4-.7.6-1.2.6-1.5a.6.6 0 0 0-.2-.5.7.7 0 0 0-.5-.1.6.6 0 0 0-.3 0c-1.6.9-3 1.5-4.4 1.8A8.3 8.3 0 0 0 27.2 0c-2.4 0-4.4.8-6 2.5a8 8 0 0 0-2.4 7A21.4 21.4 0 0 1 12 7.6a20.6 20.6 0 0 1-5.8-3.6L4 1.7a.8.8 0 0 0-.5-.3l-.6.3c-.3.6-.6 1.2-.8 2A8.8 8.8 0 0 0 1.8 6a8 8 0 0 0 1.9 5.3l-.6-.3-.7-.2a.9.9 0 0 0-.6.2.7.7 0 0 0-.3.5 8 8 0 0 0 1.1 4.1 8.5 8.5 0 0 0 3 3h-.2a.4.4 0 0 1-.1 0 3.7 3.7 0 0 0-.1 0 .3.3 0 0 0-.1 0 .6.6 0 0 0-.5.2.6.6 0 0 0-.2.4v.3A8.3 8.3 0 0 0 6.9 23a8.3 8.3 0 0 0 3.8 2 14.7 14.7 0 0 1-8.8 2.1 51.9 51.9 0 0 0-1 0 .6.6 0 0 0-.4.2.7.7 0 0 0-.2.4z"></path></svg>
+                    &#64;{{ profile_twitter }}
+                </a>
+            {{ /if }}
+
+            {{ if profile_linkedin }}
+                <a class="text-green hover:text-green-light font-medium mx-6" href="{{ profile_linkedin }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" class="icon-inline"><title>LinkedIn</title><path fill="currentColor" fill-rule="evenodd" d="M.8 6a6 6 0 0 1 6-6h20a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6h-20a6 6 0 0 1-6-6V6zm26 13v7.2h-4.1v-6.8c0-1.7-.6-2.9-2.2-2.9-1.1 0-1.8.8-2.1 1.6-.2.3-.2.6-.2 1v7.1H14V13.5h4.2v1.8c.6-.8 1.6-2 3.8-2 2.8 0 4.9 1.7 4.9 5.6zM9.7 7.3c-1.5 0-2.4 1-2.4 2.2 0 1.2 1 2.2 2.3 2.2 1.5 0 2.4-1 2.4-2.2 0-1.3-.9-2.2-2.3-2.2zM7.5 26.2h4.2V13.5H7.5v12.7z"></path></svg>
+                    LinkedIn
+                </a>
+            {{ /if }}
+        </div>
+    </header>
+
+    <h3 class="text-xl mb-4">{{ bio_short }}</h3>
+    <p>{{ bio }}</p>
+
+    <a class="my-2 text-green hover:text-green-light font-medium" href="/leadership">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" class="icon-inline text-blue-light"><path fill-rule="evenodd" d="M8.308 18.754a1.077 1.077 0 0 1 0-1.508L20.489 4.814a1.026 1.026 0 0 1 1.478 0l2.725 2.781c.41.42.41 1.09 0 1.508L15.975 18l8.717 8.897c.41.419.41 1.089 0 1.508l-2.725 2.78a1.026 1.026 0 0 1-1.478 0L8.308 18.755z"></path></svg>
+        Datica Leadership
+    </a>
+</section>

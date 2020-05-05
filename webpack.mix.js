@@ -38,6 +38,7 @@ mix.setPublicPath('./public')
     .babel([
         './src/js/components/*.js'
     ], themePath + 'js/main.js')
+    .js('./src/js/site.js', themePath + 'js/site.js')
     .browserSync({
         proxy: localURL,
         files: [
@@ -52,13 +53,13 @@ if (mix.inProduction()) {
     mix.purgeCss({
         enabled: true,
         globs: [
-            path.join(__dirname, 'layouts/*.html'),
-            path.join(__dirname, 'templates/*.html'),
-            path.join(__dirname, 'templates/**/*.html'),
-            path.join(__dirname, 'partials/*.html'),
-            path.join(__dirname, 'partials/**/*.html'),
-            path.join(__dirname, 'js/**.js'),
-            path.join(__dirname, 'img/**.svg')
+            path.join(__dirname, 'public/themes/main/layouts/*.html'),
+            path.join(__dirname, 'public/themes/main/templates/*.html'),
+            path.join(__dirname, 'public/themes/main/templates/**/*.html'),
+            path.join(__dirname, 'public/themes/main/partials/*.html'),
+            path.join(__dirname, 'public/themes/main/partials/**/*.html'),
+            path.join(__dirname, 'public/themes/main/js/**.js'),
+            path.join(__dirname, 'public/themes/main/img/**.svg')
         ],
         extensions: ['html', 'js', 'php', 'svg'],
         whitelist: ['animated', 'active', 'loaded', 'pagination', 'is-active', 'is-toggled'],

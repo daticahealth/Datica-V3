@@ -1,0 +1,51 @@
+{{ section:head_styles }}
+    <style>
+        :root {
+            --bg-color: var(--bg-light);
+        }
+    </style>
+{{ /section:head_styles }}
+
+<section class="mx-auto max-w-5xl">
+	<header>
+		<h1 class="text-2xl text-center text-gray-800 uppercase font-bold tracking-wider">{{ title }}</h1>
+    </header>
+
+    <article class="my-12">
+        <div class="flex flex-col md:flex-row md:flex-wrap items-center md:items-start md:justify-between">
+            {{ collection:people person_type:is='Datica Executives' }}
+                <div class="flex flex-col items-center justify-center mb-10 md:mb-0 md:w-1/5">
+                    {{ if profile_pic }}
+                        {{ profile_pic }}
+                            <a class="mb-2" href="{{ url }}" id="{{ slug }}" data-tooltip="true" data-tooltip-text="{{ bio_short }}">
+                                <img class="lozad h-24 w-24 rounded-full border-transparent border-4 hover:border-green" src="{{ value }}" alt="{{ title }}">
+                            </a>
+                        {{ /profile_pic }}
+                    {{ /if }}
+
+                    <h3 class="font-bold text-center text-lg"><a class="text-green" href="{{ url }}">{{ title }}</a></h3>
+                    <h4 class="text-gray-800 font-bold tracking-wider text-center text-sm uppercase text-sm leading-tight">{{ role }}</h4>
+                </div>
+            {{ /collection:people }}
+        </div>
+    </article>
+</section>
+
+<aside class="section-work-with-us bg-gray-700 text-white container-image--center lozad" data-background-image="https://images.ctfassets.net/189dvqdsjh46/5sg4ICUpO4m4eX5nAwerir/abc651f00fcedcfba995a551804067d9/Datica_cities_-_live_where_you_want.jpg?fm=jpg&fl=progressive&fit=thumb&f=bottom&w=1600&h=650">
+    <div class="section-article--med container-color--tint-20">
+       <div class="flex flex-row items-center justify-center">
+          <div class="columns small-6 large-5">
+             <h3 class="headline-5 tracking-widest text-green-minty text-lg lg:text-xl mb-2 leading-tight font-bold uppercase">Work at Datica</h3>
+             <h4 class="headline-4 font-bold text-xl lg:text-2xl mb-2 leading-tight">We're building a team to transform healthcare. Join us!</h4>
+          </div>
+          <div class="columns shrink">
+             <a id=button_open-positions class="button button-light nomargin" data-track=true data-track-category=generic data-track-id=button_open-positions data-expand-on-small=true href="/careers/" title="See open positions" style="padding: 0.8em 1em;">
+                See open positions 
+                <svg xmlns="http://www.w3.org/2000/svg" width=36 height=36 viewBox="0 0 36 36" class="icon-inline icon-right">
+                   <path fill-rule=evenodd d="M26.692 18.754c.41-.419.41-1.09 0-1.508L14.511 4.814a1.026 1.026 0 0 0-1.478 0l-2.725 2.781a1.077 1.077 0 0 0 0 1.508L19.025 18l-8.717 8.897a1.077 1.077 0 0 0 0 1.508l2.725 2.78c.41.42 1.067.42 1.478 0l12.181-12.431z"/>
+                </svg>
+             </a>
+          </div>
+       </div>
+    </div>
+ </aside> 

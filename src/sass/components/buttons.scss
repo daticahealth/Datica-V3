@@ -18,6 +18,9 @@ button-primary button-hollow button-hollow-white button-hollow-dark button-large
             transform: translate3d(-3px,0,0);
         }
     }
+    &:hover, &:focus {
+        transform: translate3d(0, -3px, 0);
+    }
     &-primary {
         transform: scale3d(1.015, 1.015, 1.015);
         //@extend .trans-color;
@@ -26,6 +29,12 @@ button-primary button-hollow button-hollow-white button-hollow-dark button-large
         &:hover {
             @apply bg-green-light;
         }
+    }
+    &-light {
+        @apply text-black;
+        background-image: -webkit-linear-gradient(to bottom,white 0%,#f2f2f2 100%);
+        background-image: -o-linear-gradient(to bottom,white 0%,#f2f2f2 100%);
+        background-image: linear-gradient(to bottom,white 0%,#f2f2f2 100%);
     }
     &-hollow {
         @apply bg-transparent border border-solid;

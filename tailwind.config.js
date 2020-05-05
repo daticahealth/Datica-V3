@@ -21,6 +21,7 @@ module.exports = {
         dark: '#007b50',
         light: '#00bd9a',
         bright: '#00d9b1',
+        minty: '#00e4c3',
       },
       blue: {
         default: '#6689AB',

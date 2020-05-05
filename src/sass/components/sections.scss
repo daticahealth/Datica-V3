@@ -1,0 +1,29 @@
+.section-work-with-us {
+    @apply bg-no-repeat bg-center bg-cover;
+
+    .section-article--med, .card-featured-section {
+        @apply py-8 px-4;
+    }
+
+    .container-color--tint-20 {
+        background-color: rgba(0, 0, 0, 0.2);
+
+        .small-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        
+        .large-5 {
+            flex: 0 0 41.66667%;
+            max-width: 41.66667%;
+        }
+    }
+}
+
+[class*="container"], [class*="bg"] {
+    transition: background-color 175ms,color 175ms,box-shadow 175ms;
+}
+
+.column, .columns {
+    @apply px-5;
+} 

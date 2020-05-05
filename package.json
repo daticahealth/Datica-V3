@@ -33,11 +33,13 @@
     "tailwind-css-variables": "^2.0.3",
     "tailwindcss-alpha": "^0.1.4",
     "tailwindcss-export-config": "^2.0.2",
+    "vue-template-compiler": "^2.6.11",
     "webpack": "^4.41.2"
   },
   "dependencies": {
     "npm": "^6.12.1",
-    "tailwindcss": "^1.1.3"
+    "tailwindcss": "^1.1.3",
+    "tippy.js": "^6.2.3"
   },
   "name": "Datica-V3",
   "version": "1.0.0",
