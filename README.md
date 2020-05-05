@@ -43,11 +43,12 @@ Note that config files must be adapted to read these keys.
 - PHP Standards are based on [PHP-FIG](https://www.php-fig.org/).
 
 ### Theming
-- In Statamic, all theme files are in the folder `site/themes/main`. This includes the `package.json` and `node_modules`.
+- In Statamic, all theme files are in the folder `public/themes/main`. This includes the `package.json` and
+ `node_modules`.
 - Make sure you are on a recent version of Node (v10+) and NPM (v6+). I prefer [n](https://github.com/tj/n) for managing node versions.
-- Run `npm install` in `public/site/themes/main` directory.
+- Run `npm install`
 - Set localURL variable in `webpack.mix.js` to be the url you are using locally
-- To view the rendered site, run open `site/themes/main` in a Terminal window and run `npm run watch`. This will run the site using Browser Sync in your default browser. Assets will now compile and livereload.
+- To view the rendered site, run `npm run watch`. This will run the site using Browser Sync in your default browser. Assets will now compile and livereload.
 
 ### JavaScript
 - Compiling assets is done with Laravel Mix, the config file for this is `webpack.mix.js`
@@ -60,6 +61,6 @@ Note that config files must be adapted to read these keys.
 
 ## Optimizing for production
 
-Running `npm run prod` will output (locally) optimized & minified CSS & JS, as well as running [PurgeCSS](https://www.purgecss.com/) to remove extra CSS classes. This could be made a server-only setting, but it's useful to visually check the site to ensure important CSS isn't getting cut.
-
-The release workflow currently needs the developer to run `npm run prod` before pushing to `master`. 
+Running `npm run prod` will output (locally) optimized & minified CSS & JS, as well as running [PurgeCSS](https://www
+.purgecss.com/) to remove extra CSS classes. This is a server-only setting, but it's useful to visually check
+ the site to ensure important CSS isn't getting cut.
