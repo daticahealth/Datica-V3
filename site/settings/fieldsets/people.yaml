@@ -13,11 +13,11 @@ sections:
         validate: required
       person_type:
         options:
-          'Datica Leadership': leadership
-          'Datica Team': team
-          'Datica Alumni': alumni
-          'Guests (podcasts, etc)': guests
-          Customers: customers
+          'Datica Leadership': 'Datica Leadership'
+          'Datica Team': 'Datica Team'
+          'Datica Alumni': 'Datica Alumni'
+          'Guests (podcasts, etc)': 'Guests (podcasts, etc)'
+          Customers: 'Customers'
         type: select
         instructions: 'It''s important to select the person category.'
         display: 'Person Category'
