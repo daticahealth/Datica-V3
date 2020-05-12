@@ -42,3 +42,6 @@
 .grad-greens-dark, .grad-brand-dark {
     @include gradient-greens-dark;
 }
+.grad-gray {
+    @include gradient-gray;
+}

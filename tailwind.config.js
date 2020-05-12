@@ -3,7 +3,8 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       white: '#ffffff',
-      black: '#000000',      
+      black: '#000000',  
+      'dark-alt': '#292928',    
       gray: {
         100: 'hsl(31, 2%, 95%)',
         200: 'hsl(31, 2%, 90%)',

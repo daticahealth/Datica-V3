@@ -1,9 +1,128 @@
-<div class="mx-auto flex max-w-6xl my-12">
-    <a class="" href="/" title="{{ site_name }} Home">
+<footer class="main-footer grad-gray" data-theme="dark" role="contentinfo">
+    <div class="footer-lists">
+        <div class="list">
+            <h5><a href="/cloud-compliance/">Compliance</a></h5>
+            <ul class="no-bullet">
+                {{ footer_nav:compliance }}
+                    <li>
+                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                            {{ label }}
+                        </a>
+                    </li>
+                {{ /footer_nav:compliance }}
+            </ul>
+        </div>
+        <div class="list">
+            <h5><a href="/ehr-integration/">Integration</a></h5>
+            <ul class="no-bullet">
+                {{ footer_nav:integration }}
+                    <li>
+                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                            {{ label }}
+                        </a>
+                    </li>
+                {{ /footer_nav:integration }}
+            </ul>
+        </div>
+        <div class="list">
+            <h5><a href="/academy/" class="text-bold">Learn</a></h5>
+            <ul class="no-bullet">
+                {{ footer_nav:learn }}
+                    <li>
+                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                            {{ label }}
+                        </a>
+                    </li>
+                {{ /footer_nav:learn }}
+            </ul>
+        </div>
+        <div class="list">
+            <h5><a href="/contact/" title="Contact Us" class="text-bold">Company</a></h5>
+            <ul class="no-bullet">
+                {{ footer_nav:company }}
+                    <li>
+                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                            {{ label }}
+                        </a>
+                    </li>
+                {{ /footer_nav:company }}
+            </ul>
+        </div>
+        <div class="list">
+            <h5><span class="faded">Help</span></h5>
+            <ul class="no-bullet">
+                {{ footer_nav:help }}
+                    <li>
+                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                            {{ label }}
+                        </a>
+                    </li>
+                {{ /footer_nav:help }}
+            </ul>
+        </div>
+        <div class="list">
+            <h5><span class="faded">Legal</span></h5>
+            <ul class="no-bullet">
+                {{ footer_nav:legal }}
+                    <li>
+                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                            {{ label }}
+                        </a>
+                    </li>
+                {{ /footer_nav:legal }}
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        <div>
+            <ul class="menu">
+                <li>
+                    <a class="nav-logo--link" href="/" style="padding-left: 0;" title="Datica Home">
+                        <svg class="nav-logo" id="datica-logo-footer"><use class="symbol-icon" xlink:href="#datica-logo-horiz"></use></svg>
+                    </a>
+                </li>
+                <li><a class="font-bold" href="/" title="Datica Health, LLC main page"  aria-current="page">© Datica Health LLC.</a></li>
+                <li><a href="tel:8883773184" title="Tap to call us">(888) 377-3184</a></li>
+                <li><a href="mailto:hello@datica.com" title="Email us today">hello@datica.com</a></li>
+                <li><a href="https://goo.gl/maps/bMkCoJFPDzRgSHKS8" title="Get directions in Maps">510 N 1st Ave, Suite 605, Minneapolis, MN 55403</a></li>
+            </ul>
+            <div class="logo-cloud nopad md:mt-4">
+                <img
+                    alt="Cloud native computing foundation"
+                    class="logo-cloud--item logo-size--medium lozad loaded"
+                    data-src="https://images.ctfassets.net/189dvqdsjh46/2qNhrxRsmEGqUOuCq2qWgU/7dc0a16f892c1950cb743bb3f54f1ad6/cncf-logo-horizontal-alt.svg"
+                    height="48"
+                    width="157"
+                    src="https://images.ctfassets.net/189dvqdsjh46/2qNhrxRsmEGqUOuCq2qWgU/7dc0a16f892c1950cb743bb3f54f1ad6/cncf-logo-horizontal-alt.svg"
+                    data-loaded="true"
+                />
+            </div>
+        </div>
+        <div>
+            <img
+                class="lozad logo-size--xlarge loaded"
+                data-src="https://images.ctfassets.net/189dvqdsjh46/yYSl0Yi3YWOsHOsExZPr6/69291bb4cdb86ed13aa5832480413c00/aws-partner-healthcare-card.png?w=280"
+                src="https://images.ctfassets.net/189dvqdsjh46/yYSl0Yi3YWOsHOsExZPr6/69291bb4cdb86ed13aa5832480413c00/aws-partner-healthcare-card.png?w=280"
+                data-loaded="true"
+                style="max-height: 11rem;"
+            />
+        </div>
+    </div>
+</footer>
+
+<div class="strip-bright h-3"></div>
+
+
+
+
+
+<!-- <div class="mx-auto flex max-w-6xl my-12">
+    <a  href="/" title="{{ site_name }} Home">
         {{ svg src="/assets/icons/datica-logo-horiz.svg" class="fill-current h-12 mr-3" a11y="Datica" }}
     </a>
     {{ big_kahuna menu="main-nav" id="nav-footer" }}
-</div>
+</div> -->
 
 {{ theme:js src="vendor.js" cache_bust="true" tag="true" }}
 {{ theme:js src="main.js" cache_bust="true" tag="true" }}

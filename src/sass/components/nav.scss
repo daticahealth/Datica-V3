@@ -1,114 +1,644 @@
-.nav-item {
-    @apply block text-center font-sans font-normal no-underline tracking-wider;
-    &:hover {
-        @apply text-black;
-    }
+.strip-bright {
+    background-image: -webkit-linear-gradient(to right,#00e1ff 1%,#00c4ff 22%,#a200ff 100%);
+    background-image: -o-linear-gradient(to right,#00e1ff 1%,#00c4ff 22%,#a200ff 100%);
+    background-image: linear-gradient(to right,#00e1ff 1%,#00c4ff 22%,#b8b5b9 100%);
 }
-.nav-pane {
-    display: none;
-}
-// $speed-default: 150ms;
-// .icon, .toggle-me, .nav-item {
-//    transition: color $speed-default ease, opacity $speed-default ease, position $speed-default ease;
-// }
-// .is-toggled {
-//    color: black;
-//    .icon-default {
-//       display: none;
-//       // opacity: 0;
-//    }
-//    .icon-active {
-//       display: block;
-//       // opacity: 1;
-//    }
-// }
 
-// via https://codepen.io/keefyboooo/pen/Wvwjwo
-#nav-toggle {
-    background: transparent;
-    position: absolute;
-    right: 0;
-    top: 40%;
-    height: 50px;
-    width:  40px;
-    @screen sm {
-        width: 50px;
-    }
-    cursor: pointer;
-    transform: translate(0%, -50%);
-    & span,
-    & span:before,
-    & span:after {
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-        border-radius: 1px;
-        height: 2px;
-        width: 35px;
-        @apply bg-blue-dark;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        display: block;
-        content: "";
-    }
-    & span:before {
-      top: -10px;
-    }
-    & span:after {
-      top: 10px;
-    }
-    &.is-toggled span {
-        background-color: transparent;
+.no-js { // preventing FOUC
+    .top-bar {
+        @apply hidden;
+
+        @screen sm {
+            @apply block;
+        }
     }
 
-    &.is-toggled span:before,
-    &.is-toggled span:after {
-        top: 0;
-    }
-
-    &.is-toggled span:before {
-        transform: rotate(135deg);
-    }
-
-    &.is-toggled span:after {
-        transform: rotate(-135deg);
+    @screen md {
+        .title-bar {
+            @apply hidden;
+        }
     }
 }
 
-// kahuna styles
-
-.nav-group-header {
-    @apply mb-4;
-    & a {
-        font-weight: bold;
+// Breadcrumb nav: http://foundation.zurb.com/sites/docs/breadcrumbs.html
+.breadcrumbs {
+    // transition: opacity $timing-default linear;
+    li {
+        &:not(:last-child)::after {
+            content: "\203A"; // a '›' http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order/
+        }
     }
-    .submenu {
-        & a {
-            @apply font-normal;
-            &:hover {
-                @apply text-green;
+}
+
+// foundation sticky nav basics
+.menu {
+    @apply p-0 m-0 list-none relative flex flex-no-wrap;
+
+    li {
+        margin-bottom: unset;
+        .button.small {
+            @apply py-2 px-3;
+
+            padding: 0.6rem 0.8rem;
+        }
+    }
+    &-secondary {
+        li a {
+            @apply font-medium p-4;
+
+            transition-property: background-color, color, border-color;
+            // transition-duration: $timing-default;
+            &[aria-current="page"] {
+                @apply text-gray-a border-b-2 border-green-dark;
+            }
+        }
+        ul.breadcrumbs { // breadcrumbs inside subnav, usually first li
+            @apply mr-12;
+
+            li {
+                a {
+                    @apply p-1;
+                }
+            }
+            li:not(:last-child)::after { // divider
+                @apply self-center;
             }
         }
     }
 }
-#nav-footer {
-    @apply flex;
-    .nav-group-header {
-        @apply mr-8;
-    }
-}
-#nav-main {
-    @screen md {
-        @apply flex;
-        .nav-group-header {
-            @apply mr-8;
+
+.menu-nav-list {
+    li {
+        a {
+            // section header - uppercase
+
+            .media-object {
+                @apply flex flex-row items-center;
+
+                .media-object-section {
+                    @screen lg {
+                        @apply w-1/5;
+                    }
+
+                    .icon-size--medium {
+                        @apply mr-2 w-12 h-12 text-center;
+                    }
+                }
+
+                .media-object--info {
+                    @screen lg {
+                        @apply w-4/5;
+                    }
+
+                    .nav__product-title {
+                        @apply text-base m-0;
+                    }
+
+                    .nav__product-description {
+                        @apply text-sm;
+                    }
+                }
+            }
         }
     }
 }
-.is-active { // when toggle is triggered, the target gets .is-active
-    display: block;
+
+.sticky {
+    $active-border-height: 4px;
+
+    @screen lg {
+        @apply opacity-0;
+
+        transition: opacity 100ms linear;
+
+        &.is-anchored, &.is-stuck {
+            @apply opacity-0;
+        }
+    }
+
+    .menu {
+        &-item {
+            @apply mb-0 p-0;
+
+            &--link {
+                @apply pt-4 pr-4 pl-4 border-b-4 border-transparent;
+
+                padding-bottom: calc(1rem - 4px);
+                transition-duration: 4px;
+                transition-property: background-color, color, border-color;
+                transition-duration: 4px;
+
+                &:hover {
+                    background-color: hsl(31, 1%, 12%);
+                }
+                &.active, [aria-current]:not([aria-current="false"]) {
+                    background-color: hsl(31, 1%, 16%);
+                    color: white;
+                }
+                &.is-active, [aria-current="page"] { // js-applied state by ZF plugins
+                    @apply border-green-dark;
+                }
+            }
+
+            &--cta { // for cta button in sticky nav bar
+                @apply py-2 px-3 ml-4;
+
+                // padding: 0.5rem 0.7rem;
+                // margin-left: 1rem;
+                &:focus,
+                &:hover { // clear 'nudge' behavior
+                    transform: initial;
+                }
+            }
+        }
+    }
 }
 
-.nav__item { // Big Kahuna classes, may need to replace
-    @apply mr-4;
+// ==== desktop nav theming; see .menu stuff at top of this file for defaults.
+.nav-logo--link { // data-theme = dark default
+    color: hsl(31, 1%, 12%);
+}
+.nav {
+    .nav__container {
+        @apply flex flex-no-wrap flex-col;
+
+        @screen lg {
+            @apply p-0 flex-wrap flex-row items-center justify-center;
+        }
+    }
+    // theming
+    // .nav {
+    //     background-color: white;
+    // }
+    .nav__item-name {
+        @apply font-medium;
+        color: hsl(31, 1%, 12%);
+    }
+    &[data-theme="light"] { // light (light text on dark) | dark (dark text on light backgrounds)
+        .nav { // change bg container 
+            background-color: hsl(31, 1%, 16%);
+        }
+        .nav-logo--link, .nav__item-name {
+            @apply text-white;
+
+            // color: white(0.8);
+            // font-weight: $font-weight-regular;
+            // transition-property: background-color, color;
+            // transition-duration: $timing-default;
+            &:hover, &:active {
+                color: hsl(57, 100%, 72%);
+            }
+        }
+        .menu {
+            &-secondary { // this is now preferred solution for secondary stacked navs
+                li {
+                    @apply text-white; // for some reason have to color the li and li > a
+                    a {
+                        @apply text-white;
+                        &:hover {
+                            @apply text-white;
+                            background-color: transparentize(hsl(31, 1%, 41%), 0.5);
+                        }
+                        &[aria-current="page"] {
+                            @apply text-white;
+                            border-bottom: 3px solid hsl(57, 100%, 72%);
+                        }
+                    }
+                }
+            }
+        }
+        // // fix pip color 
+        // .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+        //     border-color: white(0.3);
+        // }
+    }
+    &[data-theme="dark"], &[data-theme="none"] { // light (light text on dark) | dark (dark text on light backgrounds)
+        .menu {
+            &-secondary { 
+                li {
+                    color: black(0.8); // for some reason have to color the li and li > a
+                    a {
+                        color: black(0.8);
+                        &:hover {
+                            @apply text-green-light;
+                            // background-color: transparentize($gray-8, 0.9);
+                            background-color: hsl(31, 1%, 66%);
+                        }
+                        &[aria-current="page"] {
+                            @apply text-black border-b-2 border-green-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &[data-bar-theme="none"] { // combine with data-theme above for no bg color
+        .nav {
+            @apply bg-transparent;
+        }
+    }
+}
+.nav-title--compact {
+    font-size: 90%;
+}
+
+// =================== new nav ==============
+// generic stuff that applies to both navs
+
+.nav-logo { // pairing with svg use symbol, requires express dimensions. Aspect ratio is maintained, but spacing can be weird.
+    height: 2.3rem;
+    width: 5.7rem;
+}
+
+.nav__product { // a .media-object with an icon, a little adjustment needed
+// color: white;
+    .nav__product-title {
+        @apply font-medium m-1 text-base;
+    }
+    .nav__product-description { // pair with text-small
+        @apply leading-tight font-light;
+    }
+    &.media-object { // product items with icons, shouldn't have bottom spacing here
+        @apply mb-0;
+    }
+}
+
+@media (max-width: 992px) {
+    // mobile menu toggle
+    .mobile-toggle { // container, mobile only
+        @apply relative block p-4;
+    }
+    .mobile-toggle-target {
+        @apply p-0;
+        display: none !important;
+
+        // transition: color $timing-default linear, border-color $timing-default linear;
+        // @include shadow-anarchy(0 3px 5px black(0.2));
+        &.is-active {
+            display: block !important;
+        }
+    }
+    li.nav__section {
+        @apply mb-8 px-4;
+    }
+    .nav__submenu-pane {
+        @apply p-0;
+    }
+    .nav__logo {
+        @apply mb-6;
+    }
+    .nav__contact {
+        @apply p-4;
+    }
+    .nav__item a:not(.button) {
+        max-width: 30em;
+    }
+    .nav__item-name {
+        // font-weight: $font-weight-bold;
+        @apply text-2xl mb-2 block;
+    }
+    .nav__item-summary {
+        @apply mt-2 font-normal text-sm leading-tight; 
+    }
+    .nav__product { // a .media-object with an icon, a little adjustment needed
+        @apply text-white;
+
+        .icon-size--medium { // make it smaller
+            @apply w-8 h-8;
+        }
+    }
+    hr.menu-divider { 
+        @apply hidden;
+    }
+    #nav-toggle { // toggle button
+        @apply bg-transparent absolute cursor-pointer;
+
+        right:  7px;
+        top:    31px;
+        height: 50px;
+        width:  50px;
+        transform: translate(0%, -50%);
+
+        & span,
+        & span:before,
+        & span:after {
+            @apply cursor-pointer absolute left-0 block;
+
+            // transition: all 0.3s ease-in-out;
+            border-radius: 1px;
+            height: 2px;
+            width: 35px;
+            // background: white;
+            top: 50%;
+            content: "";
+        }
+        & span:before {
+          top: -10px;
+        }
+        & span:after {
+          top: 10px;
+        }
+        // &.is-toggled span {
+        //     background-color: transparent;
+        // }
+        &.is-toggled span:before,
+        &.is-toggled span:after {
+            top: 0;
+        }
+        &.is-toggled span:before {
+            transform: rotate(135deg);
+        }
+        &.is-toggled span:after {
+            transform: rotate(-135deg);
+        }
+    }
+    .nav { // theme the mobile button
+        &[data-theme="light"] { // content is light, bg is dark
+            #nav-toggle {
+                & span, & span:before, & span:after {
+                    @apply bg-white;
+                }
+                &.is-toggled span {
+                    @apply bg-transparent;
+                }
+            }
+            @media (max-width: 992px) {
+                .menu-nav-list {
+                    li {
+                        @apply mb-2;
+
+                        a {
+                            @apply text-white;
+                        }
+                    }
+                }
+                .nav__product {
+                    @apply text-white;
+
+                    svg {
+                        width: 2rem !important;
+                        height: 2rem !important;
+
+                        path {
+                            @apply text-white fill-current;
+                        }
+                    }
+                }
+            }
+        }
+        &[data-theme="dark"] { // content is dark, bg is light
+            #nav-toggle {
+                & span, & span:before, & span:after {
+                    @apply bg-black;
+                }
+                &.is-toggled span {
+                    @apply bg-transparent;
+                }
+            }
+            @media (max-width: 840px) {
+                .menu-nav-list {
+                    li a {
+                        @apply text-black;
+                    }
+                }
+                .nav__product {
+                    @apply text-black;
+                    svg path {
+                        @apply text-black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ======== DESKTOP ONLY STYLES / megamenu ==========
+.shrink-for-large { // does what .shrink does on a .column
+    @screen lg {
+        @apply max-w-full;
+
+        flex: 0 0 auto;
+    }
+}
+@screen lg {
+    // .nav__container {
+    //     &:hover {
+    //         & > .nav__item > a:not(.button) { // set "parent" items to the not-selected state
+    //             // color: red;
+    //         }
+    //     }
+    // }
+    .nav { // theme desktop stuff
+        &[data-theme="light"] { // content is light, bg is dark
+            li.nav__item {
+                &:hover {
+                    & > a:not(.button) { // selected state of button/pane
+                        @apply text-green-bright bg-no-repeat;
+
+                        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='17' viewBox='0 0 25 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 0L25 17H0L12.5 0z' fill='%233B4145'/%3E%3C/svg%3E");
+                        background-position: center bottom;
+                        background-size: 16px;
+                    }
+                }
+            }
+        }
+        &[data-theme="dark"] { // content is dark, bg is light
+            li.nav__item {
+                &:hover {
+                    & > a:not(.button) { // selected state of button/pane
+                        @apply text-green-dark;
+                    }
+                }
+            }
+        }
+    }
+    li.nav__item {
+        & > a {
+            @apply p-6;
+        }
+        & > a:not(.button) {// default state of button/pane
+            @apply text-black bg-center;
+            transition: background-position .3s ease-out;
+        }
+        &:hover {
+            & > a:not(.button) { // selected state of button/pane
+                // color: blue;
+                @apply bg-no-repeat bg-center;
+
+                background: {
+                    image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='17' viewBox='0 0 25 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 0L25 17H0L12.5 0z' fill='%233B4145'/%3E%3C/svg%3E");
+                    size: 16px;
+                }
+            }
+            & > .nav-submenu { // show (transition) in pane
+                @apply visible;
+                opacity: 1;
+
+                .menu-nav-list li a {
+                    opacity: 1;
+                    transform: translate3D(0, 0, 0);
+                }
+                .fade-1, .fade-2 {
+                    opacity: 1;
+                    transform: translate3D(0, 0, 0);
+                }
+            }
+        }
+    }
+    //============== old
+    // .nav__item a {
+    //     padding: 1.5rem;
+    // }
+    // .nav__item--active .nav__item-name {
+    //     color: $color_blue;
+    //     // background: blue;
+    //     background: {
+    //         image: url("data:image/svg+xml;charset=utf8,%3Csvg width='25' height='17' viewBox='0 0 25 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 0L25 17H0L12.5 0z' fill='%233B4145'/%3E%3C/svg%3E");
+    //         repeat: no-repeat;
+    //         position: center bottom;
+    //         size: 16px;
+    //     }
+    // }
+
+    .nav-submenu {
+        @apply text-white block invisible opacity-0 absolute left-0 w-full rounded;
+
+        background-color: hsl(31, 1%, 25%);
+        transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        top: 53px !important;
+        .button {
+            @apply inline w-auto;
+        }
+        a:not(.button):not(.preview) {
+            text-align: initial;
+            // padding: initial;
+        }
+        .link-arrow { // specific style used in link on left of the submenu
+            @apply pl-0;
+        }
+        .preview { // webinar or custom cards
+            @apply rounded-none h-full;
+
+            min-height: initial;
+            .preview-bg {
+                transform: scale3D(1.1,1.1,1);
+            }
+        }
+        .menu-nav-list {
+            li a {
+                @apply text-white;
+            }
+        }
+        .nav__product {
+            @apply text-white;
+
+            svg path {
+                @apply text-white fill-current;
+            }
+        }
+
+        .submenu-wrapper {
+            @apply flex flex-row items-center mx-auto;
+
+            max-width: 88.75rem;
+        }
+    }
+    // .nav__item--active .nav-submenu {
+    //     visibility: visible;
+    //     transition-delay: 0ms;
+    //     opacity: 1;
+    // }
+    .nav__submenu-pane {
+        padding: calc(1rem + 1.2vw);
+        a {
+            @apply p-0;
+            img {
+                @apply mb-0;
+            }
+        }
+    }
+    hr.menu-divider { // used to separate child menu items
+        @apply m-2 border-b border-gray-500;
+    }
+    .nav__contact {
+        @apply ml-4 whitespace-no-wrap;
+    }
+
+
+} // end desktop stuff
+ul.menu.menu-nav-list {
+    @apply flex-col;
+
+    // flex-wrap: wrap;
+    li a {
+        @apply py-2;
+
+        // color: white;
+    }
+    @screen lg {
+        @apply -ml-2;
+
+        li { // not sure why .menu.align-center is trickling down here, setting classes in this nav have no effect...
+            justify-content: left !important;
+            border-radius: 6px;
+            transition: background-color 100ms linear;
+            &:hover {
+                @apply bg-black;
+            }
+            @for $i from 1 through 8 { // add a small bit of delay for n children. Estimating 8
+                $t: 0.05s * $i + 0.2s;
+                &:nth-child(#{$i}) a { 
+                    transition-delay: $t;
+                }
+            }
+            & a {
+                @apply opacity-0 p-2;
+
+                transition: opacity 0.2s, transform 0.2s ease;
+                transform: translate3D(0, 3px, 0);
+                // transition-delay: 0.3s;
+                // @include link-white;
+            }
+        }
+    }
+}
+%prefade {
+    @apply opacity-0;
+
+    transition: opacity 0.2s, transform 0.2s ease;
+    transform: translate3D(-4px, 0, 0);
+    transition-delay: 0.8s;
+}
+.fade-1 { // might need a coherent timing function, so delays are coordinated
+    @extend %prefade;
+    transition-delay: 0.8s;
+}
+// .fade-2 { // might need a coherent timing function, so delays are coordinated
+//     @extend %prefade;
+//     transition-delay: 1.2s;
+// }
+
+.sticky-container {
+    @apply relative;
+}
+
+.company-header {
+    @apply hidden m-0 sticky-container;
+    // height: 50px;
+
+    @screen lg {
+        @apply block;
+    }
+
+    .sticky-nav {
+        @apply bg-gray-900 w-full opacity-100 p-3;
+
+        ul.menu {
+            li.menu-item {
+                a.menu-item--link {
+                    @apply text-sm text-white font-medium;
+                }
+            }
+        }
+    }
 }

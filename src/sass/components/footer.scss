@@ -1,0 +1,70 @@
+footer.main-footer {
+    @apply px-8 py-4;
+
+    @screen sm {
+        @apply px-12 py-6;
+    }
+
+    @screen md {
+        @apply px-20 py-10;
+    }
+
+    @screen lg {
+        @apply px-24 py-16;
+    }
+
+    .footer-lists {
+        @apply flex flex-row flex-wrap mx-auto mb-6;
+        max-width: 88.75rem;
+
+        div.list {
+            @apply w-1/2 mb-6;
+
+            @screen md {
+                @apply w-auto flex-1;
+            }
+
+            h5 {
+                @apply text-lg font-bold mb-2;
+
+                a, span.faded {
+                    @apply text-black font-bold;
+                    opacity: .6;
+                }
+            }
+
+            ul {
+                li {
+                    @apply mb-1;
+
+                    a {
+                        @apply text-black;
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-info {
+        @apply flex flex-row items-center justify-between mx-auto;
+        max-width: 88.75rem;
+
+        ul.menu {
+            @apply flex-col;
+
+            @screen md {
+                @apply flex-row items-center;
+            }
+
+            li {
+                @apply mr-6 mb-4;
+
+                a {
+                    @apply text-black mb-1;
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}
