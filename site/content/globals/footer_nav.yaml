@@ -1,0 +1,72 @@
+compliance:
+  -
+    label: 'Compliant Kubernetes Service'
+    external_link: /compliant-kubernetes-service/
+integration:
+  -
+    label: 'Datica Integrate'
+    page: 65851f8f-a438-4e4e-9c80-8fb80f66b0b5
+learn:
+  -
+    label: 'Datica Academy'
+    page: bed576c4-6820-495f-bfe3-6a5d1ed11240
+  -
+    label: 'Datica Blog'
+    page: 60962021-f154-4cd2-a1d7-035a12b6da9e
+  -
+    label: 'Innovation Hub'
+    external_link: /innovation
+  -
+    label: Podcasts
+    page: 5b648e05-8592-484b-89dc-715a40431afd
+  -
+    label: 'Discover: Compliance Topics'
+    external_link: /discover
+  -
+    label: 'Open Source'
+    external_link: /open-source
+  -
+    label: 'Digital Health Success Framework'
+    external_link: /dhsf
+  -
+    label: Webinars
+    page: 5da4c260-7caa-49f8-9aab-1f825e3d32a1
+company:
+  -
+    label: 'About Us'
+    page: 4e4d7ae3-409b-4791-b915-87e46380a0e2
+  -
+    label: Leadership
+    page: d2d9800a-fecc-4f83-a374-89051b4616e4
+  -
+    label: Careers
+    external_link: /careers
+  -
+    label: Press
+    page: b83a9445-9fa7-41c0-923f-d9887957b63d
+  -
+    label: Events
+    page: be387ad7-530b-45a3-8609-9b8870831d21
+help:
+  -
+    label: 'Sign in'
+    external_link: 'https://product.datica.com/'
+  -
+    label: 'Documentation & Support'
+    external_link: 'https://help.datica.com/hc/en-us/'
+  -
+    label: 'System Status'
+    external_link: 'https://status.datica.com/'
+legal:
+  -
+    label: 'Company Policies'
+    external_link: 'https://policy.datica.com/'
+  -
+    label: 'Compliance Training'
+    external_link: 'https://training.datica.com/'
+  -
+    label: 'HIPAA Mappings'
+    external_link: 'https://policy.datica.com/'
+fieldset: footer-navigation
+title: 'Footer Navigation'
+id: 5deed2a8-d243-4f5e-8ca2-67e52dd06767

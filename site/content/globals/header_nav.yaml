@@ -1,0 +1,127 @@
+show_announcement: true
+announcement_text: '<strong class="font-bold">Datica</strong> and <strong class="font-bold">Sansoro Health</strong> merge to help accelerate healthcare’s data-driven future in the cloud.'
+announcement_button_label: 'Read the Announcement'
+announcement_button_link: /blog/sansoro-health-datica-combine-forces/
+compliance:
+  -
+    type: text
+    heading: 'Cloud Compliance'
+    description: 'We''re the experts at understanding the exact policies and procedures required to make public cloud architecture HIPAA compliant so you can pass a HITRUST CSF assessment.'
+  -
+    type: product_family
+    products:
+      -
+        icon: cks
+        name: 'Compliant Kubernetes Service'
+        description: 'A compliant kubernetes cluster for enterprise scalability'
+        link: /compliant-kubernetes-service
+  -
+    type: image
+    image: /assets/cta/guide-hitrust-share.jpg
+    label: 'Get the Complete HITRUST Guide'
+    link: /guide/hitrust/
+learn:
+  -
+    type: text
+    heading: Learn
+    description: 'Master the complexities of cloud compliance and EHR integration'
+  -
+    type: links
+    links:
+      -
+        label: 'Datica Academy'
+        page: bed576c4-6820-495f-bfe3-6a5d1ed11240
+      -
+        label: 'Datica Blog'
+        page: 60962021-f154-4cd2-a1d7-035a12b6da9e
+      -
+        label: 'Innovation Huh'
+        external_link: /innovation
+      -
+        label: Podcasts
+        page: 5b648e05-8592-484b-89dc-715a40431afd
+      -
+        label: 'Discover: Compliance Topics'
+        external_link: /discover
+      -
+        label: 'Open Source'
+        external_link: /open-source
+      -
+        label: 'Digital Health Success Framework'
+        external_link: /dhsf
+      -
+        label: Webinars
+        page: 5da4c260-7caa-49f8-9aab-1f825e3d32a1
+  -
+    type: image
+    image: /assets/cta/c3-book-green-cta.jpg
+    label: 'Book: Complete Cloud Compliance, now available (green background)'
+    link: 'https://www.completecloudcompliance.com/'
+company:
+  -
+    type: text
+    heading: 'About Datica'
+    description: 'Datica exists to help you make the most of the healthcare cloud.'
+  -
+    type: links
+    links:
+      -
+        label: 'About Us'
+        page: 4e4d7ae3-409b-4791-b915-87e46380a0e2
+      -
+        label: Leadership
+        page: d2d9800a-fecc-4f83-a374-89051b4616e4
+      -
+        label: Careers
+        external_link: /careers
+      -
+        label: Press
+        page: b83a9445-9fa7-41c0-923f-d9887957b63d
+      -
+        label: Events
+        page: be387ad7-530b-45a3-8609-9b8870831d21
+  -
+    type: image
+    image: /assets/cta/careers-share.jpg
+    label: 'Work at Datica'
+    link: /careers
+help:
+  -
+    type: text
+    heading: Help
+    description: 'Already a Datica customer? Get help with products and services.'
+  -
+    type: links
+    links:
+      -
+        label: 'Sign in'
+        external_link: 'https://product.datica.com/'
+      -
+        label: 'Documentation & Support'
+        external_link: 'https://help.datica.com/hc/en-us/'
+      -
+        label: 'System Status'
+        external_link: 'https://status.datica.com/'
+  -
+    type: newsletter_signup
+integration:
+  -
+    type: text
+    heading: 'EHR Integration'
+    description: 'Datica''s approach to integration removes the stress and frustration of complex healthcare data integration problems and lets you focus on your products.'
+  -
+    type: product_family
+    products:
+      -
+        icon: emissary
+        name: 'Datica Integrate'
+        link: /integrate
+        description: 'The industry''s first any-to-any solution combining health data integration and compliance.'
+  -
+    type: image
+    image: /assets/cta/guide-tco-integrations.jpg
+    label: 'Get the TCO Guide to Healthcare Integrations'
+    link: /guide/total-cost-of-ownership-of-integrations
+fieldset: header-navigation
+title: 'Header Navigation'
+id: 95a58f81-9991-46fe-b811-1a7f44659bcc

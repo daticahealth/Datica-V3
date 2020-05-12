@@ -1,0 +1,133 @@
+sections:
+  main:
+    display: Main
+    fields:
+      compliance:
+        mode: stacked
+        min_rows: 1
+        fields:
+          label:
+            type: text
+            display: Label
+          page:
+            max_items: 1
+            label: '{{ title }}'
+            mode: panes
+            type: pages
+            width: 50
+            display: Page
+          external_link:
+            type: text
+            width: 50
+            display: 'External Link'
+            validate: url
+        type: grid
+        display: Compliance
+      integration:
+        mode: stacked
+        min_rows: 1
+        fields:
+          label:
+            type: text
+            display: Label
+          page:
+            max_items: 1
+            label: '{{ title }}'
+            mode: panes
+            type: pages
+            width: 50
+            display: Page
+          external_link:
+            type: text
+            width: 50
+            display: 'External Link'
+            validate: url
+        type: grid
+        display: Integration
+      learn:
+        mode: stacked
+        min_rows: 1
+        fields:
+          label:
+            type: text
+            display: Label
+          page:
+            max_items: 1
+            label: '{{ title }}'
+            mode: panes
+            type: pages
+            width: 50
+            display: Page
+          external_link:
+            type: text
+            width: 50
+            display: 'External Link'
+            validate: url
+        type: grid
+        display: Learn
+      company:
+        mode: stacked
+        min_rows: 1
+        fields:
+          label:
+            type: text
+            display: Label
+          page:
+            max_items: 1
+            label: '{{ title }}'
+            mode: panes
+            type: pages
+            width: 50
+            display: Page
+          external_link:
+            type: text
+            width: 50
+            display: 'External Link'
+            validate: url
+        type: grid
+        display: Company
+      help:
+        mode: stacked
+        min_rows: 1
+        fields:
+          label:
+            type: text
+            display: Label
+          page:
+            max_items: 1
+            label: '{{ title }}'
+            mode: panes
+            type: pages
+            width: 50
+            display: Page
+          external_link:
+            type: text
+            width: 50
+            display: 'External Link'
+            validate: url
+        type: grid
+        display: Help
+      legal:
+        mode: stacked
+        min_rows: 1
+        fields:
+          label:
+            type: text
+            display: Label
+          page:
+            max_items: 1
+            label: '{{ title }}'
+            mode: panes
+            type: pages
+            width: 50
+            display: Page
+          external_link:
+            type: text
+            width: 50
+            display: 'External Link'
+            validate: url
+        type: grid
+        display: Legal          
+taxonomies: false
+hide: true
+title: 'Footer Navigation'

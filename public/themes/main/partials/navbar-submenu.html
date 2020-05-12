@@ -1,0 +1,65 @@
+{{ if type === 'text' }}
+    <div class="flex-1 large-3 nav__submenu-pane hidden lg:block">
+        <h3 class="headline-4">{{ heading }}</h3>
+        <p class="text-sm">{{ description }}</p>
+    </div>
+{{ /if }}
+
+{{ if type === 'product_family' }}
+    <div class="flex-1 large-4 nav__submenu-pane">
+        <h4 class="read-more text-light hidden lg:block">Product Family</h4>
+        <ul class="menu menu-nav-list">
+            {{ products }}
+                <li>
+                    <a data-track="true" data-track-category="nav" data-track-id="page-datica-cks" href="{{ link }}" title="{{ name }}">
+                        <div class="media-object nav__product">
+                            <div class="media-object-section">
+                                <svg class="icon-size--medium" id="product-{{ icon }}-logo">
+                                    <use class="symbol-icon" href="#{{ icon }}-logo" xlink:href="#{{ icon }}-logo"></use>
+                                </svg>
+                            </div>
+                            <div class="media-object-section media-object--info main-section align-self-middle">
+                                <h4 class="nav__product-title">{{ name }}</h4>
+                                <div class="nav__product-description text-sm hidden lg:block">{{ description }}</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            {{ /products }}
+        </ul>
+    </div>
+{{ /if }}
+
+{{ if type === 'image' }}
+    <aside class="flex-1 nav__submenu-pane large-4 hidden lg:block">
+        <a data-track="true" data-track-category="nav" data-track-id="section-{{ slug }}" href="{{ link }}" title="{{ label }}">
+            <img alt="{{ label }}" class="lozad thumbnail loaded" data-src="{{ image }}" src="{{ image }}" width="280" data-loaded="true">
+        </a>
+    </aside>
+{{ /if }}
+
+{{ if type === 'links' }}
+    <div class="flex-1 large-4 nav__submenu-pane shrink-for-large">
+        <h4 class="read-more text-light hidden lg:block"></h4>
+        <ul class="menu menu-nav-list">
+            {{ links }}
+                <li><a data-track="true" data-track-category="nav" data-track-id="page-{{ slug }}" href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='navPage' }}{{ navPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">{{ label }}</a></li>
+            {{ /links }}
+        </ul>
+    </div>
+{{ /if }}
+
+{{ if type === 'newsletter_signup' }}
+    <aside class="flex-1 nav__submenu-pane large-4 hidden lg:block">
+        <h4 class="headline-5 nav--promo">Subscribe to our newsletter</h4>
+        <p class="text-sm">Subscribe to the Datica newsletter today.</p>
+        <a id="button_section-promo-help" class="button small success" data-track="true" data-track-category="nav" data-track-id="button_section-promo-help" data-expand-on-small="true" href="/go/subscribe" title="Subscribe to the Datica newsletter"> 
+            Subscribe to the Datica newsletter 
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" class="icon-inline icon-right">
+                <path fill-rule="evenodd"
+                    d="M26.692 18.754c.41-.419.41-1.09 0-1.508L14.511 4.814a1.026 1.026 0 0 0-1.478 0l-2.725 2.781a1.077 1.077 0 0 0 0 1.508L19.025 18l-8.717 8.897a1.077 1.077 0 0 0 0 1.508l2.725 2.78c.41.42 1.067.42 1.478 0l12.181-12.431z">
+                </path>
+            </svg> 
+        </a>
+    </aside>
+{{ /if }}

@@ -118,3 +118,9 @@ $underline: false !default;
     background: linear-gradient($dir, #3FBA72 3.31%, #00AFAF 100.72%);
     color: white;
 }
+@mixin gradient-gray($dir: to right) {
+    /* Gray Gradient */
+    background-image: -webkit-linear-gradient(top,#f2f2f2 50%,#fff 100%);
+    background-image: -o-linear-gradient(top,#f2f2f2 50%,#fff 100%);
+    background-image: linear-gradient(top,#f2f2f2 50%,#fff 100%);
+}

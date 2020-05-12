@@ -1,9 +1,10 @@
-// nav toggle on mobile
-// var toggler = document.querySelector('.toggle-me');
-// var toggleTarget = document.querySelector('.toggle-target');
+// Nav Toggle
+var toggle = document.getElementById('nav-toggle');
+var target = document.getElementById('nav-target');
 
-// toggler.addEventListener('click', function() {
-//         toggler.toggleAttribute('aria-expanded');
-//         toggleTarget.classList.toggle('is-active');
-//         toggler.classList.toggle('is-toggled');
-// });
+function toggleNav() {
+    toggle.toggleAttribute('aria-expanded');
+
+    toggle.classList.toggle('is-toggled');
+    target.classList.toggle('is-active');
+}

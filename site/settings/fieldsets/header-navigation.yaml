@@ -1,0 +1,441 @@
+sections:
+  main:
+    display: Main
+    fields:
+      announcement:
+        type: section
+        display: Announcement
+      show_announcement:
+        type: toggle
+        display: 'Show Announcement?'
+      announcement_text:
+        type: textarea
+        display: 'Announcement Text'
+        hide_when:
+          show_announcement: false
+      announcement_button_label:
+        type: text
+        width: 50
+        display: 'Button Label'
+        hide_when:
+          show_announcement: false
+      announcement_button_link:
+        type: text
+        width: 50
+        display: 'Button Link'
+        hide_when:
+          show_announcement: false
+      navigation_items:
+        type: section
+        display: 'Navigation Items'
+      compliance:
+        mode: table
+        sets:
+          text:
+            display: Text
+            fields:
+              heading:
+                type: text
+                display: Heading
+                validate: required
+              description:
+                type: textarea
+                display: Description
+          product_family:
+            display: 'Product Family'
+            fields:
+              products:
+                mode: stacked
+                fields:
+                  icon:
+                    options:
+                      cks: 'Compliant Kubernetes Service'
+                      emissary: 'Datica Integrate'
+                    type: select
+                    display: Icon
+                    validate: required
+                  name:
+                    type: text
+                    display: Name
+                    validate: required
+                    width: 50
+                  link:
+                    type: text
+                    width: 50
+                    display: Link
+                  description:
+                    type: textarea
+                    display: Description
+                    validate: required
+                type: grid
+                display: Products
+          image:
+            display: Image
+            fields:
+              image:
+                restrict: false
+                type: assets
+                display: Image
+                container: main
+                folder: /
+                max_files: 1
+              label:
+                type: text
+                width: 50
+                display: Label
+              link:
+                type: text
+                width: 50
+                display: Link
+          links:
+            display: Links
+            fields:
+              links:
+                mode: stacked
+                fields:
+                  label:
+                    type: text
+                    display: Label
+                  page:
+                    max_items: 1
+                    type: pages
+                    width: 50
+                    display: Page
+                  external_link:
+                    type: text
+                    width: 50
+                    display: 'External Link'
+                type: grid
+                display: Links
+        type: replicator
+        display: Compliance
+      intgration:
+        mode: table
+        sets:
+          text:
+            display: Text
+            fields:
+              heading:
+                type: text
+                display: Heading
+                validate: required
+              description:
+                type: textarea
+                display: Description
+          product_family:
+            display: 'Product Family'
+            fields:
+              products:
+                mode: stacked
+                fields:
+                  icon:
+                    options:
+                      cks: 'Compliant Kubernetes Service'
+                      emissary: 'Datica Integrate'
+                    type: select
+                    display: Icon
+                    validate: required
+                  name:
+                    type: text
+                    display: Name
+                    validate: required
+                    width: 50
+                  link:
+                    type: text
+                    width: 50
+                    display: Link
+                  description:
+                    type: textarea
+                    display: Description
+                    validate: required
+                type: grid
+                display: Products
+          image:
+            display: Image
+            fields:
+              image:
+                restrict: false
+                type: assets
+                display: Image
+                container: main
+                folder: /
+                max_files: 1
+              label:
+                type: text
+                width: 50
+                display: Label
+              link:
+                type: text
+                width: 50
+                display: Link
+          links:
+            display: Links
+            fields:
+              links:
+                mode: stacked
+                fields:
+                  label:
+                    type: text
+                    display: Label
+                  page:
+                    max_items: 1
+                    type: pages
+                    width: 50
+                    display: Page
+                  external_link:
+                    type: text
+                    width: 50
+                    display: 'External Link'
+                type: grid
+                display: Links
+        type: replicator
+        display: Integration
+      learn:
+        mode: table
+        sets:
+          text:
+            display: Text
+            fields:
+              heading:
+                type: text
+                display: Heading
+                validate: required
+              description:
+                type: textarea
+                display: Description
+          product_family:
+            display: 'Product Family'
+            fields:
+              products:
+                mode: stacked
+                fields:
+                  icon:
+                    options:
+                      cks: 'Compliant Kubernetes Service'
+                      emissary: 'Datica Integrate'
+                    type: select
+                    display: Icon
+                    validate: required
+                  name:
+                    type: text
+                    display: Name
+                    validate: required
+                    width: 50
+                  link:
+                    type: text
+                    width: 50
+                    display: Link
+                  description:
+                    type: textarea
+                    display: Description
+                    validate: required
+                type: grid
+                display: Products
+          image:
+            display: Image
+            fields:
+              image:
+                restrict: false
+                type: assets
+                display: Image
+                container: main
+                folder: /
+                max_files: 1
+              label:
+                type: text
+                width: 50
+                display: Label
+              link:
+                type: text
+                width: 50
+                display: Link
+          links:
+            display: Links
+            fields:
+              links:
+                mode: stacked
+                fields:
+                  label:
+                    type: text
+                    display: Label
+                  page:
+                    max_items: 1
+                    type: pages
+                    width: 50
+                    display: Page
+                  external_link:
+                    type: text
+                    width: 50
+                    display: 'External Link'
+                type: grid
+                display: Links
+        type: replicator
+        display: Learn
+      company:
+        mode: table
+        sets:
+          text:
+            display: Text
+            fields:
+              heading:
+                type: text
+                display: Heading
+                validate: required
+              description:
+                type: textarea
+                display: Description
+          product_family:
+            display: 'Product Family'
+            fields:
+              products:
+                mode: stacked
+                fields:
+                  icon:
+                    options:
+                      cks: 'Compliant Kubernetes Service'
+                      emissary: 'Datica Integrate'
+                    type: select
+                    display: Icon
+                    validate: required
+                  name:
+                    type: text
+                    display: Name
+                    validate: required
+                    width: 50
+                  link:
+                    type: text
+                    width: 50
+                    display: Link
+                  description:
+                    type: textarea
+                    display: Description
+                    validate: required
+                type: grid
+                display: Products
+          image:
+            display: Image
+            fields:
+              image:
+                restrict: false
+                type: assets
+                display: Image
+                container: main
+                folder: /
+                max_files: 1
+              label:
+                type: text
+                width: 50
+                display: Label
+              link:
+                type: text
+                width: 50
+                display: Link
+          links:
+            display: Links
+            fields:
+              links:
+                mode: stacked
+                fields:
+                  label:
+                    type: text
+                    display: Label
+                  page:
+                    max_items: 1
+                    type: pages
+                    width: 50
+                    display: Page
+                  external_link:
+                    type: text
+                    width: 50
+                    display: 'External Link'
+                type: grid
+                display: Links
+        type: replicator
+        display: Company
+      help:
+        mode: table
+        sets:
+          text:
+            display: Text
+            fields:
+              heading:
+                type: text
+                display: Heading
+                validate: required
+              description:
+                type: textarea
+                display: Description
+          product_family:
+            display: 'Product Family'
+            fields:
+              products:
+                mode: stacked
+                fields:
+                  icon:
+                    options:
+                      cks: 'Compliant Kubernetes Service'
+                      emissary: 'Datica Integrate'
+                    type: select
+                    display: Icon
+                    validate: required
+                  name:
+                    type: text
+                    display: Name
+                    validate: required
+                    width: 50
+                  link:
+                    type: text
+                    width: 50
+                    display: Link
+                  description:
+                    type: textarea
+                    display: Description
+                    validate: required
+                type: grid
+                display: Products
+          image:
+            display: Image
+            fields:
+              image:
+                restrict: false
+                type: assets
+                display: Image
+                container: main
+                folder: /
+                max_files: 1
+              label:
+                type: text
+                width: 50
+                display: Label
+              link:
+                type: text
+                width: 50
+                display: Link
+          links:
+            display: Links
+            fields:
+              links:
+                mode: stacked
+                fields:
+                  label:
+                    type: text
+                    display: Label
+                  page:
+                    max_items: 1
+                    type: pages
+                    width: 50
+                    display: Page
+                  external_link:
+                    type: text
+                    width: 50
+                    display: 'External Link'
+                type: grid
+                display: Links
+          newsletter_signup:
+            display: 'Newsletter signup'
+            fields: {  }
+        type: replicator
+        display: Help
+taxonomies: false
+hide: true
+title: 'Header Navigation'
