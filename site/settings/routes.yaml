@@ -28,3 +28,7 @@ routes:
     layout: feed
     template: feeds/things
     content_type: atom
+redirect:
+  /monitor/: /compliance/
+  /innovation/: /
+vanity: {  }
