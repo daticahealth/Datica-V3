@@ -1,8 +1,17 @@
 hide: true
-fields:
-  posts:
-    type: integer
-    display: Number of Posts
-    width: 25
-  content:
-    type: markdown
+sections:
+  main:
+    fields:
+      posts:
+        type: integer
+        display: Number of Posts
+        width: 25
+      content:
+        type: markdown
+  content_blocks_section:
+    display: 'Content Blocks'
+    fields:
+      content_blocks:
+        fieldset: _blocks
+        type: partial
+        display: 'Content Blocks'
