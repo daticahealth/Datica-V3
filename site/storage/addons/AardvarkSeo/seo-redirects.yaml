@@ -1,0 +1,6 @@
+create_auto_redirects: false
+redirects:
+  -
+    source: /monitor/
+    target: /compliance/
+    status_code: '301'
