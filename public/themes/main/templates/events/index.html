@@ -6,16 +6,20 @@
 	}
 </style>
 {{ /section:head_styles }}
-<section class="mx-auto max-w-5xl">
+<section class="mx-auto max-w-5xl px-10">
 
-	<header>
-		
-		<h1>{{ title }}</h1>
+	<header class="text-center py-20">
+		<h1 class="uppercase font-bold tracking-wider text-2xl mb-4">{{ title }}</h1>
 		<p class="lead">{{ summary }}</p>
 	</header>
 
 	<article class="list">
-		{{ collection from="{section_collection}" paginate="true" as="posts" limit="1" sort="date_start:desc" }}
+		{{ collection from="{section_collection}"
+			paginate="true"
+			as="posts"
+			limit="1"
+			sort="date_start:desc"
+		}}
 			{{ posts }}
 				<div class="bg-white shadow-sm shadow-lg mb-12 p-6 md:p-8 lg:p-12 xl:p-16">
 					{{ partial:event-card }}

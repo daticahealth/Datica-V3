@@ -35,7 +35,8 @@
     </div>
     <div class="event-meta">
         {{ if featured_image }}
-        <img class="lozad" {{ assets:featured_image }}data-src="{{ glide:id width="800" }}" {{ /assets:featured_image }} />
+        <img class="lozad mb-6" {{ assets:featured_image }}data-src="{{ glide:id width="800" }}" {{
+        /assets:featured_image }} />
         {{ /if }}
         {{ if event_related_people }}
             {{ relate:event_related_people scope="entry" }}
