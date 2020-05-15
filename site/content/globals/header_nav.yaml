@@ -13,13 +13,31 @@ compliance:
       -
         icon: cks
         name: 'Cloud Compliance'
-        description: 'Managed Service for your solution in the cloud'
+        description: 'Managed Service for your solution in the cloud.'
         link: /compliance
   -
     type: image
     image: /assets/cta/guide-hitrust-share.jpg
     label: 'Get the Complete HITRUST Guide'
     link: /guide/hitrust/
+intgration:
+  -
+    type: text
+    heading: 'EHR Integration'
+    description: 'Datica''s approach to integration removes the stress and frustration of complex healthcare data integration problems and lets you focus on your products.'
+  -
+    type: product_family
+    products:
+      -
+        icon: emissary
+        name: 'EHR Integration'
+        link: /ehr-integration
+        description: 'The industry''s first any-to-any solution combining health data integration and compliance.'
+  -
+    type: image
+    image: /assets/general/guides/guide-tco-integrations.jpg
+    label: 'Get the TCO Guide to Healthcare Integrations'
+    link: /guide/total-cost-of-ownership-of-integrations/
 learn:
   -
     type: text
