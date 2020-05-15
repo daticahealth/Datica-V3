@@ -4,7 +4,7 @@
     background-image: linear-gradient(to right,#00e1ff 1%,#00c4ff 22%,#b8b5b9 100%);
 }
 
-.no-js { // preventing FOUC
+.no-js {
     .top-bar {
         @apply hidden;
 
@@ -22,7 +22,7 @@
 
 // Breadcrumb nav: http://foundation.zurb.com/sites/docs/breadcrumbs.html
 .breadcrumbs {
-    // transition: opacity $timing-default linear;
+    // transition: opacity 175ms linear;
     li {
         &:not(:last-child)::after {
             content: "\203A"; // a '›' http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order/
@@ -47,7 +47,7 @@
             @apply font-medium p-4;
 
             transition-property: background-color, color, border-color;
-            // transition-duration: $timing-default;
+            transition-duration: 175ms;
             &[aria-current="page"] {
                 @apply text-gray-a border-b-2 border-green-dark;
             }
@@ -70,14 +70,12 @@
 .menu-nav-list {
     li {
         a {
-            // section header - uppercase
-
             .media-object {
                 @apply flex flex-row items-center;
 
                 .media-object-section {
                     @screen lg {
-                        @apply w-1/5;
+                        @apply mr-2;
                     }
 
                     .icon-size--medium {
@@ -86,10 +84,6 @@
                 }
 
                 .media-object--info {
-                    @screen lg {
-                        @apply w-4/5;
-                    }
-
                     .nav__product-title {
                         @apply text-base m-0;
                     }
@@ -143,8 +137,6 @@
             &--cta { // for cta button in sticky nav bar
                 @apply py-2 px-3 ml-4;
 
-                // padding: 0.5rem 0.7rem;
-                // margin-left: 1rem;
                 &:focus,
                 &:hover { // clear 'nudge' behavior
                     transform: initial;
@@ -166,10 +158,6 @@
             @apply p-0 flex-wrap flex-row items-center justify-center;
         }
     }
-    // theming
-    // .nav {
-    //     background-color: white;
-    // }
     .nav__item-name {
         @apply font-medium;
         color: hsl(31, 1%, 12%);
@@ -179,12 +167,11 @@
             background-color: hsl(31, 1%, 16%);
         }
         .nav-logo--link, .nav__item-name {
-            @apply text-white;
+            @apply text-white font-normal;
 
-            // color: white(0.8);
-            // font-weight: $font-weight-regular;
-            // transition-property: background-color, color;
-            // transition-duration: $timing-default;
+            color: white(0.8);
+            transition-property: background-color, color;
+            transition-duration: 175ms;
             &:hover, &:active {
                 color: hsl(57, 100%, 72%);
             }
@@ -272,7 +259,7 @@
         @apply p-0;
         display: none !important;
 
-        // transition: color $timing-default linear, border-color $timing-default linear;
+        transition: color 175ms linear, border-color 175ms linear;
         // @include shadow-anarchy(0 3px 5px black(0.2));
         &.is-active {
             display: block !important;
@@ -324,7 +311,7 @@
         & span:after {
             @apply cursor-pointer absolute left-0 block;
 
-            // transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             border-radius: 1px;
             height: 2px;
             width: 35px;
@@ -552,6 +539,7 @@
         padding: calc(1rem + 1.2vw);
         a {
             @apply p-0;
+            
             img {
                 @apply mb-0;
             }
@@ -596,7 +584,7 @@ ul.menu.menu-nav-list {
 
                 transition: opacity 0.2s, transform 0.2s ease;
                 transform: translate3D(0, 3px, 0);
-                // transition-delay: 0.3s;
+                transition-delay: 0.3s;
                 // @include link-white;
             }
         }

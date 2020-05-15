@@ -4,3 +4,7 @@ redirects:
     source: /monitor/
     target: /compliance/
     status_code: '301'
+  -
+    source: /innovation/
+    target: /
+    status_code: '301'

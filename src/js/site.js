@@ -3,10 +3,12 @@ import 'tippy.js/dist/tippy.css';
 
 var tooltips = document.querySelectorAll('[data-tooltip="true"]');
 
-for (var i in tooltips) {
-    var element = tooltips[i];
+if (tooltips.length > 0) {
+    for (var i = 0; i < tooltips.length; i++) {
+        var tooltipElement = tooltips[i];
 
-    tippy(element, {
-        content: element.getAttribute('data-tooltip-text'),
-    })
-} 
+        tippy(tooltipElement, {
+            content: tooltipElement.getAttribute('data-tooltip-text'),
+        });
+    }
+}
