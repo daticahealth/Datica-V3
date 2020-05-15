@@ -12,9 +12,9 @@ compliance:
     products:
       -
         icon: cks
-        name: 'Compliant Kubernetes Service'
-        description: 'A compliant kubernetes cluster for enterprise scalability'
-        link: /compliant-kubernetes-service
+        name: 'Cloud Compliance'
+        description: 'Managed Service for your solution in the cloud'
+        link: /compliance
   -
     type: image
     image: /assets/cta/guide-hitrust-share.jpg
