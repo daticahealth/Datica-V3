@@ -10,7 +10,7 @@
     <!-- Google Tag Manager -->
     {{#
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{ gtm_id }}"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -40,20 +40,21 @@
 
 <body itemscope itemtype="http://schema.org/LocalBusiness" class="text-base antialiased section-{{ segment_1 }} {{ template }} {{ settings }}{{ debug }}{{ if debug==1 }}development{{ /if }}{{ /debug }}{{ /settings }}">
 
-    {{ if environment!='local' and environment!='staging' }}
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ gtm_id }}"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    {{ /if }}
+{{ if environment!='local' and environment!='staging' }}
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ gtm_id }}"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+{{ /if }}
 
-    {{# <header class="site-header bg-white"> #}}
-    {{ partial:navbar }}
-    {{# </header> #}}
-    {{ template_content }}
-    {{ partial:footer }}
 
-    <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.4" media="print"> {{# Photoswipe gallery html loads below You might want to conditionally load this if there is a gallery on the page #}} {{ partial:photoswipe_markup }}
+{{ partial:navbar }}
+{{ template_content }}
+{{ partial:footer }}
+
+<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.4" media="print">
+{{# Photoswipe gallery html loads below You might want to conditionally load this if there is a gallery on the page #}}
+{{ partial:photoswipe_markup }}
 
 </body>
 
