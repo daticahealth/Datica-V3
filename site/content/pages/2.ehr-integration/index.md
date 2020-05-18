@@ -57,42 +57,25 @@ blocks:
     content_columns:
       -
         type: items
-        item_header: 'AWS HIPAA-Eligble Services'
-        item_content: |
-          - S3
-          - EC2
-          - RDs
-          - Elasticache
+        item_header: 300+
+        item_content: '- Live integrations completed'
         icon_align: right
       -
         type: items
-        item_header: 'Compliance & Security Controls'
-        item_content: |
-          - Alert logging
-          - Vulnerability scanning
-          - Monitoring
-          - Intrusion detection
-          - And more
+        item_header: Millions
+        item_content: '- Total number of mission-critical messages processed monthly with Datica''s products'
         icon_align: right
       -
         type: items
-        item_header: 'Common Developer Tools'
-        item_content: |
-          - Splunk
-          - Prometheus
-          - AquaSec
-          - SSEC
-          - and more
+        item_header: '1,000+'
+        item_content: '- Security and risk assessments passed'
         icon_align: right
       -
         type: items
-        item_header: 'Data Integration'
-        item_content: |
-          - Standards-based
-          - Custom endpoints
-          - Any-to-any
+        item_header: Zero
+        item_content: '- Unexpected downtime three years in a row'
         icon_align: right
-    block_title: 'Datica Compliance Services'
+    block_title: 'Datica Integration Services'
     color_theme: integration
     classes: mb-24
   -
