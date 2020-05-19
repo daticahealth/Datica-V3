@@ -1,0 +1,49 @@
+title: Customer
+sections:
+  main:
+    display: Main
+    fields:
+      customer_logos:
+        container: main
+        folder: img/customer-logos
+        restrict: false
+        type: assets
+        display: 'Customer Logos'
+      person_representative:
+        type: text
+        display: 'Person - Representative'
+      person_role:
+        type: text
+        display: 'Person - Role'
+      profile_link:
+        display: 'Profile Link'
+        type: text
+      profile_pic:
+        display: 'Profile Pic'
+        type: assets
+        container: main
+        max_files: 1
+      customer_quote:
+        display: 'Customer Quote'
+        type: collection
+        collection: quotes
+      company_leader_twitter:
+        display: 'Company Leader Twitter'
+        type: text
+      company_leader_linkedin:
+        display: 'Company Leader LinkedIn'
+        type: text
+      related_products_services:
+        display: 'Related Products or Services'
+        type: pages
+      customer_story_short:
+        display: 'Customer Story (short)'
+        type: markdown
+      customer_story_long:
+        display: 'Customer Story (long)'
+        type: markdown
+      customer_case_study:
+        type: collection
+        collection: case_study
+taxonomies: false
+create_title: Customer

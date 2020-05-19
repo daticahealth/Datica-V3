@@ -1,0 +1,43 @@
+title: 'Customer Spotlight'
+sections:
+  main:
+    display: Main
+    fields:
+      customer:
+        max_items: '1'
+        collection:
+          - customers
+        mode: panes
+        type: collection
+        display: Customer
+      tags:
+        type: tags
+        display: Tags
+      summary:
+        display: Summary
+        type: markdown
+      featured_image:
+        display: 'Featured Image'
+        type: assets
+        container: main
+        max_files: 1
+      lead:
+        type: textarea
+        display: Lead
+      post_top_half:
+        type: markdown
+        display: 'Post (top half)'
+      post_bottom_half:
+        type: markdown
+        display: 'Post (bottom half)'
+      related_entries:
+        collection:
+          - academy
+          - blog
+          - customers
+          - press
+          - podcasts
+        mode: panes
+        type: collection
+        display: 'Related Entries'
+taxonomies: true

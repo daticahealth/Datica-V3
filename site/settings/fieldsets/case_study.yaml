@@ -1,0 +1,39 @@
+title: 'Case Study'
+sections:
+  main:
+    display: Main
+    fields:
+      featured:
+        type: toggle
+        display: Featured
+      tags:
+        type: tags
+        display: Tags
+      customer:
+        display: Customer
+        type: collection
+        collection: customers
+        max_items: 1
+      form_or_script:
+        display: Form or Script
+        type: collection
+        max_items: 1
+        collection: forms
+      media_object:
+        type: textarea
+        display: Media Object
+      customer_quote:
+        display: Customer Quote
+        type: collection
+        collection: quotes
+      associated_product_service:
+        display: 'Associated Product or Service'
+        type: pages
+        mode: panes
+      value_proposition:
+        type: text
+        display: Value Proposition
+      case_study_body:
+        type: markdown
+        display: Case Study Body
+taxonomies: false
