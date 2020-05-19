@@ -5,6 +5,9 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{ aardvark-seo:head }}
+
     {{ if environment!='local' and environment!='staging' }}
 
     <!-- Google Tag Manager -->
@@ -39,7 +42,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/LocalBusiness" class="text-base antialiased section-{{ segment_1 }} {{ template }} {{ settings }}{{ debug }}{{ if debug==1 }}development{{ /if }}{{ /debug }}{{ /settings }}">
-
+{{ aardvark-seo:body }}
 {{ if environment!='local' and environment!='staging' }}
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ gtm_id }}"
