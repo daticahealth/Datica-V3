@@ -1,0 +1,14 @@
+title: cta_include
+sections:
+  main:
+    display: Main
+    fields:
+      cta_ref:
+        max_items: '1'
+        collection:
+          - cta
+        mode: panes
+        type: collection
+        display: CTA
+taxonomies: false
+hide: true

@@ -40,4 +40,7 @@ sections:
         mode: panes
         type: collection
         display: 'Related Entries'
+      cta:
+        type: partial
+        fieldset: cta_include
 taxonomies: true

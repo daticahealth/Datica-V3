@@ -30,6 +30,9 @@ sections:
         type: collections
         instructions: 'Choose a collection type to display.'
         display: 'Selected Collection'
+      cta:
+        type: partial
+        fieldset: cta_include
       template:
         type: template
         display: 'Choose a Template'

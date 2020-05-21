@@ -77,9 +77,8 @@
 	{{ /collection }}
 </section>
 <section class="pad-scale-md mx-auto max-w-7xl flex flex-col lg:flex-row justify-between items-start">
-	<aside class="p:6 lg:pt-8 lg:sticky lg:top-0 w-full flex flex-1 justify-center items-center">
-		<div class="promo bg-gray-300 p-16 lg:w-auto ">promo item</div>
-		
+	<aside class="p:6 lg:pt-8 lg:pr-8 lg:sticky lg:top-0 w-full flex flex-1 justify-center items-center ">
+		{{ partial:cta }}
 	</aside>
 	<div class="w-full lg:w-auto list flex-1">
 		{{ collection from="{section_collection}" paginate="true" as="posts" limit="6" sort="pub_date:desc" offset="3" }} {{# pub_date:starts_with="2019"#}}
@@ -100,7 +99,5 @@
 			{{ svg src="/assets/icons/icon-chevron-right.svg" class="icon-inline slide-right fill-current" a11y="arrow" }}
 		</a>
 	</div>
-	<aside class="p:6 lg:pt-8 lg:sticky lg:top-0 w-full flex flex-1 justify-center items-center">
-		<div class="promo bg-gray-300 p-16 lg:w-auto ">promo item</div>
-	</aside>
+
 </section>

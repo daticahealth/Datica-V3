@@ -15,6 +15,9 @@ sections:
         restrict_assets: false
         container: main
         folder: /
+      cta:
+        type: partial
+        fieldset: cta_include
   sidebar:
     display: 'Press Release Metadata'
     fields:

@@ -25,6 +25,9 @@ sections:
         restrict_assets: false
         type: markdown
         display: Lead
+      cta:
+        type: partial
+        fieldset: cta_include
   legacy:
     display: 'Legacy Fields'
     fields:
