@@ -56,9 +56,6 @@ learn:
         label: Podcasts
         page: 5b648e05-8592-484b-89dc-715a40431afd
       -
-        label: 'Discover: Compliance Topics'
-        external_link: /discover
-      -
         label: 'Open Source'
         external_link: /open-source
       -
