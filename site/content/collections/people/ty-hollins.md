@@ -2,7 +2,7 @@ title: 'Ty Hollins'
 person_type: 'Datica Leadership'
 role: 'Chief Information Security Officer'
 profile_pic:
-  - /assets/tyhollins.jpeg
+  - /assets/tyhollins-1590074725.jpeg
 bio_short: 'Ty Hollins has over 15 years of experience in security, risk, and compliance. Ty steers new vision to develop and improve people, process, and technology. He has strengthened global brands by building and implementing security, risk, and compliance products and services.'
 bio: |
   Ty Hollins has over 15 years of experience in security, risk, and compliance. Ty steers new vision to develop and improve people, process, and technology. He has strengthened global brands by building and implementing security, risk, and compliance products and services.
