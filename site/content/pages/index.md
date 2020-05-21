@@ -7,6 +7,7 @@ blocks:
     block_body: 'Developing healthcare applications in the cloud requires **data integration and compliance** with complicated rules and controls. Datica has a family of powerful, single-source solutions to those challenges.'
     icon_align: right
     block_bg_image: /assets/bg/bg-masthead-pattern.svg
+    color_theme: gray-800
   -
     type: text_image
     block_title: 'EHR Integration'
