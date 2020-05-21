@@ -40,7 +40,7 @@ blocks:
   -
     type: text_image
     block_title: 'Datica Podcasts'
-    color_theme: white
+    color_theme: gray-100
     block_bg_image: /assets/bg/podcast-4x4-background.svg
     button_label: 'Listen In'
     icon_align: right
