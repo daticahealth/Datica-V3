@@ -13,7 +13,7 @@ blocks:
     type: feature_blocks_set
     set_title: 'Datica Managed Services'
     set_subhead: 'Kelly should insert something here.'
-    color_theme: gray-800
+    color_theme: gray-100
     set_blocks:
       -
         type: set_items
@@ -31,6 +31,7 @@ blocks:
           Compliance on the cloud isn’t a one-size-fits-all kind of challenge. Maybe you don’t have the expertise, time, and resources to build your own compliant infrastructure and want a solution that picks up where your cloud provider leaves off. Or, maybe you do and just need help with compliance monitoring and reporting for your complex environments.
           
           <button type="button" name="button" class="btn">Get Compliant</button>
+    set_body: '<br>'
   -
     type: text_image
     block_title: 'EHR Integration'
