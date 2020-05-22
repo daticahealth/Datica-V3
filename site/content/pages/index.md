@@ -8,6 +8,7 @@ blocks:
     icon_align: right
     block_bg_image: /assets/bg/bg-masthead-blur.svg
     color_theme: white
+    block_image: /assets/group-7.png
   -
     type: text_image
     block_title: 'EHR Integration'
