@@ -3,10 +3,13 @@ logo_block_header: 'Trusted By The Best'
 logos:
   - /assets/img/customer-logos/jnj-logo.png
   - /assets/img/customer-logos/zipnosis-logo.png
-  - /assets/img/customer-logos/healthloop-logo.png
-  - /assets/img/bsc-logo-wide.png
-  - /assets/img/customer-logos/cota-logo.png
-  - /assets/img/customer-logos/cirrusmd-logo.png
+  - /assets/img/wolters_kluwer-logo_svg.png
+  - /assets/img/voalte_web_logo.png
+  - /assets/img/spok-logo.png
+  - /assets/img/soc-telemed-logo.jpeg
+  - /assets/img/methodist-lebonheur-hospital.png
+  - /assets/img/ginger.io.png
+item_size: sm
 use_meta_keywords: false
 page_no_index: false
 no_follow_links: false
