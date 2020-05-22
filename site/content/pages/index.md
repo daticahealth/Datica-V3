@@ -37,9 +37,6 @@ blocks:
       <br>
     block_bg_image: /assets/bg/bg-masthead-light.png
   -
-    type: gradient_accent
-    size_height: sm
-  -
     type: logo_cloud
     related_logo_cloud: 71efba74-f379-4143-9ebc-38d96eff3643
   -
@@ -49,17 +46,14 @@ blocks:
     type: text_image
     block_title: 'Datica Podcasts'
     color_theme: white
-    block_bg_image: /assets/bg/podcast-4x4-background.svg
+    block_bg_image: /assets/bg/4x4-brand-card.jpg
     button_label: 'Listen In'
     icon_align: right
     button_icon: /assets/icons/icon-angle-right.svg
     button_classes: button-hollow-white
     button_link: 5b648e05-8592-484b-89dc-715a40431afd
     block_body: 'The 4×4 Health defines the conversation around Health IT. Data is revolutionizing healthcare and we are tracking this revolution in real-time with the actual disrupters of health informatics.'
-    block_image: /assets/4x4-podcast-title.png
-  -
-    type: video_text
-    icon_align: right
+    block_image: /assets/podcast-4x4-banner.jpg
 use_meta_keywords: false
 page_no_index: false
 no_follow_links: false
