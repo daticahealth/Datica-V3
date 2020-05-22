@@ -3,8 +3,8 @@ posts: 3
 blocks:
   -
     type: text_image
-    block_title: 'Datica brings the cloud to healthcare'
-    block_body: 'Developing healthcare applications in the cloud requires **data integration and compliance** with complicated rules and controls. Datica has a family of powerful, single-source solutions to those challenges.'
+    block_title: 'Fast-Track Your Health IT Solutions with Datica'
+    block_body: 'Datica is the only managed service provider (MSP) that solves two of health IT’s most difficult challenges—EHR integration and cloud compliance. Our expertise provides customers the confidence and infrastructure to scale quickly and securely.'
     icon_align: right
     block_bg_image: /assets/bg/bg-masthead-blur.svg
     color_theme: white
