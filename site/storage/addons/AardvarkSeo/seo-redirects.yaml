@@ -12,3 +12,7 @@ redirects:
     source: /discover/
     target: /
     status_code: '302'
+  -
+    source: /integrate/
+    target: /ehr-integration/
+    status_code: '302'
