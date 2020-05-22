@@ -22,7 +22,7 @@ blocks:
     button_label: 'Explore Cloud Compliance'
     button_classes: 'button button-primary'
     button_anchor: cta
-    color_theme: white
+    color_theme: gray-800
     block_subtitle: 'Health data is the future.'
   -
     type: related_feature
@@ -86,8 +86,8 @@ blocks:
     related_logo_cloud: aed4d0d4-c0be-4b28-b3ac-9ef90a1de041
 cta_title: 'Datica Cloud Compliance is here.'
 cta_icon: /assets/icons/emissary-icon-small-white.svg
-cta_body: 'See Datica Cloud Compliance in action. Fill out this form and one of our product specialists will reach out to schedule your demo.'
-related_form: 1sd7ExrRIkg0SgQ0CsiiaO
+cta_body: 'See Datica Integrate in action. Fill out this form and one of our product specialists will reach out to schedule a conversation.'
+related_form: 328pNB4IvCaQWQMCWmgSCy
 pub_date: '2020-02-01'
 discovery_topic: topics/ehr-integrations
 use_meta_keywords: false
@@ -102,4 +102,3 @@ sub_title: 'Managed Service for your solutions in the cloud'
 featured_image: /assets/cta/cta-compliance-share.jpg
 fieldset: product
 id: 65851f8f-a438-4e4e-9c80-8fb80f66b0b5
-category: integration
