@@ -37,28 +37,8 @@ blocks:
       <br>
     block_bg_image: /assets/bg/bg-masthead-light.png
   -
-    type: text_image
-    block_title: 'EHR Integration'
-    block_body: 'Datica Integrate, our comprehensive application programming interface (API) solution that enables data exchange in any format, across EHRs. With Datica Integrate, you are up and running within days, allowing you focus on your product – not on the integration.'
-    block_image: /assets/integrate-card-(rounded).png
-    color_theme: gray-800
-    button_label: 'Learn More'
-    icon_align: right
-    button_classes: button-hollow-dark
-    button_link: 65851f8f-a438-4e4e-9c80-8fb80f66b0b5
-  -
-    type: text_image
-    block_title: 'Cloud Compliance'
-    block_body: 'Compliance on the cloud isn’t a one-size-fits-all kind of challenge. Maybe you don’t have the expertise, time, and resources to build your own compliant infrastructure and want a solution that picks up where your cloud provider leaves off. Or, maybe you do and just need help with compliance monitoring and reporting for your complex environments.'
-    block_image: /assets/cloud-compliance-rounded.png
-    color_theme: gray-800
-    button_label: 'Get Compliant'
-    icon_align: right
-    button_classes: button-hollow-dark
-    button_link: b586aa03-c5a1-4a01-ad2e-63fc7a2bb76a
-  -
     type: gradient_accent
-    size_height: lg
+    size_height: sm
   -
     type: logo_cloud
     related_logo_cloud: 71efba74-f379-4143-9ebc-38d96eff3643
