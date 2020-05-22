@@ -9,6 +9,7 @@ blocks:
     block_bg_image: /assets/bg/bg-masthead-blur.svg
     color_theme: white
     block_image: /assets/group-7.png
+    button_link: false
   -
     type: feature_blocks_set
     set_title: 'Datica Managed Services'
@@ -18,17 +19,13 @@ blocks:
       -
         type: set_items
         item_header: 'EHR Integration'
-        item_art: /assets/integrate-card-(rounded).png
-        item_content: |
-          Datica Integrate, our comprehensive application programming interface (API) solution that enables data exchange in any format, across EHRs. With Datica Integrate, you are up and running within days, allowing you focus on your product – not on the integration.
-          
-          <button type="button" name="button" class="btn" color= "009345">Learn more</button>
+        item_art: /assets/img/art/integrate-sharecard_05-2020.png
+        item_content: 'Datica Integrate solution enables health data integration from any source to any destination, in any format. Using application programming interfaces (APIs), we accelerate successful integration, whether it’s for a single pilot or for hundreds of integrations at once. We provide a clean, standard API transaction to drive your products swiftly and securely to the market.'
       -
         type: set_items
         item_header: 'Cloud Compliance'
-        item_art: /assets/cloud-compliance-rounded.png
         item_content: |
-          Compliance on the cloud isn’t a one-size-fits-all kind of challenge. Maybe you don’t have the expertise, time, and resources to build your own compliant infrastructure and want a solution that picks up where your cloud provider leaves off. Or, maybe you do and just need help with compliance monitoring and reporting for your complex environments.
+          Datica Cloud Compliance offers end-to-end cloud managed services that provide the most flexibility and security for your solutions. We install the guardrails so developers can speed into the fast lane knowing that HIPAA compliance and HITRUST certification are in place.
           
           <button type="button" name="button" class="btn">Get Compliant</button>
     set_body: |
