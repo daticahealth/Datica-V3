@@ -9,7 +9,6 @@ blocks:
     block_bg_image: /assets/bg/bg-masthead-blur.svg
     color_theme: white
     block_image: /assets/group-7.png
-    button_link: false
   -
     type: feature_blocks_set
     set_title: 'Datica Managed Services'
@@ -28,10 +27,7 @@ blocks:
           Datica Cloud Compliance offers end-to-end cloud managed services that provide the most flexibility and security for your solutions. We install the guardrails so developers can speed into the fast lane knowing that HIPAA compliance and HITRUST certification are in place.
           
           <button type="button" name="button" class="btn">Get Compliant</button>
-    set_body: |
-      We can even include more text down here for example. A lot of flexible markdown text, if we want.
-      
-      <br>
+    set_body: 'We can even include more text down here for example. A lot of flexible markdown text, if we want.'
     block_bg_image: /assets/bg/bg-masthead-light.png
   -
     type: logo_cloud
