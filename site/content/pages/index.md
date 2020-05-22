@@ -9,7 +9,6 @@ blocks:
     block_bg_image: /assets/bg/bg-masthead-blur.svg
     color_theme: white
     block_image: /assets/group-7.png
-    button_link: false
   -
     type: feature_blocks_set
     set_title: 'Datica Managed Services'
@@ -57,7 +56,7 @@ blocks:
     block_image: /assets/podcast-4x4-banner.jpg
   -
     type: text_image
-    block_title: 'Our Most Popular Academy Aticle This Month'
+    block_title: 'Our Most Popular Academy Article This Month'
     block_subtitle: 'What people have been reading lately'
     block_body: 'The ADT message is one of the most common messages in HL7. It covers a lot of use cases such as admissions, cancellation of admits, merging of patient data, etc. This is the reason why there is such a long list of possible events and message types that could be sent.'
     block_image: /assets/hl7_series.jpg
@@ -69,7 +68,7 @@ blocks:
     button_link: 60962021-f154-4cd2-a1d7-035a12b6da9e
   -
     type: text_image
-    block_title: 'Our Most Popular Blog Article This Month'
+    block_title: 'Our Most Popular Blog Post This Month'
     block_body: 'FHIR stands for Fast Healthcare Interoperability Resources. Developed by Health Level Seven International (commonly known as HL7), it’s an interoperability specification for the exchange of healthcare information electronically. The aim of FHIR is to address the growing digitization of the healthcare industry and the need for patient records to be readily “available, discoverable, and understandable.” Here’s a closer look at FHIR, its potential benefits and challenges.'
     color_theme: gray-700
     button_label: 'Read the blog'
