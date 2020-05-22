@@ -1,7 +1,7 @@
 compliance:
   -
-    label: 'Compliant Kubernetes Service'
-    external_link: /compliant-kubernetes-service/
+    label: 'Cloud Compliance'
+    page: b586aa03-c5a1-4a01-ad2e-63fc7a2bb76a
 integration:
   -
     label: 'Datica Integrate'
