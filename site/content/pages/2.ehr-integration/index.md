@@ -102,3 +102,4 @@ sub_title: 'Managed Service for your solutions in the cloud'
 featured_image: /assets/cta/cta-compliance-share.jpg
 fieldset: product
 id: 65851f8f-a438-4e4e-9c80-8fb80f66b0b5
+category: integration
