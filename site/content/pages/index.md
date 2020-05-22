@@ -9,6 +9,7 @@ blocks:
     block_bg_image: /assets/bg/bg-masthead-blur.svg
     color_theme: white
     block_image: /assets/group-7.png
+    button_link: false
   -
     type: feature_blocks_set
     set_title: 'Datica Managed Services'
@@ -76,6 +77,7 @@ blocks:
     button_icon: /assets/icons/icon-angle-right.svg
     button_classes: button-primary
     button_link: 60962021-f154-4cd2-a1d7-035a12b6da9e
+    block_image: /assets/what-is-fhir.jpg
 use_meta_keywords: false
 page_no_index: false
 no_follow_links: false
