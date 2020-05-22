@@ -19,7 +19,7 @@ blocks:
     block_image: /assets/img/art/emissary-product-diagram-3.png
     icon_align: right
     button_icon: /assets/icons/icon-chevron-down.svg
-    button_label: 'Explore Cloud Compliance'
+    button_label: 'Learn More About Datica Integrate'
     button_classes: 'button button-primary'
     button_anchor: cta
     color_theme: gray-800
