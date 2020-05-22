@@ -84,7 +84,7 @@ blocks:
   -
     type: logo_cloud
     related_logo_cloud: aed4d0d4-c0be-4b28-b3ac-9ef90a1de041
-cta_title: 'Datica Cloud Compliance is here.'
+cta_title: 'Datica Integrate is here.'
 cta_icon: /assets/icons/emissary-icon-small-white.svg
 cta_body: 'See Datica Integrate in action. Fill out this form and one of our product specialists will reach out to schedule a conversation.'
 related_form: 328pNB4IvCaQWQMCWmgSCy
