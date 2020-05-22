@@ -54,6 +54,18 @@ blocks:
     button_link: 5b648e05-8592-484b-89dc-715a40431afd
     block_body: 'The 4×4 Health defines the conversation around Health IT. Data is revolutionizing healthcare and we are tracking this revolution in real-time with the actual disrupters of health informatics.'
     block_image: /assets/podcast-4x4-banner.jpg
+  -
+    type: text_image
+    block_title: 'Our Most Popular Academy Aticle This Month'
+    block_subtitle: 'What people have been reading lately'
+    block_body: 'The ADT message is one of the most common messages in HL7. It covers a lot of use cases such as admissions, cancellation of admits, merging of patient data, etc. This is the reason why there is such a long list of possible events and message types that could be sent.'
+    block_image: /assets/hl7_series.jpg
+    color_theme: gray-700
+    button_label: 'Read the blog'
+    icon_align: right
+    button_icon: /assets/icons/icon-angle-right.svg
+    button_classes: button-primary
+    button_link: 60962021-f154-4cd2-a1d7-035a12b6da9e
 use_meta_keywords: false
 page_no_index: false
 no_follow_links: false
