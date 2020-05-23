@@ -79,6 +79,7 @@ module.exports = {
       '4xl-scale': 'calc(2vw + 1.375rem)',
       '5xl': '3rem',
       '5xl-scale': 'calc(2vw + 2.5rem)',
+      '5xl-25': '3.25rem',
       '6xl': '5rem',
       '6xl-scale': 'calc(2vw + 3rem)',
     },

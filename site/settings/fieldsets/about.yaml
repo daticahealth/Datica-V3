@@ -1,15 +1,80 @@
 title: About
 hide: true
-fields:
-  title:
-    type: text
-    width: 66
-  slug:
-    type: text
-    width: 33
-  content:
-    type: markdown
-    display: Content
-  fun_facts:
-    type: list
-    display: Fun Facts
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        width: 66
+        display: Title
+        localizable: true
+      slug:
+        type: text
+        width: 33
+        display: Slug
+      masthead_section:
+        type: section
+        display: Masthead
+      heading:
+        type: text
+        display: Heading
+      text:
+        type: textarea
+        display: Text
+      about_sections:
+        mode: stacked
+        add_row: 'Add Section'
+        fields:
+          title:
+            type: text
+            display: Title
+          heading:
+            type: text
+            width: 33
+            display: Heading
+          text:
+            type: textarea
+            width: 66
+            display: Text
+        type: grid
+        display: 'About Sections'
+      customers_logo_cloud:
+        max_items: '1'
+        label: '{{ title }}'
+        collection:
+          - logo_cloud
+        mode: panes
+        type: collection
+        display: 'Customers Logo Cloud'
+      timeline_section:
+        type: section
+        display: Timeline
+      timeline_events:
+        mode: stacked
+        add_row: 'Add Timeline Event'
+        fields:
+          date:
+            type: text
+            display: Date
+          text:
+            type: textarea
+            display: Text
+        type: grid
+        display: 'Timeline Events'
+      timeline_images:
+        container: main
+        folder: /
+        restrict: false
+        mode: grid
+        type: assets
+        display: 'Timeline Images'
+      backing_logo_cloud:
+        max_items: '1'
+        label: '{{ title }}'
+        collection:
+          - logo_cloud
+        mode: panes
+        type: collection
+        display: 'Backing Logo Cloud'  
+taxonomies: true

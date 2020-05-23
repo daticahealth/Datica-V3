@@ -2,3 +2,25 @@ img {
     height: auto;
     max-width: 100%;
 }
+
+.grayscale {
+    filter:         grayscale(1);
+    -webkit-filter: grayscale(1);
+    transition:     .3s linear;
+    // opacity:     $opacity-faded;
+    &:hover {
+        transition:         .3s linear;
+        -webkit-transition: .3s linear;
+        filter:             grayscale(0);
+        -webkit-filter:     grayscale(0);
+        //opacity: 1 !important;
+    }
+}
+
+.faded {
+    opacity: 0.6;
+
+    @screen lg {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,60 @@
+.timeline--vertical {
+    @apply relative px-5 py-6;
+
+    .line {
+        @apply bg-green-bright absolute;
+
+        width: 1px;
+        left: 100 + 45px;
+        top:  26px;
+        height: calc(100%);
+    }
+
+    .block {
+        @apply relative;
+
+        padding-left: 100 - 50px;
+    }
+
+    .date {
+        @apply absolute top-0 text-lg text-gray-800 font-bold text-right;
+
+        left: -22px;
+        // font-size: rem-calc(14px);
+        width:     100 + 17px;
+    }
+
+    .dot {
+        @apply absolute bg-green-bright rounded-lg;
+
+        // left:   100 + 17px;
+        left: 121px;
+        top:    6px;
+        height: 9px;
+        width:  9px;
+    }
+
+    .content {
+        @apply mb-8;
+
+        margin-left: 100px;
+
+        img {
+            @apply inline-block;
+        }
+    }
+
+    .inline-image {
+        @apply inline-block;
+
+        margin: 0 3px;
+        max-width: 5.5rem;
+    }
+
+    .inlineblock-image {
+        @apply inline-block;
+
+        margin: 0 15px 0 0;
+        max-width: 5.5rem;
+    }
+}

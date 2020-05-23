@@ -10,3 +10,46 @@
 svg {
     @apply fill-current inline-block;
 }
+
+.logo-cloud {
+    @apply flex mb-12;
+
+    // @include flex-it(0 0 auto);
+    padding: 0.25rem 0.5rem;
+    // margin-bottom: $global-margin;
+
+    @screen md {
+        padding: 1rem 1.5rem;
+    }
+
+    &--item {
+        margin: 0.3rem 0.5rem;
+
+        @screen md {
+            margin: 0.5rem 0.75rem;
+        }
+
+        @screen lg {
+            margin: 0.5rem 1rem;
+        }
+    }
+}
+
+.logo-size--small {
+    max-height: 1.5rem;
+}
+
+.logo-size--small-mid {
+    max-width: 90%;
+    max-height: 2rem;
+}
+
+.logo-size--medium {
+    max-width: 90%;
+    max-height: 3rem;
+}
+
+.icon-size--xlarge {
+    width: 6rem;
+    height: 6rem;
+}

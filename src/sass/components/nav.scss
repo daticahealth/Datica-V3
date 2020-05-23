@@ -24,8 +24,20 @@
 .breadcrumbs {
     // transition: opacity 175ms linear;
     li {
+        @apply mr-2 text-sm;
+
         &:not(:last-child)::after {
             content: "\203A"; // a '›' http://www.evotech.net/blog/2007/04/named-html-entities-in-numeric-order/
+        }
+
+        &:nth-child(2) {
+            @apply hidden;
+        }
+
+        a {
+            @apply p-1 text-sm;
+
+            color: #0758ed;
         }
     }
 }
@@ -110,6 +122,12 @@
         }
     }
 
+    &.is-stuck {
+        @apply fixed w-full;
+
+        z-index: 5;
+    }
+
     .menu {
         &-item {
             @apply mb-0 p-0;
@@ -123,12 +141,14 @@
                 transition-duration: 4px;
 
                 &:hover {
-                    background-color: hsl(31, 1%, 12%);
+                    background-color: #e8e8e8;
                 }
+
                 &.active, [aria-current]:not([aria-current="false"]) {
-                    background-color: hsl(31, 1%, 16%);
+                    background-color: #e8e8e8;
                     color: white;
                 }
+
                 &.is-active, [aria-current="page"] { // js-applied state by ZF plugins
                     @apply border-green-dark;
                 }
@@ -204,13 +224,15 @@
             &-secondary { 
                 li {
                     color: black(0.8); // for some reason have to color the li and li > a
+                    
                     a {
                         color: black(0.8);
+
                         &:hover {
                             @apply text-green-light;
-                            // background-color: transparentize($gray-8, 0.9);
-                            background-color: hsl(31, 1%, 66%);
+                            background-color: rgba(169,168,167,0.1);
                         }
+
                         &[aria-current="page"] {
                             @apply text-black border-b-2 border-green-light;
                         }
@@ -628,5 +650,13 @@ ul.menu.menu-nav-list {
                 }
             }
         }
+    }
+}
+
+.subnav {
+    &.is-stuck {
+        opacity: 1;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 }

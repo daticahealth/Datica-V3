@@ -20,6 +20,47 @@
     }
 }
 
+.section-article {
+    @apply relative;
+
+    z-index: 1;
+    padding-top: calc-rem(40px);
+
+    @screen md {
+        padding: 2.5rem 1rem;
+    }
+
+    @screen lg {
+        padding: 3rem 1.875rem;
+    }
+
+    @screen xl {
+        padding: 6.25rem 3rem;
+    }
+
+    &--small {
+        padding: 1rem 1.875rem 1.2rem 1.875rem;
+    }
+
+    &--med {
+        @screen md {
+            padding: 3rem 1.875rem;
+        }
+    }
+
+    &--lg {
+        @screen lg {
+            padding: 10vw 1rem;
+        }
+    }
+    
+    &--xlarge, &--xl {
+        @screen xl {
+            padding: 20vw 1rem;
+        }
+    }
+}
+
 [class*="container"], [class*="bg"] {
     transition: background-color 175ms,color 175ms,box-shadow 175ms;
 }

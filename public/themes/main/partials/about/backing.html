@@ -1,0 +1,18 @@
+<section class="section-article bg-white">
+    <div class="flex flex-row justify-center py-8 md:py-0">
+        <div class="flex flex-col justify-center w-full md:w-5/6 text-center">
+            <h2 class="text-xl mb-2 leading-tight font-bold uppercase tracking-wider">A Strong Backing</h2>
+            <div class="logo-cloud mb-0 flex-wrap items-center justify-center">
+                {{ relate:backing_logo_cloud }}
+                    {{ logos }}
+                        <img alt=""
+                            class="lozad logo-cloud--item logo-size--medium loaded"
+                            data-src="{{ value }}"
+                            src="{{ value }}"
+                            data-loaded="true">
+                    {{ /logos }}    
+                {{ /relate:backing_logo_cloud }}
+            </div>
+        </div>
+    </div>
+</section>

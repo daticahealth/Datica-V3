@@ -1,0 +1,32 @@
+<div class="bg-gray-200">
+    <section class="section-article" data-magellan-target="stats" id="stats">
+        <div class="md:w-3/4 md:mx-auto flex flex-row justify-center">
+            <div class="flex flex-col w-full md:w-4/6 lg:w-4/5 p-6 md:p-0">
+                <h5 class="uppercase tracking-widest text-center text-lg">Milestones</h5>
+                <div class="timeline--vertical content-dynamic" id="timeline">
+                    <div class="line" id="line"></div>
+
+                    {{ timeline_events }}
+                        <div class="block">
+                            <div class="date"><span><p>{{ date }}</p></span></div><span class="dot"></span>
+                            <div class="content"><p>{{ text }}</p></div>
+                        </div>
+                    {{ /timeline_events }}
+                </div>
+            </div>
+            <div class="hidden md:flex flex-col items-center w-full md:w-2/6 lg:1/5">
+                <!-- Still need to figure out how to make links work here -->
+                {{ timeline_images }}
+                    <div class="group mb-10">
+                        <img alt=""
+                            class="lozad loaded"
+                            data-src="{{ value }}"
+                            width="200"
+                            src="{{ value }}"
+                            data-loaded="true">
+                    </div>
+                {{ /timeline_images }}
+            </div>
+        </div>
+    </section>
+</div>

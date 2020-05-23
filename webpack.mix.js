@@ -44,6 +44,7 @@ mix.setPublicPath('./public')
         files: [
             './src/sass/**/*.scss',
             './src/js/components/*.js',
+            './src/js/site.js',
             themePath + '**/*.html'
         ]
     });

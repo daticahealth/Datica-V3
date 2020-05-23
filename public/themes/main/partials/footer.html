@@ -5,7 +5,7 @@
             <ul class="no-bullet">
                 {{ footer_nav:compliance }}
                     <li>
-                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                        <a {{ if !external_link }}{{ relate:page scope='item' }}{{ if item:url == current_uri }} class="font-bold" {{ /if }}{{ /relate:page }}{{ /if }} href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
                             {{ label }}
                         </a>
                     </li>
@@ -17,7 +17,7 @@
             <ul class="no-bullet">
                 {{ footer_nav:integration }}
                     <li>
-                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                        <a {{ if !external_link }}{{ relate:page scope='item' }}{{ if item:url == current_uri }} class="font-bold" {{ /if }}{{ /relate:page }}{{ /if }} href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
                             {{ label }}
                         </a>
                     </li>
@@ -29,7 +29,7 @@
             <ul class="no-bullet">
                 {{ footer_nav:learn }}
                     <li>
-                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                        <a {{ if !external_link }}{{ relate:page scope='item' }}{{ if item:url == current_uri }} class="font-bold" {{ /if }}{{ /relate:page }}{{ /if }} href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
                             {{ label }}
                         </a>
                     </li>
@@ -41,7 +41,7 @@
             <ul class="no-bullet">
                 {{ footer_nav:company }}
                     <li>
-                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                        <a {{ if !external_link }}{{ relate:page scope='item' }}{{ if item:url == current_uri }} class="font-bold" {{ /if }}{{ /relate:page }}{{ /if }} href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
                             {{ label }}
                         </a>
                     </li>
@@ -53,7 +53,7 @@
             <ul class="no-bullet">
                 {{ footer_nav:help }}
                     <li>
-                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                        <a {{ if !external_link }}{{ relate:page scope='item' }}{{ if item:url == current_uri }} class="font-bold" {{ /if }}{{ /relate:page }}{{ /if }} href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
                             {{ label }}
                         </a>
                     </li>
@@ -65,7 +65,7 @@
             <ul class="no-bullet">
                 {{ footer_nav:legal }}
                     <li>
-                        <a href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
+                        <a {{ if !external_link }}{{ relate:page scope='item' }}{{ if item:url == current_uri }} class="font-bold" {{ /if }}{{ /relate:page }}{{ /if }} href="{{ if external_link }}{{ external_link }}{{ else }}{{ relate:page scope='footerPage' }}{{ footerPage:url }}{{ /relate:page }}{{ /if }}" title="{{ label }}">
                             {{ label }}
                         </a>
                     </li>
@@ -112,17 +112,6 @@
 </footer>
 
 <div class="strip-bright h-3"></div>
-
-
-
-
-
-<!-- <div class="mx-auto flex max-w-6xl my-12">
-    <a  href="/" title="{{ site_name }} Home">
-        {{ svg src="/assets/icons/datica-logo-horiz.svg" class="fill-current h-12 mr-3" a11y="Datica" }}
-    </a>
-    {{ big_kahuna menu="main-nav" id="nav-footer" }}
-</div> -->
 
 {{ theme:js src="vendor.js" cache_bust="true" tag="true" }}
 {{ theme:js src="main.js" cache_bust="true" tag="true" }}

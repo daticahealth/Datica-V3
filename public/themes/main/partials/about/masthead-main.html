@@ -1,0 +1,40 @@
+<section class="section-article" data-magellan-target="about" id="about">
+    <div class="flex flex-row justify-center">
+        <div class="flex flex-col w-full md:w-1/2 text-center my-4 mx-6">
+            <h1 class="text-lg md:text-xl leading-tight font-bold uppercase tracking-widest md:tracking-wider mb-2">About Datica</h1>
+            <h4 class="text-3xl md:text-5xl leading-tight font-light">{{ heading }}</h4>
+        </div>
+    </div>
+    <div class="flex flex-row justify-center mb-12 mx-6">
+        <div class="flex flex-col w-full md:w-1/2 lg:w-3/5 text-center mb-4">
+            <p class="mb-4 text-xl leading-normal links-area">{{ text }}</p>
+        </div>
+    </div>
+    {{ about_sections }}
+        <div class="flex flex-col md:flex-row mb-6 mx-6">
+            <div class="w-full md:w-1/4 px-4">
+                <h2 class="md:text-right font-light leading-none uppercase tracking-widest mt-1 mb-2 text-xl">{{ title }}</h2>
+            </div>
+            <div class="w-full md:w-1/2 px-4">
+                <h3 class="text-xl font-bold leading-tight mb-2">{{ heading }}</h3>
+                <p>{{ text }}</p>
+            </div>
+        </div>
+    {{ /about_sections }}
+    <div class="flex flex-row justify-center px-6">
+        <div class="flex flex-col justify-center w-full text-center">
+            <h3 class="text-3xl md:text-4xl leading-tight font-normal mb-4 md:mb-8"><strong>World-class companies</strong> trust Datica</h3>
+            <div class="logo-cloud grayscale faded flex-wrap items-center justify-center">
+                {{ relate:customers_logo_cloud }}
+                    {{ logos }}
+                        <img alt=""
+                            class="lozad logo-cloud--item logo-size--medium loaded"
+                            data-src="{{ value }}"
+                            src="{{ value }}"
+                            data-loaded="true">
+                    {{ /logos }}    
+                {{ /relate:customers_logo_cloud }}
+            </div>
+        </div>
+    </div>
+</section>

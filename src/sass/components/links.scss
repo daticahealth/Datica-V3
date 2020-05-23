@@ -30,3 +30,9 @@ a {
         @apply text-green-light border-green-light;
     }
 }
+
+.links-area {
+    a {
+        @apply link font-medium;
+    }
+}

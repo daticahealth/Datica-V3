@@ -40,3 +40,10 @@ body {
 .slide-right { // easy anim for button icons
     transition: all 200ms ease-in-out;
 }
+
+.show-for-sr {
+    @apply absolute w-1 h-1 p-0 overflow-hidden whitespace-no-wrap border-0;
+
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+}
