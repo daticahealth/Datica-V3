@@ -27,6 +27,7 @@ blocks:
           Datica Cloud Compliance offers end-to-end cloud managed services that provide the most flexibility and security for your solutions. We install the guardrails so developers can speed into the fast lane knowing that HIPAA compliance and HITRUST certification are in place.
           
           <button type="button" name="button" class="btn">Get Compliant</button>
+        item_art: /assets/img/art/cloud-compliance-sharecard_05-2020_png-1590248326.png
     set_body: 'We can even include more text down here for example. A lot of flexible markdown text, if we want.'
     block_bg_image: /assets/bg/bg-masthead-light.png
   -
