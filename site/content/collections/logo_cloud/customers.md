@@ -1,5 +1,5 @@
 title: 'Customer Logos, all'
-logo_block_header: 'Trusted By The Best'
+logo_block_header: 'Trusted By Leading Health IT Companies'
 logos:
   - /assets/img/customer-logos/jnj-logo.png
   - /assets/img/customer-logos/zipnosis-logo.png
