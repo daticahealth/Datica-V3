@@ -1,5 +1,5 @@
 title: 'Compliance Stats & Logos'
-logo_block_header: 'Complete Cloud Compliance'
+logo_block_header: 'Cloud Compliance Experts'
 logos:
   - /assets/icons/hitrust-logo.svg
   - '/assets/img/art/150m records.svg'
