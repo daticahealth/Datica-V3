@@ -1,7 +1,7 @@
 title: 'Datica Integrate'
 nav_title: Integration
 summary: 'Datica Integrate is the comprehensive application programming interface (API) solution that enables data exchange in any format, across EHRs.'
-subhead: 'Exchange patient data in any format with any EHR'
+subhead: 'Any-to-any secure health data integration'
 bg_image: /assets/bg/share-integrate-home-bg.svg
 icon: /assets/icons/emissary-icon-small-white.svg
 color_theme: grad-integration
@@ -9,17 +9,15 @@ template: product/page
 blocks:
   -
     type: text_image
-    block_title: 'Exchange patient data in any format with any EHR'
+    block_title: 'Your Speedway to Seamless Data Integration'
     block_body: |
-      Digital health requires data liquidity. Your application can’t deliver its  full value without it. Datica is here to help you unlock that potential and get to market quickly.
+      Delivering innovative health IT solutions requires data integration between multiple electronic health records (EHRs), clinical systems, and third-party applications.
       
-      Modern times call for modern measures. That’s why we created Datica Integrate, our comprehensive application programming interface (API) solution that enables data exchange in any format, across EHRs. With Datica Integrate, you are up and running within days, allowing you focus on your product – not on the integration. 
-      
-      Datica Integrate is also a fully compliant application solution that alleviates the frustrating hardships of working with standards-based interoperability, such as HL7v2 or FHIR.
+      Integration is essential, but it can quickly veer into an obstacle course that takes your team off track. Datica team of experts handles the integration details so your IT team can stay on course to handle what matters most.
     block_image: /assets/img/art/emissary-product-diagram-3.png
     icon_align: right
     button_icon: /assets/icons/icon-chevron-down.svg
-    button_label: 'Learn More About Datica Integrate'
+    button_label: 'Ignite your EHR integration'
     button_classes: 'button button-primary'
     button_anchor: cta
     color_theme: gray-800
@@ -29,7 +27,7 @@ blocks:
     related_feature: 5eA1ToAIEw4Qy20mkUmmcm
   -
     type: feature_blocks_set
-    set_title: 'Under the Hood'
+    set_title: 'How it works'
     set_blocks:
       -
         type: set_items
@@ -37,11 +35,15 @@ blocks:
         item_art: /assets/img/art/apis-art.svg
       -
         type: set_items
-        item_content: 'APIs have been a staple in the digital economy for the past two decades across industries like finance and supply chain. Imagine being free to focus on solving your strategic problems, instead of the worry and cost of integration. Now you can with Datica Integrate.'
+        item_content: |
+          In the past, integration projects have been frustrating obstacles for innovation teams, preventing them from creating breakthrough solutions for overwhelmed medical professionals. The flexibility to offer both standards-based integration and advanced, custom endpoints, allows for support of use cases like:
+          - population health
+          - automation
+          - prior auth, telehealth, AI/ML, and many more.
         item_art: /assets/img/art/integration-projects-art.svg
       -
         type: set_items
-        item_content: 'We have experience and successful integrations with all major EHRs, as well as custom, one-off integrations. It is simple — you connect to our universal API  once and we take care of the rest. With Datica Integrate, scaling quickly is made possible.'
+        item_content: 'We have experience and successful integrations with all major EHRs, as well as custom, one-off integrations. It is simple — you connect to our universal API once and we take care of the rest. With Datica Integrate, scaling quickly is made possible.'
         item_art: /assets/img/art/ehr-list-art.png
       -
         type: set_items
@@ -49,6 +51,7 @@ blocks:
         item_art: /assets/img/art/support-help-art.svg
     block_bg_image: /assets/general/videos/hex-pattern-light-bg.jpg
     color_theme: gray-200
+    icon_align: right
   -
     type: gradient_accent
     size_height: sm
@@ -57,23 +60,18 @@ blocks:
     content_columns:
       -
         type: items
-        item_header: 300+
-        item_content: '- Live integrations completed'
+        item_header: 400+
+        item_content: '- Successful live integrations completed'
         icon_align: right
       -
         type: items
         item_header: Millions
-        item_content: '- Total number of mission-critical messages processed monthly with Datica''s products'
+        item_content: '- of messages processed daily'
         icon_align: right
       -
         type: items
         item_header: '1,000+'
         item_content: '- Security and risk assessments passed'
-        icon_align: right
-      -
-        type: items
-        item_header: Zero
-        item_content: '- Unexpected downtime three years in a row'
         icon_align: right
     block_title: 'Datica Integration Services'
     color_theme: integration
@@ -84,9 +82,9 @@ blocks:
   -
     type: logo_cloud
     related_logo_cloud: aed4d0d4-c0be-4b28-b3ac-9ef90a1de041
-cta_title: 'Datica Integrate is here.'
+cta_title: 'Datica Integrate in action.'
 cta_icon: /assets/icons/emissary-icon-small-white.svg
-cta_body: 'See Datica Integrate in action. Fill out this form and one of our product specialists will reach out to schedule a conversation.'
+cta_body: 'Ready to remove the roadblocks to EHR integration? Fill out this form to request a conversation with one of our integration experts.'
 related_form: 328pNB4IvCaQWQMCWmgSCy
 pub_date: '2020-02-01'
 discovery_topic: topics/ehr-integrations
