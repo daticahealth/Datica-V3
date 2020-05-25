@@ -222,6 +222,10 @@ sections:
                         display: 'Item Content'
                 type: replicator
                 display: 'Content Columns'
+              block_cta_button:
+                fieldset: _button
+                type: partial
+                display: 'CTA Button'
               classes:
                 type: text
                 instructions: |

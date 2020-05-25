@@ -16,6 +16,9 @@
             {{ if set_body }}
                 {{ set_body | markdown | wrap:div.block-content.text-xl }}
             {{ /if }}
+
+            {{ partial src='sets/_buttons' }}
+            
         </div>
         <div class="block-feature--set">
             {{ if set_blocks }}

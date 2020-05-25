@@ -8,24 +8,7 @@
                 {{ block_title }}
             </h2>
             {{ block_body | markdown | wrap:div.text-xl.inline-content }}
-            {{ if button_label }}
-                <a href="#{{ button_anchor }}"
-                   class="button {{ button_classes }}">
-                    {{ button_label }}
-                    {{ if button_icon }}
-                    {{ svg src="{{ button_icon }}" class="icon-inline slide-down fill-current" a11y="arrow" }}
-                    {{ /if }}
-                </a>
-            {{ /if }}
-            {{ if button_url }}
-            <a href="{{ button_url }}"
-               class="button {{ button_classes }}">
-                {{ button_label }}
-                {{ if button_icon }}
-                {{ svg src="{{ button_icon }}" class="icon-inline slide-down fill-current" a11y="arrow" }}
-                {{ /if }}
-            </a>
-            {{ /if}}
+            {{ partial src='sets/_buttons' }}
         </div>
         <div class="w-auto md:w-1/2">
             {{ if block_image }}
