@@ -17,7 +17,7 @@
         <header class="mb-6">
             <div class="date text-xs font-bold tracking-widest uppercase">{{ pub_date format="F j, Y" }}</div>
             <h1 class="headline-3 mb-4">{{ title }}</h1>
-            <div class="flex flex-wrap items-center justify-between" md:flex-no-wrap="md:flex-no-wrap">
+            <div class="flex flex-wrap items-center justify-between md:flex-no-wrap">
 				{{ relate:author scope="entry" }}
 					{{ partial:person }}
 				{{ /relate:author }}
