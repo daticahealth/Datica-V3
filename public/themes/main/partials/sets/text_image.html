@@ -4,15 +4,28 @@
 >
     <div class="p-4 md:p-6 lg:p-3 w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center">
         <div class="w-auto mb-6 md:w-1/2 md:pr-12">
-            <h2 class="headline-3 ">{{ block_title }}</h2>
+            <h2 class="headline-3 ">
+                {{ block_title }}
+            </h2>
             {{ block_body | markdown | wrap:div.text-xl.inline-content }}
             {{ if button_label }}
-                <a href="#{{ button_anchor }}" class="button {{ button_classes }}">{{ button_label }}
+                <a href="#{{ button_anchor }}"
+                   class="button {{ button_classes }}">
+                    {{ button_label }}
                     {{ if button_icon }}
                     {{ svg src="{{ button_icon }}" class="icon-inline slide-down fill-current" a11y="arrow" }}
                     {{ /if }}
                 </a>
             {{ /if }}
+            {{ if button_url }}
+            <a href="{{ button_url }}"
+               class="button {{ button_classes }}">
+                {{ button_label }}
+                {{ if button_icon }}
+                {{ svg src="{{ button_icon }}" class="icon-inline slide-down fill-current" a11y="arrow" }}
+                {{ /if }}
+            </a>
+            {{ /if}}
         </div>
         <div class="w-auto md:w-1/2">
             {{ if block_image }}
@@ -33,7 +46,3 @@
         </div>
     </div>
 </section>
-{{# move these to stylesheets #}}
-<style>
-
-</style>

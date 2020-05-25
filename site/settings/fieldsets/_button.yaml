@@ -43,12 +43,18 @@ sections:
         type: pages
         instructions: 'Choose a page to link to.'
         display: 'Page Link'
-        width: 50
+        width: 33
+      button_url:
+        instructions: 'Paste a standalone URL'
+        display: Button URL
+        type: text
+        validate: url
+        width: 33
       button_anchor:
         type: text
         instructions: 'If there''s an anchor (href #) on the page, write the `id` of the anchor. Must be unique, overrides any page link.'
-        width: 50
-        display: button_anchor
+        width: 33
+        display: Button Anchor
 taxonomies: false
 hide: true
 title: 'Button (partial)'
