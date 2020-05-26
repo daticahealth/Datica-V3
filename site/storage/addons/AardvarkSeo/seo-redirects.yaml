@@ -16,3 +16,7 @@ redirects:
     source: /integrate/
     target: /ehr-integration/
     status_code: '302'
+  -
+    source: /dhsf/
+    target: /
+    status_code: '301'
