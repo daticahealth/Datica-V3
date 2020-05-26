@@ -31,5 +31,7 @@ routes:
 redirect:
   /monitor/: /compliance/
   /innovation/: /
+  /dhsf/: /
 vanity:
   /discover/: /
+  /integrate/: /ehr-integration/
