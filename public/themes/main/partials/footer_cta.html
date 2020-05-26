@@ -1,0 +1,22 @@
+<section id="cta"
+         class="bg-gray-800 lozad bg-cover bg-no-repeat lozad"
+         {{ if bg_image }}
+         data-background-image="{{ bg_image or "/assets/bg/bg-masthead-pattern.svg" }}"
+{{ /if }}
+>
+<div class="flex mx-auto justify-center items-center flex-col md:flex-row max-w-6xl pad-scale-y-md">
+    <div class="p-4 max-w-3xl w-full mb-6 z-10 md:w-2/3 lg:w-3/5 md:p-10 lg:p-16 xl:p-20">
+        {{ cta_title | wrap:h2.headline-3.mb-3 }}
+        {{ cta_body | markdown | wrap:item-content.text-xl }}
+    </div>
+    <aside class="block w-full items-start md:w-1/3 lg:w-2/5 xl:max-w-md z-0">
+        {{ if related_form }}
+        {{ relate:related_form }}
+        <div class="bg-white pad-scale-sm shadow-sm shadow-xl">
+            {{ partial:form-hubspot the_form={custom_form} }}
+        </div>
+        {{ /relate:related_form }}
+        {{ /if }}
+    </aside>
+</div>
+</section>

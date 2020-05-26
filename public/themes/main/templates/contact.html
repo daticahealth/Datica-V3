@@ -1,0 +1,15 @@
+{{#
+
+This template is the default page and entry template that will load.
+
+#}}
+
+{{ partial:page_hero }}
+
+{{ partial:content_blocks }}
+
+{{ partial:footer_cta }}
+
+{{ if mount }}
+{{ partial:list_{{mount}} }}
+{{ /if }}
