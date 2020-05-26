@@ -29,10 +29,10 @@ taxonomies:
   tags: '/tag/{slug}'
   topics: '/discover/{slug}'
 redirect:
-  /monitor/: /compliance/
-  /innovation/: /
-  /dhsf/: /
+  /monitor: /compliance/
+  /innovation: /
+  /dhsf: /
 vanity:
-  /discover/: /
-  /integrate/: /ehr-integration/
-  /cloud-compliance/: /compliance/
+  /discover: /
+  /integrate: /ehr-integration/
+  /cloud-compliance: /compliance/
