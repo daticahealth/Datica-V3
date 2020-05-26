@@ -11,6 +11,7 @@ use Statamic\API\File;
 use Statamic\API\Parse;
 use Statamic\API\PageFolder;
 use Statamic\API\Taxonomy;
+use Statamic\API\URL;
 use Statamic\Extend\Tags;
 
 class AardvarkSeoTags extends Tags
@@ -64,6 +65,35 @@ class AardvarkSeoTags extends Tags
     }
 
     /**
+     * Return a generated canonical URL - this should contain pagination vars
+     * if any are set
+     *
+     * @return string
+     */
+    public function generatedCanonical()
+    {
+        $data = collect($this->getData());
+        $vars = $data->get('get');
+        $current_url = $data->get('current_url');
+        if ($vars && $page = collect($vars)->get('page')) {
+            $current_url .= '?page=' . urlencode($page);
+        }
+        return $current_url;
+    }
+
+    /**
+     * Return an 'un-localised' version of a URL
+     *
+     * @return string
+     */
+    public function unlocalise()
+    {
+        $url = $this->get('url');
+        $default_locale = Config::getDefaultLocale();
+        return URL::makeAbsolute($url, $default_locale);
+    }
+
+    /**
      * Return a template file from this addon.
      *
      * @param string $name The name of the html view file
@@ -89,7 +119,21 @@ class AardvarkSeoTags extends Tags
         $localisedDefaults = $defaults->merge($this->getDefaults($ctx, site_locale()));
 
         $defaultData = $base->merge($localisedDefaults);
-        $combinedData = $defaultData->merge($ctx);
+
+        $ctx = $defaultData->merge($ctx);
+
+        $booleanFields = [
+            'page_no_index',
+            'no_follow_links',
+            'use_meta_keywords',
+        ];
+
+        $combinedData = $ctx->mapWithKeys(function ($field, $fieldName) use ($defaultData, $booleanFields) {
+            if (in_array($fieldName, $booleanFields) && $defaultData->get($fieldName)) {
+                return [$fieldName => true];
+            }
+            return [$fieldName => $field];
+        });
 
         $this->rawData = $combinedData;
         return $this->parseData()->all();

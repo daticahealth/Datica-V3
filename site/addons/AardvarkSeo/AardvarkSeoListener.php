@@ -13,6 +13,7 @@ use Statamic\API\File;
 use Statamic\API\Nav;
 use Statamic\API\YAML;
 use Statamic\API\Config;
+use Statamic\API\User;
 use Statamic\Extend\Listener;
 
 /**
@@ -44,23 +45,27 @@ class AardvarkSeoListener extends Listener
      */
     public function addSeoNavItems($nav)
     {
-        $seo_section = Nav::item('aardvark-seo')->title('SEO')->route('aardvark-seo')->icon('line-graph');
+        // Only super-users can access this
+        $user = User::getCurrent();
+        if ($user->isSuper()) {
+            $seo_section = Nav::item('aardvark-seo')->title('SEO')->route('aardvark-seo')->icon('line-graph');
 
-        $errors = AardvarkController::getErrors();
-        if (count($errors)) {
-            $seo_section->badge(count($errors));
+            $errors = AardvarkController::getErrors();
+            if (count($errors)) {
+                $seo_section->badge(count($errors));
+            }
+
+            $seo_section->add(function ($item) {
+                $item->add(Nav::item('General')->route('aardvark-seo.general'));
+                $item->add(Nav::item('Content defaults')->route('aardvark-seo.defaults'));
+                $item->add(Nav::item('Marketing')->route('aardvark-seo.marketing'));
+                $item->add(Nav::item('Social')->route('aardvark-seo.social'));
+                $item->add(Nav::item('Redirects')->route('aardvark-seo.redirects')->badge('BETA'));
+                $item->add(Nav::item('Sitemap')->route('aardvark-seo.sitemap'));
+            });
+
+            $nav->addTo('tools', $seo_section);
         }
-
-        $seo_section->add(function ($item) {
-            $item->add(Nav::item('General')->route('aardvark-seo.general'));
-            $item->add(Nav::item('Content defaults')->route('aardvark-seo.defaults'));
-            $item->add(Nav::item('Marketing')->route('aardvark-seo.marketing'));
-            $item->add(Nav::item('Social')->route('aardvark-seo.social'));
-            $item->add(Nav::item('Redirects')->route('aardvark-seo.redirects')->badge('BETA'));
-            $item->add(Nav::item('Sitemap')->route('aardvark-seo.sitemap'));
-        });
-
-        $nav->addTo('tools', $seo_section);
     }
 
     /**

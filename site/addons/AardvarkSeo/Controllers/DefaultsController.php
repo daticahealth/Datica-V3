@@ -15,6 +15,7 @@ use Statamic\Events\Data\CollectionSaved;
 use Statamic\Events\Data\TaxonomySaved;
 use Statamic\Events\Data\SettingsSaved;
 use Statamic\CP\Publish\ProcessesFields;
+use Statamic\Addons\AardvarkSeo\Controllers\SitemapController;
 
 class DefaultsController extends Controller
 {
@@ -93,6 +94,9 @@ class DefaultsController extends Controller
                 event(new SettingsSaved($object->path(), $object->data()));
                 break;
         }
+
+        // Clear the sitemap index cache
+        SitemapController::clearIndexCache($request->locale);
 
         return $this->successResponse('aardvark-seo.defaults');
     }
@@ -217,10 +221,16 @@ class DefaultsController extends Controller
                 $object = Taxonomy::whereHandle($ctx->get('taxonomy', ''));
                 break;
             case 'Page':
+            case 'ExceptionRoute':
                 $object = PageFolder::whereHandle('/') ?: PageFolder::create();
                 $object->path('/');
                 break;
         }
+
+        if (empty($object)) {
+            return [];
+        }
+
         return $object->get('aardvark_' . $locale, []);
     }
 }

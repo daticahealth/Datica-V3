@@ -20,10 +20,18 @@
 {{# General default meta tags #}}
 <title>{{ meta_title or calculated_title }}</title>
 <meta name="description" content="{{ meta_description }}">
+
+{{ if canonical_url }}
+<link rel="canonical" href="{{ canonical_url }}">
+<meta property="og:url" content="{{ canonical_url }}">
+{{ else }}
+<link rel="canonical" href="{{ aardvark_seo:generated_canonical }}">
+<meta property="og:url" content="{{ aardvark_seo:generated_canonical }}">
+{{ /if }}
+
 {{ if use_meta_keywords }}
 <meta name="keywords" content="{{ meta_keywords join=', ' }}">
 {{ /if }}
-<link rel="canonical" href="{{ canonical_url or permalink }}">
 {{ if auto_alternate_locales }}
 {{ auto_alternate_locales }}
 <link rel="alternate" hreflang="{{ locale }}" href="{{ url }}">
@@ -38,7 +46,7 @@
 {{# Favicon tag #}}
 {{ if global_favicon }}
   {{ asset:global_favicon }}
-    <link rel="shortcut icon" href="{{ permalink }}">
+    <link rel="shortcut icon" href="{{ aardvark_seo:unlocalise :url='url' }}">
   {{ /asset:global_favicon }}
 {{ /if }}
 
@@ -48,10 +56,9 @@
 <meta property="og:description" content="{{ facebook_description or meta_description }}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="{{ locale }}">
-<meta property="og:url" content="{{ canonical_url or permalink }}">
 {{ if calculated_facebook_image }}
 {{ asset:calculated_facebook_image }}
-<meta property="og:image" content="{{ permalink }}">
+<meta property="og:image" content="{{ aardvark_seo:unlocalise :url='url' }}">
 <meta property="og:image:width" content="{{ width }}">
 <meta property="og:image:height" content="{{ height }}">
 <meta property="og:image:alt" content="{{ alt }}">
@@ -76,14 +83,14 @@
   {{ /if }}
   {{ if calculated_twitter_card_type === 'summary_large_image' }}
   {{ asset:calculated_twitter_large_image }}
-  <meta name="twitter:image" content="{{ permalink }}">
+  <meta name="twitter:image" content="{{ aardvark_seo:unlocalise :url='url' }}">
   {{ if alt }}
     <meta name="twitter:image:alt" content="{{ alt }}">
   {{ /if }}
   {{ /asset:calculated_twitter_large_image }}
   {{ elseif calculated_twitter_summary_image }}
   {{ asset:calculated_twitter_summary_image }}
-    <meta name="twitter:image" content="{{ permalink }}">
+    <meta name="twitter:image" content="{{ aardvark_seo:unlocalise :url='url' }}">
     {{ if alt }}
     <meta name="twitter:image:alt" content="{{ alt }}">
     {{ /if }}
@@ -101,6 +108,7 @@
 {{ if baidu_verification_code }}<meta name="baidu-site-verification" content="{{ baidu_verification_code }}">{{ /if }}
 
 {{# Top level schema #}}
+{{ if permalink === homepage }}
 <script type="application/ld+json" id="schema">
   {
     "@context": "http://schema.org",
@@ -108,7 +116,7 @@
     "url": "{{ site_url }}",
     "name": "{{ if company_or_person === 'company' }}{{ company_name}}{{ else }}{{ your_name }}{{ /if }}",
     {{ if company_or_person === 'company' && company_logo != '' }}
-    "logo": "{{ asset:company_logo }}{{ permalink }}{{ /asset:company_logo}}",
+    "logo": "{{ asset:company_logo }}{{ aardvark_seo:unlocalise :url='url' }}{{ /asset:company_logo }}",
     {{ /if }}
     "sameAs": [
       {{ social_links }}"{{ url}}"{{ if !last }},
@@ -116,6 +124,7 @@
     ]
   }
 </script>
+{{ /if }}
 
 {{# Breadcrumbs trail #}}
 {{ if enable_breadcrumbs && permalink !== homepage }}
