@@ -13,10 +13,11 @@ blocks:
     block_body: 'A compliance and integration expert from Datica will follow up to learn how we might be able to help.'
     icon_align: right
     block_image: /assets/group-7.png
-    block_bg_image: /assets/bg/bg-masthead-pattern.svg
+    block_bg_image: /assets/bg/grad-mix.png
     button_anchor: cta
     button_label: 'Let''s talk'
     color_theme: white
+    button_icon: /assets/icons/icon-angle-down.svg
 cta_title: 'Get in touch'
 cta_body: 'Have services or pricing questions?'
 related_form: 6REeio0W88ac0o0GOsMs8U
