@@ -46,7 +46,6 @@ blocks:
     icon_align: right
     button_icon: /assets/icons/icon-angle-right.svg
     button_classes: button-hollow-white
-    button_link: 5b648e05-8592-484b-89dc-715a40431afd
     block_body: 'The 4×4 Health defines the conversation around Health IT. Data is revolutionizing healthcare and we are tracking this revolution in real-time with the actual disrupters of health informatics.'
     block_image: /assets/podcast-4x4-banner.jpg
     button_url: /podcasts/
