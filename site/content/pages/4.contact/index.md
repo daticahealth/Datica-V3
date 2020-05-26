@@ -14,7 +14,7 @@ blocks:
     icon_align: right
     block_image: /assets/group-7.png
     block_bg_image: /assets/bg/bg-masthead-pattern.svg
-    button_anchor: '#cta'
+    button_anchor: cta
     button_label: 'Let''s talk'
     color_theme: white
 cta_title: 'Get in touch'
