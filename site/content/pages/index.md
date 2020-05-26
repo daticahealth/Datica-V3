@@ -9,7 +9,6 @@ blocks:
     block_bg_image: /assets/bg/bg-masthead-blur.svg
     color_theme: white
     block_image: /assets/group-7.png
-    button_link: false
   -
     type: feature_blocks_set
     set_title: 'Datica Managed Services'
@@ -32,7 +31,6 @@ blocks:
     set_body: 'We can even include more text down here for example. A lot of flexible markdown text, if we want.'
     block_bg_image: /assets/bg/bg-masthead-light.png
     icon_align: right
-    button_link: false
   -
     type: logo_cloud
     related_logo_cloud: 71efba74-f379-4143-9ebc-38d96eff3643
@@ -51,7 +49,6 @@ blocks:
     block_body: 'The 4×4 Health defines the conversation around Health IT. Data is revolutionizing healthcare and we are tracking this revolution in real-time with the actual disrupters of health informatics.'
     block_image: /assets/podcast-4x4-banner.jpg
     button_url: /podcast/
-    button_link: false
   -
     type: text_image
     block_title: 'Our Most Popular Academy Article This Month'
@@ -63,7 +60,7 @@ blocks:
     icon_align: right
     button_icon: /assets/icons/icon-angle-right.svg
     button_classes: button-primary
-    button_link: 60962021-f154-4cd2-a1d7-035a12b6da9e
+    button_url: /academy/hl7-201-the-admission-discharge-transfer-adt-message/
   -
     type: text_image
     block_title: 'Our Most Popular Blog Post This Month'
@@ -73,8 +70,8 @@ blocks:
     icon_align: right
     button_icon: /assets/icons/icon-angle-right.svg
     button_classes: button-primary
-    button_link: 60962021-f154-4cd2-a1d7-035a12b6da9e
     block_image: /assets/what-is-fhir.jpg
+    button_url: /blog/what-is-fhir/
 use_meta_keywords: false
 page_no_index: false
 no_follow_links: false
