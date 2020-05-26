@@ -1,6 +1,6 @@
 title: 'Scott Johnson'
 person_type: 'Datica Leadership'
-role: 'VP Engineering'
+role: 'Vice President of Engineering'
 profile_pic:
   - /assets/scott-johnson.jpg
 bio_short: 'Scott is an accomplished technology leader and Software Engineer and has a track record of building and developing rapidly scaling globally distributed teams and systems in growth stage technology companies.'
