@@ -1,15 +1,3 @@
-collections:
-  blog: '/blog/{slug}'
-  academy: '/academy/{slug}'
-  events: '/events/{slug}'
-  webinars: '/webinar/{slug}'
-  press: '/press/{slug}'
-  guides: '/guide/{slug}'
-  podcasts: '/podcast/{slug}'
-  people: '/about/{slug}'
-taxonomies:
-  tags: '/tag/{slug}'
-  topics: '/discover/{slug}'
 routes:
   /blog/tags: blog/taxonomies
   /search: search
@@ -28,6 +16,18 @@ routes:
     layout: feed
     template: feeds/things
     content_type: atom
+collections:
+  blog: '/blog/{slug}'
+  academy: '/academy/{slug}'
+  events: '/events/{slug}'
+  webinars: '/webinar/{slug}'
+  press: '/press/{slug}'
+  guides: '/guide/{slug}'
+  podcasts: '/podcast/{slug}'
+  people: '/about/{slug}'
+taxonomies:
+  tags: '/tag/{slug}'
+  topics: '/discover/{slug}'
 redirect:
   /monitor/: /compliance/
   /innovation/: /
@@ -35,3 +35,4 @@ redirect:
 vanity:
   /discover/: /
   /integrate/: /ehr-integration/
+  /cloud-compliance/: /compliance/
