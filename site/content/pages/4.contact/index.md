@@ -6,6 +6,12 @@ subhead: 'Talk to us!'
 bg_image: /assets/img/untitled-design.jpg
 color_theme: none
 template: contact
+blocks:
+  -
+    type: text_image
+    block_title: 'Contact Us'
+    block_body: 'A compliance and integration expert from Datica will follow up to learn how we might be able to help.'
+    icon_align: right
 related_form: 6REeio0W88ac0o0GOsMs8U
 pub_date: '2020-05-21'
 use_meta_keywords: false
