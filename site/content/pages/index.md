@@ -30,6 +30,7 @@ blocks:
         item_art: /assets/img/art/cloud-compliance-sharecard_05-2020_png-1590248326.png
     set_body: 'We can even include more text down here for example. A lot of flexible markdown text, if we want.'
     block_bg_image: /assets/bg/bg-masthead-light.png
+    icon_align: right
   -
     type: logo_cloud
     related_logo_cloud: 71efba74-f379-4143-9ebc-38d96eff3643
@@ -48,6 +49,7 @@ blocks:
     button_link: 5b648e05-8592-484b-89dc-715a40431afd
     block_body: 'The 4×4 Health defines the conversation around Health IT. Data is revolutionizing healthcare and we are tracking this revolution in real-time with the actual disrupters of health informatics.'
     block_image: /assets/podcast-4x4-banner.jpg
+    button_url: /podcasts/
   -
     type: text_image
     block_title: 'Our Most Popular Academy Article This Month'
