@@ -76,6 +76,7 @@ blocks:
     block_title: 'Datica Integration Services'
     color_theme: integration
     classes: mb-24
+    block_bg_image: /assets/bg/bg-integrate-16x9-alt-lighting.jpg
   -
     type: related_feature
     related_feature: ytW3RCOoXASAGm0wuUCq2
