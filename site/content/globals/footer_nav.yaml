@@ -14,20 +14,11 @@ learn:
     label: 'Datica Blog'
     page: 60962021-f154-4cd2-a1d7-035a12b6da9e
   -
-    label: 'Innovation Hub'
-    external_link: /innovation
-  -
     label: Podcasts
     page: 5b648e05-8592-484b-89dc-715a40431afd
   -
-    label: 'Discover: Compliance Topics'
-    external_link: /discover
-  -
     label: 'Open Source'
     external_link: /open-source
-  -
-    label: 'Digital Health Success Framework'
-    external_link: /dhsf
   -
     label: Webinars
     page: 5da4c260-7caa-49f8-9aab-1f825e3d32a1
