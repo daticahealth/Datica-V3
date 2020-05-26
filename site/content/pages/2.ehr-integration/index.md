@@ -74,7 +74,7 @@ blocks:
         item_content: '- Security and risk assessments passed'
         icon_align: right
     block_title: 'Datica Integration Services'
-    color_theme: gray-100
+    color_theme: grad-bright
     classes: mb-24
     block_bg_image: /assets/bg/bg-integrate-16x9-alt-lighting.jpg
   -
